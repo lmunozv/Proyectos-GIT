@@ -14,8 +14,7 @@ using System.Web.Mvc;
 namespace Bizagi.Business.Reports.Controllers
 {
     public class GraphicController : Controller
-    {    
-        [AcceptVerbs(HttpVerbs.Post)]
+    {           
         public ActionResult Details(MenuBO menu)
         {
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
