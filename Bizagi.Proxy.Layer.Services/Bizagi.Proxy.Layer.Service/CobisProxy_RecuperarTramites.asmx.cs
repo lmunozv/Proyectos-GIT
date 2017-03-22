@@ -9,7 +9,7 @@ using System.Web.Services.Protocols;
 namespace Bizagi.Proxy.Layer.Service
 {
     /// <summary>
-    /// Summary description for CobisProxy_RecuperarTramites
+    /// Servicio que consulta los tramite de un consumidor financiero
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
