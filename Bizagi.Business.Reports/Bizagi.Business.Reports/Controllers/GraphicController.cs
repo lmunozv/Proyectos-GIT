@@ -13,8 +13,13 @@ using System.Web.Mvc;
 
 namespace Bizagi.Business.Reports.Controllers
 {
+    /// <summary>
+    /// Ccontrolador grafico que permite mostrar
+    /// la informacion de negocio de bizagi
+    /// </summary>
     public class GraphicController : Controller
     {           
+        
         public ActionResult Details(MenuBO menu)
         {
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
