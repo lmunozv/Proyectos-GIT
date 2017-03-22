@@ -15,7 +15,7 @@ namespace Bizagi.Business.Reports.Controllers
 {
     /// <summary>
     /// Ccontrolador grafico que permite mostrar
-    /// la informacion de negocio de bizagi
+    /// la información de negocio de bizagi
     /// </summary>
     public class GraphicController : Controller
     {       
