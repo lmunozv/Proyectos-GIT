@@ -30,15 +30,11 @@ namespace Bizagi.Ejecutor.Reglas
                     main = objClase.GetType().GetMethod(metodo);
                     return main.Invoke(null, argumentos);
                 }
-
-
                 //return objClase.GetType().InvokeMember(metodo, BindingFlags.InvokeMethod, null, objClase, argumentos);
                 //MethodInfo main = objClase.GetType().GetMethod(metodo);
                 //return main.Invoke(null, null);
             }
-
         }
-
 
         public static object Compiler(string clase, string nSpace_Clase)
         {
@@ -60,23 +56,7 @@ namespace Bizagi.Ejecutor.Reglas
                 #endregion
 
                 objParametros.TempFiles.KeepFiles = true;
-                CodeDomProvider objCompiler = CodeDomProvider.CreateProvider("CSharp");
-                //foreach (AssemblyName reference in Assembly.GetExecutingAssembly().GetReferencedAssemblies())
-                //{
-                //    if (reference.Name.Contains("DevExpress"))
-                //    {
-                //        objParametros.ReferencedAssemblies.Add(ConfigurationManager.AppSettings["URL"] + reference.Name + ".dll");
-                //    }
-                //    else if (reference.Name.Contains("AutoMapper"))
-                //    {
-                //        objParametros.ReferencedAssemblies.Add(ConfigurationManager.AppSettings["URLMapper"] + reference.Name + ".dll");
-                //    }
-                //    else
-                //    {
-                //        objParametros.ReferencedAssemblies.Add(reference.Name + ".dll");
-                //    }
-
-                //}
+                CodeDomProvider objCompiler = CodeDomProvider.CreateProvider("CSharp");                
                 objParametros.ReferencedAssemblies.Add(Assembly.GetExecutingAssembly().Location);
                 CompilerResults objResultados = objCompiler.CompileAssemblyFromSource(objParametros, clase);
                 if (objResultados.Errors.HasErrors)
