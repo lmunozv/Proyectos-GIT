@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WorkManager.Model.Business.Dto" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Business.Dto" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="FormulariosRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CamposSelect" nillable="true" type="tns:CamposSelectDto" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FormulariosRequest" nillable="true" type="tns:FormulariosRequest" />
+  <xs:complexType name="CamposSelectDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoTabla" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Columnas" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Operador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Parametro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CamposSelectDto" nillable="true" type="tns:CamposSelectDto" />
+  <xs:complexType name="HeaderDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeaderDto" nillable="true" type="tns:HeaderDto" />
+  <xs:complexType name="DocumentosRequestPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CamposSelect" nillable="true" type="tns:CamposSelectDto" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+      <xs:element minOccurs="0" name="ListDocumetnos" nillable="true" type="tns:ArrayOfDocumentosDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentosRequestPost" nillable="true" type="tns:DocumentosRequestPost" />
+  <xs:complexType name="ArrayOfDocumentosDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentosDto" nillable="true" type="tns:DocumentosDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentosDto" nillable="true" type="tns:ArrayOfDocumentosDto" />
+  <xs:complexType name="DocumentosDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Archivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoDirectorio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTipoDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Extension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentosDto" nillable="true" type="tns:DocumentosDto" />
+  <xs:complexType name="FormulariosRequestPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CamposSelect" nillable="true" type="tns:CamposSelectDto" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+      <xs:element minOccurs="0" name="ListadoFormularios" nillable="true" type="tns:ArrayOfListadoFormulariosDtoPost" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FormulariosRequestPost" nillable="true" type="tns:FormulariosRequestPost" />
+  <xs:complexType name="ArrayOfListadoFormulariosDtoPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListadoFormulariosDtoPost" nillable="true" type="tns:ListadoFormulariosDtoPost" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListadoFormulariosDtoPost" nillable="true" type="tns:ArrayOfListadoFormulariosDtoPost" />
+  <xs:complexType name="ListadoFormulariosDtoPost">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ListCampos" nillable="true" type="tns:ArrayOfDiccionario" />
+      <xs:element minOccurs="0" name="ListDocumetnos" nillable="true" type="tns:ArrayOfDocumentosDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListadoFormulariosDtoPost" nillable="true" type="tns:ListadoFormulariosDtoPost" />
+  <xs:complexType name="ArrayOfDiccionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Diccionario" nillable="true" type="tns:Diccionario" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDiccionario" nillable="true" type="tns:ArrayOfDiccionario" />
+  <xs:complexType name="Diccionario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Diccionario" nillable="true" type="tns:Diccionario" />
+  <xs:complexType name="TipoDocumentoRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TipoDocumentoRequest" nillable="true" type="tns:TipoDocumentoRequest" />
+  <xs:complexType name="DocumentosRequest">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Campo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoFormulario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTipoDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+      <xs:element minOccurs="0" name="Top" type="xs:int" />
+      <xs:element minOccurs="0" name="Valor" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentosRequest" nillable="true" type="tns:DocumentosRequest" />
+  <xs:complexType name="CumplirTareaDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+      <xs:element minOccurs="0" name="codigoTipoDocumental" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="descripcionArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ext" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fileBase64String" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idWorkflow" type="xs:long" />
+      <xs:element minOccurs="0" name="paso" type="xs:int" />
+      <xs:element minOccurs="0" name="responsableSiguientePaso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="usuarioEjecuta" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CumplirTareaDto" nillable="true" type="tns:CumplirTareaDto" />
+</xs:schema>

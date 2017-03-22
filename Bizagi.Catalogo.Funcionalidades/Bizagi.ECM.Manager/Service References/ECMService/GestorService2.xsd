@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" />
+  <xs:element name="Gestor_Insertar">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="request" nillable="true" type="q1:RequestDtoOfGestorDtopCDoQcXC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_InsertarResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="Gestor_InsertarResult" nillable="true" type="q2:ResponseDtoOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_CambiarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="header" nillable="true" type="q3:HeaderDto" />
+        <xs:element minOccurs="0" name="codigo" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="documento" nillable="true" type="q4:FileDto" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_CambiarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="Gestor_CambiarDocumentoResult" nillable="true" type="q5:ResponseDtoOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_EliminarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="header" nillable="true" type="q6:HeaderDto" />
+        <xs:element minOccurs="0" name="codigoAchivo" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="radicado" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_EliminarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="Gestor_EliminarDocumentoResult" nillable="true" type="q7:ResponseDtoOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_ConsultarDocumento">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="header" nillable="true" type="q8:HeaderDto" />
+        <xs:element minOccurs="0" name="radicado" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="identificacion" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Gestor_ConsultarDocumentoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" minOccurs="0" name="Gestor_ConsultarDocumentoResult" nillable="true" type="q9:ResponseDtoOfArrayOfGestorDocumentalDtopCDoQcXC" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

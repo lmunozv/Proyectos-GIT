@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e15910e-3fac-4873-afd5-25d3cbe923dc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://fnabogpapp001:8095/GestorService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GestorService.xsd" MetadataType="Schema" ID="e347b2f9-bee5-4f29-a4f6-43084d167f07" SourceId="1" SourceUrl="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd1" />
+    <MetadataFile FileName="GestorService1.xsd" MetadataType="Schema" ID="05ca93db-3e6c-49cf-a212-8f153770d8d1" SourceId="1" SourceUrl="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd3" />
+    <MetadataFile FileName="GestorService2.xsd" MetadataType="Schema" ID="363b4e9b-7ac8-4087-b134-5035eec20702" SourceId="1" SourceUrl="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="GestorService3.xsd" MetadataType="Schema" ID="6c03144d-b255-4748-9a36-19acae0c096b" SourceId="1" SourceUrl="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd2" />
+    <MetadataFile FileName="Api.wsdl" MetadataType="Wsdl" ID="4436c92b-42c1-46b8-a97e-97a04eb0f3b5" SourceId="1" SourceUrl="http://fnabogpapp001:8095/GestorService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

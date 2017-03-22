@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="a058af7e-a12f-49f0-b825-ca7350b70870" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://fnabogpapp001:8088/WorkManagerApi.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WorkManagerApi3.xsd" MetadataType="Schema" ID="6e399c2e-024e-4bc3-9dbe-a3987c07db85" SourceId="1" SourceUrl="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd2" />
+    <MetadataFile FileName="WorkManagerApi1.wsdl" MetadataType="Wsdl" ID="5a7f1957-faa0-4605-961a-58f83411d8d2" SourceId="1" SourceUrl="http://fnabogpapp001:8088/WorkManagerApi.svc?wsdl" />
+    <MetadataFile FileName="WorkManagerApi31.xsd" MetadataType="Schema" ID="dda17f57-27f2-4862-907a-5c9fe08304f2" SourceId="1" SourceUrl="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd0" />
+    <MetadataFile FileName="WorkManagerApi32.xsd" MetadataType="Schema" ID="9f0cfd50-ffdb-428a-9097-9bac8e90c71e" SourceId="1" SourceUrl="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

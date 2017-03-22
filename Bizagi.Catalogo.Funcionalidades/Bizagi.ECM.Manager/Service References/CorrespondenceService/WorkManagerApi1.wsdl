@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WorkManagerApi" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://fnabogpapp001:8088/WorkManagerApi.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Business.Dto" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IWorkManagerApi_ReadRegistroFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRegistroFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_ReadRegistroFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReadRegistroFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_AdjuntarArchivosPorRegistroFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdjuntarArchivosPorRegistroFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_AdjuntarArchivosPorRegistroFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdjuntarArchivosPorRegistroFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_CreateRegistroFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRegistroFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_CreateRegistroFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateRegistroFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_UpdateRegistroFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegistroFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_UpdateRegistroFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRegistroFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_DeleteRegistroFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegistroFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_DeleteRegistroFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRegistroFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_GetTiposDocumentosByIdFormualrio_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTiposDocumentosByIdFormualrio" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_GetTiposDocumentosByIdFormualrio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTiposDocumentosByIdFormualrioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_GetDocumentoByIdFormulario_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoByIdFormulario" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_GetDocumentoByIdFormulario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDocumentoByIdFormularioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_CumplirTarea_InputMessage">
+    <wsdl:part name="parameters" element="tns:CumplirTarea" />
+  </wsdl:message>
+  <wsdl:message name="IWorkManagerApi_CumplirTarea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CumplirTareaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IWorkManagerApi">
+    <wsdl:operation name="ReadRegistroFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/ReadRegistroFormulario" message="tns:IWorkManagerApi_ReadRegistroFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/ReadRegistroFormularioResponse" message="tns:IWorkManagerApi_ReadRegistroFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdjuntarArchivosPorRegistroFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/AdjuntarArchivosPorRegistroFormulario" message="tns:IWorkManagerApi_AdjuntarArchivosPorRegistroFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/AdjuntarArchivosPorRegistroFormularioResponse" message="tns:IWorkManagerApi_AdjuntarArchivosPorRegistroFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegistroFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/CreateRegistroFormulario" message="tns:IWorkManagerApi_CreateRegistroFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/CreateRegistroFormularioResponse" message="tns:IWorkManagerApi_CreateRegistroFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistroFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/UpdateRegistroFormulario" message="tns:IWorkManagerApi_UpdateRegistroFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/UpdateRegistroFormularioResponse" message="tns:IWorkManagerApi_UpdateRegistroFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegistroFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/DeleteRegistroFormulario" message="tns:IWorkManagerApi_DeleteRegistroFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/DeleteRegistroFormularioResponse" message="tns:IWorkManagerApi_DeleteRegistroFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTiposDocumentosByIdFormualrio">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/GetTiposDocumentosByIdFormualrio" message="tns:IWorkManagerApi_GetTiposDocumentosByIdFormualrio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/GetTiposDocumentosByIdFormualrioResponse" message="tns:IWorkManagerApi_GetTiposDocumentosByIdFormualrio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoByIdFormulario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/GetDocumentoByIdFormulario" message="tns:IWorkManagerApi_GetDocumentoByIdFormulario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/GetDocumentoByIdFormularioResponse" message="tns:IWorkManagerApi_GetDocumentoByIdFormulario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CumplirTarea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IWorkManagerApi/CumplirTarea" message="tns:IWorkManagerApi_CumplirTarea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IWorkManagerApi/CumplirTareaResponse" message="tns:IWorkManagerApi_CumplirTarea_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IWorkManagerApi" type="tns:IWorkManagerApi">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ReadRegistroFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/ReadRegistroFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdjuntarArchivosPorRegistroFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/AdjuntarArchivosPorRegistroFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateRegistroFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/CreateRegistroFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRegistroFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/UpdateRegistroFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRegistroFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/DeleteRegistroFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTiposDocumentosByIdFormualrio">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/GetTiposDocumentosByIdFormualrio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDocumentoByIdFormulario">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/GetDocumentoByIdFormulario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CumplirTarea">
+      <soap:operation soapAction="http://tempuri.org/IWorkManagerApi/CumplirTarea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WorkManagerApi">
+    <wsdl:port name="BasicHttpBinding_IWorkManagerApi" binding="tns:BasicHttpBinding_IWorkManagerApi">
+      <soap:address location="http://fnabogpapp001:8088/WorkManagerApi.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

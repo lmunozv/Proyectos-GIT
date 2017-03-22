@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://fnabogpapp001:8095/GestorService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="RequestDtoOfGestorDtopCDoQcXC">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="RequestDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="GestorDto" Namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Archivos" nillable="true" type="tns:ArrayOfFileDto" />
+      <xs:element minOccurs="0" name="Data" nillable="true" type="tns:GestorDto" />
+      <xs:element minOccurs="0" name="Header" nillable="true" type="tns:HeaderDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestDtoOfGestorDtopCDoQcXC" nillable="true" type="tns:RequestDtoOfGestorDtopCDoQcXC" />
+  <xs:complexType name="ArrayOfFileDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FileDto" nillable="true" type="tns:FileDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFileDto" nillable="true" type="tns:ArrayOfFileDto" />
+  <xs:complexType name="FileDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Base64String" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoTipoDocumental" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ext" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileDto" nillable="true" type="tns:FileDto" />
+  <xs:complexType name="GestorDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aplicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Identificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Login" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Tipo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoIdentificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Transaccion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GestorDto" nillable="true" type="tns:GestorDto" />
+  <xs:complexType name="HeaderDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Token" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Usuario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="HeaderDto" nillable="true" type="tns:HeaderDto" />
+  <xs:complexType name="ResponseDtoOfstring">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResponseDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="string" Namespace="http://www.w3.org/2001/XMLSchema" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CodeFiles" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Results" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucess" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseDtoOfstring" nillable="true" type="tns:ResponseDtoOfstring" />
+  <xs:complexType name="ResponseDtoOfArrayOfGestorDocumentalDtopCDoQcXC">
+    <xs:annotation>
+      <xs:appinfo>
+        <GenericType Name="ResponseDtoOf{0}{#}" Namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" xmlns="http://schemas.microsoft.com/2003/10/Serialization/">
+          <GenericParameter Name="ArrayOfGestorDocumentalDto" Namespace="http://schemas.datacontract.org/2004/07/WorkManager.Model.Entities" />
+        </GenericType>
+      </xs:appinfo>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CodeFiles" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Results" nillable="true" type="tns:ArrayOfGestorDocumentalDto" />
+      <xs:element minOccurs="0" name="Sucess" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResponseDtoOfArrayOfGestorDocumentalDtopCDoQcXC" nillable="true" type="tns:ResponseDtoOfArrayOfGestorDocumentalDtopCDoQcXC" />
+  <xs:complexType name="ArrayOfGestorDocumentalDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="GestorDocumentalDto" nillable="true" type="tns:GestorDocumentalDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfGestorDocumentalDto" nillable="true" type="tns:ArrayOfGestorDocumentalDto" />
+  <xs:complexType name="GestorDocumentalDto">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:GestorDto">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Documentos" nillable="true" type="tns:ArrayOfDocumentoDto" />
+          <xs:element minOccurs="0" name="Radicado" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="GestorDocumentalDto" nillable="true" type="tns:GestorDocumentalDto" />
+  <xs:complexType name="ArrayOfDocumentoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentoDto" nillable="true" type="tns:DocumentoDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentoDto" nillable="true" type="tns:ArrayOfDocumentoDto" />
+  <xs:complexType name="DocumentoDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoArchivo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoDirectorio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ext" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoDocumento" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentoDto" nillable="true" type="tns:DocumentoDto" />
+</xs:schema>
