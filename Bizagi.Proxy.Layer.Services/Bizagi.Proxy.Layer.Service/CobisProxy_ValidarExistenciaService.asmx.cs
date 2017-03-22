@@ -8,7 +8,8 @@ using System.Web.Services.Protocols;
 namespace Bizagi.Proxy.Layer.Service
 {
     /// <summary>
-    /// Summary description for CobisProxy_ValidarExistenciaService
+    /// Servicio que permite validar la existencia de un cliente
+    /// en el core de COBIS
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
