@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="solicitud" type="solicitudType"/>
+  <xs:complexType name="actoType">
+    <xs:sequence>
+      <xs:element type="xs:short" name="codigoacto"/>
+      <xs:element type="xs:string" name="nombreacto"/>
+      <xs:element type="xs:int" name="cuantia"/>
+      <xs:element type="xs:string" name="avaluo"/>
+      <xs:element type="xs:string" name="adquisicion"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="actosType">
+    <xs:sequence>
+      <xs:element type="actoType" name="acto" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="afiliadoType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="tipodocumento"/>
+      <xs:element type="xs:int" name="identificacion"/>
+      <xs:element type="xs:string" name="expediciondoc"/>
+      <xs:element type="xs:string" name="nombres"/>
+      <xs:element type="xs:string" name="apellidos"/>
+      <xs:element type="xs:string" name="razonsocial"/>
+      <xs:element type="xs:string" name="estadocivil"/>
+      <xs:element type="xs:string" name="direccion"/>
+      <xs:element type="xs:int" name="municipio"/>
+      <xs:element type="xs:int" name="telefono"/>
+      <xs:element type="xs:string" name="email"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="afiliadosType">
+    <xs:sequence>
+      <xs:element type="afiliadoType" name="afiliado" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoafiliadoType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:short" name="codigoacto"/>
+      <xs:element type="xs:byte" name="tipodocumento"/>
+      <xs:element type="xs:int" name="identificacion"/>
+      <xs:element type="xs:byte" name="tipousuario"/>
+      <xs:element type="xs:string" name="porcentaje"/>
+      <xs:element type="xs:string" name="adquisicion"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tiposafiliadosType">
+    <xs:sequence>
+      <xs:element type="tipoafiliadoType" name="tipoafiliado" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inmuebleType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="matricula"/>
+      <xs:element type="xs:string" name="direccioninmueble"/>
+      <xs:element type="xs:short" name="municipio"/>
+      <xs:element type="xs:int" name="cedulacatastral"/>
+      <xs:element type="xs:string" name="chip"/>
+      <xs:element type="xs:string" name="tipoinmueble"/>
+      <xs:element type="xs:string" name="conjuntoagrupacion"/>
+      <xs:element type="xs:string" name="linderosespeciales"/>
+      <xs:element type="xs:string" name="linderosgenerales"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inmueblesType">
+    <xs:sequence>
+      <xs:element type="inmuebleType" name="inmueble" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="solicitudType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:int" name="identificador"/>
+      <xs:element type="xs:short" name="legalizacion"/>
+      <xs:element type="xs:date" name="fechasolicitud"/>
+      <xs:element type="xs:short" name="codmunicipiosol"/>
+      <xs:element type="xs:string" name="nommunicipiosol"/>
+      <xs:element type="xs:byte" name="circuloregistral"/>
+      <xs:element type="xs:int" name="vrcontado"/>
+      <xs:element type="xs:int" name="vrcredito"/>
+      <xs:element type="xs:byte" name="vrcesantias"/>
+      <xs:element type="actosType" name="actos"/>
+      <xs:element type="afiliadosType" name="afiliados"/>
+      <xs:element type="tiposafiliadosType" name="tiposafiliados"/>
+      <xs:element type="inmueblesType" name="inmuebles"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

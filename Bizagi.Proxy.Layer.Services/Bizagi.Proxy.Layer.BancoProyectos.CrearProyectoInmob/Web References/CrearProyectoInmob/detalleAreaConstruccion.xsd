@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:detareconstr="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="DetalleAreaConstruccion">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="areaViviendas" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaCirculacionAbierta" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaSalonComunal" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaPorterias" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaComercios" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaEducacion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaSalud" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaOtros" type="decimal" />
+    </sequence>
+  </complexType>
+</schema>

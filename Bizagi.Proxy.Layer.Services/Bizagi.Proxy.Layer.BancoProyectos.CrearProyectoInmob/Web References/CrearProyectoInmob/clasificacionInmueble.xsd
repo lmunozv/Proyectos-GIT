@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:clsfinm="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ClasificacionInmueble">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="cantidadCasas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadCasasBifamiliarias" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadApartamentos" type="int" />
+    </sequence>
+  </complexType>
+</schema>

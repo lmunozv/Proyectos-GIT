@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Identificacion">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+    </sequence>
+  </complexType>
+</schema>

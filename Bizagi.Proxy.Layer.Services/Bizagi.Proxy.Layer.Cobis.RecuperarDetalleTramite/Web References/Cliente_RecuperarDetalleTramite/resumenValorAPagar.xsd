@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:rsmvalpag="http://www.fna.gov.co/cim/businessentities/resumenvalorapagar" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/resumenvalorapagar" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ResumenValorAPagar">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="valorCuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="valorSeguro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoVencido" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="seguroInflacion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="coberturaFrech" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="anticipos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="valorTotal" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="pagarAntesDe" type="date" />
+    </sequence>
+  </complexType>
+</schema>

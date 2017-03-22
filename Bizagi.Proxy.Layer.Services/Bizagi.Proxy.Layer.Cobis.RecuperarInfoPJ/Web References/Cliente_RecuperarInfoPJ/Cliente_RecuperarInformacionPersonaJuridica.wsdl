@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="http://www.fna.gov.co/esb/services/cl/consumerheader" name="Cliente_RecuperarInformacionPersonaJuridica" targetNamespace="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="recuperarinformacionpj.xsd" namespace="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1" />
+      <xsd:import schemaLocation="../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://www.fna.gov.co/cim/businessentities/excepciongenerica" targetNamespace="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1">
+      <xsd:import schemaLocation="../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+      <xsd:import schemaLocation="../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+      <xsd:complexType name="excepcionSistema">
+        <xsd:complexContent mixed="false">
+          <xsd:extension base="Q1:excepcionGenerica" />
+        </xsd:complexContent>
+      </xsd:complexType>
+      <xsd:element name="consumerHeader" type="xsd1:ConsumerHeader" />
+      <xsd:element name="excepcionSistema" type="Q1:excepcionGenerica" />
+      <xsd:element name="excepcionNegocio" type="Q1:excepcionGenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RecuperarInformacionPersonaJuridica_in">
+    <wsdl:part name="bodyparms" element="tns:recuperarInformacionPersonaJuridicaRequest" />
+    <wsdl:part name="srvHdr" element="tns:consumerHeader" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarInformacionPersonaJuridica_out">
+    <wsdl:part name="bodyparms" element="tns:recuperarInformacionPersonaJuridicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarInformacionPersonaJuridicaFault">
+    <wsdl:part name="parameters" type="tns:excepcionSistema" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarInformacionPersonaJuridicaFault1">
+    <wsdl:part name="parameters" element="tns:excepcionSistema" />
+  </wsdl:message>
+  <wsdl:message name="RecuperarInformacionPersonaJuridicaFault11">
+    <wsdl:part name="parameters" element="tns:excepcionNegocio" />
+  </wsdl:message>
+  <wsdl:portType name="Cliente_RecuperarInformacionPersonaJuridicaPortType">
+    <wsdl:operation name="RecuperarInformacionPersonaJuridica">
+      <wsdl:input name="RecuperarInformacionPersonaJuridica_Input" message="tns:RecuperarInformacionPersonaJuridica_in" />
+      <wsdl:output name="RecuperarInformacionPersonaJuridica_Output" message="tns:RecuperarInformacionPersonaJuridica_out" />
+      <wsdl:fault name="fault" message="tns:RecuperarInformacionPersonaJuridicaFault1" />
+      <wsdl:fault name="fault1" message="tns:RecuperarInformacionPersonaJuridicaFault11" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Cliente_RecuperarInformacionPersonaJuridica_Binding12" type="tns:Cliente_RecuperarInformacionPersonaJuridicaPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RecuperarInformacionPersonaJuridica">
+      <soap12:operation soapAction="" />
+      <wsdl:input name="RecuperarInformacionPersonaJuridica_Input">
+        <soap12:header message="tns:RecuperarInformacionPersonaJuridica_in" part="srvHdr" use="literal" />
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:input>
+      <wsdl:output name="RecuperarInformacionPersonaJuridica_Output">
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cliente_RecuperarInformacionPersonaJuridica_Service">
+    <wsdl:port name="Cliente_RecuperarInformacionPersonaJuridica_Port12" binding="tns:Cliente_RecuperarInformacionPersonaJuridica_Binding12">
+      <soap12:address location="http://localhost:7800/esb/services/cliente/RecuperarInformacionPersonaJuridica/v1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.andesscd.com.co/" name="WSHUBDocumental" targetNamespace="http://www.andesscd.com.co/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.andesscd.com.co/">
+      <s:element name="MigrarSolicitudRepartoRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="solicitud" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MigrarSolicitudRepartoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cadena" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="estado" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mensaje" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="LoginRequest">
+    <wsdl:part name="parameters" element="tns:LoginRequest" />
+  </wsdl:message>
+  <wsdl:message name="MigrarSolicitudRepartoRequest">
+    <wsdl:part name="parameters" element="tns:MigrarSolicitudRepartoRequest" />
+  </wsdl:message>
+  <wsdl:message name="LoginResponse">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="MigrarSolicitudRepartoResponse">
+    <wsdl:part name="parameters" element="tns:MigrarSolicitudRepartoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MigrarSolicitudRepartoPortType">
+    <wsdl:operation name="MigrarSolicitudReparto">
+      <wsdl:input message="tns:MigrarSolicitudRepartoRequest" />
+      <wsdl:output message="tns:MigrarSolicitudRepartoResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="LoginPortType">
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:LoginRequest" />
+      <wsdl:output message="tns:LoginResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="LoginBinding" type="tns:LoginPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Login">
+      <wsdl:documentation>Autenticacion.</wsdl:documentation>
+      <soap:operation soapAction="http://desarrollo.avance.org.co/~jose.ramirez/hubdocumental/WS/soap-server.php#Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MigrarSolicitudRepartoBinding" type="tns:MigrarSolicitudRepartoPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="MigrarSolicitudReparto">
+      <wsdl:documentation>Permite migrar los radicados realizados desde otra plataforma.</wsdl:documentation>
+      <soap:operation soapAction="http://desarrollo.avance.org.co/~jose.ramirez/hubdocumental/WS/soap-server.php#MigrarSolicitudReparto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSHUBDocumental">
+    <wsdl:port name="LoginPort" binding="tns:LoginBinding">
+      <soap:address location="http://desarrollo.avance.org.co/~jose.ramirez/hubdocumental/WS/soap-server.php" />
+    </wsdl:port>
+    <wsdl:port name="MigrarSolicitudRepartoPort" binding="tns:MigrarSolicitudRepartoBinding">
+      <soap:address location="http://SER-LuisM:8088/mockMigrarSolicitudRepartoBinding" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

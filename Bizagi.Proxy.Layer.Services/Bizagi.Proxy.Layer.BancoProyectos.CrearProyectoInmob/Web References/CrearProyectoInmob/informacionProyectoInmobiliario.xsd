@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:clsfprq="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" xmlns:detareconstr="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" xmlns:inviv="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" xmlns:clsfinm="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" xmlns:compgeninm="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:infpryinm="http://www.fna.gov.co/cim/businessentities/informacionproyectoinmobiliario" xmlns:detarelote="http://www.fna.gov.co/cim/businessentities/detallearealote" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/informacionproyectoinmobiliario" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="../BusinessEntitiesLib/inventarioViviendas.xsd" namespace="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" />
+  <import schemaLocation="../BusinessEntitiesLib/clasificacionInmueble.xsd" namespace="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" />
+  <import schemaLocation="../BusinessEntitiesLib/composicionGeneralInmobiliario.xsd" namespace="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" />
+  <import schemaLocation="../BusinessEntitiesLib/clasificacionParqueo.xsd" namespace="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" />
+  <import schemaLocation="../BusinessEntitiesLib/detalleAreaConstruccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" />
+  <import schemaLocation="../BusinessEntitiesLib/detalleAreaLote.xsd" namespace="http://www.fna.gov.co/cim/businessentities/detallearealote" />
+  <complexType name="InformacionProyectoInmobiliario">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nombreProyecto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroTotalEstructuras" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="numeroEstructurasFinanciadas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoClasificacionProyecto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="dir:DireccionFisica" />
+      <element minOccurs="0" maxOccurs="1" name="inventarioViviendasPorProyecto" type="inviv:InventarioViviendas" />
+      <element minOccurs="0" maxOccurs="1" name="clasificacionInmueblePorProyecto" type="clsfinm:ClasificacionInmueble" />
+      <element minOccurs="0" maxOccurs="1" name="composicionGeneralProyecto" type="compgeninm:ComposicionGeneralInmobiliario" />
+      <element minOccurs="0" maxOccurs="1" name="clasificacionParqueoProyecto" type="clsfprq:ClasificacionParqueo" />
+      <element minOccurs="0" maxOccurs="1" name="detalleAreaConstruccion" type="detareconstr:DetalleAreaConstruccion" />
+      <element minOccurs="0" maxOccurs="1" name="detalleAreaLoteProyecto" type="detarelote:DetalleAreaLote" />
+    </sequence>
+  </complexType>
+</schema>

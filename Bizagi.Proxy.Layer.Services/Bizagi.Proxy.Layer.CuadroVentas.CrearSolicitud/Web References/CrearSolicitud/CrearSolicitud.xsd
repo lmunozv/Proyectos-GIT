@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:srv="http://www.fna.gov.co/esb/services/cuadroventas/crearsolicitud/v1" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/cuadroventas/crearsolicitud/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ServicioResponse">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigoRetorno" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="descripcion" type="string" />
+    </sequence>
+  </complexType>
+  <element name="crearSolicitudResponse" type="srv:ServicioResponse" />
+  <element name="crearSolicitudRequest" type="srv:ServiceRequest" />
+  <complexType name="ServiceRequest">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="numeroRadicado" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="idEstructura" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="nombreConstructor" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="numeroProyecto" type="int" />
+    </sequence>
+  </complexType>
+</schema>

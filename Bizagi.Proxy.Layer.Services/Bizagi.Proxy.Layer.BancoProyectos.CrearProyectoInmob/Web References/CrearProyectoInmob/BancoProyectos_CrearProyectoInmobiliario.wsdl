@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BancoProyectos_CrearProyectoInmobiliario" targetNamespace="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="../../xsd/CrearProyectoInmobiliario.xsd" namespace="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" />
+      <xsd:import schemaLocation="../../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+    </xsd:schema>
+    <xsd:schema xmlns:Q1="http://www.fna.gov.co/cim/businessentities/excepciongenerica" targetNamespace="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1">
+      <xsd:include schemaLocation="../../xsd/CrearProyectoInmobiliario.xsd" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+      <xsd:element name="excepcionSistema" type="Q1:excepcionGenerica" />
+      <xsd:element name="excepcionNegocio" type="Q1:excepcionGenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CrearProyectoInmobiliarioFault">
+    <wsdl:part name="fault" element="tns:excepcionSistema" />
+  </wsdl:message>
+  <wsdl:message name="CrearProyectoInmobiliarioFault1">
+    <wsdl:part name="fault" element="tns:excepcionNegocio" />
+  </wsdl:message>
+  <wsdl:message name="CrearProyectoInmobiliario_in">
+    <wsdl:part name="bodyparms" element="tns:CrearProyectoInmobiliarioRequest" />
+    <wsdl:part name="srvHdr" element="chdr:consumerHeader" />
+  </wsdl:message>
+  <wsdl:message name="CrearProyectoInmobiliario_out">
+    <wsdl:part name="bodyparms" element="tns:CrearProyectoInmobiliarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BancoProyectos_CrearProyectoInmobiliarioPortType">
+    <wsdl:operation name="CrearProyectoInmobiliario">
+      <wsdl:input name="CrearProyectoInmobiliario_input" message="tns:CrearProyectoInmobiliario_in" />
+      <wsdl:output name="CrearProyectoInmobiliario_output" message="tns:CrearProyectoInmobiliario_out" />
+      <wsdl:fault name="CrearProyectoInmobiliarioFault" message="tns:CrearProyectoInmobiliarioFault" />
+      <wsdl:fault name="CrearProyectoInmobiliarioFault1" message="tns:CrearProyectoInmobiliarioFault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BancoProyectos_CrearProyectoInmobiliario_Binding12" type="tns:BancoProyectos_CrearProyectoInmobiliarioPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearProyectoInmobiliario">
+      <soap12:operation soapAction="CrearProyectoInmobiliario" />
+      <wsdl:input name="CrearProyectoInmobiliario_input">
+        <soap12:header message="tns:CrearProyectoInmobiliario_in" part="srvHdr" use="literal" />
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:input>
+      <wsdl:output name="CrearProyectoInmobiliario_output">
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:output>
+      <wsdl:fault name="CrearProyectoInmobiliarioFault">
+        <soap12:fault use="literal" name="CrearProyectoInmobiliarioFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="CrearProyectoInmobiliarioFault1">
+        <soap12:fault use="literal" name="CrearProyectoInmobiliarioFault1" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BancoProyectos_CrearProyectoInmobiliario_Service">
+    <wsdl:port name="BancoProyectos_CrearProyectoInmobiliario_Port12" binding="tns:BancoProyectos_CrearProyectoInmobiliario_Binding12">
+      <soap12:address location="http://localhost:7800/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

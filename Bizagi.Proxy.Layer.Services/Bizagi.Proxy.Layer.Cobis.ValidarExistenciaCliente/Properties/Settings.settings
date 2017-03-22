@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Bizagi_Proxy_Layer_Cobis_ValidarExistenciaCliente_Cliente_ValidarExistencia_Cliente_validarexistencia_Service" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://172.16.123.110:7094/esb/services/soap</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

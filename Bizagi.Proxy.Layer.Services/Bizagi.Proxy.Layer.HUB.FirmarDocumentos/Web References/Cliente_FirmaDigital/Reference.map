@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Firma/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Firma/MessageLib/PKI_Seguridad_FirmarDocumento/wsdl/1.2/PKI_Seguridad_FirmaDocumento.wsdl" filename="PKI_FirmaDocumento.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Firma/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Firma/BusinessEntitiesLib/identificacion.xsd" filename="identificacion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Firma/MessageLib/PKI_Seguridad_FirmarDocumento/xsd/firmadocumento.xsd" filename="firmadocumento.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{209E3F81-A9F0-46B5-A3EC-711B3D42D117}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Service.Manager</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Service.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoProyectosManager.cs" />
+    <Compile Include="CobisManager.cs" />
+    <Compile Include="CuadroVentasManager.cs" />
+    <Compile Include="HUBManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob\Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob.csproj">
+      <Project>{198fc1b3-0af6-4849-8165-7ad247af7577}</Project>
+      <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob.csproj">
+      <Project>{c55b454a-78f3-4ff7-8ee3-5ed39e4900bb}</Project>
+      <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite.csproj">
+      <Project>{de4e389e-b31c-47bd-a672-fe7fa7b33ee7}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.csproj">
+      <Project>{7e3285c0-2830-4a31-8e49-8041f909b897}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.csproj">
+      <Project>{35dc4b03-1a88-4633-9889-58e57e541c01}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarTramites\Bizagi.Proxy.Layer.Cobis.RecuperarTramites.csproj">
+      <Project>{e4cf547a-ea1e-4d9e-a4c2-8bf9573e791a}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarTramites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente\Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.csproj">
+      <Project>{d76acd0f-7a81-4486-a03e-2cbe887617a3}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud\Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud.csproj">
+      <Project>{5f5cb2b0-803c-4975-a4c8-ac6dcc8d5eac}</Project>
+      <Name>Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.CorreosSeguros\Bizagi.Proxy.Layer.HUB.CorreosSeguros.csproj">
+      <Project>{46ea12af-8012-4e07-bb4e-8ce7aee865d5}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.CorreosSeguros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.FirmarDocumentos\Bizagi.Proxy.Layer.HUB.FirmarDocumentos.csproj">
+      <Project>{65a9d12a-068c-4446-966b-507249605f9c}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.FirmarDocumentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.GenerarMinuta\Bizagi.Proxy.Layer.HUB.GenerarMinuta.csproj">
+      <Project>{abf5c57b-28df-4c04-a4a3-022079f7d8aa}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.GenerarMinuta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Utils\Bizagi.Proxy.Utils.csproj">
+      <Project>{7dfd7615-bc27-4e51-9b0a-4ed8880557b1}</Project>
+      <Name>Bizagi.Proxy.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

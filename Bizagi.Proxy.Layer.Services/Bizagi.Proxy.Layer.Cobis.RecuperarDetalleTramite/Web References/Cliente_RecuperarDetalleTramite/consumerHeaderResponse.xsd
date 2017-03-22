@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:altova="http://www.altova.com/xml-schema-extensions" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ConsumerHeaderResponse_v1.0">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="clientTransactionID" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="datetime" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="systemId" type="string" />
+      <element minOccurs="0" name="status" type="chdr:Status_v1.0" />
+    </sequence>
+  </complexType>
+  <complexType name="Status_v1.0">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="statusType">
+        <simpleType>
+          <restriction base="string">
+            <enumeration value="OK" />
+            <enumeration value="ERROR" />
+          </restriction>
+        </simpleType>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="statusCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="statusDesc" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="systemCode" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="systemDesc" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="severity">
+        <simpleType>
+          <restriction base="string">
+            <enumeration value="INFO" />
+            <enumeration value="ERROR" />
+          </restriction>
+        </simpleType>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="trace" type="string" />
+    </sequence>
+  </complexType>
+  <element name="headerRs" type="chdr:ConsumerHeaderResponse_v1.0" />
+</schema>

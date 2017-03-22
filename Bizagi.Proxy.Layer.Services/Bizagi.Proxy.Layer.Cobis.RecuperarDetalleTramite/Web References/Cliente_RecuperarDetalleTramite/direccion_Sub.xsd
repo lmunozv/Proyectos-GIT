@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/direccionsub" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefono" xmlns:telsub="http://www.fna.gov.co/cim/CommonsLib/telefonosub" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/telefono.xsd" namespace="http://www.fna.gov.co/cim/businessentities/telefono" />
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="telefono_Sub.xsd" namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub" />
+  <import schemaLocation="telefono_Sub.xsd" namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub" />
+  <complexType name="DireccionFisica_V1.2">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.0" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.3">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="tel:Telefono_V1.0" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.4">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.0" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombrePoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.5">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombrePais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.6">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCorregimiento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoProvincia" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoSector" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoLocalidad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreUrbanizacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="zonaVeredal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.1" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="observacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.7">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.2" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.8">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.2" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.9">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoProvincia" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.1" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.10">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.4" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.11">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.0" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica_V1.12">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.5" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaCreacion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionElectronica_V1.0">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionElectronica">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="correoElectronico" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionElectronica_V1.1">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionElectronica">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="correoElectronico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CasillaPostal_V1.0">
+    <complexContent mixed="false">
+      <restriction base="dir:CasillaPostal">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCasilla" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="apartado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CasillaPostal_V1.1">
+    <complexContent mixed="false">
+      <restriction base="dir:CasillaPostal">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="apartado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CasillaPostal_V1.2">
+    <complexContent mixed="false">
+      <restriction base="dir:CasillaPostal">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="apartado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="senalizacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoProvincia" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="verificado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="zonaPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaRegistro" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="comentario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionLab">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica_V2.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="telsub:Telefono_V1.0" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombrePoblado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

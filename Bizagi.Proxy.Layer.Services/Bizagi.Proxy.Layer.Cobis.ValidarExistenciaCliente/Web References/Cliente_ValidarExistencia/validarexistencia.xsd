@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:pref="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefonos" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:srv="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ServicioResponse">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="existeCliente" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="datosCliente" type="srv:DatosCliente" />
+    </sequence>
+  </complexType>
+  <element name="validarexistenciaResponse" type="srv:ServicioResponse" />
+  <element name="validarexistenciaRequest" type="srv:ServiceRequest" />
+  <complexType name="ServiceRequest">
+    <choice minOccurs="1" maxOccurs="1">
+      <element minOccurs="1" maxOccurs="1" name="consultaPorCif" type="srv:ConsultaXCif" />
+      <element minOccurs="1" maxOccurs="1" name="consultaPorIdentificacion" type="srv:ConsultaXIdentificacion" />
+    </choice>
+  </complexType>
+  <complexType name="ConsultaXCif">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="idCliente" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultaXIdentificacion">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="DatosCliente">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="idCliente" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="nombreCompleto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="primerApellido" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="segundoApellido" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreEmpresa" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="identificacion" type="srv:Identificacion" />
+      <element minOccurs="1" maxOccurs="1" name="tipoCliente" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="estadoCliente" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Identificacion">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefonos" xmlns:pref="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:srv="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/cliente/recuperarinformacionpj/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="../BusinessEntitiesLib/cliente.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cliente" />
+  <import schemaLocation="../BusinessEntitiesLib/personajuridica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personajuridica" />
+  <complexType name="informacionFinancieraSB">
+    <complexContent mixed="false">
+      <extension base="pref:DatosFinancierosPJ">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="informacionLegalPersonaJuridicaSB">
+    <complexContent mixed="false">
+      <extension base="pref:DatosLegalesPJ">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="datosBasicosPersonaJuridica">
+    <complexContent mixed="false">
+      <restriction base="pref:DatosBasicosPJ">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="identificacion" type="ident:Identificacion" />
+          <element minOccurs="0" maxOccurs="1" name="nombreEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreComercial" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCIIU" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroDeEmpleados" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="vinculacionBandera" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoVinculacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="sector" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="filial" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="direccionElectronica" type="pref:DireccionElectronicaPJ" />
+          <element minOccurs="0" maxOccurs="1" name="direcciones" type="pref:Direcciones" />
+          <element minOccurs="0" maxOccurs="1" name="casillasPostales" type="pref:CasillasPostales" />
+          <element minOccurs="0" maxOccurs="1" name="referenciasEconomicas" type="pref:ReferenciasEconomicas" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="ServicioResponse">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="datosBasicosPersonaJuridica" type="srv:datosBasicosPersonaJuridica" />
+      <element minOccurs="1" maxOccurs="1" name="informacionLegalPersonaJuridica" type="srv:informacionLegalPersonaJuridica" />
+      <element minOccurs="1" maxOccurs="1" name="informacionFinanciera" type="srv:informacionFinanciera" />
+    </sequence>
+  </complexType>
+  <element name="recuperarInformacionPersonaJuridicaResponse" type="srv:ServicioResponse" />
+  <complexType name="informacionLegalPersonaJuridica">
+    <complexContent mixed="false">
+      <extension base="pref:DatosLegalesPJ" />
+    </complexContent>
+  </complexType>
+  <complexType name="informacionFinanciera">
+    <complexContent mixed="false">
+      <extension base="pref:DatosFinancierosPJ" />
+    </complexContent>
+  </complexType>
+  <element name="recuperarInformacionPersonaJuridicaRequest" type="srv:ServiceRequest" />
+  <complexType name="ServiceRequest">
+    <choice minOccurs="1" maxOccurs="1">
+      <element minOccurs="1" maxOccurs="1" name="idCliente" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="identificacion" type="ident:Identificacion" />
+    </choice>
+  </complexType>
+</schema>

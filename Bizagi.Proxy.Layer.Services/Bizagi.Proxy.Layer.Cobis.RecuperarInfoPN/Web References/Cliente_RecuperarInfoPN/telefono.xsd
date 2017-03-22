@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefono" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/telefono" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Telefono">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroCompleto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/011_CuadroVentas_CrearSolicitud_vr2/MessageLib/011_CuadroVentas_CrearSolicitud/wsdl/1.2/CuadroVentas_CrearSolicitudService.wsdl" filename="CuadroVentas_CrearSolicitud.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/011_CuadroVentas_CrearSolicitud_vr2/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/011_CuadroVentas_CrearSolicitud_vr2/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/011_CuadroVentas_CrearSolicitud_vr2/MessageLib/011_CuadroVentas_CrearSolicitud/xsd/CrearSolicitud.xsd" filename="CrearSolicitud.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

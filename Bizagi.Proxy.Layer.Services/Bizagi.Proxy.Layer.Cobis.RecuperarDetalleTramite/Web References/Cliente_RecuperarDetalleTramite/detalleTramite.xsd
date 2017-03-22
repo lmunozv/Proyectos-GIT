@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:detrmt="http://www.fna.gov.co/cim/businessentities/detalletramite" xmlns:iden="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:trmt="http://www.fna.gov.co/cim/businessentities/tramite" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/detalletramite" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="tramite.xsd" namespace="http://www.fna.gov.co/cim/businessentities/tramite" />
+  <import schemaLocation="identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <complexType name="detalleTramite">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="idTramite" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="lineaCredito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSolicitud" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaAprobacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaOferta" type="date" />
+      <element minOccurs="0" name="valorAprobado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tipoSolicitud" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ruta" type="detrmt:rutaType" />
+      <element minOccurs="0" name="valorSubsidio" type="decimal" />
+      <element minOccurs="0" name="fechaVencimientoSubsidio" type="date" />
+      <element minOccurs="0" name="fechaCambioLinea" type="date" />
+      <element minOccurs="0" name="observaciones" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoCredito" type="string" />
+      <element minOccurs="0" name="ciudadRadicacion" type="string" />
+      <element minOccurs="0" name="deptoRadicacion" type="string" />
+      <element minOccurs="0" name="numeroObligacion" type="string" />
+      <element minOccurs="0" name="moneda" type="string" />
+      <element minOccurs="0" name="destinoEconomico" type="string" />
+      <element minOccurs="0" name="ciudadDestino" type="string" />
+      <element minOccurs="0" name="acta" type="string" />
+      <element minOccurs="0" name="flujoTramite" type="detrmt:flujoTramiteType" />
+      <element minOccurs="0" name="valorSolicitado" type="string" />
+      <element minOccurs="0" name="deudor1" type="detrmt:deudorType" />
+      <element minOccurs="0" name="deudor2" type="detrmt:deudorType" />
+      <element minOccurs="0" name="estadoVivienda" type="string" />
+      <element minOccurs="0" name="entidadSubsidiaria" type="string" />
+      <element minOccurs="0" name="bloqueoJuridico" type="string" />
+      <element minOccurs="0" name="fechaRechazo" type="date" />
+      <element minOccurs="0" name="oficinaRadicacion" type="string" />
+      <element minOccurs="0" name="plazo" type="int" />
+      <element minOccurs="0" name="fechaRadicacion" type="date" />
+    </sequence>
+  </complexType>
+  <complexType name="rutaType">
+    <sequence>
+      <element minOccurs="0" name="codigo" type="string" />
+      <element minOccurs="0" name="producto" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="PuntajeCentralInformacionType">
+    <sequence>
+      <element minOccurs="0" name="valor" type="string" />
+      <element minOccurs="0" name="tipoPuntaje" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="flujoTramiteType">
+    <complexContent mixed="false">
+      <restriction base="trmt:FlujoTramite">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="secuencialEtapa" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="deudorType">
+    <sequence>
+      <element minOccurs="0" name="nombre" type="string" />
+      <element minOccurs="0" name="identificacion" type="detrmt:identificacionType" />
+      <element minOccurs="0" name="direccion" type="detrmt:direccionType" />
+      <element minOccurs="0" name="saldoCES" type="decimal" />
+      <element minOccurs="0" name="saldoAVC" type="decimal" />
+      <element minOccurs="0" name="estadoAVC" type="string" />
+      <element minOccurs="0" name="sueldo" type="decimal" />
+      <element minOccurs="0" name="ingresosAVC" type="decimal" />
+      <element minOccurs="0" name="tipoDeudor" type="string" />
+      <element minOccurs="0" name="PuntajeCentralInformacion" type="detrmt:PuntajeCentralInformacionType" />
+    </sequence>
+  </complexType>
+  <complexType name="identificacionType">
+    <complexContent mixed="false">
+      <restriction base="iden:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="direccionType">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

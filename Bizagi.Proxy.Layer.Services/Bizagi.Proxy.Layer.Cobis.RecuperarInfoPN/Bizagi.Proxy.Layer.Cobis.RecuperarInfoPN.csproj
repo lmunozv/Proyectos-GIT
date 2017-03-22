@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{35DC4B03-1A88-4633-9889-58E57E541C01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cobis_RecuperarInfoPNImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Cliente_RecuperarInfoPN\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\cliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\ClientePersonaNatural_RecuperarInformacion.wsdl" />
+    <None Include="Web References\Cliente_RecuperarInfoPN\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\recuperarInformacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\ServiceResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPN\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="D:\Proyectos\FNA\Procesos\Sistemas\Cobis\Servicios\024_ClntePrsnaNtral_RecuperarInfoBasica\wsdl\1.2\ClntePrsnaNtral_RcprarInfoBsca.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Cliente_RecuperarInfoPN\</RelPath>
+      <UpdateFromURL>D:\Proyectos\FNA\Procesos\Sistemas\Cobis\Servicios\024_ClntePrsnaNtral_RecuperarInfoBasica\wsdl\1.2\ClntePrsnaNtral_RcprarInfoBsca.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Bizagi_Proxy_Layer_Cobis_RecuperarInfoPN_Cliente_RecuperarInfoPN_ClientePersonaNatural_RecuperarInformacion_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

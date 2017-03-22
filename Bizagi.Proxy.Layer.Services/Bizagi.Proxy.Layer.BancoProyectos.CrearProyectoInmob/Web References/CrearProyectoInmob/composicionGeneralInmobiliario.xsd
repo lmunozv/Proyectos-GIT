@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:compgeninm="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ComposicionGeneralInmobiliario">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="cantidadLotes" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadManzanas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadTorres" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadBloques" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadPisos" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadDepositos" type="int" />
+    </sequence>
+  </complexType>
+</schema>

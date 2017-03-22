@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://www.fna.gov.co/esb/services/cuadroventas/crearsolicitud/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CuadroVentas_CrearSolicitud" targetNamespace="http://www.fna.gov.co/esb/services/cuadroventas/crearsolicitud/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:Q1="http://www.fna.gov.co/cim/businessentities/excepciongenerica" xmlns:Q2="http://www.fna.gov.co/esb/services/cl/consumerheader" targetNamespace="http://www.fna.gov.co/esb/services/cuadroventas/crearsolicitud/v1">
+      <xsd:include schemaLocation="../../xsd/CrearSolicitud.xsd" />
+      <xsd:import schemaLocation="../../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+      <xsd:element name="consumerHeader" type="Q2:ConsumerHeader" />
+      <xsd:element name="CrearSolicitudFault">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CrearSolicitudFault" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="CrearSolicitudFault1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="CrearSolicitudFault" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="excepcionSistema" type="Q1:excepcionGenerica" />
+      <xsd:element name="excepcionNegocio" type="Q1:excepcionGenerica" />
+      <xsd:element name="CrearSolicitudRequest" type="tns:ServiceRequest" />
+      <xsd:element name="CrearSolicitudResponse" type="tns:ServicioResponse" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CrearSolicitudFault">
+    <wsdl:part name="parameters" element="tns:excepcionSistema" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitudFault1">
+    <wsdl:part name="parameters" element="tns:excepcionNegocio" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitud_in">
+    <wsdl:part name="bodyparms" element="tns:CrearSolicitudRequest" />
+    <wsdl:part name="srvHdr" element="tns:consumerHeader" />
+  </wsdl:message>
+  <wsdl:message name="CrearSolicitud_out">
+    <wsdl:part name="bodyparms" element="tns:CrearSolicitudResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CuadroVentas_CrearSolicitudPortType">
+    <wsdl:operation name="CrearSolicitud">
+      <wsdl:input name="CrearSolicitud_input" message="tns:CrearSolicitud_in" />
+      <wsdl:output name="CrearSolicitud_output" message="tns:CrearSolicitud_out" />
+      <wsdl:fault name="fault" message="tns:CrearSolicitudFault" />
+      <wsdl:fault name="fault1" message="tns:CrearSolicitudFault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CuadroVentas_CrearSolicitud_Binding12" type="tns:CuadroVentas_CrearSolicitudPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearSolicitud">
+      <soap12:operation soapAction="CrearSolicitud" />
+      <wsdl:input name="CrearSolicitud_input">
+        <soap12:header message="tns:CrearSolicitud_in" part="srvHdr" use="literal" />
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:input>
+      <wsdl:output name="CrearSolicitud_output">
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:output>
+      <wsdl:fault name="fault">
+        <soap12:fault use="literal" name="fault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="fault1">
+        <soap12:fault use="literal" name="fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CuadroVentas_CrearSolicitud_Service">
+    <wsdl:port name="CuadroVentas_CrearSolicitud_Port12" binding="tns:CuadroVentas_CrearSolicitud_Binding12">
+      <soap12:address location="http://localhost:7800/esb/services/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

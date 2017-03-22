@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/identificacion.xsd" filename="identificacion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/telefono.xsd" filename="telefono.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/direccion.xsd" filename="direccion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/informacionfinanciera.xsd" filename="informacionfinanciera.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cesantias.xsd" filename="cesantias.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/wsdl/1.2/ClntePrsnaNtral_RcprarInfoBsca.wsdl" filename="ClientePersonaNatural_RecuperarInformacion.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/informacionlaboral.xsd" filename="informacionlaboral.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/personajuridica.xsd" filename="personajuridica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cliente.xsd" filename="cliente.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/personanatural.xsd" filename="personanatural.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cuentaBancaria.xsd" filename="cuentaBancaria.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Servicios/024_ClntePrsnaNtral_RecuperarInfoBasica/xsd/recuperarInformacion.xsd" filename="recuperarInformacion.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:inviv="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="InventarioViviendas">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="viviendasInteresPrioritario" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="viviendasInteresSocial" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="viviendasInteresNormal" type="int" />
+    </sequence>
+  </complexType>
+</schema>

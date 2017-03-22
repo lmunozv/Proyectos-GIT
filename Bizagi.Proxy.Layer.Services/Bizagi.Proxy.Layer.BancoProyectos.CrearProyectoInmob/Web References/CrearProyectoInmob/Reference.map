@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/informacionProyectoInmobiliario.xsd" filename="informacionProyectoInmobiliario.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/direccion.xsd" filename="direccion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/clasificacionParqueo.xsd" filename="clasificacionParqueo.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/detalleAreaLote.xsd" filename="detalleAreaLote.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/detalleAreaConstruccion.xsd" filename="detalleAreaConstruccion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/MessageLib/010_BancoProyecto_CrearProyecto/wsdl/1.2/BancoProyectos_CrearProyectoInmobiliarioService.wsdl" filename="BancoProyectos_CrearProyectoInmobiliario.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/clasificacionInmueble.xsd" filename="clasificacionInmueble.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/composicionGeneralInmobiliario.xsd" filename="composicionGeneralInmobiliario.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/inventarioViviendas.xsd" filename="inventarioViviendas.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/BusinessEntitiesLib/telefono.xsd" filename="telefono.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/010_BancoProyecto_CrearProyecto/MessageLib/010_BancoProyecto_CrearProyecto/xsd/CrearProyectoInmobiliario.xsd" filename="CrearProyectoInmobiliario.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

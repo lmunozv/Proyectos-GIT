@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:detarelote="http://www.fna.gov.co/cim/businessentities/detallearealote" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/detallearealote" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="DetalleAreaLote">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="areaBruta" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaProteccion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaAfectada" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaCesion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaUtil" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaTotalConstruida" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaConstruidaPrimerPiso" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="areaVendibleVivienda" type="decimal" />
+    </sequence>
+  </complexType>
+</schema>

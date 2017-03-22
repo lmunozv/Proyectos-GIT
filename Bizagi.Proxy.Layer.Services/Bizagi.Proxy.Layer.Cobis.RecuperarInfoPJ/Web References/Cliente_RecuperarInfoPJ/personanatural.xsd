@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/personanatural" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <complexType name="PersonaNatural">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="identificacion" type="ident:Identificacion" />
+      <element minOccurs="0" maxOccurs="1" name="nombreCompleto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="primerNombre" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="segundoNombre" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="primerApellido" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="segundoApellido" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="dir:DireccionFisica" />
+    </sequence>
+  </complexType>
+</schema>

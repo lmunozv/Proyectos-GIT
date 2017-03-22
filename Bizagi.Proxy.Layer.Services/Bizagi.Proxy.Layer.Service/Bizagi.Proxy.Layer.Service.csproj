@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EA1E40F5-1587-4C2F-B324-8F7934DBC39B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Service</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BancoProyectosProxy_CrearEstructuraInmobiliaria.asmx" />
+    <Content Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx" />
+    <Content Include="CobisProxy_RecuperarDetalleTramiteService.asmx" />
+    <Content Include="CobisProxy_RecuperarInfoPJService.asmx" />
+    <Content Include="CobisProxy_RecuperarInfoPNService.asmx" />
+    <Content Include="CobisProxy_RecuperarTramites.asmx" />
+    <Content Include="CobisProxy_ValidarExistenciaService.asmx" />
+    <Content Include="CuadroVentasProxy_CrearSolicitud.asmx" />
+    <Content Include="HUBProxy_CorreoSeguro.asmx" />
+    <Content Include="HUBProxy_FirmaDigital.asmx" />
+    <Content Include="HUBProxy_GenerarMinutaService.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoProyectosProxy_CrearEstructuraInmobiliaria.asmx.cs">
+      <DependentUpon>BancoProyectosProxy_CrearEstructuraInmobiliaria.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx.cs">
+      <DependentUpon>BancoProyectosProxy_CrearProyectoInmobiliario.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_RecuperarDetalleTramiteService.asmx.cs">
+      <DependentUpon>CobisProxy_RecuperarDetalleTramiteService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_RecuperarInfoPJService.asmx.cs">
+      <DependentUpon>CobisProxy_RecuperarInfoPJService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_RecuperarInfoPNService.asmx.cs">
+      <DependentUpon>CobisProxy_RecuperarInfoPNService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_RecuperarTramites.asmx.cs">
+      <DependentUpon>CobisProxy_RecuperarTramites.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_ValidarExistenciaService.asmx.cs">
+      <DependentUpon>CobisProxy_ValidarExistenciaService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CuadroVentasProxy_CrearSolicitud.asmx.cs">
+      <DependentUpon>CuadroVentasProxy_CrearSolicitud.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HUBProxy_CorreoSeguro.asmx.cs">
+      <DependentUpon>HUBProxy_CorreoSeguro.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HUBProxy_FirmaDigital.asmx.cs">
+      <DependentUpon>HUBProxy_FirmaDigital.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="HUBProxy_GenerarMinutaService.svc.cs">
+      <DependentUpon>HUBProxy_GenerarMinutaService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="IHUBProxy_GenerarMinutaService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TraceExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\Bizagi.Proxy.Layer.Service.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob\Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob.csproj">
+      <Project>{198fc1b3-0af6-4849-8165-7ad247af7577}</Project>
+      <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearEstructuraInmob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob.csproj">
+      <Project>{c55b454a-78f3-4ff7-8ee3-5ed39e4900bb}</Project>
+      <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite.csproj">
+      <Project>{de4e389e-b31c-47bd-a672-fe7fa7b33ee7}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.csproj">
+      <Project>{7e3285c0-2830-4a31-8e49-8041f909b897}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.csproj">
+      <Project>{35dc4b03-1a88-4633-9889-58e57e541c01}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarTramites\Bizagi.Proxy.Layer.Cobis.RecuperarTramites.csproj">
+      <Project>{e4cf547a-ea1e-4d9e-a4c2-8bf9573e791a}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.RecuperarTramites</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente\Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.csproj">
+      <Project>{d76acd0f-7a81-4486-a03e-2cbe887617a3}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud\Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud.csproj">
+      <Project>{5f5cb2b0-803c-4975-a4c8-ac6dcc8d5eac}</Project>
+      <Name>Bizagi.Proxy.Layer.CuadroVentas.CrearSolicitud</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.CorreosSeguros\Bizagi.Proxy.Layer.HUB.CorreosSeguros.csproj">
+      <Project>{46ea12af-8012-4e07-bb4e-8ce7aee865d5}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.CorreosSeguros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.FirmarDocumentos\Bizagi.Proxy.Layer.HUB.FirmarDocumentos.csproj">
+      <Project>{65a9d12a-068c-4446-966b-507249605f9c}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.FirmarDocumentos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB.GenerarMinuta\Bizagi.Proxy.Layer.HUB.GenerarMinuta.csproj">
+      <Project>{abf5c57b-28df-4c04-a4a3-022079f7d8aa}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB.GenerarMinuta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Service.Manager\Bizagi.Proxy.Layer.Service.Manager.csproj">
+      <Project>{209e3f81-a9f0-46b5-a3ec-711b3d42d117}</Project>
+      <Name>Bizagi.Proxy.Layer.Service.Manager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55500</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55500/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

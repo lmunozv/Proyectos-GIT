@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/telefonosub" xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefono" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/telefono.xsd" namespace="http://www.fna.gov.co/cim/businessentities/telefono" />
+  <complexType name="Telefono_V1.0">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.1">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.2">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.3">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.4">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="TelefonoInfoLabor_V1.0">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroCompleto" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.5">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono_V1.6">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="numeroTelefono" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:clsfprq="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ClasificacionParqueo">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="cantidadPrivados" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadVisitantes" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadComunales" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadDiscapacitados" type="int" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Cliente_validarexistencia" targetNamespace="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema>
+      <xsd:import schemaLocation="validarexistencia.xsd" namespace="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1" />
+      <xsd:import schemaLocation="../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+    </xsd:schema>
+    <xsd:schema xmlns:exgen="http://www.fna.gov.co/cim/businessentities/excepciongenerica" targetNamespace="http://www.fna.gov.co/esb/services/cliente/validarexistencia/v1">
+      <xsd:include schemaLocation="validarexistencia.xsd" />
+      <xsd:import schemaLocation="../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+      <xsd:element name="excepcionSistema" type="exgen:excepcionGenerica" />
+      <xsd:element name="excepcionNegocio" type="exgen:excepcionGenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="validarExistencia_fault">
+    <wsdl:part name="fault" element="tns:excepcionSistema" />
+  </wsdl:message>
+  <wsdl:message name="validarexistencia_in">
+    <wsdl:part name="bodyparms" element="tns:validarexistenciaRequest" />
+    <wsdl:part name="consumerHeader" element="chdr:consumerHeader" />
+  </wsdl:message>
+  <wsdl:message name="validarexistencia_out">
+    <wsdl:part name="bodyparms" element="tns:validarexistenciaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Cliente_validarexistenciaPortType">
+    <wsdl:operation name="ValidarExistencia">
+      <wsdl:input name="validarexistencia_Input" message="tns:validarexistencia_in" />
+      <wsdl:output name="validarexistencia_Output" message="tns:validarexistencia_out" />
+      <wsdl:fault name="validarExistencia_fault" message="tns:validarExistencia_fault" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Cliente_validarexistencia_Binding12" type="tns:Cliente_validarexistenciaPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarExistencia">
+      <soap12:operation soapAction="ValidarExistencia" />
+      <wsdl:input name="validarexistencia_Input">
+        <soap12:header message="tns:validarexistencia_in" part="consumerHeader" use="literal" />
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:input>
+      <wsdl:output name="validarexistencia_Output">
+        <soap12:body use="literal" parts="bodyparms" />
+      </wsdl:output>
+      <wsdl:fault name="validarExistencia_fault">
+        <soap12:fault use="literal" name="validarExistencia_fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Cliente_validarexistencia_Service">
+    <wsdl:port name="Cliente_validarexistencia_Port12" binding="tns:Cliente_validarexistencia_Binding12">
+      <soap12:address location="https://172.16.123.110:7094/esb/services/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

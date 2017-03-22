@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:saldeudacrd="http://www.fna.gov.co/cim/businessentities/saldodeudacredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/saldodeudacredito" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="SaldoDeudaCredito">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="saldoCapital" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoCapitalUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoInteresCorriente" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoInteresUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMora" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMoraUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoSeguro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaAnticipado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaAnticipadoUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargosUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoAcumulado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoAcumuladoUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesSaldoAcumulado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesSaldoAcumuladoUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoAPagarFogafin" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoAPagarUvrFogafin" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoTotal" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoAReintegrar" type="decimal" />
+    </sequence>
+  </complexType>
+</schema>

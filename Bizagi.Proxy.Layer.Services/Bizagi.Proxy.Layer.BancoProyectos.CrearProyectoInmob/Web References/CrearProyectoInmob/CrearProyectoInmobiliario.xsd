@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:srv="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" xmlns:clsfprq="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" xmlns:detareconstr="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" xmlns:inviv="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" xmlns:clsfinm="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" xmlns:compgeninm="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:infpryinm="http://www.fna.gov.co/cim/businessentities/informacionproyectoinmobiliario" xmlns:ns1="http://www.fna.gov.co/cim/businessentities/detalleAreaLote" xmlns:detarelote="http://www.fna.gov.co/cim/businessentities/detallearealote" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/bancoproyectos/crearproyectoinmobiliario/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../BusinessEntitiesLib/informacionProyectoInmobiliario.xsd" namespace="http://www.fna.gov.co/cim/businessentities/informacionproyectoinmobiliario" />
+  <import schemaLocation="../../../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="../../../BusinessEntitiesLib/inventarioViviendas.xsd" namespace="http://www.fna.gov.co/cim/businessentities/inventarioviviendas" />
+  <import schemaLocation="../../../BusinessEntitiesLib/clasificacionInmueble.xsd" namespace="http://www.fna.gov.co/cim/businessentities/clasificacioninmueble" />
+  <import schemaLocation="../../../BusinessEntitiesLib/composicionGeneralInmobiliario.xsd" namespace="http://www.fna.gov.co/cim/businessentities/composiciongeneralinmobiliario" />
+  <import schemaLocation="../../../BusinessEntitiesLib/clasificacionParqueo.xsd" namespace="http://www.fna.gov.co/cim/businessentities/clasificacionparqueo" />
+  <import schemaLocation="../../../BusinessEntitiesLib/detalleAreaConstruccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/detalleareaconstruccion" />
+  <import schemaLocation="../../../BusinessEntitiesLib/detalleAreaLote.xsd" namespace="http://www.fna.gov.co/cim/businessentities/detallearealote" />
+  <complexType name="DireccionProyecto">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreLocalidad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreUrbanizacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InventarioViviendas_Crear">
+    <complexContent mixed="false">
+      <restriction base="inviv:InventarioViviendas">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="viviendasInteresPrioritario" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="viviendasInteresSocial" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="viviendasInteresNormal" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="ClasificacionInmueble_Crear">
+    <complexContent mixed="false">
+      <restriction base="clsfinm:ClasificacionInmueble">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="cantidadCasas" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadCasasBifamiliarias" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadApartamentos" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="ComposicionGeneralInmobiliario_Crear">
+    <complexContent mixed="false">
+      <restriction base="compgeninm:ComposicionGeneralInmobiliario">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="cantidadLotes" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadManzanas" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadTorres" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadBloques" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadPisos" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadDepositos" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="ClasificacionParqueo_Crear">
+    <complexContent mixed="false">
+      <restriction base="clsfprq:ClasificacionParqueo">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="cantidadPrivados" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadVisitantes" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadComunales" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="cantidadDiscapacitados" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DetalleAreaConstruccion_Crear">
+    <complexContent mixed="false">
+      <restriction base="detareconstr:DetalleAreaConstruccion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="areaViviendas" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaCirculacionAbierta" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaSalonComunal" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaPorterias" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaComercios" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaEducacion" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaSalud" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaOtros" type="decimal" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DetalleAreaLote_Crear">
+    <complexContent mixed="false">
+      <restriction base="detarelote:DetalleAreaLote">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="areaBruta" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaProteccion" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaAfectada" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaCesion" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaUtil" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaTotalConstruida" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaConstruidaPrimerPiso" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="areaVendibleVivienda" type="decimal" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionProyectoInmobiliario_Crear">
+    <complexContent mixed="false">
+      <restriction base="infpryinm:InformacionProyectoInmobiliario">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="nombreProyecto" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="numeroTotalEstructuras" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="numeroEstructurasFinanciadas" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="codigoClasificacionProyecto" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="direccion" type="srv:DireccionProyecto" />
+          <element minOccurs="1" maxOccurs="1" name="inventarioViviendasPorProyecto" type="srv:InventarioViviendas_Crear" />
+          <element minOccurs="1" maxOccurs="1" name="clasificacionInmueblePorProyecto" type="srv:ClasificacionInmueble_Crear" />
+          <element minOccurs="1" maxOccurs="1" name="composicionGeneralProyecto" type="srv:ComposicionGeneralInmobiliario_Crear" />
+          <element minOccurs="1" maxOccurs="1" name="clasificacionParqueoProyecto" type="srv:ClasificacionParqueo_Crear" />
+          <element minOccurs="1" maxOccurs="1" name="detalleAreaConstruccion" type="srv:DetalleAreaConstruccion_Crear" />
+          <element minOccurs="1" maxOccurs="1" name="detalleAreaLoteProyecto" type="srv:DetalleAreaLote_Crear" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="ServicioResponse">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="idProyecto" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="numeroProyecto" type="int" />
+    </sequence>
+  </complexType>
+  <element name="CrearProyectoInmobiliarioResponse" type="srv:ServicioResponse" />
+  <element name="CrearProyectoInmobiliarioRequest" type="srv:ServiceRequest" />
+  <complexType name="ServiceRequest">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="informacionProyecto" type="srv:InformacionProyectoInmobiliario_Crear" />
+    </sequence>
+  </complexType>
+</schema>

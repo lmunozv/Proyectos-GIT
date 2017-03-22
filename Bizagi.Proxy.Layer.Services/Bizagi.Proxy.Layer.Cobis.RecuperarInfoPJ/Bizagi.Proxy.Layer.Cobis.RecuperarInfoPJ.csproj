@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7E3285C0-2830-4A31-8E49-8041F909B897}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cobis_RecuperarInfoPJImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Cliente_RecuperarInfoPJ\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\cliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\Cliente_RecuperarInformacionPersonaJuridica.wsdl" />
+    <None Include="Web References\Cliente_RecuperarInfoPJ\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\recuperarinformacionpj.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\ServicioResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Cliente_RecuperarInfoPJ\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="E:\Workspace\FNA\Proyectos\CCP\InterfacesBUS\Cliente_RecuperarInformacionPersonaJuridica_wsdl\wsdl\Cliente\Cliente_RecuperarInformacionPersonaJuridica.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Cliente_RecuperarInfoPJ\</RelPath>
+      <UpdateFromURL>E:\Workspace\FNA\Proyectos\CCP\InterfacesBUS\Cliente_RecuperarInformacionPersonaJuridica_wsdl\wsdl\Cliente\Cliente_RecuperarInformacionPersonaJuridica.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Bizagi_Proxy_Layer_Cobis_RecuperarInfoPJ_Cliente_RecuperarInfoPJ_Cliente_RecuperarInformacionPersonaJuridica_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

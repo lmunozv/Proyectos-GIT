@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/cliente.xsd" filename="cliente.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/Cliente/recuperarinformacionpj.xsd" filename="recuperarinformacionpj.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/telefono.xsd" filename="telefono.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/Cliente/Cliente_RecuperarInformacionPersonaJuridica.wsdl" filename="Cliente_RecuperarInformacionPersonaJuridica.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/identificacion.xsd" filename="identificacion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/direccion.xsd" filename="direccion.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/personanatural.xsd" filename="personanatural.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///E:/Workspace/FNA/Proyectos/CCP/InterfacesBUS/Cliente_RecuperarInformacionPersonaJuridica_wsdl/wsdl/BusinessEntitiesLib/personajuridica.xsd" filename="personajuridica.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>
