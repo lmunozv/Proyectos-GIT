@@ -18,8 +18,7 @@ namespace Bizagi.Business.Reports.Controllers
     /// la informacion de negocio de bizagi
     /// </summary>
     public class GraphicController : Controller
-    {           
-        
+    {       
         public ActionResult Details(MenuBO menu)
         {
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
