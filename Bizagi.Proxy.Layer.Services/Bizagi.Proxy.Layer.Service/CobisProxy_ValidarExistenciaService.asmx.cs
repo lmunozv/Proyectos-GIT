@@ -9,7 +9,7 @@ namespace Bizagi.Proxy.Layer.Service
 {
     /// <summary>
     /// Servicio que permite validar la existencia de un cliente
-    /// en el core de COBIS pasando por el BUS
+    /// en el core de COBIS pasando por el ESB
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
