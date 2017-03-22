@@ -1,0 +1,47 @@
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="M_Desembolso">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" name="OidTrackingDesembolso">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element minOccurs="0" maxOccurs="1" name="IIdCaso" type="xs:integer"/>
+							<xs:element minOccurs="0" maxOccurs="1" name="SNombreUsuarioEstacion" type="xs:string"/>
+							<xs:element minOccurs="0" maxOccurs="1" name="SCodigoEstacion" type="xs:string"/>
+							<xs:element minOccurs="0" maxOccurs="1" name="IRuta" type="xs:integer"/>
+							<xs:element minOccurs="0" maxOccurs="1" name="OidTipoDocumentoEstac">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute form="unqualified" name="entityName" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element minOccurs="0" maxOccurs="1" name="SIdentificacionEstacion" type="xs:string"/>
+							<xs:element minOccurs="0" maxOccurs="1" name="OidActividadEspera">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element minOccurs="0" maxOccurs="1" name="STransformacion" type="xs:string"/>
+										<xs:element minOccurs="0" maxOccurs="1" name="OidProceso">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element minOccurs="0" maxOccurs="1" name="SNombreTecnico" type="xs:string"/>
+												</xs:sequence>
+												<xs:attribute form="unqualified" name="entityName" type="xs:string"/>
+											</xs:complexType>
+										</xs:element>
+										<xs:element minOccurs="0" maxOccurs="1" name="STaskName" type="xs:string"/>
+									</xs:sequence>
+									<xs:attribute form="unqualified" name="entityName" type="xs:string"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element minOccurs="0" maxOccurs="1" name="IEtapa" type="xs:integer"/>
+						</xs:sequence>
+						<xs:attribute form="unqualified" name="entityName" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element minOccurs="0" maxOccurs="1" name="SNumeroTramite" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

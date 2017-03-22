@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Bizagi.Proxy.Layer.HUB.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Bizagi_Proxy_Layer_HUB_WorkflowEngineSOA_WorkflowEngineSOA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://fnabogpbzg/DevBizAgiFNA/WebServices/WorkflowEngineSOA.asmx</Value>
+    </Setting>
+    <Setting Name="Bizagi_Proxy_Layer_HUB_EntityManagerSOA_EntityManagerSOA" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://fnabogpbzg/DevBizAgiFNA/WebServices/EntityManagerSOA.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

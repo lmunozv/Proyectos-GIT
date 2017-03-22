@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="BizAgiWSParam">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EntityData">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:choice>
+								<xs:element name="EntityName" type="xs:string"/>
+								<xs:element name="EntityID" type="xs:integer"/>
+							</xs:choice>
+							<xs:element name="FilterDisabled" type="xs:boolean" minOccurs="0" />
+							<xs:element name="Filters" type="xs:string" nillable="true" minOccurs="0"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

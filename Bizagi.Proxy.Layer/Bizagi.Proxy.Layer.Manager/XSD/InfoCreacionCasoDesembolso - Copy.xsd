@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="M_CAT_GestionDesembolso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="1" name="OidInformacionDesembolso">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="1" name="OidEstadoDesembolso">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string" />
+                  </xs:sequence>
+                  <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="1" name="CMonto" type="xs:decimal" />
+              <xs:element minOccurs="0" maxOccurs="1" name="OidTrackingDesembolso">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="1" name="DFechaNotificacion" type="xs:dateTime" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="OidCausalRechazoDesembolso">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="SCodigoEstacion" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="IRuta" type="xs:integer" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="OidTipoDocumentoEstac">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string" />
+                        </xs:sequence>
+                        <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" maxOccurs="1" name="SIdentificacionEstacion" type="xs:string" />
+                    <xs:element minOccurs="0" maxOccurs="1" name="IEtapa" type="xs:integer" />
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="XCausalesPNC">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="M_CausalesPNC">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="1" name="OidCausalPNC">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" maxOccurs="1" name="SNumeroTramite" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="XOrdenesPago">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="M_OrdenPago">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" maxOccurs="1" name="SNumeroOrdenPago" type="xs:string" />
+                          <xs:element minOccurs="0" maxOccurs="1" name="OidEstadoOrdenPago">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element minOccurs="0" maxOccurs="1" name="SCodigo" type="xs:string" />
+                              </xs:sequence>
+                              <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute form="unqualified" name="entityName" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

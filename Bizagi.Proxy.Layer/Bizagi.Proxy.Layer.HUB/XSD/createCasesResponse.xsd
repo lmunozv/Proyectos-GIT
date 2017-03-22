@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="processes">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="process">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="processId" type="xs:integer" />
+							<xs:element minOccurs="0" name="processRadNumber" type="xs:string" />
+							<xs:element minOccurs="0" name="savedMessage">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Entities" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element minOccurs="0" name="processWorkflowClass">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="workflowClassId" type="xs:integer" />
+										<xs:element name="workflowClassName" type="xs:string" />
+										<xs:element name="workflowClassDisplayName" type="xs:string" />
+										<xs:element name="workflowClassDescription" type="xs:string" />
+										<xs:element name="workflowClassHelpText" type="xs:string" />
+										<xs:element name="workflowClassDisplayOrder" type="xs:integer" />
+										<xs:element name="workflowClassCreationDate" type="xs:string" />
+										<xs:element name="workflowClassGlobalForm" type="xs:integer" />
+										<xs:element name="workflowClassAllocationPrinciple" type="xs:string" />
+										<xs:element name="workflowClassProcessType" type="xs:string" />
+										<xs:element name="workflowClassDisplay" type="xs:string" />
+										<xs:element name="workflowClassUseParentRadicationNumber" type="xs:string" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="processError">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="errorCode" type="xs:string" />
+										<xs:element name="errorMessage">
+											<xs:complexType mixed="true">
+												<xs:sequence minOccurs="0">
+													<xs:element name="Entities">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="Path" type="xs:string" />
+																<xs:element name="Atrib" type="xs:string" />
+																<xs:element name="Value" type="xs:string" />
+																<xs:element name="ErrorMessage" type="xs:string" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="CurrentWorkItems">
+								<xs:complexType mixed="true">
+									<xs:sequence minOccurs="0">
+										<xs:element name="workItem">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="workItemId" type="xs:integer" />
+													<xs:element name="workItemState" type="xs:string" />
+													<xs:element name="workItemEntryDate" type="xs:string" />
+													<xs:element name="workItemDuration" type="xs:integer" />
+													<xs:element name="workItemEstimatedSolutionDate" type="xs:string" />
+													<xs:element name="task">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element name="taskId" type="xs:integer" />
+																<xs:element name="taskName" type="xs:string" />
+																<xs:element name="taskDisplayName" type="xs:string" />
+																<xs:element name="taskDescription" type="xs:string" />
+																<xs:element name="taskHelpText" type="xs:string" />
+																<xs:element name="taskEstimatedDuration" type="xs:integer" />
+																<xs:element name="taskType" type="xs:string" />
+																<xs:element name="taskCost" type="xs:integer" />
+																<xs:element name="taskPriority" type="xs:string" />
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

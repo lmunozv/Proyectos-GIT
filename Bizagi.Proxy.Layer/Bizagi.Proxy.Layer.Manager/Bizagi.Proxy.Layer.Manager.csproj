@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A1EA6FDF-DEA7-40CD-900F-1FA891CFE249}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Manager</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Manager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\AsDirectory.cs" />
+    <Compile Include="Controlador\ControladorReclamacionSeguros.cs" />
+    <Compile Include="DesembolsoObjects\BizAgiWSResponseEntities_M_Desembolso.cs" />
+    <Compile Include="SegurosObjects\BizAgiWSResponseEntities_M_Seguros.cs" />
+    <Compile Include="DesembolsoObjects\InfoCasoDesembolso.cs" />
+    <Compile Include="Controlador\ControladorGestionDesembolso.cs" />
+    <Compile Include="DesembolsoObjects\M_CAT_GestionDesembolso.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SegurosObjects\ConsultaReclamacionSeguros.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.BusinessObjects\Bizagi.Proxy.Layer.BusinessObjects.csproj">
+      <Project>{754147e9-bebc-42bf-8abe-f5743fc40c91}</Project>
+      <Name>Bizagi.Proxy.Layer.BusinessObjects</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.HUB\Bizagi.Proxy.Layer.HUB.csproj">
+      <Project>{d5b2ea08-1506-4274-a4b0-c58235a057f3}</Project>
+      <Name>Bizagi.Proxy.Layer.HUB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Util\Bizagi.Proxy.Layer.Util.csproj">
+      <Project>{c0b50e83-d536-40f0-9f0f-ab9313fbd9bc}</Project>
+      <Name>Bizagi.Proxy.Layer.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XSD\AjustePNCREC.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XSD\BizAgiWSResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\ConsultaReclamacionSeguros.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XSD\InfoCasoDesembolso.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="XSD\M_CAT_GestionDesembolso.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
