@@ -24,7 +24,6 @@ namespace Bizagi.Business.Reports.Controllers
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
             Highcharts chart = Grapher.GetGraphic(menu);            
             return View(chart);
-        }
-       
+        }       
     }
 }
