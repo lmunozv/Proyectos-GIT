@@ -362,7 +362,6 @@
     <Content Include="Scripts\Highcharts-4.0.1\js\themes\skies.js" />
     <Content Include="Content\analytics.tsv" />
     <None Include="Properties\PublishProfiles\Bizagi.Business.Reports.pubxml" />
-    <None Include="Properties\PublishProfiles\BizagiChartsViewer.pubxml" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />

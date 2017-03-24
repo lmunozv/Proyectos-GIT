@@ -15,7 +15,7 @@ namespace Bizagi.Business.Reports.TransformerLayer
     {
         public override List<Series> MappearReader2ListBO(DataSet dtSet)
         {
-            int x = 0;
+            int x = 0;            
             object[] oData = null;
             List<DetailDataBO> details = new List<DetailDataBO>();
             List<Series> series = base.MappearReader2ListBO(dtSet.Tables[0]);

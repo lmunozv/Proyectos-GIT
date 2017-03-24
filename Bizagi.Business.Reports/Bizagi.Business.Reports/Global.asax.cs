@@ -46,5 +46,19 @@ namespace Bizagi.Business.Reports
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
         }
+
+        void Application_BeginRequest(object sender, EventArgs ex)
+        {
+            ///* ======== For Chrome ======== */
+            //Response.AddHeader("X-WebKit-CSP", "default-src 'self'; img-src *; script-src 'self'; style-src 'self' 'unsafe-inline'; report-uri /Home/Report");
+
+            ///* ======== For Firefox ======== */
+            //Response.AddHeader("X-Content-Security-Policy", "default-src 'self'; img-src *; script-src 'self'; style-src 'self' 'unsafe-inline'; report-uri /Home/Report");
+            //Response.AddHeader("Content-Security-Policy", "default-src https: data: 'unsafe-inline' 'unsafe-eval'");
+            //Response.AddHeader("X-WebKit-CSP", "script-src 'self'");
+            //Response.AddHeader("X-Content-Security-Policy", "script-src 'self'");
+        }
+
+        
     }
 }
