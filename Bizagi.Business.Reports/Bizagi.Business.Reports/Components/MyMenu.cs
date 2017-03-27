@@ -28,7 +28,6 @@ namespace Bizagi.Business.Reports.Components
             }
             else
             {
-
                 parameter = new object[1] { ConfigurationManager.AppSettings["DefaultRol"] };
             }
             listMenu = dal.GetMenu(parameter);
