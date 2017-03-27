@@ -2,6 +2,7 @@
 using Bizagi.Business.Reports.Models;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 
@@ -20,7 +21,16 @@ namespace Bizagi.Business.Reports.Components
 
 
             DataManager dal = new DAL.DataManager();
-            object[] parameter = new object[1] { roles };
+            object[] parameter;
+            if (roles != string.Empty)
+            {
+                parameter = new object[1] { roles };
+            }
+            else
+            {
+
+                parameter = new object[1] { ConfigurationManager.AppSettings["DefaultRol"] };
+            }
             listMenu = dal.GetMenu(parameter);
 
             return listMenu;
