@@ -30,11 +30,12 @@ namespace Bizagi.Business.Reports.Controllers
             Session["roles"] = roles;
             return View();
         }
+
         public ActionResult Index()
         {
             if(Convert.ToBoolean(ConfigurationManager.AppSettings["Debug"]))
             {
-                Session["roles"] = "10019";
+                Session["roles"] = ConfigurationManager.AppSettings["DefaultRol"];
             }            
             return View();
         }
