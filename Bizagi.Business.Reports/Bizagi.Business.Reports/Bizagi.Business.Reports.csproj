@@ -362,6 +362,10 @@
     <Content Include="Scripts\Highcharts-4.0.1\js\themes\skies.js" />
     <Content Include="Content\analytics.tsv" />
     <None Include="Properties\PublishProfiles\Bizagi.Business.Reports.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />
@@ -427,6 +431,11 @@
     <Compile Include="Models\InformacionDetalle.cs" />
     <Compile Include="Models\Perona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
     <Compile Include="TransformerLayer\Factory\FactoryTransformer.cs" />
     <Compile Include="TransformerLayer\GaugeTransformation.cs" />
     <Compile Include="TransformerLayer\LiteTransformation.cs" />
