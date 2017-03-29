@@ -33,7 +33,6 @@ namespace Bizagi.Business.Reports.TransformerLayer.Mapper
                                 && (propiedad.CanWrite))
                                 ubicacion.Add(propiedad.Name, indice);
                     }
-
                     // Se recorren los registros del lector.             
                     while (reader.Read())
                     {
@@ -52,7 +51,6 @@ namespace Bizagi.Business.Reports.TransformerLayer.Mapper
                         }
                         respuesta.Add(instancia);
                     }
-
                 }
                 return instancia;
             }
