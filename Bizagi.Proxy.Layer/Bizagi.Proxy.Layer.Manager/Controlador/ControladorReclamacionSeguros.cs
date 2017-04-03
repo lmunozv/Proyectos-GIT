@@ -65,11 +65,10 @@ namespace Bizagi.Proxy.Layer.Manager.Controlador
                     mSol.OidReclamacionSeguro.XDocumentosReclamacion.Add
                         (new M_SolicitudOidReclamacionSeguroXDocumentosReclamacionM_DocumentoRecSeguro() { SUrlDocumento = item });
                 }
-                BizAgiWSParamType<M_Solicitud> saveEntity = new BizAgiWSParamType<M_Solicitud>();
-
+                BizAgiWSParamType<M_Solicitud> saveEntity = new BizAgiWSParamType<M_Solicitud>();            
                 saveEntity.Entities = new EntitiesType<M_Solicitud>();
-                saveEntity.Entities.M_Solicitud = new M_Solicitud();
-                saveEntity.Entities.M_Solicitud = mSol;
+                saveEntity.Entities.Informacion = new M_Solicitud();
+                saveEntity.Entities.Informacion= mSol;
 
                 var save = SerializerManager.SerializarToXml<BizAgiWSParamType<M_Solicitud>>(saveEntity);
                 var rt = Ejecutar.saveEntityAsString(save);

@@ -45,18 +45,18 @@ public partial class BizAgiWSParamType<T> where T : class
 public partial class EntitiesType<T> where T : class
 {
 
-    private T m_SolicitudField;
+    private T informacion;
 
-    /// <remarks/>
-    public T M_Solicitud
+    [XmlElement(ElementName = "M_Solicitud")]
+    public T Informacion
     {
         get
         {
-            return this.m_SolicitudField;
+            return this.informacion;
         }
         set
         {
-            this.m_SolicitudField = value;
+            this.informacion = value;
         }
     }
 }
