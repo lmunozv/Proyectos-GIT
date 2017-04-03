@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="BizAgiWSParam" type="BizAgiWSParamType"/>
+  <xs:complexType name="BizAgiWSParamType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Entities"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

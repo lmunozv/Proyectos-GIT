@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bizagi.Test.Util;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,13 @@ namespace Bizagi.Catalogo.Funcionalidades
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CommonMethods c = new CommonMethods();
+
+            MessageBox.Show(c.ConvertNumbersToLetters("25000000,60", true));
         }
     }
 }

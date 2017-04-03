@@ -5,6 +5,7 @@ using System.IO;
 using System.Xml;
 using Bizagi.Proxy.Layer.Manager.SegurosObjects;
 using Bizagi.Proxy.Layer.Util;
+using System.Collections.Generic;
 
 namespace Bizagi.Proxy.Layer.Manager.Controlador
 {
@@ -34,12 +35,9 @@ namespace Bizagi.Proxy.Layer.Manager.Controlador
             {
                 AjustePNCSegurosResponse res = new AjustePNCSegurosResponse();
                 res.Codigo = "1";
-                res.Mensaje = "OK";
-
-                var rr = SerializerManager.SerializarToXml<AjustePNCSegurosResponse>(res);
+                res.Mensaje = "Proceso Ejecutado";               
                 var rr2 = SerializerManager.SerializarToXml<AjustePNCSegurosRequest>(request);
-
-
+                
                 #region Consultar
                 XmlDocument schemaDoc = new XmlDocument();
                 string schemaPath = Path.Combine(AsDirectory.AssemblyDirectory, Properties.Resources.SchemaConsultarCasoSeguros);
@@ -48,15 +46,38 @@ namespace Bizagi.Proxy.Layer.Manager.Controlador
                 XmlDocument doc = new XmlDocument();
                 doc.LoadXml(respuesta);
 
-                
+                BizAgiWSResponseType con = SerializerManager.DeserializarTo2<BizAgiWSResponseType>(respuesta);
 
                 #endregion
 
-                return null;
+                #region Modificar
+                M_Solicitud mSol = new M_Solicitud();
+
+                mSol.key = con.M_Solicitud.key;
+                mSol.keySpecified = true;
+                mSol.OidReclamacionSeguro = new M_SolicitudOidReclamacionSeguro();
+                mSol.OidReclamacionSeguro.key = con.M_Solicitud.OidReclamacionSeguro;
+                mSol.OidReclamacionSeguro.keySpecified = true;
+                mSol.OidReclamacionSeguro.XDocumentosReclamacion = 
+                    new List<M_SolicitudOidReclamacionSeguroXDocumentosReclamacionM_DocumentoRecSeguro>();
+                foreach (var item in request.LstDocumentos)
+                {
+                    mSol.OidReclamacionSeguro.XDocumentosReclamacion.Add
+                        (new M_SolicitudOidReclamacionSeguroXDocumentosReclamacionM_DocumentoRecSeguro() { SUrlDocumento = item });
+                }
+                BizAgiWSParamType<M_Solicitud> saveEntity = new BizAgiWSParamType<M_Solicitud>();
+
+                saveEntity.Entities = new EntitiesType<M_Solicitud>();
+                saveEntity.Entities.M_Solicitud = new M_Solicitud();
+                saveEntity.Entities.M_Solicitud = mSol;
+
+                var save = SerializerManager.SerializarToXml<BizAgiWSParamType<M_Solicitud>>(saveEntity);
+                var rt = Ejecutar.saveEntityAsString(save);
+                #endregion
+                return res;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }

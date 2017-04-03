@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="BizAgiWSResponse" type="BizAgiWSResponseType"/>
+  <xs:complexType name="M_SolicitudType">
+    <xs:sequence>
+      <xs:element type="xs:byte" name="OidReclamacionSeguro"/>
+    </xs:sequence>
+    <xs:attribute type="xs:byte" name="key"/>
+  </xs:complexType>
+  <xs:complexType name="BizAgiWSResponseType">
+    <xs:sequence>
+      <xs:element type="M_SolicitudType" name="M_Solicitud"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

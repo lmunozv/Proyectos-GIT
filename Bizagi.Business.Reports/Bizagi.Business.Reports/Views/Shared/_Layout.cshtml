@@ -47,7 +47,7 @@
                         <a href="#">Reportes</a>
                     </h3>
                     <div data-panel-index="0">
-                        <ul class="nav navbar-nav">
+                        <ul class="nav navbar-nav">                         
                             @*<li>*@
                             @{
                                 string roles = string.Empty;
@@ -63,17 +63,20 @@
                                     {
                                         if (@pitem.GraphicsType != 18)
                                         {
-                                            @Ajax.ActionLink(@pitem.Title, @pitem.URL, @pitem.Description, @pitem, new AjaxOptions { HttpMethod = "POST" });
+                                            using (Ajax.BeginForm(@pitem.URL, @pitem.Description, new AjaxOptions { HttpMethod = "POST"}))
+                                            {
+                                                @Ajax.ActionLink(@pitem.Title, @pitem.URL, @pitem.Description, new AjaxOptions { HttpMethod = "POST" }, @pitem);
+                                            }
                                         }
                                         else
                                         {
-                                            @Html.ActionLink("Información Origen-" + @pitem.Title, "Details", "OriginInformation", @pitem, new AjaxOptions { HttpMethod = "POST" });
+                                            @Html.ActionLink("Información Origen-" + @pitem.Title, "Details", "OriginInformation", @pitem, null);
                                         }
                                     }
                                 }
                             }
-                            @*</li>*@
-                        </ul>
+                            @*</li>*@                           
+                        </ul>                        
                     </div>
                 </div>
             </div>

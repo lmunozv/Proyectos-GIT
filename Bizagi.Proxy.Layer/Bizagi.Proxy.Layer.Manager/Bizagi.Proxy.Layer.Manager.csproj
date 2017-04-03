@@ -57,6 +57,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="SegurosObjects\ConsultaReclamacionSeguros.cs" />
+    <Compile Include="XSD\AjustePNCREC.cs">
+      <DependentUpon>AjustePNCREC.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\RespuestaConsultaSeg.cs">
+      <DependentUpon>RespuestaConsultaSeg.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Bizagi.Proxy.Layer.BusinessObjects\Bizagi.Proxy.Layer.BusinessObjects.csproj">
@@ -81,7 +87,6 @@
   <ItemGroup>
     <None Include="XSD\AjustePNCREC.xsd">
       <SubType>Designer</SubType>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="XSD\BizAgiWSResponse.xsd">
       <SubType>Designer</SubType>
@@ -95,6 +100,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="XSD\M_CAT_GestionDesembolso.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XSD\RespuestaConsultaSeg.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

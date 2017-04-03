@@ -19,13 +19,22 @@ namespace Bizagi.Business.Reports.Controllers
     /// la información de negocio de bizagi
     /// </summary>
     public class GraphicController : Controller
-    {        
+    {
+        //public ActionResult Details(MenuBO menu)
+        //{
+        //    ChartTypes chartType = (ChartTypes)menu.GraphicsType;
+        //    Highcharts chart = Grapher.GetGraphic(menu);
+        //    Response.AddHeader("Refresh", ConfigurationManager.AppSettings["Refresh"]);
+        //    return View(chart);
+        //}
+
+        [HttpPost]
         public ActionResult Details(MenuBO menu)
-        {     
+        {
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
             Highcharts chart = Grapher.GetGraphic(menu);
             Response.AddHeader("Refresh", ConfigurationManager.AppSettings["Refresh"]);
             return View(chart);
-        }      
+        }
     }
 }

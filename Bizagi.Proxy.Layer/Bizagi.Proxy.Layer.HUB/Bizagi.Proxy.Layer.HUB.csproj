@@ -47,7 +47,6 @@
     <Compile Include="BizagiSOAObjects\BizAgiWSResponse.cs" />
     <Compile Include="BizagiSOAObjects\BizAgiWSResponseEntities_Base.cs" />
     <Compile Include="BizagiSOAObjects\BizagiSOALayerResponse.cs" />
-    <Compile Include="BizagiSOAObjects\BizAgiWSResponseSeg.cs" />
     <Compile Include="BizagiSOAObjects\createCasesAsString.cs" />
     <Compile Include="BizagiSOAObjects\createCasesResponse.cs" />
     <Compile Include="BizagiSOAObjects\EnumSOALayerAction.cs" />
@@ -69,6 +68,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="XSD\BizAgiWSParam.cs">
+      <DependentUpon>BizAgiWSParam.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +120,9 @@
     </None>
     <None Include="Web References\WorkflowEngineSOA\WorkflowEngineSOA.disco" />
     <None Include="Web References\WorkflowEngineSOA\WorkflowEngineSOA.wsdl" />
+    <None Include="XSD\BizAgiWSParam.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="XSD\BizAgiWSResponse.xsd">
       <SubType>Designer</SubType>
     </None>

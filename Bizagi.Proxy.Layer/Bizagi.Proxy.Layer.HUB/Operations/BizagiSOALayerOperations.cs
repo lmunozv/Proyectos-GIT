@@ -111,5 +111,18 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
                 throw ex;
             }
         }
+
+        public string saveEntityAsString(string entityInfo)
+        {
+            try
+            {
+                return WfEntityManSOA.saveEntityAsString(entityInfo);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
     }
 }
