@@ -17,7 +17,7 @@ namespace Bizagi.Proxy.Layer.Service
     // [System.Web.Script.Services.ScriptService]
     public class HUBProxy_CorreoSeguro : System.Web.Services.WebService
     {
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         public Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
             EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,

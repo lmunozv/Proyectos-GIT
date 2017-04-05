@@ -19,7 +19,7 @@ namespace Bizagi.Proxy.Layer.Service
     public class CobisProxy_ValidarExistenciaService : System.Web.Services.WebService
     {
         public Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ConsumerHeader header;
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         [SoapHeader("header")]
         public Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ServicioResponse validarExistenciarRequest(Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ServiceRequest DatosCliente)

@@ -22,7 +22,7 @@ namespace Bizagi.Proxy.Layer.Service
 
         public Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob.CrearProyectoInmob.ConsumerHeader head;
 
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         [SoapHeader("head")]
         public ServicioResponse crearProyectoInmobiliarioRequest(ServiceRequest DatosProyecto)

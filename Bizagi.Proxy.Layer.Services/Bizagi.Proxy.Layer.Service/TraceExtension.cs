@@ -110,7 +110,7 @@ public class TraceExtension : SoapExtension
 [AttributeUsage(AttributeTargets.Method)]
 public class TraceExtensionAttribute : SoapExtensionAttribute
 {
-    private string filename = "c:\\log.txt";
+    private string filename = System.Configuration.ConfigurationManager.AppSettings["PathTraceLog"];
     private int priority;
 
 

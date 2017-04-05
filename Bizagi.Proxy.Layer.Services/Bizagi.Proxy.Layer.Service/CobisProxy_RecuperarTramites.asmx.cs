@@ -16,7 +16,7 @@ namespace Bizagi.Proxy.Layer.Service
     [System.ComponentModel.ToolboxItem(false)]    
     public class CobisProxy_RecuperarTramites : System.Web.Services.WebService
     {        
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]        
         public Cobis.RecuperarTramites.Cliente_RecuperarTramites.TramiteType2[] RecuperarTramites(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramites.ConsumerHeader header, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramites.ConsultarTramitesCreditoPorIdentificacionRq body)
         {

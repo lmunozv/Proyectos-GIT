@@ -19,7 +19,7 @@ namespace Bizagi.Proxy.Layer.Service
     public class CobisProxy_RecuperarDetalleTramiteService : System.Web.Services.WebService
     {
         //public Cobis.RecuperarDetalleTramite.Cliente_RecuperarDetalleTramite.ConsumerHeader header;
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         //[SoapHeader("header")]        
         public RecuperarDetalleTramiteRsType RecuperarDetalleTramite(Cobis.RecuperarDetalleTramite.Cliente_RecuperarDetalleTramite.ConsumerHeader header,

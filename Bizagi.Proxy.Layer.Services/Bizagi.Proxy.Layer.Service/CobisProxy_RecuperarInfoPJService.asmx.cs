@@ -18,7 +18,7 @@ namespace Bizagi.Proxy.Layer.Service
     public class CobisProxy_RecuperarInfoPJService : System.Web.Services.WebService
     {
         public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ConsumerHeader header;
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         [SoapHeader("header")]
         public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServicioResponse recuperarInfoBasicaPersonaJuridicaRequest(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServiceRequest DatosCliente)

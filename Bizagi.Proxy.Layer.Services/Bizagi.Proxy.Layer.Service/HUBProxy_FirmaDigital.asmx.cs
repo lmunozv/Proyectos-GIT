@@ -17,7 +17,7 @@ namespace Bizagi.Proxy.Layer.Service
     // [System.Web.Script.Services.ScriptService]
     public class HUBProxy_FirmaDigital : System.Web.Services.WebService
     {
-        [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+        [TraceExtensionAttribute]
         [WebMethod]
         public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.FirmarDocumentoRsType
             FirmarDocumento(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.headerRq head,

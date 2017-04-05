@@ -21,7 +21,7 @@ namespace Bizagi.Proxy.Layer.Service
     {
          public ConsumerHeader header;
 
-    [TraceExtensionAttribute(Filename = "C:/LogWSFacadeService/")]
+    [TraceExtensionAttribute]
     [WebMethod]
     [SoapHeader("header")]
     public ServicioResponse crearSolicitudRequest(ServiceRequest DatosSolicitud)
