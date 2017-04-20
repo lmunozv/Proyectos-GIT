@@ -2,9 +2,6 @@
 @model Bizagi.Business.Reports.Models.ChartsModel
 <!DOCTYPE html>
 <html>
-<head>
-    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
-</head>
 <body>
     <div class="pageBody">
         <div class="dashboard">
@@ -29,19 +26,19 @@
                                         <tr>
                                             @foreach (DataColumn column in Model.ModelDef1.Detail.Columns)
                                             {
-                                            <th>@column.ColumnName</th>
+                                                <th>@column.ColumnName</th>
                                             }
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach (DataRow row in Model.ModelDef1.Detail.Rows)
                                         {
-                                        <tr>
-                                            @foreach (DataColumn column in Model.ModelDef1.Detail.Columns)
+                                            <tr>
+                                                @foreach (DataColumn column in Model.ModelDef1.Detail.Columns)
                                                 {
-                                            <td>@row[column]</td>
+                                                    <td>@row[column]</td>
                                                 }
-                                        </tr>
+                                            </tr>
                                         }
                                     </tbody>
                                 </table>
@@ -68,26 +65,26 @@
                                         <tr>
                                             @foreach (DataColumn column in Model.ModelDef2.Detail.Columns)
                                             {
-                                            <th>@column.ColumnName</th>
+                                                <th>@column.ColumnName</th>
                                             }
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach (DataRow row in Model.ModelDef2.Detail.Rows)
                                         {
-                                        <tr>
-                                            @foreach (DataColumn column in Model.ModelDef2.Detail.Columns)
+                                            <tr>
+                                                @foreach (DataColumn column in Model.ModelDef2.Detail.Columns)
                                                 {
-                                            <td>@row[column]</td>
+                                                    <td>@row[column]</td>
                                                 }
-                                        </tr>
+                                            </tr>
                                         }
                                     </tbody>
                                 </table>
                             </div>
 
                         </div>
-                    }                                
+                    }
                 </div>
 
                 <div class="dashboardCol">
@@ -129,10 +126,10 @@
                             </div>
 
                         </div>
-                    }     
+                    }
                     <div class="dashboardItemHeader">@Model.ModelDef4.Name</div>
                     @if (!Model.ModelDef4.isDetail)
-                    {                        
+                    {
                         <div class="dashboardItemBody">
                             @Model.ModelDef4.Model
                         </div>
@@ -149,19 +146,19 @@
                                         <tr>
                                             @foreach (DataColumn column in Model.ModelDef4.Detail.Columns)
                                             {
-                                            <th>@column.ColumnName</th>
+                                                <th>@column.ColumnName</th>
                                             }
                                         </tr>
                                     </thead>
                                     <tbody>
                                         @foreach (DataRow row in Model.ModelDef4.Detail.Rows)
                                         {
-                                        <tr>
-                                            @foreach (DataColumn column in Model.ModelDef4.Detail.Columns)
+                                            <tr>
+                                                @foreach (DataColumn column in Model.ModelDef4.Detail.Columns)
                                                 {
-                                                <td>@row[column]</td>
+                                                    <td>@row[column]</td>
                                                 }
-                                        </tr>
+                                            </tr>
                                         }
                                     </tbody>
                                 </table>
@@ -175,3 +172,4 @@
     </div>
 </body>
 </html>
+
