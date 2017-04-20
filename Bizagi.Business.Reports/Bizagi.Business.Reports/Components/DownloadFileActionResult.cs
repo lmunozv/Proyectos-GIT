@@ -48,7 +48,6 @@ namespace Bizagi.Business.Reports.Components
             curContext.Response.Write(sr.ReadToEnd());
 
             curContext.Response.End();
-
         }
     }
 }

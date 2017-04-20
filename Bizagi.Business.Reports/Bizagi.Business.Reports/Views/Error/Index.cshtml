@@ -1,8 +1,29 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="pageBody">
+        <div class="dashboard">
+            <div class="dashboard3Col">
+                <div class="dashboardCol">
+                    <div class="dashboardItemHeader">Titulo</div>
+                    @ViewBag.Title          
+                </div>
+                <div class="dashboardCol">
+                    <div class="dashboardItemHeader">Descripcion</div>
+                    @ViewBag.Description
+                </div>
 
-@{
-    ViewBag.Title = "Error";
-}
-
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
+                <div class="dashboardCol">
+                    <div class="dashboardItemHeader">Mensaje</div>
+                    @ViewBag.MessageEx
+                </div>
+                <div class="dashboardFooter"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

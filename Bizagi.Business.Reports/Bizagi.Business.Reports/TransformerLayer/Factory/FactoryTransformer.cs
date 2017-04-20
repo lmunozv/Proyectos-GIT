@@ -1,4 +1,5 @@
 ﻿using Bizagi.Business.Reports.Components;
+using Bizagi.Business.Reports.Models;
 using Bizagi.Business.Reports.TransformerLayer.Mapper;
 using Bizagi.Business.Reports.TransformerLayer.Util;
 using DotNet.Highcharts.Options;
@@ -44,6 +45,10 @@ namespace Bizagi.Business.Reports.TransformerLayer.Factory
             if (modelType == typeof(string))
             {
                 return new StringTransformation() as MapperManager<Persistent, BusinessObject>;
+            }
+            if (modelType == typeof(ParametersBO))
+            {
+                return new ParametersTransformation() as MapperManager<Persistent, BusinessObject>;
             }
             #endregion
 

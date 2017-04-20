@@ -93,9 +93,9 @@ namespace Bizagi.Business.Reports.Consultants.Helper
                 }
                 return listParameter;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw ex;
             }
         }
         #endregion

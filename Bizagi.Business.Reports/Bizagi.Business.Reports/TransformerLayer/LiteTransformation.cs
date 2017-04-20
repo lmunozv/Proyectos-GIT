@@ -1,4 +1,5 @@
 ﻿using Bizagi.Business.Reports.Components;
+using Bizagi.Business.Reports.Models;
 using Bizagi.Business.Reports.TransformerLayer.Mapper;
 using System;
 using System.Collections.Generic;

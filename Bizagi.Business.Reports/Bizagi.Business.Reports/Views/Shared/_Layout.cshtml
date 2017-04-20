@@ -11,6 +11,8 @@
     <link href="@Url.Content("~/Content/themes/start/jquery-ui-1.10.3.custom.min.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Scripts/prettify-small-1-Jun-2011/google-code-prettify/prettify.css")" rel="stylesheet" type="text/css" />
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    
 
     <script src="@Url.Content("~/Scripts/jquery-2.0.0.min.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/modernizr-2.6.2.js")" type="text/javascript"></script>
@@ -22,9 +24,7 @@
     <script src="@Url.Content("~/Scripts/json_parse.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/json_parse_state.js")" type="text/javascript"></script>
     <script src="@Url.Content("~/Scripts/json2.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/cycle.js")" type="text/javascript"></script>
-    <script src="@Url.Content("~/Scripts/jquery-2.0.0.min.map")" type="text/javascript"></script>
-
+    <script src="@Url.Content("~/Scripts/cycle.js")" type="text/javascript"></script>    
 </head>
 
 <body onload="prettyPrint()">
@@ -55,7 +55,9 @@
                                 {
                                     roles = (string)Session["roles"];
                                 }
-                                List<MenuBO> myMenu = MyMenu.GetMenus(roles);
+                                List<MenuBO> myMenu = Util.GetInitialMenu(roles);
+                                List<MenuBO> myDashBoard = Util.GetDashBoardMenu(myMenu);
+                                Session["myMenu"] = myMenu;
                                 var plist = myMenu.Where(m => m.ParentID == null).ToList();
                                 if (plist != null && plist.Count > 0)
                                 {
@@ -63,13 +65,19 @@
                                     {
                                         if (@pitem.GraphicsType != 18)
                                         {
-                                            @Ajax.ActionLink(@pitem.Title, @pitem.URL, @pitem.Description, @pitem, new AjaxOptions { HttpMethod = "POST" });
+                                            @Html.ActionLink(@pitem.Title, @pitem.URL, @pitem.Description, new { id = @pitem.Oid } , new AjaxOptions { HttpMethod = "POST" });
+                                            
                                         }
                                         else
                                         {
-                                            @Html.ActionLink("Información Origen-" + @pitem.Title, "Details", "OriginInformation", @pitem, new AjaxOptions { HttpMethod = "POST" });
-                                        }
+                                            @Html.ActionLink("Información Origen-" + @pitem.Title, "Details", "OriginInformation", new { id = @pitem.Oid }, new AjaxOptions { HttpMethod = "POST" });
+                                        }                                        
                                     }
+                                    if (myDashBoard.Count > 0)
+                                    {
+                                        @Ajax.ActionLink("DashBoard", "DashBoard", "DashBoard", new AjaxOptions { HttpMethod = "POST" });
+                                    }
+
                                 }
                             }
                             @*</li>*@

@@ -36,7 +36,8 @@ namespace Bizagi.Business.Reports
             int error = httpException != null ? httpException.GetHttpCode() : 0;
 
             Server.ClearError();
-            Response.Redirect(String.Format("~/Error/?error={0}", error, exception.Message));
+            Response.Redirect(String.Format("~/Error/?message={0}&error={1}", exception.Message, error));
+            
         }
 
         protected void Application_Start()

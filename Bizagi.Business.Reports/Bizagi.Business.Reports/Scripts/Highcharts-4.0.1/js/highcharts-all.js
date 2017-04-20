@@ -415,6 +415,9 @@ c.SVGRenderer.prototype.cuboidPath,c.VMLRenderer.prototype.toLinePath=c.SVGRende
 c.setTooltipPoints(),c.render()},c.wrap(c.Axis.prototype,"render",function(c){c.apply(this,[].slice.call(arguments,1));this.sideFrame&&(this.sideFrame.css({zIndex:0}),this.sideFrame.front.attr({fill:this.sideFrame.color}));this.bottomFrame&&(this.bottomFrame.css({zIndex:1}),this.bottomFrame.front.attr({fill:this.bottomFrame.color}));this.backFrame&&(this.backFrame.css({zIndex:0}),this.backFrame.front.attr({fill:this.backFrame.color}))})})(Highcharts);
 /*
  Highcharts JS v4.0.1 (2014-04-24)
+ Exporting module
+
+ (c) 2010-2014 Torstein Honsi
 
  License: www.highcharts.com/license
 */

@@ -93,6 +93,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\dashboard.css" />
     <Content Include="Content\images\snow.png" />
     <Content Include="Content\images\sun.png" />
     <Content Include="Content\Site.css" />
@@ -362,15 +363,21 @@
     <Content Include="Scripts\Highcharts-4.0.1\js\themes\skies.js" />
     <Content Include="Content\analytics.tsv" />
     <None Include="Properties\PublishProfiles\Bizagi.Business.Reports.pubxml" />
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-2.0.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.5.1.min.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
     <Content Include="Scripts\jquery-2.0.0.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\json_parse.js" />
     <Content Include="Scripts\json_parse_state.js" />
@@ -403,12 +410,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\_ViewStart\_ViewStartAreaRegistration.cs" />
     <Compile Include="Components\DAL\DataManager.cs" />
-    <Compile Include="Components\DetailDataBO.cs" />
+    <Compile Include="Models\DetailDataBO.cs" />
     <Compile Include="Components\DownloadFileActionResult.cs" />
-    <Compile Include="Components\GaugeBO.cs" />
+    <Compile Include="Components\Enum.cs" />
+    <Compile Include="Models\GaugeBO.cs" />
     <Compile Include="Components\Grapher.cs" />
-    <Compile Include="Components\LiteBO.cs" />
-    <Compile Include="Components\MyMenu.cs" />
+    <Compile Include="Models\LiteBO.cs" />
+    <Compile Include="Models\ParametrosBO.cs" />
+    <Compile Include="Components\Util.cs" />
     <Compile Include="Consultants\ADO\ConsultantReader.cs" />
     <Compile Include="Consultants\ADO\IConsultantReader.cs" />
     <Compile Include="Consultants\Factory\ConsultantFactory.cs" />
@@ -419,6 +428,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DALMessage.resx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\DashboardController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\GraphicController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -426,22 +436,19 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ChartsModel.cs" />
     <Compile Include="Models\DataSeries.cs" />
-    <Compile Include="Components\MenuBO.cs" />
-    <Compile Include="Models\InformacionDetalle.cs" />
-    <Compile Include="Models\Perona.cs" />
+    <Compile Include="Models\MenuBO.cs" />
+    <Compile Include="Models\InformationDetail.cs" />
+    <Compile Include="Models\ModelDefinition.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-      <DependentUpon>Settings.settings</DependentUpon>
-    </Compile>
     <Compile Include="TransformerLayer\Factory\FactoryTransformer.cs" />
     <Compile Include="TransformerLayer\GaugeTransformation.cs" />
     <Compile Include="TransformerLayer\LiteTransformation.cs" />
     <Compile Include="TransformerLayer\Mapper\IMapperManager.cs" />
     <Compile Include="TransformerLayer\Mapper\MapperManager.cs" />
     <Compile Include="TransformerLayer\MenuTransformation.cs" />
+    <Compile Include="TransformerLayer\ParametersTransformation.cs" />
     <Compile Include="TransformerLayer\SeriesTransformation.cs" />
     <Compile Include="TransformerLayer\StringTransformation.cs" />
     <Compile Include="TransformerLayer\Util\TransforMessage.Designer.cs">
@@ -490,10 +497,10 @@
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\java\readme.md" />
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\phantomjs\readme.md" />
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\php\php-batik\index.php" />
-    <Content Include="Scripts\jquery-2.0.0.min.map" />
     <Content Include="Views\Graphic\Details.cshtml" />
     <Content Include="Views\Error\Index.cshtml" />
     <Content Include="Views\OriginInformation\Details.cshtml" />
+    <Content Include="Views\DashBoard\DashBoard.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

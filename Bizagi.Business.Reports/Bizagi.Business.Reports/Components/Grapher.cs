@@ -1,13 +1,16 @@
 ﻿using Bizagi.Business.Reports.Components.DAL;
+using Bizagi.Business.Reports.Models;
 using DotNet.Highcharts;
 using DotNet.Highcharts.Enums;
 using DotNet.Highcharts.Helpers;
 using DotNet.Highcharts.Options;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Web;
+using System.Web.UI.WebControls;
 
 namespace Bizagi.Business.Reports.Components
 {
@@ -30,30 +33,84 @@ namespace Bizagi.Business.Reports.Components
 
         public static Highcharts GetGraphic(MenuBO menu)
         {
-            ChartTypes chartType = (ChartTypes)menu.GraphicsType;
-            #region Type
-            switch (chartType)
+            try
             {
-                case ChartTypes.Area:
-                    return AreaChart(menu);
-               
-                case ChartTypes.Bar:                  
-                    return BarChart(menu);
-                case ChartTypes.Pie:
-                    return PieChart(menu);              
-                case ChartTypes.Gauge:
-                    return GaugeChart(menu);
-                default:
-                    return StackedBarChart(menu);
+                ChartTypes chartType = (ChartTypes)menu.GraphicsType;
+
+                #region Parameters
+                object[] parameter = GetParameters(menu);
+                #endregion
+
+                #region Type
+                switch (chartType)
+                {
+                    case ChartTypes.Area:
+                        return AreaChart(menu, parameter);
+                    case ChartTypes.Bar:
+                        return BarChart(menu, parameter);
+                    case ChartTypes.Pie:
+                        return PieChart(menu, parameter);
+                    case ChartTypes.Gauge:
+                        return GaugeChart(menu, parameter);
+                    default:
+                        return StackedBarChart(menu, parameter);
+                }
+                #endregion
             }
-            #endregion          
+            catch (Exception ex)
+            {
+
+                //Util.WriteEvent(ex.Message+ "  "+ ex.StackTrace);
+                throw ex;
+            }
+           
+        }
+
+        public static DataTable GetDatatailsDs(MenuBO menu)
+        {
+            DataManager dal = new Components.DAL.DataManager();
+            object[] parameter = new object[1] { menu.GraphicsType };
+            var ds = dal.GetDetails(menu.ProcedureName, parameter);
+            DataTable dt = new DataTable();
+            if (ds.Tables.Count > 0)
+            {
+                dt = ds.Tables[0];
+            }
+            return dt;
+        }       
+
+        public static List<InformationDetail> GetDateils(MenuBO menu)
+        {
+            DataManager dal = new Components.DAL.DataManager();
+            object[] parameter = new object[1] { menu.GraphicsType };
+            var ds = dal.GetDetails(menu.ProcedureName, parameter);
+            InformationDetail details = new InformationDetail();
+            List<InformationDetail> listDetails = new List<Models.InformationDetail>();
+            if (ds.Tables.Count > 0)
+            {
+                DataTable datos = ds.Tables[0];
+                foreach (DataRow item in datos.Rows)
+                {
+                    details.Id = item[0].ToString();
+                    details.Field = item[1].ToString();
+                    var results = from myRow in ds.Tables[1].AsEnumerable()
+                                  where myRow.Field<string>("Id") == details.Id
+                                  select myRow;
+                    foreach (DataRow itemDatos in results)
+                    {
+                        details.Value = itemDatos[1].ToString();
+                    }
+                    listDetails.Add(details);
+                }
+            }
+            return listDetails;
         }
 
         #region Privados
 
-        private static Highcharts PieChart(MenuBO menu)
+        private static Highcharts PieChart(MenuBO menu, object[] parameter)
         {
-            object[] parameter = new object[1] { menu.GraphicsType };
+            
             List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
             object[] oComplement = new object[series.Count];
             int y = 0;
@@ -69,7 +126,7 @@ namespace Bizagi.Business.Reports.Components
             #endregion
 
             #region Chart
-            Highcharts chart = new Highcharts("chart")
+            Highcharts chart = new Highcharts("chart"+menu.Oid)
                .InitChart(new Chart { PlotShadow = false })
                .SetTitle(new Title { Text = menu.Title })
                .SetTooltip(new Tooltip { Formatter = "function() { return '<b>'+ this.point.name +'</b>: '+ this.percentage +' %'; }" })
@@ -98,13 +155,13 @@ namespace Bizagi.Business.Reports.Components
             return chart;
         }
 
-        private static Highcharts BarChart(MenuBO menu)
+        private static Highcharts BarChart(MenuBO menu, object[] parameter)
         {
-            object[] parameter = new object[1] { menu.GraphicsType };
+           
             List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
-            List<string> axis= Dal.GetAxis(menu.DataAxis, null);
+            List<string> axis = Dal.GetAxis(menu.DataAxis, null);
             #region Chart
-            Highcharts chart = new Highcharts("chart")
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
                .InitChart(new Chart { DefaultSeriesType = ChartTypes.Column })
                .SetTitle(new Title { Text = menu.Title })
                .SetXAxis(new XAxis { Categories = axis.ToArray() })
@@ -137,15 +194,14 @@ namespace Bizagi.Business.Reports.Components
             #endregion
 
             return chart;
-
         }
 
-        private static Highcharts AreaChart(MenuBO menu)
+        private static Highcharts AreaChart(MenuBO menu, object[] parameter)
         {
-            object[] parameter = new object[1] { menu.GraphicsType };
+        
             List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
             #region Chart
-            Highcharts chart = new Highcharts("chart")
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
                 .InitChart(new Chart { DefaultSeriesType = ChartTypes.Area })
                 .SetTitle(new Title { Text = menu.Title })
                 .SetXAxis(new XAxis { Categories = new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" } })
@@ -173,18 +229,18 @@ namespace Bizagi.Business.Reports.Components
                     }
                 })
                 .SetSeries(series.ToArray());
+            #endregion
 
             return chart;
-            #endregion
         }
 
-        private static Highcharts GaugeChart(MenuBO menu)
+        private static Highcharts GaugeChart(MenuBO menu, object[] parameter)
         {
-            object[] parameter = new object[1] { menu.GraphicsType.ToString() };
+            
             GaugeBO gauge = Dal.GetGauge(menu.ProcedureName, parameter);
 
             #region Chart
-            Highcharts chart = new Highcharts("chart")
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
                 .InitChart(new Chart
                 {
                     Type = ChartTypes.Gauge,
@@ -268,14 +324,13 @@ namespace Bizagi.Business.Reports.Components
             return chart;
         }
 
-        private static Highcharts StackedBarChart(MenuBO menu)
-        {
-            object[] parameter = new object[1] { menu.GraphicsType };
+        private static Highcharts StackedBarChart(MenuBO menu, object[] parameter)
+        {           
             List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
             List<string> axis = Dal.GetAxis(menu.DataAxis, null);
 
             #region Chart
-            Highcharts chart = new Highcharts("chart")
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
               .InitChart(new Chart { DefaultSeriesType = ChartTypes.Bar })
               .SetTitle(new Title { Text = menu.Title })
               .SetXAxis(new XAxis { Categories = axis.ToArray() })
@@ -290,6 +345,52 @@ namespace Bizagi.Business.Reports.Components
             #endregion
 
             return chart;
+        }
+
+        private static object[] GetParameters(MenuBO menu)
+        {
+            object[] filter = new object[1] { menu.Oid };
+            List<ParametersBO> lstParameters = Dal.GetParameters(filter);
+
+            object[] parameters = new object[lstParameters.Count + 1];
+            int control = 1;
+            parameters[0] = menu.GraphicsType;
+
+            foreach (var item in lstParameters)
+            {
+                parameters[control] = SetDataType(item);
+                control++;
+            }
+            return parameters;
+        }
+
+        private static object SetDataType(ParametersBO parameter)
+        {
+            object response = new object();           
+            switch ((EnumDataType)parameter.DataType)
+            {
+                case EnumDataType.iInteger:
+                    response = parameter.IValue;
+                    break;
+                case EnumDataType.sString:
+                    response = parameter.SValue;
+                    break;
+                case EnumDataType.dDateTime:
+                    response = parameter.DValue;
+                    break;
+                case EnumDataType.dDouble:
+                    response = parameter.DoValue;
+                    break;
+                case EnumDataType.dDecimal:
+                    response = parameter.CValue;
+                    break;
+                case EnumDataType.bBooean:
+                    response = parameter.BValue;
+                    break;
+                default:
+                    throw new Exception("Tipo de Dato No Implementado");
+            }
+            return response;
         }
         #endregion
     }

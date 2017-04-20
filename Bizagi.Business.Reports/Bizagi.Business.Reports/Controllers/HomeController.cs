@@ -1,7 +1,4 @@
-﻿using Bizagi.Business.Reports.Components;
-using DotNet.Highcharts;
-using DotNet.Highcharts.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
@@ -42,8 +39,5 @@ namespace Bizagi.Business.Reports.Controllers
             }            
             return View();
         }
-
-
-     
     }
 }

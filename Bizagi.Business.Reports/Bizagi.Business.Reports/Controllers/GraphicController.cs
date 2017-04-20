@@ -11,21 +11,28 @@ using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 
 namespace Bizagi.Business.Reports.Controllers
 {
-    /// <summary>
-    /// Ccontrolador grafico que permite mostrar
-    /// la información de negocio de bizagi
-    /// </summary>
+    
     public class GraphicController : Controller
     {
-        public ActionResult Details(MenuBO menu)
+
+        /// <summary>
+        /// Ccontrolador grafico que permite mostrar
+        /// la información de negocio de bizagi
+        /// </summary>        
+        public ActionResult Details(Int32 id)
         {
+            MenuBO menu = Util.GetProcessChart(id, Session["myMenu"]);
             ChartTypes chartType = (ChartTypes)menu.GraphicsType;
+            List<Highcharts> lstChart = new List<Highcharts>();
             Highcharts chart = Grapher.GetGraphic(menu);
+            lstChart.Add(chart);
+            lstChart.Add(chart);
             Response.AddHeader("Refresh", ConfigurationManager.AppSettings["Refresh"]);
             return View(chart);
-        }        
+        }
     }
 }

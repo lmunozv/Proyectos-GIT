@@ -21,9 +21,7 @@ namespace Bizagi.Business.Reports.Consultants.ADO
         BusinessObject ConsultarProcedimientoObjArray(string NombreProcedimiento, string nombreConexion, CommandType tipoEjecucion, object[] parameter, MapperManager<Persistent, BusinessObject> mapper);
         DataTable GetParametersSP(string NombreProcedimiento, string nombreConexion);
         DataSet ConsultarDatos(string NombreProcedimiento, string nombreConexion, CommandType tipoEjecucion, object[] parameter);
-        #endregion
-
-        
+        #endregion        
 
     }
 }

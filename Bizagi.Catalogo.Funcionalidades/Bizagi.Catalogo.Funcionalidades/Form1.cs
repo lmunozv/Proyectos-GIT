@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml;
 
 namespace Bizagi.Catalogo.Funcionalidades
 {
@@ -19,9 +20,11 @@ namespace Bizagi.Catalogo.Funcionalidades
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CommonMethods c = new CommonMethods();
+            //CommonMethods c = new CommonMethods();
 
-            MessageBox.Show(c.ConvertNumbersToLetters("25000000,60", true));
+            //MessageBox.Show(c.ConvertNumbersToLetters(textBox1.Text, true));
+           
         }
+        
     }
 }

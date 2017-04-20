@@ -1,4 +1,5 @@
 ﻿using Bizagi.Business.Reports.Consultants.ADO;
+using Bizagi.Business.Reports.Models;
 using Bizagi.Business.Reports.TransformerLayer.Factory;
 using Bizagi.Business.Reports.TransformerLayer.Mapper;
 using DotNet.Highcharts.Options;
@@ -20,14 +21,13 @@ namespace Bizagi.Business.Reports.Components.DAL
                 IConsultantReader<object, Series> consultor = new ConsultantReader<object, Series>();
                 MapperManager<object, Series> mapper = FactoryTransformer.Create<object, Series>();
                 List<Series> response =
-                   consultor.ConsultarProcedimientoListObjArray(sp,
+                    consultor.ConsultarProcedimientoListObjArray(sp,
                                                              ConnectionString,
                                                              CommandType.StoredProcedure, filter, mapper);
                 return response;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -39,15 +39,32 @@ namespace Bizagi.Business.Reports.Components.DAL
                 IConsultantReader<object, MenuBO> consultor = new ConsultantReader<object, MenuBO>();
                 MapperManager<object, MenuBO> mapper = FactoryTransformer.Create<object, MenuBO>();
                 List<MenuBO> response =
-                   consultor.ConsultarProcedimientoListObjArray(MenuSp,
+                 consultor.ConsultarProcedimientoListObjArray(MenuSp,
                                                              ConnectionString,
                                                              CommandType.StoredProcedure, filter, mapper);
                 return response;
             }
-            catch (Exception )
+            catch (Exception ex)
             {
+                throw ex;
+            }
+        }
 
-                throw ;
+        public List<ParametersBO> GetParameters(object[] filter)
+        {
+            try
+            {
+                IConsultantReader<object, ParametersBO> consultor = new ConsultantReader<object, ParametersBO>();
+                MapperManager<object, ParametersBO> mapper = FactoryTransformer.Create<object, ParametersBO>();
+                List<ParametersBO> response =
+                   consultor.ConsultarProcedimientoListObjArray(ParametersSP,
+                                                             ConnectionString,
+                                                             CommandType.StoredProcedure, filter, mapper);
+                return response;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
 
@@ -57,14 +74,14 @@ namespace Bizagi.Business.Reports.Components.DAL
             {
                 IConsultantReader<object, GaugeBO> consultor = new ConsultantReader<object, GaugeBO>();
                 MapperManager<object, GaugeBO> mapper = FactoryTransformer.Create<object, GaugeBO>();
-                GaugeBO response = consultor.ConsultarProcedimientoObjArray(sp,
+                GaugeBO response = 
+                    consultor.ConsultarProcedimientoObjArray(sp,
                                                              ConnectionString,
                                                              CommandType.StoredProcedure, filter, mapper);
                 return response;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -83,7 +100,6 @@ namespace Bizagi.Business.Reports.Components.DAL
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
         }
@@ -100,10 +116,8 @@ namespace Bizagi.Business.Reports.Components.DAL
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
-
         }
 
         #region Privados
@@ -122,7 +136,14 @@ namespace Bizagi.Business.Reports.Components.DAL
                 return "Get_ChartMenu_SP";
             }
         }
-        #endregion
 
+        private static string ParametersSP
+        {
+            get
+            {
+                return "Get_ParametersReport_SP";
+            }
+        }
+        #endregion
     }
 }

@@ -107,10 +107,10 @@ namespace Bizagi.Business.Reports.Consultants.ADO
                 }
                 return listaSalida;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                throw ex;
             }
         }
 
