@@ -70,6 +70,15 @@ namespace Bizagi.Business.Reports.Consultants.Util {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Grafico no implementado.
+        /// </summary>
+        internal static string Error_Grafico {
+            get {
+                return ResourceManager.GetString("Error_Grafico", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Las Propiedades de la clase {0} no corresponden con los parametros de entredad del SP {1}.
         /// </summary>
         internal static string Error_Parametros {

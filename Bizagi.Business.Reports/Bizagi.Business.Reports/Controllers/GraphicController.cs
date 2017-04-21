@@ -25,12 +25,8 @@ namespace Bizagi.Business.Reports.Controllers
         /// </summary>        
         public ActionResult Details(Int32 id)
         {
-            MenuBO menu = Util.GetProcessChart(id, Session["myMenu"]);
-            ChartTypes chartType = (ChartTypes)menu.GraphicsType;
-            List<Highcharts> lstChart = new List<Highcharts>();
-            Highcharts chart = Grapher.GetGraphic(menu);
-            lstChart.Add(chart);
-            lstChart.Add(chart);
+            MenuBO menu = Util.GetProcessChart(id, Session["myMenu"]);                   
+            Highcharts chart = Grapher.GetGraphic(menu);       
             Response.AddHeader("Refresh", ConfigurationManager.AppSettings["Refresh"]);
             return View(chart);
         }

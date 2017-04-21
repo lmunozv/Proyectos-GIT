@@ -63,7 +63,7 @@
                                 {
                                     foreach (var pitem in plist)
                                     {
-                                        if (@pitem.GraphicsType != 18)
+                                        if ((ChartType)@pitem.GraphicsType != ChartType.Detalles)
                                         {
                                             @Html.ActionLink(@pitem.Title, @pitem.URL, @pitem.Description, new { id = @pitem.Oid } , new AjaxOptions { HttpMethod = "POST" });
                                             

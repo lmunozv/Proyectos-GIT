@@ -14,4 +14,16 @@ namespace Bizagi.Business.Reports.Components
         dDecimal =5,
         bBooean = 6
     }
+
+    public enum ChartType
+    {
+        Area = 1,
+        BarrasVerticales = 2,
+        Pie = 3,
+        Gauge = 4,
+        BarrasHorizontales = 5,
+        Detalles = 6,
+        Pie3D = 7,
+        Donut = 8
+    }
 }

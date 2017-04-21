@@ -408,7 +408,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Areas\_ViewStart\_ViewStartAreaRegistration.cs" />
     <Compile Include="Components\DAL\DataManager.cs" />
     <Compile Include="Models\DetailDataBO.cs" />
     <Compile Include="Components\DownloadFileActionResult.cs" />
@@ -463,7 +462,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Areas\_ViewStart\Views\web.config" />
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\app-convert.properties" />
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\java\highcharts-export\highcharts-export-convert\src\main\resources\log4j.properties" />
     <Content Include="Scripts\Highcharts-4.0.1\exporting-server\java\highcharts-export\highcharts-export-web\src\main\resources\log4j.properties" />
@@ -510,9 +508,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\_ViewStart\Controllers\" />
-    <Folder Include="Areas\_ViewStart\Models\" />
-    <Folder Include="Areas\_ViewStart\Views\Shared\" />
     <Folder Include="Scripts\Highcharts-4.0.1\exporting-server\java\highcharts-export\highcharts-export-web\target\generated-sources\annotations\" />
     <Folder Include="Scripts\Highcharts-4.0.1\exporting-server\java\highcharts-export\highcharts-export-web\tmp\" />
   </ItemGroup>

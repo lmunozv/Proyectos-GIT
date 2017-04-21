@@ -1,4 +1,5 @@
 ﻿using Bizagi.Business.Reports.Components.DAL;
+using Bizagi.Business.Reports.Consultants.Util;
 using Bizagi.Business.Reports.Models;
 using DotNet.Highcharts;
 using DotNet.Highcharts.Enums;
@@ -35,7 +36,7 @@ namespace Bizagi.Business.Reports.Components
         {
             try
             {
-                ChartTypes chartType = (ChartTypes)menu.GraphicsType;
+                ChartType chartType = (ChartType)menu.GraphicsType;
 
                 #region Parameters
                 object[] parameter = GetParameters(menu);
@@ -44,16 +45,23 @@ namespace Bizagi.Business.Reports.Components
                 #region Type
                 switch (chartType)
                 {
-                    case ChartTypes.Area:
+                    case ChartType.Area:
                         return AreaChart(menu, parameter);
-                    case ChartTypes.Bar:
+                    case ChartType.BarrasVerticales:
                         return BarChart(menu, parameter);
-                    case ChartTypes.Pie:
+                    case ChartType.Pie:
                         return PieChart(menu, parameter);
-                    case ChartTypes.Gauge:
+                    case ChartType.Gauge:
                         return GaugeChart(menu, parameter);
-                    default:
+                    case ChartType.BarrasHorizontales:
                         return StackedBarChart(menu, parameter);
+                    case ChartType.Pie3D:
+                        return PieChartThreeD(menu, parameter);
+                    case ChartType.Donut:
+                        return DonutChartThreeD(menu, parameter);
+                    default:
+                        throw new Exception(DALMessage.Error_Grafico);
+
                 }
                 #endregion
             }
@@ -344,6 +352,107 @@ namespace Bizagi.Business.Reports.Components
               .SetSeries(series.ToArray());
             #endregion
 
+            return chart;
+        }
+
+        private static Highcharts PieChartThreeD(MenuBO menu, object[] parameter)
+        {
+            List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
+            object[] oComplement = new object[series.Count];
+            int y = 0;
+            #region Data
+            foreach (var item in series)
+            {
+                object[] oData = oData = new object[2];
+                oData[0] = item.Name;
+                oData[1] = item.Data.ArrayData[0];
+                oComplement[y] = oData;
+                y += 1;
+            }
+            #endregion
+
+            #region Chart
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
+                .InitChart(new Chart
+                {
+                    Type = ChartTypes.Pie,
+                    MarginTop = 80,
+                    MarginRight = 40,
+                    Options3d = new ChartOptions3d
+                    {
+                        Enabled = true,
+                        Alpha = 45,
+                        Beta = 0
+                    }
+                })
+                .SetTitle(new Title { Text = menu.Title })
+                .SetTooltip(new Tooltip { PointFormat = "{series.name}: <b>{point.percentage:.1f}%</b>" })
+                .SetPlotOptions(new PlotOptions
+                {
+                    Pie = new PlotOptionsPie
+                    {
+                        AllowPointSelect = true,
+                        Cursor = Cursors.Pointer,
+                        Depth = 35,
+                        DataLabels = new PlotOptionsPieDataLabels
+                        {
+                            Enabled = true,
+                            Format = "{point.name}"
+                        }
+                    }
+                })
+                .SetSeries(new Series
+                {
+                    Type = ChartTypes.Pie,
+                    Name = "Browser share",
+                    Data = new Data(oComplement)
+                });
+            #endregion
+            return chart;
+        }
+
+        private static Highcharts DonutChartThreeD(MenuBO menu, object[] parameter)
+        {
+            List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
+            object[] oComplement = new object[series.Count];
+            int y = 0;
+            #region Data
+            foreach (var item in series)
+            {
+                object[] oData = oData = new object[2];
+                oData[0] = item.Name;
+                oData[1] = item.Data.ArrayData[0];
+                oComplement[y] = oData;
+                y += 1;
+            }
+            #endregion
+
+            #region Chart
+            Highcharts chart = new Highcharts("chart" + menu.Oid)
+                 .InitChart(new Chart
+                 {
+                     Type = ChartTypes.Pie,
+                     Options3d = new ChartOptions3d
+                     {
+                         Enabled = true,
+                         Alpha = 45
+                     }
+                 })
+                .SetTitle(new Title { Text = menu.Title })                
+                .SetPlotOptions(new PlotOptions
+                {
+                    Pie = new PlotOptionsPie
+                    {
+                        InnerSize = new PercentageOrPixel(100),
+                        Depth = 45
+                    }
+                })
+                .SetSeries(new Series
+                {
+                    Name = "Browser share",
+                    Data = new Data(oComplement)
+                });
+            #endregion
             return chart;
         }
 

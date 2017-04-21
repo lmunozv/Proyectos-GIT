@@ -120,6 +120,9 @@
   <data name="Error_Factory" xml:space="preserve">
     <value>Error Consultor no implementado</value>
   </data>
+  <data name="Error_Grafico" xml:space="preserve">
+    <value>Grafico no implementado</value>
+  </data>
   <data name="Error_Parametros" xml:space="preserve">
     <value>Las Propiedades de la clase {0} no corresponden con los parametros de entredad del SP {1}</value>
   </data>
