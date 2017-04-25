@@ -69,8 +69,7 @@ namespace Bizagi.Business.Reports.Components
             }
             catch (Exception ex)
             {
-
-                //Util.WriteEvent(ex.Message+ "  "+ ex.StackTrace);
+                Util.WriteFile(ex);
                 throw ex;
             }
            
@@ -78,17 +77,25 @@ namespace Bizagi.Business.Reports.Components
 
         public static DataTable GetDatatailsDs(MenuBO menu)
         {
-            DataManager dal = new Components.DAL.DataManager();
-            #region Parameters
-            object[] parameter = Util.GetParameters(menu);
-            #endregion
-            var ds = dal.GetDetails(menu.ProcedureName, parameter);
-            DataTable dt = new DataTable();
-            if (ds.Tables.Count > 0)
+            try
             {
-                dt = ds.Tables[0];
+                DataManager dal = new Components.DAL.DataManager();
+                #region Parameters
+                object[] parameter = Util.GetParameters(menu);
+                #endregion
+                var ds = dal.GetDetails(menu.ProcedureName, parameter);
+                DataTable dt = new DataTable();
+                if (ds.Tables.Count > 0)
+                {
+                    dt = ds.Tables[0];
+                }
+                return dt;
             }
-            return dt;
+            catch (Exception ex)
+            {
+                Util.WriteFile(ex);
+                throw ex;
+            }           
         }       
 
         public static List<InformationDetail> GetDateils(MenuBO menu)

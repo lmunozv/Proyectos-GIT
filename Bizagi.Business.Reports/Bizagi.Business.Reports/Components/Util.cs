@@ -5,7 +5,9 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Text;
 using System.Web;
 using System.Web.UI.WebControls;
 
@@ -101,6 +103,35 @@ namespace Bizagi.Business.Reports.Components
             if (!EventLog.SourceExists(sSource))
                 EventLog.CreateEventSource(sSource, sLog);
             EventLog.WriteEntry(sSource, sEvent, EventLogEntryType.Error);           
+        }
+
+        /// <summary>
+        /// Luis Fernando Muñoz Vega.
+        /// Metodo que se encaga de escribir el archivo en la ruta.
+        /// </summary>
+        /// <param name="pathFile"></param>
+        /// <param name="stringReport"></param>
+        public static void WriteFile(Exception ex)
+        {
+            string fileName = "LogKPI_FechaGeneracion_" + DateTime.Now.ToString("ddMMyyyy");
+            StringBuilder message = new StringBuilder();
+            message.Append(ex.Message);
+            message.Append("\n");            
+            message.Append("******************************************");
+            message.Append("\n");
+            message.Append("\n");
+            message.Append(ex.StackTrace);
+
+            string directory = @ConfigurationManager.AppSettings["PathFile"] + Convert.ToString(@"\");
+            string pathFile = directory + fileName + ".txt";
+
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+            StreamWriter writer = File.CreateText(pathFile);
+            writer.Write(message.ToString());
+            writer.Close();
         }
 
         public static object[] GetParameters(MenuBO menu)
