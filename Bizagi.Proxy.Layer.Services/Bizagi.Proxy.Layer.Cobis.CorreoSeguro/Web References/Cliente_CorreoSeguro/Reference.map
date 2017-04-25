@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/MessageLib/PKI_Seguridad_EnviarCorreoSeguro/wsdl/1.2/PKI_Seguridad_CorreoSeguro.wsdl" filename="PKI_CorreoSeguro.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/CommonsLib/consumerHeader.xsd" filename="consumerHeader.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/BusinessEntitiesLib/excepciongenerica.xsd" filename="excepciongenerica.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/MessageLib/PKI_Seguridad_EnviarCorreoSeguro/xsd/correoseguro.xsd" filename="correoseguro.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

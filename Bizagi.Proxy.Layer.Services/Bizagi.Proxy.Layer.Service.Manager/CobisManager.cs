@@ -96,7 +96,5 @@ namespace Bizagi.Proxy.Layer.Service.Manager
 
         }
         #endregion
-
-
     }
 }

@@ -94,7 +94,7 @@ namespace Bizagi.Business.Reports.Controllers
         {
             if (indexx == 0)
             {
-                if (item.GraphicsType != 18)
+                if ((ChartType)item.GraphicsType != ChartType.Detalles)
                 {
                     model.ModelDef1.Name = item.Title;
                     model.ModelDef1.Model = Grapher.GetGraphic(item);
@@ -110,7 +110,7 @@ namespace Bizagi.Business.Reports.Controllers
             }
             else if (indexx == 1)
             {
-                if (item.GraphicsType != 18)
+                if ((ChartType)item.GraphicsType != ChartType.Detalles)
                 {
                     model.ModelDef2.Name = item.Title;
                     model.ModelDef2.Model = Grapher.GetGraphic(item);
@@ -126,7 +126,7 @@ namespace Bizagi.Business.Reports.Controllers
             }
             else if (indexx == 2)
             {
-                if (item.GraphicsType != 18)
+                if ((ChartType)item.GraphicsType != ChartType.Detalles)
                 {
                     model.ModelDef3.Name = item.Title;
                     model.ModelDef3.Model = Grapher.GetGraphic(item);
@@ -142,7 +142,7 @@ namespace Bizagi.Business.Reports.Controllers
             }
             else
             {
-                if (item.GraphicsType != 18)
+                if ((ChartType)item.GraphicsType != ChartType.Detalles)
                 {
                     model.ModelDef4.Name = item.Title;
                     model.ModelDef4.Model = Grapher.GetGraphic(item);

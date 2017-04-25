@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1" xmlns:excpg="http://www.fna.gov.co/cim/businessentities/excepciongenerica" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PKI_CorreoSeguro" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:mrm="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1">
+      <xsd:include schemaLocation="../../xsd/correoseguro.xsd" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="headerRq">
+    <wsdl:part name="headerRq" element="tns:headerRq" />
+  </wsdl:message>
+  <wsdl:message name="enviarCorreoSeguro_in">
+    <wsdl:part name="EnviarCorreoSeguroRq" element="tns:EnviarCorreoSeguroRq" />
+  </wsdl:message>
+  <wsdl:message name="enviarCorreoSeguro_out">
+    <wsdl:part name="EnviarCorreoSeguroRs" element="tns:EnviarCorreoSeguroRs" />
+  </wsdl:message>
+  <wsdl:message name="enviarCorreoSeguro_fault1">
+    <wsdl:part name="excepcionGenerica" element="excpg:excepcionGenerica" />
+  </wsdl:message>
+  <wsdl:portType name="PKI_CorreoSeguroPortType">
+    <wsdl:operation name="enviarCorreoSeguro">
+      <wsdl:input name="enviarCorreoSeguro_Input" message="tns:enviarCorreoSeguro_in" />
+      <wsdl:output name="enviarCorreoSeguro_Output" message="tns:enviarCorreoSeguro_out" />
+      <wsdl:fault name="enviarCorreoSeguro_Fault" message="tns:enviarCorreoSeguro_fault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PKI_CorreoSeguroBinding12" type="tns:PKI_CorreoSeguroPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="enviarCorreoSeguro">
+      <soap12:operation soapAction="enviarCorreoSeguro" />
+      <wsdl:input name="enviarCorreoSeguro_Input">
+        <soap12:header message="tns:headerRq" part="headerRq" use="literal" />
+        <soap12:body use="literal" parts="EnviarCorreoSeguroRq" />
+      </wsdl:input>
+      <wsdl:output name="enviarCorreoSeguro_Output">
+        <soap12:body use="literal" parts="EnviarCorreoSeguroRs" />
+      </wsdl:output>
+      <wsdl:fault name="enviarCorreoSeguro_Fault">
+        <soap12:fault use="literal" name="enviarCorreoSeguro_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PKI_CorreoSeguroService">
+    <wsdl:port name="PKI_CorreoSeguroPort12" binding="tns:PKI_CorreoSeguroBinding12">
+      <soap12:address location="http://localhost:9080/CorreoSeguroWS/PKI_CorreoSeguroService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

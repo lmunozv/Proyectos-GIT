@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:this="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1" xmlns:ns1="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <xsd:element name="headerRq">
+    <xsd:complexType>
+      <xsd:complexContent mixed="false">
+        <xsd:restriction base="chdr:ConsumerHeader">
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="systemId" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="clientTransactionID" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="endHost" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="endUser" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="datetime" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:restriction>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="EnviarCorreoSeguroRq" type="this:EnviarCorreoSeguroRqType" />
+  <xsd:element name="EnviarCorreoSeguroRs" type="this:EnviarCorreoSeguroRsType" />
+  <xsd:complexType name="EnviarCorreoSeguroRqType">
+    <xsd:sequence>
+      <xsd:element name="usuario" type="xsd:string" />
+      <xsd:element name="asunto" type="xsd:string" />
+      <xsd:element name="mensaje" type="xsd:string" />
+      <xsd:element name="nombreDestinatario" type="xsd:string" />
+      <xsd:element name="correoDestinatario" type="xsd:string" />
+      <xsd:element minOccurs="0" name="nombreArchivo" type="xsd:string" />
+      <xsd:element minOccurs="0" name="archivo" nillable="true" type="xsd:base64Binary" />
+      <xsd:element name="notificacion" type="xsd:boolean" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="EnviarCorreoSeguroRsType">
+    <xsd:sequence>
+      <xsd:element name="idMensaje" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
