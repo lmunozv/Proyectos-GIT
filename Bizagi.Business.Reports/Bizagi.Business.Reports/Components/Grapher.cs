@@ -1,4 +1,5 @@
 ﻿using Bizagi.Business.Reports.Components.DAL;
+using Bizagi.Business.Reports.Consultants.Helper;
 using Bizagi.Business.Reports.Consultants.Util;
 using Bizagi.Business.Reports.Models;
 using DotNet.Highcharts;
@@ -29,7 +30,8 @@ namespace Bizagi.Business.Reports.Components
                 }
                 return dal;
             }
-        }
+        }       
+        
         #endregion
 
         public static Highcharts GetGraphic(MenuBO menu)
@@ -39,7 +41,7 @@ namespace Bizagi.Business.Reports.Components
                 ChartType chartType = (ChartType)menu.GraphicsType;
 
                 #region Parameters
-                object[] parameter = GetParameters(menu);
+                object[] parameter = Util.GetParameters(menu);
                 #endregion
 
                 #region Type
@@ -77,7 +79,9 @@ namespace Bizagi.Business.Reports.Components
         public static DataTable GetDatatailsDs(MenuBO menu)
         {
             DataManager dal = new Components.DAL.DataManager();
-            object[] parameter = new object[1] { menu.GraphicsType };
+            #region Parameters
+            object[] parameter = Util.GetParameters(menu);
+            #endregion
             var ds = dal.GetDetails(menu.ProcedureName, parameter);
             DataTable dt = new DataTable();
             if (ds.Tables.Count > 0)
@@ -90,7 +94,9 @@ namespace Bizagi.Business.Reports.Components
         public static List<InformationDetail> GetDateils(MenuBO menu)
         {
             DataManager dal = new Components.DAL.DataManager();
-            object[] parameter = new object[1] { menu.GraphicsType };
+            #region Parameters
+            object[] parameter = Util.GetParameters(menu);
+            #endregion
             var ds = dal.GetDetails(menu.ProcedureName, parameter);
             InformationDetail details = new InformationDetail();
             List<InformationDetail> listDetails = new List<Models.InformationDetail>();
@@ -454,53 +460,7 @@ namespace Bizagi.Business.Reports.Components
                 });
             #endregion
             return chart;
-        }
-
-        private static object[] GetParameters(MenuBO menu)
-        {
-            object[] filter = new object[1] { menu.Oid };
-            List<ParametersBO> lstParameters = Dal.GetParameters(filter);
-
-            object[] parameters = new object[lstParameters.Count + 1];
-            int control = 1;
-            parameters[0] = menu.GraphicsType;
-
-            foreach (var item in lstParameters)
-            {
-                parameters[control] = SetDataType(item);
-                control++;
-            }
-            return parameters;
-        }
-
-        private static object SetDataType(ParametersBO parameter)
-        {
-            object response = new object();           
-            switch ((EnumDataType)parameter.DataType)
-            {
-                case EnumDataType.iInteger:
-                    response = parameter.IValue;
-                    break;
-                case EnumDataType.sString:
-                    response = parameter.SValue;
-                    break;
-                case EnumDataType.dDateTime:
-                    response = parameter.DValue;
-                    break;
-                case EnumDataType.dDouble:
-                    response = parameter.DoValue;
-                    break;
-                case EnumDataType.dDecimal:
-                    response = parameter.CValue;
-                    break;
-                case EnumDataType.bBooean:
-                    response = parameter.BValue;
-                    break;
-                default:
-                    throw new Exception("Tipo de Dato No Implementado");
-            }
-            return response;
-        }
+        }       
         #endregion
     }
 }

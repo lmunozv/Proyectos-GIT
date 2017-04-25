@@ -1,5 +1,8 @@
-﻿using Bizagi.Business.Reports.Consultants.ADO;
+﻿using Bizagi.Business.Reports.Components;
+using Bizagi.Business.Reports.Components.DAL;
+using Bizagi.Business.Reports.Consultants.ADO;
 using Bizagi.Business.Reports.Consultants.Util;
+using Bizagi.Business.Reports.Models;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -13,6 +16,8 @@ namespace Bizagi.Business.Reports.Consultants.Helper
 {
     public class SqlHelper
     {
+       
+
         #region Constructor
         public SqlHelper(string nombreConexion)
         {
@@ -41,6 +46,7 @@ namespace Bizagi.Business.Reports.Consultants.Helper
                 DataTable paramsSp = consultor.GetParametersSP(SP_NAME.Substring(SP_NAME.IndexOf(".") + 1), Conexion);
                 SqlParameter[] listParameter = new SqlParameter[paramsSp.Rows.Count];
                 Int32 i = 0;
+                
                 foreach (DataRow itemRow in paramsSp.Rows)
                 {
 
@@ -80,6 +86,7 @@ namespace Bizagi.Business.Reports.Consultants.Helper
                 DataTable paramsSp = consultor.GetParametersSP(SP_NAME.Substring(SP_NAME.IndexOf(".") + 1), Conexion);
                 SqlParameter[] listParameter = new SqlParameter[paramsSp.Rows.Count];
                 Int32 i = 0;
+                ValidateParameters(parameter, listParameter, SP_NAME);
                 foreach (DataRow itemRow in paramsSp.Rows)
                 {
                     SqlParameter parameterSQL = new SqlParameter(); ;
@@ -98,6 +105,16 @@ namespace Bizagi.Business.Reports.Consultants.Helper
                 throw ex;
             }
         }
+        #endregion
+
+        #region Privados
+        private void ValidateParameters(object[] parameter, object[] listParameterSP, string spName)
+        {
+            if (parameter.Length < listParameterSP.Length)
+            {
+                throw new Exception(string.Format(DALMessage.Error_ParametrosCant, spName));
+            }
+        }      
         #endregion
     }
 }

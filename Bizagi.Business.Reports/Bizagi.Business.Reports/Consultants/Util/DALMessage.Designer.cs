@@ -86,5 +86,14 @@ namespace Bizagi.Business.Reports.Consultants.Util {
                 return ResourceManager.GetString("Error_Parametros", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to La Cantidad de parámetros enviados no corresponde a la que posee el SP. Verifique parametrización SP {0}.
+        /// </summary>
+        internal static string Error_ParametrosCant {
+            get {
+                return ResourceManager.GetString("Error_ParametrosCant", resourceCulture);
+            }
+        }
     }
 }

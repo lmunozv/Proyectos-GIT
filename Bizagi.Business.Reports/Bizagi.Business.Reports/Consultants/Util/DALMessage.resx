@@ -126,4 +126,7 @@
   <data name="Error_Parametros" xml:space="preserve">
     <value>Las Propiedades de la clase {0} no corresponden con los parametros de entredad del SP {1}</value>
   </data>
+  <data name="Error_ParametrosCant" xml:space="preserve">
+    <value>La Cantidad de parámetros enviados no corresponde a la que posee el SP. Verifique parametrización SP {0}</value>
+  </data>
 </root>
