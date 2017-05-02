@@ -91,14 +91,17 @@ namespace Bizagi.Proxy.Layer.Util
 
         public static string GetAddress()
         {
-            return ConfigurationManager.AppSettings["URLRecuperarTramite"];
+            return ConfigurationManager.AppSettings["URLCorreoSeguro"];
         }
 
         public static CustomBinding CreateCustomBinding()
         {
             ProxyUtils.ByPassCertificate();
-            CustomBinding customBinding = new CustomBinding(new BasicHttpBinding(BasicHttpSecurityMode.TransportWithMessageCredential)
+            //CustomBinding customBinding = new CustomBinding(new BasicHttpBinding(BasicHttpSecurityMode.TransportWithMessageCredential));
+
+            CustomBinding customBinding = new CustomBinding(new BasicHttpBinding(BasicHttpSecurityMode.None)
             {
+                
                 Security =
                 {
                     Message =
@@ -106,9 +109,15 @@ namespace Bizagi.Proxy.Layer.Util
                         ClientCredentialType = BasicHttpMessageCredentialType.UserName
                     }
                 }
+                
+                
             });
-            SecurityBindingElement securityBindingElement = customBinding.Elements.Find<SecurityBindingElement>();
-            securityBindingElement.IncludeTimestamp = false;
+            //MtomMessageEncodingBindingElement mtom = new MtomMessageEncodingBindingElement();
+            //customBinding.Elements.Add(mtom);
+            
+
+            //SecurityBindingElement securityBindingElement = customBinding.Elements.Find<SecurityBindingElement>();
+            //securityBindingElement.IncludeTimestamp = false;
             return customBinding;
         }
 

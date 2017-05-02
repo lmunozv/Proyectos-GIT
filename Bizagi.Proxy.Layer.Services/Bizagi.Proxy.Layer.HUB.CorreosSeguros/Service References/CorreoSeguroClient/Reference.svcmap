@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="3746a094-06b0-4026-a8a9-6eef7458d8b5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Proyectos\FNA\Procesos\Sistemas\Firma Digital\Correo Seguro\MessageLib\PKI_Seguridad_EnviarCorreoSeguro\wsdl\1.2\PKI_Seguridad_CorreoSeguro.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PKI_CorreoSeguro.wsdl" MetadataType="Wsdl" ID="fb9607cc-8a58-4d91-b465-4bcf51ba2554" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/MessageLib/PKI_Seguridad_EnviarCorreoSeguro/wsdl/1.2/PKI_Seguridad_CorreoSeguro.wsdl" />
+    <MetadataFile FileName="correoseguro.xsd" MetadataType="Schema" ID="73662e65-c23c-4845-9180-4766f08e6251" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/MessageLib/PKI_Seguridad_EnviarCorreoSeguro/xsd/correoseguro.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="4c7994e9-8f91-4195-a780-924259027b67" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="149ef4b7-e917-427d-89ab-73f545074047" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Firma Digital/Correo Seguro/BusinessEntitiesLib/excepciongenerica.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -31,8 +31,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,11 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CorreoSeguroImpl.cs" />
+    <Compile Include="CorreoSeguroImpl2.cs" />
+    <Compile Include="Encoder\CustomTextMessageBindingElement .cs" />
+    <Compile Include="Encoder\CustomTextMessageEncoder .cs" />
+    <Compile Include="Encoder\CustomTextMessageEncoderFactory .cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\CorreoSeguroClient\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Web References\Cliente_CorreoSeguro\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -74,11 +86,26 @@
     </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Service References\CorreoSeguroClient\Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\CorreoSeguroClient\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CorreoSeguroClient\correoseguro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CorreoSeguroClient\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CorreoSeguroClient\PKI_CorreoSeguro.wsdl" />
     <None Include="Web References\Cliente_CorreoSeguro\consumerHeader.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -96,6 +123,27 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CorreoSeguroClient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CorreoSeguroClient\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CorreoSeguroClient\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CorreoSeguroClient\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Utils\Bizagi.Proxy.Utils.csproj">
+      <Project>{7dfd7615-bc27-4e51-9b0a-4ed8880557b1}</Project>
+      <Name>Bizagi.Proxy.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

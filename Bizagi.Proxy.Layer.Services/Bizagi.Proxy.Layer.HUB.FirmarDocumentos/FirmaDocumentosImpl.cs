@@ -8,12 +8,11 @@ using System.Text;
 
 public partial class FirmaDocumentosImpl : PKI_FirmaDocumentoService
 {
-
     protected override WebRequest GetWebRequest(Uri uri)
     {
         HttpWebRequest request;
         request = (HttpWebRequest)base.GetWebRequest(uri);
-
+        request.ContentType = "application/soap+xml; charset=utf-8";
         if (PreAuthenticate)
         {
             NetworkCredential networkCredentials =

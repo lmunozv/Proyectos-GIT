@@ -1,18 +1,18 @@
 ﻿using Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Text;
-
 
 public partial class CorreoSeguroImpl : PKI_CorreoSeguroService
 {
     protected override WebRequest GetWebRequest(Uri uri)
     {
         HttpWebRequest request;
-        request = (HttpWebRequest)base.GetWebRequest(uri);
-
+        request = (HttpWebRequest)base.GetWebRequest(uri);      
+        request.ContentType= ConfigurationManager.AppSettings["ContentTypeRQ"];        
         if (PreAuthenticate)
         {
             NetworkCredential networkCredentials =
@@ -32,6 +32,15 @@ public partial class CorreoSeguroImpl : PKI_CorreoSeguroService
             }
         }
         return request;
+    }
+    
+
+    protected override WebResponse GetWebResponse(WebRequest request)
+    {
+        request.ContentType = ConfigurationManager.AppSettings["ContentTypeRQ"];
+        WebResponse response = base.GetWebResponse(request);
+        response.Headers[HttpResponseHeader.ContentType] = ConfigurationManager.AppSettings["ContentTypeRS"];
+        return response;
     }
 }
 
