@@ -56,7 +56,6 @@ namespace Bizagi.Proxy.Layer.Service.Manager
         //    return ser.enviarCorreoSeguro(body);
         //}
 
-
         public static Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
            EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
            Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
@@ -76,14 +75,12 @@ namespace Bizagi.Proxy.Layer.Service.Manager
             }
             return ser.enviarCorreoSeguro(body);
         }
-
-
-
-        public static HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguro2
-            (HUB.CorreosSeguros.CorreoSeguroClient.headerRq head, HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType body)
+        
+        public static HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType 
+            EnviarCorreoSeguro2(HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input input)
         {
-            CorreoSeguroImpl2 seg = new CorreoSeguroImpl2();
-            return seg.EnviarCorreoSeguro(head, body);
+            CorreoSeguroImpl2 seg = new CorreoSeguroImpl2();            
+            return seg.EnviarCorreoSeguro(input);
         }
     }
 }

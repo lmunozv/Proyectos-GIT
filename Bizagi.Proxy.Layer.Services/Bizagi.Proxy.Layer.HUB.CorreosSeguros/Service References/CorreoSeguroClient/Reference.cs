@@ -237,7 +237,6 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1", ConfigurationName="CorreoSeguroClient.PKI_CorreoSeguroPortType")]
     public interface PKI_CorreoSeguroPortType {
         
-        // CODEGEN: Generating message contract since the operation enviarCorreoSeguro is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="enviarCorreoSeguro", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.excepcionGenerica), Action="enviarCorreoSeguro", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -612,7 +611,6 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class enviarCorreoSeguro_Input {
         
@@ -633,7 +631,6 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class enviarCorreoSeguro_Output {
         
@@ -675,17 +672,8 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.PKI_CorreoSeguroPortType.enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input request) {
+        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input request) {
             return base.Channel.enviarCorreoSeguro(request);
-        }
-        
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.headerRq headerRq, Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType EnviarCorreoSeguroRq) {
-            Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input inValue = new Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input();
-            inValue.headerRq = headerRq;
-            inValue.EnviarCorreoSeguroRq = EnviarCorreoSeguroRq;
-            Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output retVal = ((Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.PKI_CorreoSeguroPortType)(this)).enviarCorreoSeguro(inValue);
-            return retVal.EnviarCorreoSeguroRs;
         }
     }
 }

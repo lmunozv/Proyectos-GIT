@@ -19,16 +19,15 @@ namespace Bizagi.Proxy.Layer.Service
     {
         [TraceExtensionAttribute]
         [WebMethod]
-        //public HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguro
-        //    (HUB.CorreosSeguros.CorreoSeguroClient.headerRq head, HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType body)
-        //{
-        //    return HUBManager.EnviarCorreoSeguro2(head, body);
-        //}
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
-                EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
-                Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
+        public HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguro(HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input input)
         {
-            return HUBManager.EnviarCorreoSeguro(head, body);
+            return HUBManager.EnviarCorreoSeguro2(input);
         }
+        //public Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
+        //        EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
+        //        Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
+        //{
+        //    return HUBManager.EnviarCorreoSeguro(head, body);
+        //}
     }
 }
