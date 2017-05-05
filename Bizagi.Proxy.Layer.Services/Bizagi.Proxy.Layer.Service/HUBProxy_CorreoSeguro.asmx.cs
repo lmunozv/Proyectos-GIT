@@ -22,12 +22,6 @@ namespace Bizagi.Proxy.Layer.Service
         public HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguro(HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input input)
         {
             return HUBManager.EnviarCorreoSeguro2(input);
-        }
-        //public Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
-        //        EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
-        //        Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
-        //{
-        //    return HUBManager.EnviarCorreoSeguro(head, body);
-        //}
+        }        
     }
 }

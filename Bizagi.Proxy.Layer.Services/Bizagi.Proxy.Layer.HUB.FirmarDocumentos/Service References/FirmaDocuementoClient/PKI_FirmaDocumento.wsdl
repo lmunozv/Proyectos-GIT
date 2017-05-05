@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1" xmlns:excpg="http://www.fna.gov.co/cim/businessentities/excepciongenerica" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PKI_FirmaDocumento" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:mrm="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1">
+      <xsd:include schemaLocation="../../xsd/firmadocumento.xsd" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="headerRq">
+    <wsdl:part name="headerRq" element="tns:headerRq" />
+  </wsdl:message>
+  <wsdl:message name="firmarDocumento_in">
+    <wsdl:part name="FirmarDocumentoRq" element="tns:FirmarDocumentoRq" />
+  </wsdl:message>
+  <wsdl:message name="firmarDocumento_out">
+    <wsdl:part name="FirmarDocumentoRs" element="tns:FirmarDocumentoRs" />
+  </wsdl:message>
+  <wsdl:message name="firmarDocumento_fault1">
+    <wsdl:part name="excepcionGenerica" element="excpg:excepcionGenerica" />
+  </wsdl:message>
+  <wsdl:portType name="PKI_FirmaDocumentoPortType">
+    <wsdl:operation name="firmarDocumento">
+      <wsdl:input name="firmarDocumento_Input" message="tns:firmarDocumento_in" />
+      <wsdl:output name="firmarDocumento_Output" message="tns:firmarDocumento_out" />
+      <wsdl:fault name="firmarDocumento_Fault" message="tns:firmarDocumento_fault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PKI_FirmaDocumentoBinding12" type="tns:PKI_FirmaDocumentoPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="firmarDocumento">
+      <soap12:operation soapAction="firmarDocumento" />
+      <wsdl:input name="firmarDocumento_Input">
+        <soap12:header message="tns:headerRq" part="headerRq" use="literal" />
+        <soap12:body use="literal" parts="FirmarDocumentoRq" />
+      </wsdl:input>
+      <wsdl:output name="firmarDocumento_Output">
+        <soap12:body use="literal" parts="FirmarDocumentoRs" />
+      </wsdl:output>
+      <wsdl:fault name="firmarDocumento_Fault">
+        <soap12:fault use="literal" name="firmarDocumento_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PKI_FirmaDocumentoService">
+    <wsdl:port name="PKI_FirmaDocumentoPort12" binding="tns:PKI_FirmaDocumentoBinding12">
+      <soap12:address location="http://localhost:9080/FirmaDocumentoWS/PKI_FirmaDocumentoService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -19,11 +19,9 @@ namespace Bizagi.Proxy.Layer.Service
     {
         [TraceExtensionAttribute]
         [WebMethod]
-        public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.FirmarDocumentoRsType
-            FirmarDocumento(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.headerRq head,
-            Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.FirmarDocumentoRqType body)
+        public HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRsType EnviarCorreoSeguro(HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Input input)
         {
-            return HUBManager.FirmarDocumento(head, body);
+            return HUBManager.FirmarDocumento(input);
         }
     }
 }
