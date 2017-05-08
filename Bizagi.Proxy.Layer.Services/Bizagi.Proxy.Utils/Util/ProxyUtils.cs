@@ -97,27 +97,32 @@ namespace Bizagi.Proxy.Layer.Util
         public static CustomBinding CreateCustomBinding()
         {
             ProxyUtils.ByPassCertificate();
-            //CustomBinding customBinding = new CustomBinding(new BasicHttpBinding(BasicHttpSecurityMode.TransportWithMessageCredential));
-
-            CustomBinding customBinding = new CustomBinding(new BasicHttpBinding(BasicHttpSecurityMode.None)
+            WSMessageEncoding msgEncoding;
+            msgEncoding = WSMessageEncoding.Mtom;
+            BasicHttpSecurityMode sec = BasicHttpSecurityMode.TransportWithMessageCredential;            
+            BasicHttpBinding basicBinding = new BasicHttpBinding(sec)
             {
-                
                 Security =
                 {
                     Message =
                     {
                         ClientCredentialType = BasicHttpMessageCredentialType.UserName
                     }
-                }
-                
-                
-            });
-            //MtomMessageEncodingBindingElement mtom = new MtomMessageEncodingBindingElement();
-            //customBinding.Elements.Add(mtom);
-            
-
-            //SecurityBindingElement securityBindingElement = customBinding.Elements.Find<SecurityBindingElement>();
-            //securityBindingElement.IncludeTimestamp = false;
+                },
+                MessageEncoding = msgEncoding,
+            };
+            var elements = basicBinding.CreateBindingElements();           
+            if (msgEncoding == WSMessageEncoding.Text)
+            {
+                TextMessageEncodingBindingElement te = elements.Find<TextMessageEncodingBindingElement>();
+                te.MessageVersion = MessageVersion.Soap12;
+            }
+            else
+            {
+                MtomMessageEncodingBindingElement te = elements.Find<MtomMessageEncodingBindingElement>();
+                te.MessageVersion = MessageVersion.Soap12;
+            }            
+            CustomBinding customBinding = new CustomBinding(elements);           
             return customBinding;
         }
 

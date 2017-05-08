@@ -1,4 +1,5 @@
 ﻿using Bizagi.Proxy.Layer.HUB.CorreosSeguros;
+using Bizagi.Proxy.Layer.HUB.FirmarDocumentos;
 using Bizagi.Proxy.Layer.HUB.GenerarMinuta;
 using Bizagi.Proxy.Layer.Util;
 using System;
@@ -12,78 +13,51 @@ namespace Bizagi.Proxy.Layer.Service.Manager
 {
     public class HUBManager
     {
+        #region Propiedades
+        static CorreoSeguroImpl2 seg;
+        static CorreoSeguroImpl2 CorreoSeguro
+        {
+            get
+            {
+                if (seg == null)
+                {
+                    seg = new CorreoSeguroImpl2();
+                }
+                return seg;
+            }
+        }
+
+        static FirmaDocumentosImpl2 firma;
+        static FirmaDocumentosImpl2 Firma
+        {
+            get
+            {
+                if (firma == null)
+                {
+                    firma = new FirmaDocumentosImpl2();
+                }
+                return firma;
+            }         
+        }
+        #endregion
+
+        #region Metodos
         public static int GenerarMinuta(solicitudType solicitud)
         {
             return HubDocumentalImpl.GenerarMinuta(solicitud);
         }
 
-        public static Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.FirmarDocumentoRsType
-            FirmarDocumento(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.headerRq head,
-            Bizagi.Proxy.Layer.HUB.FirmarDocumentos.Cliente_FirmaDigital.FirmarDocumentoRqType body)
+        public static HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRsType
+            FirmarDocumento(HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Input input)
         {
-            ProxyUtils.ByPassCertificate();
-            FirmaDocumentosImpl ser = new FirmaDocumentosImpl();          
-            ser.headerRqValue = head;
-            ser.Url = ProxyUtils.GetServiceEndpoint("URLFirmaDigital");
-            NetworkCredential credential = ProxyUtils.getReceivedCredentials();
-            //si no vienen credenciales basic, no se crea estructura de seguridad. 
-            //sino, se genera excepción cuando hayan peticiones sin autenticación.
-            if (credential != null)
-            {
-                ser.Credentials = credential;
-                ser.PreAuthenticate = true;
-            }          
-
-            return ser.firmarDocumento(body);
+            return Firma.FirmarDocumento(input);
         }
 
-        //public static Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
-        //    EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
-        //    Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
-        //{
-        //    ProxyUtils.ByPassCertificate();
-        //    CorreoSeguroImpl ser = new CorreoSeguroImpl();
-        //    ser.headerRqValue = head;
-        //    ser.Url = ProxyUtils.GetServiceEndpoint("URLCorreoSeguro");
-        //    NetworkCredential credential = ProxyUtils.getReceivedCredentials();
-        //    //si no vienen credenciales basic, no se crea estructura de seguridad. 
-        //    //sino, se genera excepción cuando hayan peticiones sin autenticación.
-        //    if (credential != null)
-        //    {
-        //        ser.Credentials = credential;
-        //        ser.PreAuthenticate = true;
-        //    }
-        //    return ser.enviarCorreoSeguro(body);
-        //}
-
-
-        public static Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRsType
-           EnviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.headerRq head,
-           Bizagi.Proxy.Layer.HUB.CorreosSeguros.Cliente_CorreoSeguro.EnviarCorreoSeguroRqType body)
+        public static HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType
+            EnviarCorreoSeguro2(HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input input)
         {
-            ProxyUtils.ByPassCertificate();
-            CorreoSeguroImpl ser = new CorreoSeguroImpl();
-            //ser.RequestEncoding = Encoding.UTF8;
-            ser.headerRqValue = head;
-            ser.Url = ProxyUtils.GetServiceEndpoint("URLCorreoSeguro");
-            NetworkCredential credential = ProxyUtils.getReceivedCredentials();
-            //si no vienen credenciales basic, no se crea estructura de seguridad. 
-            //sino, se genera excepción cuando hayan peticiones sin autenticación.
-            if (credential != null)
-            {
-                ser.Credentials = credential;
-                ser.PreAuthenticate = true;
-            }
-            return ser.enviarCorreoSeguro(body);
+            return CorreoSeguro.EnviarCorreoSeguro(input);
         }
-
-
-
-        public static HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguro2
-            (HUB.CorreosSeguros.CorreoSeguroClient.headerRq head, HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType body)
-        {
-            CorreoSeguroImpl2 seg = new CorreoSeguroImpl2();
-            return seg.EnviarCorreoSeguro(head, body);
-        }
+        #endregion
     }
 }

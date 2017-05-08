@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
+namespace Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient {
     
     
     /// <remarks/>
@@ -76,20 +76,20 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
-    public partial class EnviarCorreoSeguroRsType : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1")]
+    public partial class FirmarDocumentoRsType : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string idMensajeField;
+        private byte[] archivoFirmadoField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string idMensaje {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true, Order=0)]
+        public byte[] archivoFirmado {
             get {
-                return this.idMensajeField;
+                return this.archivoFirmadoField;
             }
             set {
-                this.idMensajeField = value;
-                this.RaisePropertyChanged("idMensaje");
+                this.archivoFirmadoField = value;
+                this.RaisePropertyChanged("archivoFirmado");
             }
         }
         
@@ -108,99 +108,259 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
-    public partial class EnviarCorreoSeguroRqType : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/identificacion")]
+    public partial class Identificacion : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string usuarioField;
+        private string numeroDocumentoField;
         
-        private string asuntoField;
+        private string tipoDocumentoField;
         
-        private string mensajeField;
+        private int digitoVerificacionField;
         
-        private string nombreDestinatarioField;
+        private bool digitoVerificacionFieldSpecified;
         
-        private string correoDestinatarioField;
+        private System.DateTime fechaExpedicionField;
         
-        private string nombreArchivoField;
+        private bool fechaExpedicionFieldSpecified;
         
-        private byte[] archivoField;
+        private System.DateTime fechasExpiracionField;
         
-        private bool notificacionField;
+        private bool fechasExpiracionFieldSpecified;
+        
+        private string ciudadExpedicionField;
+        
+        private string departamentoExpedicionField;
+        
+        private string paisExpedicionField;
+        
+        private string pobladoExpedicionField;
+        
+        private string estadoField;
+        
+        private string descripcionEstadoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string usuario {
+        public string numeroDocumento {
             get {
-                return this.usuarioField;
+                return this.numeroDocumentoField;
             }
             set {
-                this.usuarioField = value;
-                this.RaisePropertyChanged("usuario");
+                this.numeroDocumentoField = value;
+                this.RaisePropertyChanged("numeroDocumento");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string asunto {
+        public string tipoDocumento {
             get {
-                return this.asuntoField;
+                return this.tipoDocumentoField;
             }
             set {
-                this.asuntoField = value;
-                this.RaisePropertyChanged("asunto");
+                this.tipoDocumentoField = value;
+                this.RaisePropertyChanged("tipoDocumento");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string mensaje {
+        public int digitoVerificacion {
             get {
-                return this.mensajeField;
+                return this.digitoVerificacionField;
             }
             set {
-                this.mensajeField = value;
-                this.RaisePropertyChanged("mensaje");
+                this.digitoVerificacionField = value;
+                this.RaisePropertyChanged("digitoVerificacion");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string nombreDestinatario {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool digitoVerificacionSpecified {
             get {
-                return this.nombreDestinatarioField;
+                return this.digitoVerificacionFieldSpecified;
             }
             set {
-                this.nombreDestinatarioField = value;
-                this.RaisePropertyChanged("nombreDestinatario");
+                this.digitoVerificacionFieldSpecified = value;
+                this.RaisePropertyChanged("digitoVerificacionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string correoDestinatario {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
+        public System.DateTime fechaExpedicion {
             get {
-                return this.correoDestinatarioField;
+                return this.fechaExpedicionField;
             }
             set {
-                this.correoDestinatarioField = value;
-                this.RaisePropertyChanged("correoDestinatario");
+                this.fechaExpedicionField = value;
+                this.RaisePropertyChanged("fechaExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaExpedicionSpecified {
+            get {
+                return this.fechaExpedicionFieldSpecified;
+            }
+            set {
+                this.fechaExpedicionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaExpedicionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=4)]
+        public System.DateTime fechasExpiracion {
+            get {
+                return this.fechasExpiracionField;
+            }
+            set {
+                this.fechasExpiracionField = value;
+                this.RaisePropertyChanged("fechasExpiracion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechasExpiracionSpecified {
+            get {
+                return this.fechasExpiracionFieldSpecified;
+            }
+            set {
+                this.fechasExpiracionFieldSpecified = value;
+                this.RaisePropertyChanged("fechasExpiracionSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string nombreArchivo {
+        public string ciudadExpedicion {
             get {
-                return this.nombreArchivoField;
+                return this.ciudadExpedicionField;
             }
             set {
-                this.nombreArchivoField = value;
-                this.RaisePropertyChanged("nombreArchivo");
+                this.ciudadExpedicionField = value;
+                this.RaisePropertyChanged("ciudadExpedicion");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true, Order=6)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string departamentoExpedicion {
+            get {
+                return this.departamentoExpedicionField;
+            }
+            set {
+                this.departamentoExpedicionField = value;
+                this.RaisePropertyChanged("departamentoExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string paisExpedicion {
+            get {
+                return this.paisExpedicionField;
+            }
+            set {
+                this.paisExpedicionField = value;
+                this.RaisePropertyChanged("paisExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string pobladoExpedicion {
+            get {
+                return this.pobladoExpedicionField;
+            }
+            set {
+                this.pobladoExpedicionField = value;
+                this.RaisePropertyChanged("pobladoExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string descripcionEstado {
+            get {
+                return this.descripcionEstadoField;
+            }
+            set {
+                this.descripcionEstadoField = value;
+                this.RaisePropertyChanged("descripcionEstado");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1")]
+    public partial class FirmarDocumentoRqType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private FirmarDocumentoRqTypeIdentificacion identificacionField;
+        
+        private string contrasenaField;
+        
+        private byte[] archivoField;
+        
+        private string procesoField;
+        
+        private string observacionesField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public FirmarDocumentoRqTypeIdentificacion identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+                this.RaisePropertyChanged("identificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string contrasena {
+            get {
+                return this.contrasenaField;
+            }
+            set {
+                this.contrasenaField = value;
+                this.RaisePropertyChanged("contrasena");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true, Order=2)]
         public byte[] archivo {
             get {
                 return this.archivoField;
@@ -212,14 +372,26 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public bool notificacion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string proceso {
             get {
-                return this.notificacionField;
+                return this.procesoField;
             }
             set {
-                this.notificacionField = value;
-                this.RaisePropertyChanged("notificacion");
+                this.procesoField = value;
+                this.RaisePropertyChanged("proceso");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string observaciones {
+            get {
+                return this.observacionesField;
+            }
+            set {
+                this.observacionesField = value;
+                this.RaisePropertyChanged("observaciones");
             }
         }
         
@@ -233,14 +405,24 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
         }
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1")]
+    public partial class FirmarDocumentoRqTypeIdentificacion : Identificacion {
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1", ConfigurationName="CorreoSeguroClient.PKI_CorreoSeguroPortType")]
-    public interface PKI_CorreoSeguroPortType {
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1", ConfigurationName="FirmaDocuementoClient.PKI_FirmaDocumentoPortType")]
+    public interface PKI_FirmaDocumentoPortType {
         
-        [System.ServiceModel.OperationContractAttribute(Action="enviarCorreoSeguro", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.excepcionGenerica), Action="enviarCorreoSeguro", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+        [System.ServiceModel.OperationContractAttribute(Action="firmarDocumento", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.excepcionGenerica), Action="firmarDocumento", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input request);
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Identificacion))]
+        Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Output firmarDocumento(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Input request);
     }
     
     /// <remarks/>
@@ -248,7 +430,7 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1")]
     public partial class headerRq : ConsumerHeader {
     }
     
@@ -612,68 +794,68 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class enviarCorreoSeguro_Input {
+    public partial class firmarDocumento_Input {
         
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.headerRq headerRq;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1")]
+        public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.headerRq headerRq;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1", Order=0)]
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType EnviarCorreoSeguroRq;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1", Order=0)]
+        public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRqType FirmarDocumentoRq;
         
-        public enviarCorreoSeguro_Input() {
+        public firmarDocumento_Input() {
         }
         
-        public enviarCorreoSeguro_Input(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.headerRq headerRq, Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRqType EnviarCorreoSeguroRq) {
+        public firmarDocumento_Input(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.headerRq headerRq, Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRqType FirmarDocumentoRq) {
             this.headerRq = headerRq;
-            this.EnviarCorreoSeguroRq = EnviarCorreoSeguroRq;
+            this.FirmarDocumentoRq = FirmarDocumentoRq;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class enviarCorreoSeguro_Output {
+    public partial class firmarDocumento_Output {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1", Order=0)]
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguroRs;
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1", Order=0)]
+        public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRsType FirmarDocumentoRs;
         
-        public enviarCorreoSeguro_Output() {
+        public firmarDocumento_Output() {
         }
         
-        public enviarCorreoSeguro_Output(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType EnviarCorreoSeguroRs) {
-            this.EnviarCorreoSeguroRs = EnviarCorreoSeguroRs;
+        public firmarDocumento_Output(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRsType FirmarDocumentoRs) {
+            this.FirmarDocumentoRs = FirmarDocumentoRs;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface PKI_CorreoSeguroPortTypeChannel : Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.PKI_CorreoSeguroPortType, System.ServiceModel.IClientChannel {
+    public interface PKI_FirmaDocumentoPortTypeChannel : Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.PKI_FirmaDocumentoPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class PKI_CorreoSeguroPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.PKI_CorreoSeguroPortType>, Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.PKI_CorreoSeguroPortType {
+    public partial class PKI_FirmaDocumentoPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.PKI_FirmaDocumentoPortType>, Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.PKI_FirmaDocumentoPortType {
         
-        public PKI_CorreoSeguroPortTypeClient() {
+        public PKI_FirmaDocumentoPortTypeClient() {
         }
         
-        public PKI_CorreoSeguroPortTypeClient(string endpointConfigurationName) : 
+        public PKI_FirmaDocumentoPortTypeClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public PKI_CorreoSeguroPortTypeClient(string endpointConfigurationName, string remoteAddress) : 
+        public PKI_FirmaDocumentoPortTypeClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PKI_CorreoSeguroPortTypeClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PKI_FirmaDocumentoPortTypeClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public PKI_CorreoSeguroPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public PKI_FirmaDocumentoPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input request) {
-            return base.Channel.enviarCorreoSeguro(request);
+        public Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Output firmarDocumento(Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Input request) {
+            return base.Channel.firmarDocumento(request);
         }
     }
 }

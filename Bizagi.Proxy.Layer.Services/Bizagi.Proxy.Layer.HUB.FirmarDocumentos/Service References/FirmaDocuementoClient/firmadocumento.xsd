@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:this="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:ns1="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/pki/services/soap/seguridad/firmardocumento/v1" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <xsd:import schemaLocation="../../../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <xsd:element name="headerRq">
+    <xsd:complexType>
+      <xsd:complexContent mixed="false">
+        <xsd:restriction base="chdr:ConsumerHeader">
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="systemId" type="xsd:string" />
+            <xsd:element minOccurs="0" maxOccurs="1" name="clientTransactionID" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="endHost" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="endUser" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="datetime" type="xsd:dateTime" />
+          </xsd:sequence>
+        </xsd:restriction>
+      </xsd:complexContent>
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:element name="FirmarDocumentoRq" type="this:FirmarDocumentoRqType" />
+  <xsd:element name="FirmarDocumentoRs" type="this:FirmarDocumentoRsType" />
+  <xsd:complexType name="FirmarDocumentoRqType">
+    <xsd:sequence>
+      <xsd:element name="identificacion">
+        <xsd:complexType>
+          <xsd:complexContent mixed="false">
+            <xsd:restriction base="ident:Identificacion">
+              <xsd:sequence>
+                <xsd:element name="numeroDocumento" type="xsd:string" />
+                <xsd:element name="tipoDocumento" type="xsd:string" />
+              </xsd:sequence>
+            </xsd:restriction>
+          </xsd:complexContent>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="contrasena" type="xsd:string" />
+      <xsd:element name="archivo" nillable="true" type="xsd:base64Binary" />
+      <xsd:element minOccurs="0" name="proceso" type="xsd:string" />
+      <xsd:element minOccurs="0" name="observaciones" type="xsd:string" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FirmarDocumentoRsType">
+    <xsd:sequence>
+      <xsd:element name="archivoFirmado" nillable="true" type="xsd:base64Binary" />
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>

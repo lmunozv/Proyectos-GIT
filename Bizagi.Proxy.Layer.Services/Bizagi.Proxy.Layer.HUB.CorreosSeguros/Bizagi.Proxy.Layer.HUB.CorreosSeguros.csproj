@@ -93,7 +93,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\CorreoSeguroClient\Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.EnviarCorreoSeguroRsType.datasource">
+    <None Include="Service References\CorreoSeguroClient\Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\CorreoSeguroClient\consumerHeader.xsd">

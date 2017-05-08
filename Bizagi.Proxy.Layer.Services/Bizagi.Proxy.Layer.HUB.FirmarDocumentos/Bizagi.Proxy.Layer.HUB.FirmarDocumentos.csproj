@@ -33,6 +33,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -42,11 +44,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FirmaDocumentosImpl.cs" />
+    <Compile Include="FirmaDocumentosImpl2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\FirmaDocuementoClient\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Web References\Cliente_FirmaDigital\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -79,6 +87,22 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Service References\FirmaDocuementoClient\Bizagi.Proxy.Layer.HUB.FirmarDocumentos.FirmaDocuementoClient.firmarDocumento_Output.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FirmaDocuementoClient\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FirmaDocuementoClient\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FirmaDocuementoClient\firmadocumento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FirmaDocuementoClient\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FirmaDocuementoClient\PKI_FirmaDocumento.wsdl" />
     <None Include="Web References\Cliente_FirmaDigital\consumerHeader.xsd">
       <SubType>Designer</SubType>
     </None>
@@ -99,6 +123,27 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FirmaDocuementoClient\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FirmaDocuementoClient\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FirmaDocuementoClient\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FirmaDocuementoClient\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Utils\Bizagi.Proxy.Utils.csproj">
+      <Project>{7dfd7615-bc27-4e51-9b0a-4ed8880557b1}</Project>
+      <Name>Bizagi.Proxy.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
