@@ -17,13 +17,19 @@ namespace Bizagi.Proxy.Layer.Service
 
     public class CobisProxy_EnrutarTramiteCredito : System.Web.Services.WebService
     {
-        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeader header;
-        [TraceExtensionAttribute]
-        [WebMethod]
-        [SoapHeader("header")]
-        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType enrutarTramiteRequest(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRqType DatosTramite)
+        //public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeader header;
+        //[TraceExtensionAttribute]
+        //[WebMethod]
+        //[SoapHeader("header")]
+        //public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType enrutarTramiteRequest(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRqType DatosTramite)
+        //{
+        //    return Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(header, DatosTramite);
+        //}
+
+
+        public void enrutarTramiteRequest(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
-            return Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(header, DatosTramite);
+            Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(input);
         }
     }
 }

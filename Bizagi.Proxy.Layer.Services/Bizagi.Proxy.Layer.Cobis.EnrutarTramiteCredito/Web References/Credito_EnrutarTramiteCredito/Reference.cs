@@ -2199,16 +2199,16 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteC
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V15))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoInfoLabor_V10))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V14))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V13))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V12))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2430,6 +2430,24 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteC
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V111 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V101 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
     public partial class Telefono_V15 : Telefono {
     }
@@ -2476,7 +2494,7 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteC
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V111 : Telefono {
+    public partial class Telefono_V11 : Telefono {
     }
     
     /// <remarks/>
@@ -2485,7 +2503,7 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteC
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V101 : Telefono {
+    public partial class Telefono_V10 : Telefono {
     }
     
     /// <remarks/>
@@ -2495,24 +2513,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteC
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
     public partial class TelefonoPJ : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V11 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V10 : Telefono {
     }
     
     /// <remarks/>

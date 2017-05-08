@@ -1,4 +1,5 @@
-﻿using Bizagi.Proxy.Layer.Util;
+﻿using Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito;
+using Bizagi.Proxy.Layer.Util;
 using System.Net;
 
 namespace Bizagi.Proxy.Layer.Service.Manager
@@ -96,26 +97,33 @@ namespace Bizagi.Proxy.Layer.Service.Manager
 
         }
 
-
-        public static Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType EnrutarTramiteCredito(Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeader head, 
-            Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRqType body)
+        public static void EnrutarTramiteCredito(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
             ProxyUtils.ByPassCertificate();
-            Cobis_EnrutarTramiteCreditoImpl ser = new Cobis_EnrutarTramiteCreditoImpl();
-            ser.headerRq = head;
-            ser.Url = ProxyUtils.GetServiceEndpoint("URLEnrutarTramiteCredito");
-            NetworkCredential credential = ProxyUtils.getReceivedCredentials();
-            //si no vienen credenciales basic, no se crea estructura de seguridad. 
-            //sino, se genera excepción cuando hayan peticiones sin autenticación.
-            if (credential != null)
-            {
-                ser.Credentials = credential;
-                ser.PreAuthenticate = true;
-            }
-            Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType a = ser.enrutarTramiteCredito(body);
-            Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeaderResponse_v10 headerRs = ser.headerRs;
-            return a;
+            Cobis_EnrutarTramiteCreditoImpl2 ser = new Cobis_EnrutarTramiteCreditoImpl2();
+            ser.EnrutarTramiteCredito(input);
         }
+
+
+        //public static Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType EnrutarTramiteCredito(Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeader head,
+        //    Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRqType body)
+        //{
+        //    ProxyUtils.ByPassCertificate();
+        //    Cobis_EnrutarTramiteCreditoImpl ser = new Cobis_EnrutarTramiteCreditoImpl();
+        //    ser.headerRq = head;
+        //    ser.Url = ProxyUtils.GetServiceEndpoint("URLEnrutarTramiteCredito");
+        //    NetworkCredential credential = ProxyUtils.getReceivedCredentials();
+        //    //si no vienen credenciales basic, no se crea estructura de seguridad. 
+        //    //sino, se genera excepción cuando hayan peticiones sin autenticación.
+        //    if (credential != null)
+        //    {
+        //        ser.Credentials = credential;
+        //        ser.PreAuthenticate = true;
+        //    }
+        //    Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.EnrutarTramiteCreditoRsType a = ser.enrutarTramiteCredito(body);
+        //    Cobis.EnrutarTramiteCredito.Credito_EnrutarTramiteCredito.ConsumerHeaderResponse_v10 headerRs = ser.headerRs;
+        //    return a;
+        //}
         #endregion
     }
 }
