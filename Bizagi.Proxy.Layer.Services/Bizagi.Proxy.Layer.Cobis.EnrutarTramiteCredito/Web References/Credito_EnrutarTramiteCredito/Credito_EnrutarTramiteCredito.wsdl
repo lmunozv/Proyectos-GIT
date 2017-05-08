@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/esb/services/soap/credito/enrutartramitecredito/v1" xmlns:excpg="http://www.fna.gov.co/cim/businessentities/excepciongenerica" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Credito_EnrutarTramiteCredito" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/enrutartramitecredito/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:mrm="http://www.fna.gov.co/esb/services/soap/credito/enrutartramitecredito/v1" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/enrutartramitecredito/v1">
+      <xsd:include schemaLocation="../../xsd/EnrutarTramiteCredito.xsd" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="headerRq">
+    <wsdl:part name="headerRq" element="tns:headerRq" />
+  </wsdl:message>
+  <wsdl:message name="headerRs">
+    <wsdl:part name="headerRs" element="tns:headerRs" />
+  </wsdl:message>
+  <wsdl:message name="enrutarTramiteCredito_in">
+    <wsdl:part name="EnrutarTramiteCreditoRq" element="tns:EnrutarTramiteCreditoRq" />
+  </wsdl:message>
+  <wsdl:message name="enrutarTramiteCredito_out">
+    <wsdl:part name="EnrutarTramiteCreditoRs" element="tns:EnrutarTramiteCreditoRs" />
+  </wsdl:message>
+  <wsdl:message name="enrutarTramiteCredito_fault1">
+    <wsdl:part name="excepcionGenerica" element="excpg:excepcionGenerica" />
+  </wsdl:message>
+  <wsdl:portType name="Credito_EnrutarTramiteCreditoPortType">
+    <wsdl:operation name="enrutarTramiteCredito">
+      <wsdl:input name="enrutarTramiteCredito_Input" message="tns:enrutarTramiteCredito_in" />
+      <wsdl:output name="enrutarTramiteCredito_Output" message="tns:enrutarTramiteCredito_out" />
+      <wsdl:fault name="enrutarTramiteCredito_Fault" message="tns:enrutarTramiteCredito_fault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Credito_EnrutarTramiteCreditoBinding12" type="tns:Credito_EnrutarTramiteCreditoPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="enrutarTramiteCredito">
+      <soap12:operation soapAction="enrutarTramiteCredito" />
+      <wsdl:input name="enrutarTramiteCredito_Input">
+        <soap12:header message="tns:headerRq" part="headerRq" use="literal" />
+        <soap12:body use="literal" parts="EnrutarTramiteCreditoRq" />
+      </wsdl:input>
+      <wsdl:output name="enrutarTramiteCredito_Output">
+        <soap12:header message="tns:headerRs" part="headerRs" use="literal" />
+        <soap12:body use="literal" parts="EnrutarTramiteCreditoRs" />
+      </wsdl:output>
+      <wsdl:fault name="enrutarTramiteCredito_Fault">
+        <soap12:fault use="literal" name="enrutarTramiteCredito_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Credito_EnrutarTramiteCreditoService">
+    <wsdl:port name="Credito_EnrutarTramiteCreditoPort12" binding="tns:Credito_EnrutarTramiteCreditoBinding12">
+      <soap12:address location="http://localhost:7800/esb/services/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

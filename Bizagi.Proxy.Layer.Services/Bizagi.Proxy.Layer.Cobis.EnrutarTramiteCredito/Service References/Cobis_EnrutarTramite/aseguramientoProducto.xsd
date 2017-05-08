@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:asegprd="http://www.fna.gov.co/cim/businessentities/aseguramientoproducto" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:codr="http://www.fna.gov.co/cim/businessentities/codeudor" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/aseguramientoproducto" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="../BusinessEntitiesLib/codeudor.xsd" namespace="http://www.fna.gov.co/cim/businessentities/codeudor" />
+  <complexType name="AseguramientoProducto">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="direccionInmueble" type="dir:DireccionInmueble" />
+      <element minOccurs="0" maxOccurs="1" name="codeudor" type="codr:Codeudor" />
+    </sequence>
+  </complexType>
+</schema>

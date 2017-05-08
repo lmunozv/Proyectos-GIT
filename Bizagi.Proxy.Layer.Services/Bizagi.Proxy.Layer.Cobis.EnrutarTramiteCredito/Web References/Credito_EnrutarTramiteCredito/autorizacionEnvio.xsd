@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:aenv="http://www.fna.gov.co/cim/businessentities/autorizacionEnvio" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/autorizacionEnvio" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="AutorizacionEnvio_V1.0">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="correoElectronico" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="telefonoCelular" type="boolean" />
+      <element minOccurs="0" name="extractosCorreoElectronico" type="boolean" />
+      <element minOccurs="0" name="extractosTelefonoCelular" type="boolean" />
+      <element minOccurs="0" name="envioCorrespondenciaDireccionPrincipal" type="boolean" />
+    </sequence>
+  </complexType>
+  <complexType name="AutorizacionEnvio_V1.1">
+    <complexContent mixed="false">
+      <restriction base="aenv:AutorizacionEnvio_V1.0">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="correoElectronico" type="boolean" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

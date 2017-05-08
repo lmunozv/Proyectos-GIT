@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:inflab="http://www.fna.gov.co/cim/businessentities/informacionlaboral" xmlns:dirsub="http://www.fna.gov.co/cim/CommonsLib/direccionsub" xmlns:this="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:pep="http://www.fna.gov.co/cim/businessentities/pep" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/informacionlaboral.xsd" namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral" />
+  <import schemaLocation="direccion_Sub.xsd" namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub" />
+  <import schemaLocation="../BusinessEntitiesLib/pep.xsd" namespace="http://www.fna.gov.co/cim/businessentities/pep" />
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <complexType name="InformacionLaboral_V2.1">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tipoContrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpleo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaIngreso" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaSalida" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="salarioBasico" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="fechaRegistroSalario" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="monedaSalario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="descripcionOtrosIngresos" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="seguroDesempleo" type="inflab:SeguroDesempleo" />
+          <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="dirsub:DireccionLab" />
+          <element minOccurs="0" maxOccurs="1" name="tipoLaboral" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="esIndependienteConContrato" type="boolean" />
+          <element minOccurs="0" name="ActividadEconomica" type="inflab:ActividadEconomica" />
+          <element minOccurs="0" name="pep" type="pep:PEP" />
+          <element minOccurs="0" name="tiempoAnho" type="int" />
+          <element minOccurs="0" name="tiempoMeses" type="int" />
+          <element minOccurs="0" name="observacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.2">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="nombre" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoContrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpleo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="salarioBasico" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="monedaSalario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="esIndependienteConContrato" type="boolean" />
+          <element minOccurs="0" name="ActividadEconomica" type="inflab:ActividadEconomica" />
+          <element minOccurs="0" name="tiempoAnho" type="int" />
+          <element minOccurs="0" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.3">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" name="pep" type="pep:PEP" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.4">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tipoContrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpleo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaIngreso" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaSalida" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="salarioBasico" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="fechaRegistroSalario" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="monedaSalario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="descripcionOtrosIngresos" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="seguroDesempleo" type="inflab:SeguroDesempleo" />
+          <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="dirsub:DireccionLab" />
+          <element minOccurs="0" name="identificacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoLaboral" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="esIndependienteConContrato" type="boolean" />
+          <element minOccurs="0" name="ActividadEconomica" type="inflab:ActividadEconomica" />
+          <element minOccurs="0" name="DireccionElectronica" type="dir:DireccionElectronica" />
+          <element minOccurs="0" name="pep" type="pep:PEP" />
+          <element minOccurs="0" name="tiempoAnho" type="int" />
+          <element minOccurs="0" name="tiempoMeses" type="int" />
+          <element minOccurs="0" name="observacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.5">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="nombre" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoContrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpleo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaIngreso" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaSalida" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="salarioBasico" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="fechaRegistroSalario" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="monedaSalario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="descripcionOtrosIngresos" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="seguroDesempleo" type="inflab:SeguroDesempleo" />
+          <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="dirsub:DireccionLab" />
+          <element minOccurs="0" name="identificacion" type="string" />
+          <element minOccurs="0" name="sector" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoLaboral" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="esIndependienteConContrato" type="boolean" />
+          <element minOccurs="0" name="ActividadEconomica" type="inflab:ActividadEconomica" />
+          <element minOccurs="0" name="DireccionElectronica" type="dir:DireccionElectronica" />
+          <element minOccurs="0" name="pep" type="pep:PEP" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.6">
+    <complexContent mixed="false">
+      <restriction base="this:InformacionLaboral_V2.2">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="nombre" type="string" />
+          <element minOccurs="0" name="ActividadEconomica" type="inflab:ActividadEconomica" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="InformacionLaboral_V2.7">
+    <complexContent mixed="false">
+      <restriction base="inflab:InformacionLaboral_V2.0">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idEmpresa" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tipoContrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoEmpleo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaIngreso" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaSalida" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="salarioBasico" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="fechaRegistroSalario" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="monedaSalario" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="descripcionOtrosIngresos" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="seguroDesempleo" type="inflab:SeguroDesempleo" />
+          <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="dirsub:DireccionLab" />
+          <element minOccurs="0" name="sector" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoLaboral" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="esIndependienteConContrato" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="correoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="cargoActividad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Entidad" type="inflab:Entidad" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

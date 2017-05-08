@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85B86625-EAB0-414B-9E0A-2DEF2894151D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito</RootNamespace>
+    <AssemblyName>Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cobis_EnrutarTramiteCreditoImpl2.cs" />
+    <Compile Include="Cobis_EnrutarTramiteCreditoImpl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Cobis_EnrutarTramite\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Credito_EnrutarTramiteCredito\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="E:\Workspace\FNA\Proyectos\Desembolsos\Interfaces\ServiciosCobis\Credito_EnrutarTramiteCredito\Credito_EnrutarTramiteCredito\MessageLib\106_Credito_EnrutarTramiteCredito\wsdl\1.2\EnrutarTramiteCredito.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Credito_EnrutarTramiteCredito\</RelPath>
+      <UpdateFromURL>E:\Workspace\FNA\Proyectos\Desembolsos\Interfaces\ServiciosCobis\Credito_EnrutarTramiteCredito\Credito_EnrutarTramiteCredito\MessageLib\106_Credito_EnrutarTramiteCredito\wsdl\1.2\EnrutarTramiteCredito.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Bizagi_Proxy_Layer_Cobis_EnrutarTramiteCredito_Credito_EnrutarTramiteCredito_Credito_EnrutarTramiteCreditoService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\aseguramientoProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\asesor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\autorizacionEnvio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\codeudor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\codigoTipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\consumerHeaderResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\conversionUvr.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\Credito_EnrutarTramiteCredito.wsdl" />
+    <None Include="Service References\Cobis_EnrutarTramite\cuentaAVC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cuentaproductocliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cuentaproductocredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cuotaCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\cuotasMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\desembolso.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\direccion_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\EnrutarTramiteCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\informacionCuentaMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\informacionLaboral_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\monedaExtranjera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\pagosCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\pagosDeuda.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\pep.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\resumenValorAPagar.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\saldodeudacredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\telefono_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\tipoafiliacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\tramite.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cobis_EnrutarTramite\ubicacionOficinaProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\aseguramientoProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\asesor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\autorizacionEnvio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\codeudor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\codigoTipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\consumerHeaderResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\conversionUvr.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\Credito_EnrutarTramiteCredito.wsdl" />
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuentaAVC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuentaproductocliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuentaproductocredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuotaCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\cuotasMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\desembolso.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\direccion_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\EnrutarTramiteCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\EnrutarTramiteCreditoRsType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\informacionCuentaMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\informacionLaboral_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\monedaExtranjera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\pagosCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\pagosDeuda.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\pep.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\resumenValorAPagar.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\saldodeudacredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\telefono_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\tipoafiliacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\tramite.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Credito_EnrutarTramiteCredito\ubicacionOficinaProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Cobis_EnrutarTramite\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cobis_EnrutarTramite\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cobis_EnrutarTramite\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cobis_EnrutarTramite\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

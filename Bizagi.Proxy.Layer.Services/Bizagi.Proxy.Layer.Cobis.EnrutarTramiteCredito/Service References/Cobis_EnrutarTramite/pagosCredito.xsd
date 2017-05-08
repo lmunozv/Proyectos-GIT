@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:pagcrd="http://www.fna.gov.co/cim/businessentities/pagoscredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/pagoscredito" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="PagosCredito">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroCuota" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="fechaPago" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="formaPago" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="monto" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCuotaUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCapital" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCapitalUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesCorriente" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesCorrienteUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMora" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMoraUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaAnticipada" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaAnticipadaUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargosUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaPagoFogafin" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotaPagoFogafinUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cobertura" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="coberturaUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="seguro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoCapital" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoCapitalUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="estadoCuota" type="string" />
+    </sequence>
+  </complexType>
+</schema>

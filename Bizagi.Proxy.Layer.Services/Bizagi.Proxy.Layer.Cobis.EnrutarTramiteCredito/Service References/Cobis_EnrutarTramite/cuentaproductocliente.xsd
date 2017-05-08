@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dsblso="http://www.fna.gov.co/cim/businessentities/desembolso" xmlns:ctaprdcli="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" xmlns:ubofprd="http://www.fna.gov.co/cim/businessentities/ubicacionoficinaproducto" xmlns:asegprd="http://www.fna.gov.co/cim/businessentities/aseguramientoproducto" xmlns:ctaprdcre="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/desembolso.xsd" namespace="http://www.fna.gov.co/cim/businessentities/desembolso" />
+  <import schemaLocation="../BusinessEntitiesLib/cuentaproductocredito.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" />
+  <import schemaLocation="../BusinessEntitiesLib/aseguramientoProducto.xsd" namespace="http://www.fna.gov.co/cim/businessentities/aseguramientoproducto" />
+  <import schemaLocation="../BusinessEntitiesLib/ubicacionOficinaProducto.xsd" namespace="http://www.fna.gov.co/cim/businessentities/ubicacionoficinaproducto" />
+  <complexType name="CuentaProductoCliente">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="fechaApertura" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaVence" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaProceso" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSistema" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cotizacionFechaProceso" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="productoClienteId" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoProductoClienteId" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreProductoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="moneda" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="montoInicial" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="estadoProductoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="valorPrimeraCuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="fechaPrimeraCuota" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cuotasFacturadas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="estadoCobranza" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoAmortizacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ipcProyectado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tasaInteres" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tasaMora" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tasaInteresNominal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plazo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tipoCuota" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="pagoCapital" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="pagoInteres" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="desembolso" type="dsblso:Desembolso" />
+      <element minOccurs="0" maxOccurs="1" name="cuentaProductoCredito" type="ctaprdcre:CuentaProductoCredito" />
+      <element minOccurs="0" maxOccurs="1" name="aseguramientoProducto" type="asegprd:AseguramientoProducto" />
+      <element minOccurs="0" maxOccurs="1" name="ubicacionOficinaProducto" type="ubofprd:UbicacionOficinaProducto" />
+    </sequence>
+  </complexType>
+</schema>
