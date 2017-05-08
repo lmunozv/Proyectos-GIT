@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="81073e56-72f1-4fc2-b4e6-dbd323f9630c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="E:\Workspace\FNA\Proyectos\Desembolsos\Interfaces\ServiciosCobis\Credito_EnrutarTramiteCredito\Credito_EnrutarTramiteCredito\MessageLib\106_Credito_EnrutarTramiteCredito\wsdl\1.2\EnrutarTramiteCredito.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ubicacionOficinaProducto.xsd" MetadataType="Schema" ID="29da9460-085f-4453-90a8-4c607ff0e1bb" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/ubicacionOficinaProducto.xsd" />
+    <MetadataFile FileName="direccion_Sub.xsd" MetadataType="Schema" ID="3c4be48d-16a4-463c-888b-192ecf577e51" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/CommonsLib/direccion_Sub.xsd" />
+    <MetadataFile FileName="codigoTipo.xsd" MetadataType="Schema" ID="c4e1fd05-de60-4963-a306-4a062f5e0940" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/codigoTipo.xsd" />
+    <MetadataFile FileName="saldodeudacredito.xsd" MetadataType="Schema" ID="4b033216-07e8-4dc2-b781-27b5817e25ac" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/saldodeudacredito.xsd" />
+    <MetadataFile FileName="identificacion.xsd" MetadataType="Schema" ID="ffa6203d-0a3d-4f32-8901-8777dd01d8bf" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="asesor.xsd" MetadataType="Schema" ID="b9ffd756-c834-4fc2-b2af-6ec48ef0eff9" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/asesor.xsd" />
+    <MetadataFile FileName="informacionCuentaMora.xsd" MetadataType="Schema" ID="ff1b0fcf-5833-4ea4-b035-0541ecf09120" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/informacionCuentaMora.xsd" />
+    <MetadataFile FileName="informacionlaboral.xsd" MetadataType="Schema" ID="f1275e43-2724-46bb-bf37-c3de7535ef91" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/informacionlaboral.xsd" />
+    <MetadataFile FileName="resumenValorAPagar.xsd" MetadataType="Schema" ID="9525dcf1-e732-4a4a-ab10-04dbec192dee" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/resumenValorAPagar.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="0a2e28b8-430d-41e3-9aca-692b483a205f" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="informacionLaboral_Sub.xsd" MetadataType="Schema" ID="91789262-811b-4478-88a1-b67cfcbde3ea" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/CommonsLib/informacionLaboral_Sub.xsd" />
+    <MetadataFile FileName="pagosDeuda.xsd" MetadataType="Schema" ID="da452061-72ac-4bac-aa9a-191a4306a227" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/pagosDeuda.xsd" />
+    <MetadataFile FileName="personajuridica.xsd" MetadataType="Schema" ID="ed715299-3a32-4bca-80f6-c57ade6160e6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/personajuridica.xsd" />
+    <MetadataFile FileName="informacionfinanciera.xsd" MetadataType="Schema" ID="5977c9e0-0528-4428-95ec-0b7e71b3f281" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/informacionfinanciera.xsd" />
+    <MetadataFile FileName="EnrutarTramiteCredito.xsd" MetadataType="Schema" ID="892e51c8-96fc-4f64-8246-826e04b26480" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/MessageLib/106_Credito_EnrutarTramiteCredito/xsd/EnrutarTramiteCredito.xsd" />
+    <MetadataFile FileName="cuotasMora.xsd" MetadataType="Schema" ID="b9f466b6-02c8-4227-bd25-64273314a622" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuotasMora.xsd" />
+    <MetadataFile FileName="codeudor.xsd" MetadataType="Schema" ID="96cb77ad-1d83-4afe-9d3f-676b0419f71d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/codeudor.xsd" />
+    <MetadataFile FileName="cesantias.xsd" MetadataType="Schema" ID="a9b6bb55-af6c-4670-9763-d035a48555f3" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cesantias.xsd" />
+    <MetadataFile FileName="cuentaAVC.xsd" MetadataType="Schema" ID="3a37aa11-9351-458c-a1a0-33f4759a985b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuentaAVC.xsd" />
+    <MetadataFile FileName="autorizacionEnvio.xsd" MetadataType="Schema" ID="9d6ab275-611e-43cb-b54b-477293c746c6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/autorizacionEnvio.xsd" />
+    <MetadataFile FileName="monedaExtranjera.xsd" MetadataType="Schema" ID="f9c6e0ae-c674-4a7f-b32d-9cc2d1faf99e" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/monedaExtranjera.xsd" />
+    <MetadataFile FileName="direccion.xsd" MetadataType="Schema" ID="68097351-ac41-4e8e-9377-e9436d418267" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/direccion.xsd" />
+    <MetadataFile FileName="aseguramientoProducto.xsd" MetadataType="Schema" ID="6233670c-87a2-444f-aea4-dfc968d463ff" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/aseguramientoProducto.xsd" />
+    <MetadataFile FileName="Credito_EnrutarTramiteCredito.wsdl" MetadataType="Wsdl" ID="f42caccf-ace7-420c-8779-0a73fdf6afb6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/MessageLib/106_Credito_EnrutarTramiteCredito/wsdl/1.2/EnrutarTramiteCredito.wsdl" />
+    <MetadataFile FileName="telefono.xsd" MetadataType="Schema" ID="a014f404-0216-419b-b205-10717fef5afe" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/telefono.xsd" />
+    <MetadataFile FileName="tramite.xsd" MetadataType="Schema" ID="53232f2f-f0a2-4e31-b2e0-a581d65f3df4" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/tramite.xsd" />
+    <MetadataFile FileName="desembolso.xsd" MetadataType="Schema" ID="496a1a7a-1275-4c7b-b9a7-20cce0049ed5" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/desembolso.xsd" />
+    <MetadataFile FileName="cuentaBancaria.xsd" MetadataType="Schema" ID="01795abb-4fa7-4fe2-beb8-6efc721732f6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuentaBancaria.xsd" />
+    <MetadataFile FileName="pagosCredito.xsd" MetadataType="Schema" ID="33b986a9-160e-431e-88b5-f282868d78af" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/pagosCredito.xsd" />
+    <MetadataFile FileName="tipoafiliacion.xsd" MetadataType="Schema" ID="e7d68537-1384-4f61-ac70-24ae96c98bd6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/tipoafiliacion.xsd" />
+    <MetadataFile FileName="pep.xsd" MetadataType="Schema" ID="16cc55da-a2f5-4ea6-8216-8bdb4f332ed4" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/pep.xsd" />
+    <MetadataFile FileName="cuentaproductocliente.xsd" MetadataType="Schema" ID="90767bff-2d75-403e-8a83-b24021d380c6" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuentaproductocliente.xsd" />
+    <MetadataFile FileName="conversionUvr.xsd" MetadataType="Schema" ID="22e79762-9753-467f-9eda-546ffe644178" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/conversionUvr.xsd" />
+    <MetadataFile FileName="cuotaCredito.xsd" MetadataType="Schema" ID="5199a0b5-f43a-40b3-ba53-20b7d47df841" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuotaCredito.xsd" />
+    <MetadataFile FileName="telefono_Sub.xsd" MetadataType="Schema" ID="f394238e-204b-42d0-8770-a91ec6f7874b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/CommonsLib/telefono_Sub.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="f65cd563-381a-4e67-a252-16c2c8e2b74d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse.xsd" MetadataType="Schema" ID="eb4b25dd-5271-43e1-b693-e395f8f7658c" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="personanatural.xsd" MetadataType="Schema" ID="b9ae0e42-f2a9-4911-9c4a-bffc3963d5f1" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/personanatural.xsd" />
+    <MetadataFile FileName="cuentaproductocredito.xsd" MetadataType="Schema" ID="517fd897-dcc2-426c-8441-b9fbc525ba71" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_EnrutarTramiteCredito/Credito_EnrutarTramiteCredito/BusinessEntitiesLib/cuentaproductocredito.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

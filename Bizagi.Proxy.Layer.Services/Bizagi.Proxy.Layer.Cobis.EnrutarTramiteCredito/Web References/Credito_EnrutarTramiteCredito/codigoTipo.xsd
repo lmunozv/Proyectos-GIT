@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tel="http://www.fna.gov.co/cim/businessentities/codigoTipo" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/codigoTipo" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="codigoTipo">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipo" type="string" />
+    </sequence>
+  </complexType>
+</schema>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cuotasmora="http://www.fna.gov.co/cim/businessentities/cuotasmora" xmlns:infctamora="http://www.fna.gov.co/cim/businessentities/informacioncuentamora" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/informacioncuentamora" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/cuotasMora.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuotasmora" />
+  <complexType name="InformacionCuentaMora">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroDiasInteresMora" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="fechaInicioMora" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="numeroCuotasMora" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="montoTotalCuotasMora" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cuotasMora" type="cuotasmora:CuotasMora" />
+    </sequence>
+  </complexType>
+</schema>

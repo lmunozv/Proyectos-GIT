@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:csntias="http://www.fna.gov.co/cim/businessentities/cesantias" xmlns:perjur="http://www.fna.gov.co/cim/businessentities/personajuridica" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cesantias" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="personajuridica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personajuridica" />
+  <complexType name="Cesantias">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroCesantia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEstado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Entidad" type="csntias:PersonaJuridicaType" />
+      <element minOccurs="0" maxOccurs="1" name="fechaCreacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cesantiasConsolidadas" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="proteccionCausada" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cesantiasFlotantes" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoNeto" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalAportes" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalRetiros" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tiempoVinculacion" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="marca_pignoracion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="marca_embargo" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ProteccionCesante">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRadicacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoAFC" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCCF" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="porcentajeAhorro" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cuotas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="valorAhorro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="fechaDecision" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="nombreImagen" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="imagen" type="base64Binary" />
+      <element minOccurs="0" maxOccurs="1" name="consecutivo" type="int" />
+    </sequence>
+  </complexType>
+  <complexType name="PersonaJuridicaType">
+    <complexContent mixed="false">
+      <restriction base="perjur:DatosBasicosPJ">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idCliente" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="identificacion" type="csntias:IdPersonaJuridicaType" />
+          <element minOccurs="1" maxOccurs="1" name="nombreEmpresa" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="IdPersonaJuridicaType">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

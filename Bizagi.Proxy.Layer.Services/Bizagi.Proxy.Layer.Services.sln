@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Utils", "Bizagi.Proxy.Utils\Bizagi.Proxy.Utils.csproj", "{7DFD7615-BC27-4E51-9B0A-4ED8880557B1}"
 EndProject
@@ -30,6 +30,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.HUB.FirmarDocumentos", "Bizagi.Proxy.Layer.HUB.FirmarDocumentos\Bizagi.Proxy.Layer.HUB.FirmarDocumentos.csproj", "{65A9D12A-068C-4446-966B-507249605F9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.HUB.CorreosSeguros", "Bizagi.Proxy.Layer.HUB.CorreosSeguros\Bizagi.Proxy.Layer.HUB.CorreosSeguros.csproj", "{46EA12AF-8012-4E07-BB4E-8CE7AEE865D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito", "Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.csproj", "{85B86625-EAB0-414B-9E0A-2DEF2894151D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +95,10 @@ Global
 		{46EA12AF-8012-4E07-BB4E-8CE7AEE865D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46EA12AF-8012-4E07-BB4E-8CE7AEE865D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46EA12AF-8012-4E07-BB4E-8CE7AEE865D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85B86625-EAB0-414B-9E0A-2DEF2894151D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85B86625-EAB0-414B-9E0A-2DEF2894151D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85B86625-EAB0-414B-9E0A-2DEF2894151D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85B86625-EAB0-414B-9E0A-2DEF2894151D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

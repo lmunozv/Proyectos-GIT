@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:CDP="http://www.fna.gov.co/cim/businessentities/asesor" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/asesor" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Asesor">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoOficinaAfiliacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreOficinaAfiliacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="LogIn" type="string" />
+      <element minOccurs="0" name="codigoAsesor" type="string" />
+      <element minOccurs="0" name="codigoOficialReferido" type="string" />
+    </sequence>
+  </complexType>
+</schema>

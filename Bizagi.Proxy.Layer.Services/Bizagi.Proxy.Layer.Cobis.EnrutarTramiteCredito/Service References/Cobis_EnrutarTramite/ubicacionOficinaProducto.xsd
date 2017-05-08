@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ubofprd="http://www.fna.gov.co/cim/businessentities/ubicacionoficinaproducto" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/ubicacionoficinaproducto" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="UbicacionOficinaProducto">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nombre" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="telefono" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="nombreCiudad" type="string" />
+    </sequence>
+  </complexType>
+</schema>

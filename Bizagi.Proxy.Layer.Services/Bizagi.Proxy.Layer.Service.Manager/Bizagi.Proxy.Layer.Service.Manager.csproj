@@ -57,6 +57,10 @@
       <Project>{c55b454a-78f3-4ff7-8ee3-5ed39e4900bb}</Project>
       <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.csproj">
+      <Project>{85b86625-eab0-414b-9e0a-2def2894151d}</Project>
+      <Name>Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite\Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite.csproj">
       <Project>{de4e389e-b31c-47bd-a672-fe7fa7b33ee7}</Project>
       <Name>Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite</Name>

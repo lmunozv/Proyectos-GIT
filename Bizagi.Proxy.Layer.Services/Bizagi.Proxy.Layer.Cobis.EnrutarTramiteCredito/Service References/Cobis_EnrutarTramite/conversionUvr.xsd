@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:convuvr="http://www.fna.gov.co/cim/businessentities/conversionuvr" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/conversionuvr" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ConversionUvr">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="fechaConversion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cotizacionUvrAFecha" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoAntesDeConversion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoAntesDeConversionUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoPostConversion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="saldoUvrPostConversion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="vencimientoFinal" type="date" />
+    </sequence>
+  </complexType>
+</schema>
