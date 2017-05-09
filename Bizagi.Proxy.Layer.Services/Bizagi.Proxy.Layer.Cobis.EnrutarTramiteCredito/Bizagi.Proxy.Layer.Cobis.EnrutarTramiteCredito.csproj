@@ -98,10 +98,7 @@
     <None Include="Service References\Cobis_EnrutarTramite\autorizacionEnvio.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cobis_EnrutarTramite\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.ConsumerHeaderResponse_v10.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\Cobis_EnrutarTramite\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType.datasource">
+    <None Include="Service References\Cobis_EnrutarTramite\Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\Cobis_EnrutarTramite\cesantias.xsd">

@@ -1540,10 +1540,10 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V112))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V13))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V21))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionLab))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V111))]
@@ -2134,14 +2134,14 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V15))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoInfoLabor_V10))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V14))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V13))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V10))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
@@ -2390,24 +2390,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V111 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V101 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
     public partial class TelefonoPJ : Telefono {
     }
@@ -2463,7 +2445,7 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V11 : Telefono {
+    public partial class Telefono_V111 : Telefono {
     }
     
     /// <remarks/>
@@ -2472,25 +2454,25 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V101 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V11 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
     public partial class Telefono_V10 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJT : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJ : DireccionFisica {
     }
     
     /// <remarks/>
@@ -2509,6 +2491,24 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class DireccionFisica_V13 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJT : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJ : DireccionFisica {
     }
     
     /// <remarks/>
@@ -2746,9 +2746,9 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2827,15 +2827,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionElectronicaPJ : DireccionElectronica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionElectronica_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class DireccionElectronica_V11 : DireccionElectronica {
     }
@@ -2850,10 +2841,19 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionElectronicaPJ : DireccionElectronica {
+    }
+    
+    /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3142,15 +3142,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class CasillaPostalPJ : CasillaPostal {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class CasillaPostal_V12 : CasillaPostal {
     }
@@ -3171,6 +3162,15 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class CasillaPostal_V10 : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class CasillaPostalPJ : CasillaPostal {
     }
     
     /// <remarks/>
@@ -9868,7 +9868,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/enrutartramitecredito/v1", ConfigurationName="Cobis_EnrutarTramite.Credito_EnrutarTramiteCreditoPortType")]
     public interface Credito_EnrutarTramiteCreditoPortType {
         
-        // CODEGEN: Generating message contract since the operation enrutarTramiteCredito is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="enrutarTramiteCredito", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.excepcionGenerica), Action="enrutarTramiteCredito", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
@@ -10570,7 +10569,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class enrutarTramiteCredito_Input {
         
@@ -10591,7 +10589,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class enrutarTramiteCredito_Output {
         
@@ -10637,18 +10634,8 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite {
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.Credito_EnrutarTramiteCreditoPortType.enrutarTramiteCredito(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input request) {
+        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output enrutarTramiteCredito(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input request) {
             return base.Channel.enrutarTramiteCredito(request);
-        }
-        
-        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.ConsumerHeaderResponse_v10 enrutarTramiteCredito(Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.ConsumerHeader headerRq, Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.EnrutarTramiteCreditoRqType EnrutarTramiteCreditoRq, out Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType EnrutarTramiteCreditoRs) {
-            Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input inValue = new Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input();
-            inValue.headerRq = headerRq;
-            inValue.EnrutarTramiteCreditoRq = EnrutarTramiteCreditoRq;
-            Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output retVal = ((Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.Credito_EnrutarTramiteCreditoPortType)(this)).enrutarTramiteCredito(inValue);
-            EnrutarTramiteCreditoRs = retVal.EnrutarTramiteCreditoRs;
-            return retVal.headerRs;
         }
     }
 }

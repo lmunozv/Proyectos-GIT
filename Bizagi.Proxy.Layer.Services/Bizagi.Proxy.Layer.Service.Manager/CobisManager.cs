@@ -97,11 +97,11 @@ namespace Bizagi.Proxy.Layer.Service.Manager
 
         }
 
-        public static void EnrutarTramiteCredito(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
+        public static Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output EnrutarTramiteCredito(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
             ProxyUtils.ByPassCertificate();
             Cobis_EnrutarTramiteCreditoImpl2 ser = new Cobis_EnrutarTramiteCreditoImpl2();
-            ser.EnrutarTramiteCredito(input);
+            return ser.EnrutarTramiteCredito(input);
         }
 
 

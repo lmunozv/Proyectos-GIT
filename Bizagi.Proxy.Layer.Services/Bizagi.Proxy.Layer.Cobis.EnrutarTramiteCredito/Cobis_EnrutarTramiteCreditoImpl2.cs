@@ -12,38 +12,34 @@ using System.ServiceModel.Channels;
 /// 
 
 namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito
-{ 
-public partial class Cobis_EnrutarTramiteCreditoImpl2
 {
-
-    public void EnrutarTramiteCredito(Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
+    public partial class Cobis_EnrutarTramiteCreditoImpl2
     {
-        try
+
+        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output EnrutarTramiteCredito(Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
-            ProxyUtils.ByPassCertificate();
+            try
+            {
+                ProxyUtils.ByPassCertificate();
                 Cobis_EnrutarTramite.Credito_EnrutarTramiteCreditoPortTypeClient cliente = new Cobis_EnrutarTramite.Credito_EnrutarTramiteCreditoPortTypeClient();
-
-
-
                 cliente.ClientCredentials.UserName.UserName = ProxyUtils.GetServiceUser("UsrServices");
                 cliente.ClientCredentials.UserName.Password = ProxyUtils.GetServicePwd("PwdServices");
-            using (OperationContextScope scope = new OperationContextScope(cliente.InnerChannel))
-            {
-                OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
-                    ProxyUtils.GetHttpRequestMessageProperty();
+                using (OperationContextScope scope = new OperationContextScope(cliente.InnerChannel))
+                {
+                    OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
+                        ProxyUtils.GetHttpRequestMessageProperty();
 
                     Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType EnrutarTramiteCreditoRs = new Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType();
-                var SomeResposne = cliente.enrutarTramiteCredito(input.headerRq, input.EnrutarTramiteCreditoRq, out EnrutarTramiteCreditoRs);
-                //return SomeResposne.;
+                    var SomeResposne = cliente.enrutarTramiteCredito(input);
+                    return SomeResposne;
+                }
             }
-        }
-        catch (Exception ex)
-        {
-            throw ex;
-        }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
 
+        }
 
     }
-
-}
 }

@@ -26,10 +26,11 @@ namespace Bizagi.Proxy.Layer.Service
         //    return Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(header, DatosTramite);
         //}
 
-
-        public void enrutarTramiteRequest(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
+        [TraceExtensionAttribute]
+        [WebMethod]
+        public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output enrutarTramiteRequest(Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
-            Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(input);
+          return  Bizagi.Proxy.Layer.Service.Manager.CobisManager.EnrutarTramiteCredito(input);
         }
     }
 }
