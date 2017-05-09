@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Net;
 using System.Text;
 using Bizagi.Proxy.Layer.Util;
@@ -10,12 +9,10 @@ using System.ServiceModel.Channels;
 /// Summary description for Class1
 /// </summary>
 /// 
-
 namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito
 {
     public partial class Cobis_EnrutarTramiteCreditoImpl2
     {
-
         public Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.enrutarTramiteCredito_Output EnrutarTramiteCredito(Cobis_EnrutarTramite.enrutarTramiteCredito_Input input)
         {
             try
@@ -28,7 +25,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito
                 {
                     OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
                         ProxyUtils.GetHttpRequestMessageProperty();
-
                     Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito.Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType EnrutarTramiteCreditoRs = new Cobis_EnrutarTramite.EnrutarTramiteCreditoRsType();
                     var SomeResposne = cliente.enrutarTramiteCredito(input);
                     return SomeResposne;
@@ -38,8 +34,6 @@ namespace Bizagi.Proxy.Layer.Cobis.EnrutarTramiteCredito
             {
                 throw ex;
             }
-
         }
-
     }
 }
