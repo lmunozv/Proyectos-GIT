@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:csntias="http://www.fna.gov.co/cim/businessentities/cesantias" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cesantias" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Cesantias" />
+  <complexType name="ProteccionCesante">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRadicacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoAFC" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCCF" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="porcentajeAhorro" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="cuotas" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="valorAhorro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="fechaDecision" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="nombreImagen" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="imagen" type="base64Binary" />
+    </sequence>
+  </complexType>
+</schema>

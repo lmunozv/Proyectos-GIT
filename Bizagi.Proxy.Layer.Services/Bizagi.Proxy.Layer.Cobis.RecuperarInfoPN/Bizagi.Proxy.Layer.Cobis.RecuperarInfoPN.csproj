@@ -36,6 +36,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -50,6 +52,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ClientePersonaNaturalCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Web References\Cliente_RecuperarInfoPN\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -68,6 +75,52 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\cliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\ClientePersonaNatural_RecuperarInformacion.wsdl" />
+    <None Include="Service References\ClientePersonaNaturalCliente\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\recuperarInformacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\telefono.xsd">
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Cliente_RecuperarInfoPN\cesantias.xsd">
       <SubType>Designer</SubType>
@@ -129,6 +182,21 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>Bizagi_Proxy_Layer_Cobis_RecuperarInfoPN_Cliente_RecuperarInfoPN_ClientePersonaNatural_RecuperarInformacion_Service</CachedSettingsPropName>
     </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ClientePersonaNaturalCliente\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientePersonaNaturalCliente\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientePersonaNaturalCliente\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ClientePersonaNaturalCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:perjur="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cliente" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/personanatural.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personanatural" />
+  <import schemaLocation="../BusinessEntitiesLib/personajuridica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personajuridica" />
+  <complexType name="Cliente">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="categoriaCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="calificacionInternaCredito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreContactoPrincipal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccionPrincipal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="telefonoPrincipal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="autorizacionAsignacionCredito" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="calificacionSatisfaccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="contactoLaboral" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaActualizacionFormato" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tasaRetencion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="sucursalAfiliado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idProductoPrincipal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaInicialCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaFinalCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idAreaGeografica" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="razonEstadoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vinculacionEfectiva" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="correoContacto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="contactoTelefonoCelular" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="seguroVivienda" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="seguroProducto" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="seguroVida" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="programaMembresia" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="pension" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="plazoPago" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="plazoCompra" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroProductos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ingresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="egresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="renovacionProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="otrosEgresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="ajusteDeRiesgo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="saldoTotal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="gastosGestion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoGastos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="eliminacionCargos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cobroInteresGastos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cobroInteresIngresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadNuevosProductos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroCuentas" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalDepositos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalPrestamos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalAvances" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalUtilizacionCredito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalIntereses" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalNoIntereses" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoTotalAtrasos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalAhorros" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="valorReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="costoAdquisicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="calificacionPromedioRiesgo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="medicionRetencion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="mesesDesdePrimeraCuentaAbierta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="mesesDesdeUltimaCuentaAbierta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadVecesMoroso" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="limiteTotalCredito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadConsultasSucursal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="porcentageCuotaCartera" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalHonorarios" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadReclamos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoReclamos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cantidadAccidentes" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="quejasActivas" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="montoContribucionFinanciera" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoPension" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="personaNatural" type="pernat:PersonaNatural" />
+      <element minOccurs="0" maxOccurs="1" name="personaJuridica" type="perjur:DatosBasicosPJ" />
+      <element minOccurs="0" maxOccurs="1" name="fondoPrivado" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+    </sequence>
+  </complexType>
+</schema>

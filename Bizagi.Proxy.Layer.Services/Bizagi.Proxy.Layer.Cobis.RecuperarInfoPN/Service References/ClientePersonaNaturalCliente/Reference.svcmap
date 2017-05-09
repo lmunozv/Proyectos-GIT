@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0eba79e8-e998-4948-82d4-99d71a95dbab" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Proyectos\FNA\Procesos\Sistemas\Cobis\024_ClntePrsnaNtral_RecuperarInfoBasica\wsdl\1.2\ClntePrsnaNtral_RcprarInfoBsca.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="cuentaBancaria.xsd" MetadataType="Schema" ID="304e5b14-ade6-43bf-874d-bb6491f7926b" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cuentaBancaria.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="7b94592e-a0d5-4862-b670-7e265f77e1bb" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="personajuridica.xsd" MetadataType="Schema" ID="7d1c5c85-bc5f-4f55-af44-ab4b36f3e7f6" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/personajuridica.xsd" />
+    <MetadataFile FileName="telefono.xsd" MetadataType="Schema" ID="947a949f-bced-42e1-aa69-2f3f5e90700e" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/telefono.xsd" />
+    <MetadataFile FileName="cesantias.xsd" MetadataType="Schema" ID="e17e471c-b667-4fe6-a382-c8c657327195" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cesantias.xsd" />
+    <MetadataFile FileName="cliente.xsd" MetadataType="Schema" ID="f4c13aaf-5b67-484c-8079-6697a76f187c" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/cliente.xsd" />
+    <MetadataFile FileName="informacionlaboral.xsd" MetadataType="Schema" ID="d9d748f0-887f-4a4d-b433-74448fc1229e" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/informacionlaboral.xsd" />
+    <MetadataFile FileName="ClientePersonaNatural_RecuperarInformacion.wsdl" MetadataType="Wsdl" ID="80bea233-012e-4cb7-b6fd-37df3ed8fd44" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/wsdl/1.2/ClntePrsnaNtral_RcprarInfoBsca.wsdl" />
+    <MetadataFile FileName="personanatural.xsd" MetadataType="Schema" ID="f92677b2-eac9-4a94-8634-b3e5f190a783" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/personanatural.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="b37c717b-b77f-43ac-97c4-dc97fcf96f80" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="recuperarInformacion.xsd" MetadataType="Schema" ID="a0a42a65-f51e-4d57-a40d-2765f280d373" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/xsd/recuperarInformacion.xsd" />
+    <MetadataFile FileName="identificacion.xsd" MetadataType="Schema" ID="2cf86348-5c7f-4834-95df-d704a9ae2044" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="direccion.xsd" MetadataType="Schema" ID="f2156d7c-851d-4520-960c-f64a0d44df83" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/direccion.xsd" />
+    <MetadataFile FileName="informacionfinanciera.xsd" MetadataType="Schema" ID="e5edb5f6-edaf-4bcb-a672-81f070a6842f" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/024_ClntePrsnaNtral_RecuperarInfoBasica/BusinessEntitiesLib/informacionfinanciera.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

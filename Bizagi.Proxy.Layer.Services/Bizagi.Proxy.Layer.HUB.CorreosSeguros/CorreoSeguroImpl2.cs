@@ -32,8 +32,7 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros
             catch (Exception ex)
             {
                 throw ex;
-            }
-            
+            }            
         }
     }   
 }

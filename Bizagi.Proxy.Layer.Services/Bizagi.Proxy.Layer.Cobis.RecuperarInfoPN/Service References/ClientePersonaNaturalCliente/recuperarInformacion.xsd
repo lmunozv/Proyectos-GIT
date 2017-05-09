@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:pagina="http://www.fna.gov.co/cim/businessentities/paginacion" xmlns:inflab="http://www.fna.gov.co/cim/businessentities/informacionlaboral" xmlns:infofin="http://www.fna.gov.co/cim/businessentities/informacionfinanciera" xmlns:tns="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1" xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefono" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/cliente.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cliente" />
+  <import schemaLocation="../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="../BusinessEntitiesLib/personanatural.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personanatural" />
+  <import schemaLocation="../BusinessEntitiesLib/direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="../BusinessEntitiesLib/informacionlaboral.xsd" namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral" />
+  <import schemaLocation="../BusinessEntitiesLib/telefono.xsd" namespace="http://www.fna.gov.co/cim/businessentities/telefono" />
+  <import schemaLocation="../BusinessEntitiesLib/informacionfinanciera.xsd" namespace="http://www.fna.gov.co/cim/businessentities/informacionfinanciera" />
+  <element name="recuperarInformacionBasicaRequest" type="tns:ServiceRequest" />
+  <element name="recuperarInformacionBasicaResponse" type="tns:ServiceResponse" />
+  <complexType name="ServiceRequest">
+    <sequence>
+      <choice>
+        <element minOccurs="1" maxOccurs="1" name="idCliente" type="string" />
+        <element minOccurs="1" maxOccurs="1" name="identificacion" type="tns:Identificacion" />
+      </choice>
+    </sequence>
+  </complexType>
+  <complexType name="ServiceResponse">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="cliente" type="tns:Cliente" />
+      <element minOccurs="1" maxOccurs="1" name="personaNatural" type="tns:PersonaNatural" />
+      <element minOccurs="0" maxOccurs="1" name="familiares" type="tns:Familiares" />
+    </sequence>
+  </complexType>
+  <complexType name="Cliente">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fondoPrivado" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="IdentificacionRes">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechasExpiracion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="PersonaNatural">
+    <complexContent mixed="false">
+      <restriction base="pernat:PersonaNatural">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="identificacion" type="tns:IdentificacionRes" />
+          <element minOccurs="1" maxOccurs="1" name="nombreCompleto" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="primerApellido" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="segundoApellido" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="fechaNacimiento" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="lugarNacimiento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="sexo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCivil" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="personasACargo" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="nivelEstudio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="profesion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoVivienda" type="string" />
+          <element minOccurs="1" maxOccurs="unbounded" name="direccion" type="tns:DireccionFisica" />
+          <element minOccurs="1" maxOccurs="1" name="filial" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="oficina" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="fechaCreacion" type="date" />
+          <element minOccurs="1" maxOccurs="1" name="fechaActualizacion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="autorizaEnvioEmail" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="colombianoEnExterior" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPaisExt" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="trasladoCesantias" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="ahorroProgramado" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="esFamiliar" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="direcccionElectronica" type="pernat:DireccionElectronica" />
+          <element minOccurs="0" maxOccurs="1" name="medioActualizacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoAsesorComercial" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoOficialReferido" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="casillasPostales" type="pernat:CasillasPostales" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionFisica">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCorregimiento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="tns:Telefono" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Telefono">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="PersonaNaturalFamiliar">
+    <complexContent mixed="false">
+      <restriction base="pernat:PersonaNatural">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="identificacion" type="tns:Identificacion" />
+          <element minOccurs="1" maxOccurs="1" name="nombreCompleto" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="primerApellido" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="segundoApellido" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="sexo" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nivelEstudio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccion" type="tns:DireccionFisica" />
+          <element minOccurs="0" maxOccurs="1" name="direcccionElectronica" type="pernat:DireccionElectronica" />
+          <element minOccurs="0" maxOccurs="1" name="empresaDondeTrabaja" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Familiares">
+    <sequence>
+      <element minOccurs="1" maxOccurs="unbounded" name="informacionFamiliar" type="tns:InformacionFamiliar" />
+    </sequence>
+  </complexType>
+  <complexType name="InformacionFamiliar">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigoFamiliar" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="tipoFamiliar" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="personaNatural" type="tns:PersonaNaturalFamiliar" />
+      <element minOccurs="1" maxOccurs="1" name="cliente" type="tns:ClienteFamiliar" />
+    </sequence>
+  </complexType>
+  <complexType name="ClienteFamiliar">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>
