@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1" xmlns:excpg="http://www.fna.gov.co/cim/businessentities/excepciongenerica" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Credito_MigrarSolicitudReparto" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns:mrm="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1">
+      <xsd:include schemaLocation="../../xsd/MigrarSolicitudReparto.xsd" />
+      <xsd:import schemaLocation="../../../../BusinessEntitiesLib/excepciongenerica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="headerRq">
+    <wsdl:part name="headerRq" element="tns:headerRq" />
+  </wsdl:message>
+  <wsdl:message name="headerRs">
+    <wsdl:part name="headerRs" element="tns:headerRs" />
+  </wsdl:message>
+  <wsdl:message name="migrarSolicitudReparto_in">
+    <wsdl:part name="MigrarSolicitudRepartoRq" element="tns:MigrarSolicitudRepartoRq" />
+  </wsdl:message>
+  <wsdl:message name="migrarSolicitudReparto_out">
+    <wsdl:part name="MigrarSolicitudRepartoRs" element="tns:MigrarSolicitudRepartoRs" />
+  </wsdl:message>
+  <wsdl:message name="migrarSolicitudReparto_fault1">
+    <wsdl:part name="excepcionGenerica" element="excpg:excepcionGenerica" />
+  </wsdl:message>
+  <wsdl:portType name="Credito_MigrarSolicitudRepartoPortType">
+    <wsdl:operation name="migrarSolicitudReparto">
+      <wsdl:input name="migrarSolicitudReparto_Input" message="tns:migrarSolicitudReparto_in" />
+      <wsdl:output name="migrarSolicitudReparto_Output" message="tns:migrarSolicitudReparto_out" />
+      <wsdl:fault name="migrarSolicitudReparto_Fault" message="tns:migrarSolicitudReparto_fault1" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Credito_MigrarSolicitudRepartoBinding12" type="tns:Credito_MigrarSolicitudRepartoPortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="migrarSolicitudReparto">
+      <soap12:operation soapAction="migrarSolicitudReparto" />
+      <wsdl:input name="migrarSolicitudReparto_Input">
+        <soap12:header message="tns:headerRq" part="headerRq" use="literal" />
+        <soap12:body use="literal" parts="MigrarSolicitudRepartoRq" />
+      </wsdl:input>
+      <wsdl:output name="migrarSolicitudReparto_Output">
+        <soap12:header message="tns:headerRs" part="headerRs" use="literal" />
+        <soap12:body use="literal" parts="MigrarSolicitudRepartoRs" />
+      </wsdl:output>
+      <wsdl:fault name="migrarSolicitudReparto_Fault">
+        <soap12:fault use="literal" name="migrarSolicitudReparto_Fault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Credito_MigrarSolicitudRepartoService">
+    <wsdl:port name="Credito_MigrarSolicitudRepartoPort12" binding="tns:Credito_MigrarSolicitudRepartoBinding12">
+      <soap12:address location="http://localhost:7800/esb/services/soap" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:mtr="http://www.fna.gov.co/cim/businessentities/motivoRetiro" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/motivoRetiro" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="MotivoRetiro">
+    <sequence>
+      <element minOccurs="1" name="codigoMotivoRetiro" type="string" />
+      <element minOccurs="0" name="restriccionMotivoRetiro" type="string" />
+    </sequence>
+  </complexType>
+</schema>

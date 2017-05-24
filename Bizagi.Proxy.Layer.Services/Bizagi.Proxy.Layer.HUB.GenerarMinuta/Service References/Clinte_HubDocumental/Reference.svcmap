@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b0e9526b-624e-4ade-9d49-43555f2a5483" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Proyectos\FNA\Procesos\Sistemas\HUB\Reparto Notarial\Reparto Final\MessageLib\150_Credito_MigrarSolicitudReparto\wsdl\1.2\Credito_MigrarSolicitudReparto.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="codigoTipo.xsd" MetadataType="Schema" ID="b3c764c2-1cb3-4219-99a8-ceae6bca5cb1" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/codigoTipo.xsd" />
+    <MetadataFile FileName="asesor.xsd" MetadataType="Schema" ID="a50a416c-e58f-42df-bd57-6b23837f1394" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/asesor.xsd" />
+    <MetadataFile FileName="tipoafiliacion.xsd" MetadataType="Schema" ID="2916d62f-5bbd-41cc-b692-4ba5d502cfd8" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/tipoafiliacion.xsd" />
+    <MetadataFile FileName="autorizacionEnvio.xsd" MetadataType="Schema" ID="d703a764-461c-4e75-8147-7f281d0b4d62" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/autorizacionEnvio.xsd" />
+    <MetadataFile FileName="direccion_Sub.xsd" MetadataType="Schema" ID="5c8a03bc-8f3d-40af-8312-09a00618bfbc" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/CommonsLib/direccion_Sub.xsd" />
+    <MetadataFile FileName="informacionfinanciera.xsd" MetadataType="Schema" ID="09f57b91-10a9-493c-a85d-6a1d44c7b94a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/informacionfinanciera.xsd" />
+    <MetadataFile FileName="Credito_MigrarSolicitudReparto.wsdl" MetadataType="Wsdl" ID="2c493187-0978-4aa7-bd3e-c98323e4db7b" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/MessageLib/150_Credito_MigrarSolicitudReparto/wsdl/1.2/Credito_MigrarSolicitudReparto.wsdl" />
+    <MetadataFile FileName="solicitud.xsd" MetadataType="Schema" ID="49b09475-32d5-43a2-b83d-b27bdb24aa27" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/solicitud.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="0f180b49-25bb-4630-8546-d685ad0efd7a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="cuentaBancaria.xsd" MetadataType="Schema" ID="8c5ce2bd-95cd-4304-aa90-2b9d560b96e1" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/cuentaBancaria.xsd" />
+    <MetadataFile FileName="informacionLaboral_Sub.xsd" MetadataType="Schema" ID="0eb40caf-d2ae-4765-b1a3-2dd040711058" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/CommonsLib/informacionLaboral_Sub.xsd" />
+    <MetadataFile FileName="monedaExtranjera.xsd" MetadataType="Schema" ID="f099476d-0bec-48e2-895e-64b1cdc44fc4" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/monedaExtranjera.xsd" />
+    <MetadataFile FileName="telefono_Sub.xsd" MetadataType="Schema" ID="8c2040b4-3d94-4712-928c-27e988cb069d" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/CommonsLib/telefono_Sub.xsd" />
+    <MetadataFile FileName="legalizacion.xsd" MetadataType="Schema" ID="c8fb6cdb-f969-4346-aa95-ad1eff577a8d" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/legalizacion.xsd" />
+    <MetadataFile FileName="pep.xsd" MetadataType="Schema" ID="b107dba4-7893-4fec-91e6-ee48a1a9b900" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/pep.xsd" />
+    <MetadataFile FileName="motivoRetiro.xsd" MetadataType="Schema" ID="a0bc28ff-4838-4832-8024-a20a9ded1703" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/motivoRetiro.xsd" />
+    <MetadataFile FileName="inmueble.xsd" MetadataType="Schema" ID="36d85ec8-c657-473d-8356-ea4597950187" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/inmueble.xsd" />
+    <MetadataFile FileName="cuentaAVC.xsd" MetadataType="Schema" ID="b46175a4-046f-433e-ad72-7b094f15d8c8" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/cuentaAVC.xsd" />
+    <MetadataFile FileName="telefono.xsd" MetadataType="Schema" ID="93789d50-3946-4133-a389-ac0737c3d22b" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/telefono.xsd" />
+    <MetadataFile FileName="MigrarSolicitudReparto.xsd" MetadataType="Schema" ID="56d4a865-584c-4ee5-b546-0627ccecae1a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/MessageLib/150_Credito_MigrarSolicitudReparto/xsd/MigrarSolicitudReparto.xsd" />
+    <MetadataFile FileName="identificacion.xsd" MetadataType="Schema" ID="72a6b862-6890-43f5-822e-38204fe26a2b" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="cddfbde7-57b4-4394-bbc8-32f3a19be534" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse.xsd" MetadataType="Schema" ID="2b681a63-830c-4462-8165-62abc326fb18" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="cesantias.xsd" MetadataType="Schema" ID="3242d330-71ab-421b-885a-b02c41b321a7" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/cesantias.xsd" />
+    <MetadataFile FileName="personanatural.xsd" MetadataType="Schema" ID="2192a4a2-1e9f-4fb7-bd66-b416566359f7" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/personanatural.xsd" />
+    <MetadataFile FileName="personajuridica.xsd" MetadataType="Schema" ID="2aa0dc4b-9b09-4331-919a-0f312972eb4f" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/personajuridica.xsd" />
+    <MetadataFile FileName="direccion.xsd" MetadataType="Schema" ID="cfac206e-92c3-4c84-ac56-3bc59cafe67b" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/direccion.xsd" />
+    <MetadataFile FileName="informacionlaboral.xsd" MetadataType="Schema" ID="3b5800e5-5767-4709-b85f-4cce4b0916a9" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/HUB/Reparto Notarial/Reparto Final/BusinessEntitiesLib/informacionlaboral.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

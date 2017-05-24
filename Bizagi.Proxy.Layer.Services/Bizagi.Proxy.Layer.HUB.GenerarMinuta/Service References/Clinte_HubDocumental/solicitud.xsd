@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/businessentities/solicitud" xmlns:avc="http://www.fna.gov.co/cim/businessentities/cuentaAVC" xmlns:mtr="http://www.fna.gov.co/cim/businessentities/motivoRetiro" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/solicitud" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="cuentaAVC.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC" />
+  <import schemaLocation="motivoRetiro.xsd" namespace="http://www.fna.gov.co/cim/businessentities/motivoRetiro" />
+  <complexType name="solicitud">
+    <sequence>
+      <element minOccurs="0" name="numeroTramiteSolicitud" type="string" />
+      <element minOccurs="0" name="codigoTipoSolicitud" type="string" />
+      <element minOccurs="0" name="codigoProducto" type="string" />
+      <element minOccurs="0" name="tipoProducto" type="string" />
+      <element minOccurs="0" name="codigoCiudadDestino" type="string" />
+      <element minOccurs="0" name="codigoEstadoTramite" type="string" />
+      <element minOccurs="0" name="fechaSolicitud" type="date" />
+      <element minOccurs="0" name="fechaAprobacion" type="date" />
+      <element minOccurs="0" name="codigoCiudadRadicacion" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="solicitudCredito">
+    <complexContent mixed="false">
+      <extension base="this:solicitud">
+        <sequence>
+          <element minOccurs="0" name="codigoLineaCredito" type="string" />
+          <element minOccurs="0" name="tipoCredito" type="string" />
+          <element minOccurs="0" name="codigoDestinoEconomico" type="string" />
+          <element minOccurs="0" name="fechaOferta" type="date" />
+          <element minOccurs="0" name="valorSubsidio" type="string" />
+          <element minOccurs="0" name="fechaVencimientoSubsidio" type="date" />
+          <element minOccurs="0" name="valorSolicitado" type="string" />
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="solicitudCesantias">
+    <sequence>
+      <element minOccurs="0" name="numeroFormulario" type="string" />
+      <element minOccurs="0" name="pais" type="string" />
+      <element minOccurs="0" name="departamento" type="string" />
+      <element minOccurs="0" name="ciudad" type="string" />
+      <element minOccurs="0" name="puntoAtencion" type="string" />
+      <element minOccurs="0" name="valorIntencionRetiro" type="decimal" />
+      <element minOccurs="0" name="cobroPor" type="string" />
+      <element minOccurs="0" name="modalidad" type="string" />
+      <element minOccurs="0" name="codigoEntidad" type="int" />
+      <element minOccurs="0" name="codTipoSolicitud" type="string" />
+      <element minOccurs="0" name="codDestinoEconomico" type="string" />
+      <element minOccurs="0" name="codCanal" type="int" />
+      <element minOccurs="0" name="codFuncionario" type="int" />
+      <element minOccurs="0" name="numeroSolicitudRetiro" type="string" />
+      <element minOccurs="0" name="annio" type="int" />
+      <element minOccurs="0" name="observacion" type="string" />
+      <element minOccurs="0" name="montoSolicitado" type="decimal" />
+      <element minOccurs="0" name="monto" type="decimal" />
+      <element minOccurs="0" name="codigoEstadoSolicitud" type="string" />
+      <element minOccurs="0" name="retencionParcial" type="boolean" />
+      <element minOccurs="0" name="telefonoFijoWM" type="string" />
+      <element minOccurs="0" name="telefonoCelularWM" type="string" />
+      <element minOccurs="0" name="telefonoLaboralWM" type="string" />
+      <element minOccurs="0" name="tieneArchivo" type="boolean" />
+      <element minOccurs="0" name="numeroCuentaCesantias" type="string" />
+      <element minOccurs="0" name="loginFuncionario" type="string" />
+      <element minOccurs="0" name="nombreEntidad" type="string" />
+      <element minOccurs="0" name="fechaCreacion" type="date" />
+    </sequence>
+  </complexType>
+  <complexType name="SolicitudRetiroAVC">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoSolicitudRetiro" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="esRetiroParcial" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="valorRetiro" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="numeroExterno" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="CuentaAVC" type="avc:cuentaAVC" />
+      <element minOccurs="0" maxOccurs="1" name="observacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoOrigen" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroSolicitud" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSolicitud" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="codigoMotivo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="formaPagoRetiro" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="motivoRetiro" type="mtr:MotivoRetiro" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEstadoSolicitudRetiro" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="SolicitudHUBLegalizacion">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoMunicipio" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoVivienda" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="identificador" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCirculoRegistral" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="valorCesantias" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="valorCredito" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="legalizacion" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSolicitud" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="valorContado" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="nombreMunicipio" type="string" />
+    </sequence>
+  </complexType>
+</schema>

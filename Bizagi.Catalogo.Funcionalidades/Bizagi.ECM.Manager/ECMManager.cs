@@ -23,9 +23,9 @@ namespace Bizagi.ECM.Manager
         /// y el identificador del documento</returns>
         public List<ObjetoSalidaECM> EjecutarECM(ObjetoEntradaECM obj, int operacion)
         {
+            List<ObjetoSalidaECM> lst = new List<Manager.ObjetoSalidaECM>();
             try
-            {
-                List<ObjetoSalidaECM> lst = new List<Manager.ObjetoSalidaECM>();
+            {                
                 var respuesta = new ObjetoSalidaECM();
                 #region Trace
                 if (obj.Trace.ActivarTrace)
@@ -49,12 +49,12 @@ namespace Bizagi.ECM.Manager
                         return lst;
                     default:
                         throw new Exception("Operación no implementada: " + operacion);                        
-                }
-               
+                }               
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                CrearArchivo(obj, "Mensaje Error", ex.Message);
+                return lst;
             }
         }
 

@@ -110,6 +110,9 @@ namespace Bizagi.ECM.Manager.ECMService {
         private string LoginField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NombresyApellidosField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string TipoField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
@@ -163,6 +166,19 @@ namespace Bizagi.ECM.Manager.ECMService {
                 if ((object.ReferenceEquals(this.LoginField, value) != true)) {
                     this.LoginField = value;
                     this.RaisePropertyChanged("Login");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string NombresyApellidos {
+            get {
+                return this.NombresyApellidosField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NombresyApellidosField, value) != true)) {
+                    this.NombresyApellidosField = value;
+                    this.RaisePropertyChanged("NombresyApellidos");
                 }
             }
         }

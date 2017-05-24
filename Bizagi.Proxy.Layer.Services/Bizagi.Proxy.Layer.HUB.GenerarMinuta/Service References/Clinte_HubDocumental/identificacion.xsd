@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Identificacion">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="digitoVerificacion" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechasExpiracion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="departamentoExpedicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="paisExpedicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="pobladoExpedicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descripcionEstado" type="string" />
+    </sequence>
+  </complexType>
+</schema>

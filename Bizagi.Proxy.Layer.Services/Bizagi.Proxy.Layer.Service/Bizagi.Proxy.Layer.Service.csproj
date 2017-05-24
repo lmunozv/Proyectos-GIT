@@ -74,7 +74,7 @@
     <Content Include="CuadroVentasProxy_CrearSolicitud.asmx" />
     <Content Include="HUBProxy_CorreoSeguro.asmx" />
     <Content Include="HUBProxy_FirmaDigital.asmx" />
-    <Content Include="HUBProxy_GenerarMinutaService.svc" />
+    <Content Include="HUB_GenerarMinuta.asmx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -124,10 +124,10 @@
       <DependentUpon>HUBProxy_FirmaDigital.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="HUBProxy_GenerarMinutaService.svc.cs">
-      <DependentUpon>HUBProxy_GenerarMinutaService.svc</DependentUpon>
+    <Compile Include="HUB_GenerarMinuta.asmx.cs">
+      <DependentUpon>HUB_GenerarMinuta.asmx</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="IHUBProxy_GenerarMinutaService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TraceExtension.cs" />
   </ItemGroup>

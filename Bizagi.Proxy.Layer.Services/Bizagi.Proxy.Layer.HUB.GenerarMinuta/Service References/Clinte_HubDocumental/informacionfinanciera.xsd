@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ctaban="http://www.fna.gov.co/cim/businessentities/cuentabancaria" xmlns:infofin="http://www.fna.gov.co/cim/businessentities/informacionfinanciera" xmlns:moex="http://www.fna.gov.co/cim/businessentities/monedaextranjera" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/informacionfinanciera" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="cuentaBancaria.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentabancaria" />
+  <import schemaLocation="monedaExtranjera.xsd" namespace="http://www.fna.gov.co/cim/businessentities/monedaextranjera" />
+  <complexType name="InformacionFinanciera">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="ingresos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="egresos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosIngresos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="detalleOtrosIngresos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="totalActivos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalPasivos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalPatrimonio" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="fechaPatrimonioBruto" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaVinculacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaRecibido" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaEnvio" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="tarjetaFirmas" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorRetencion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="reportadoSuperbancaria" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="documentoValidado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="pendienteDatos" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="grandesContribuyentes" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="comentarios" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorCredito" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="devolucion" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorCentralRiesgos" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="tipoAportante" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="monedaExtranjera" type="moex:MonedaExtranjera" />
+      <element minOccurs="0" name="pagoServicios" type="string" />
+      <element minOccurs="0" name="prestamosME" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="otroPrestamos" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="cuentasBancarias" type="ctaban:CuentaBancaria" />
+      <element minOccurs="0" name="realizaOperacionesMonedaExtranjera" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="ingresosNoOperacionales" type="decimal" />
+    </sequence>
+  </complexType>
+</schema>

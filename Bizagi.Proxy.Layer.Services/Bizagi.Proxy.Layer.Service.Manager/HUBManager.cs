@@ -42,9 +42,10 @@ namespace Bizagi.Proxy.Layer.Service.Manager
         #endregion
 
         #region Metodos
-        public static int GenerarMinuta(solicitudType solicitud)
+        public static HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output 
+            GenerarMinuta(HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Input input)
         {
-            return HubDocumentalImpl.GenerarMinuta(solicitud);
+            return HubDocumentalImpl.GenerarMinuta(input);
         }
 
         public static HUB.FirmarDocumentos.FirmaDocuementoClient.FirmarDocumentoRsType

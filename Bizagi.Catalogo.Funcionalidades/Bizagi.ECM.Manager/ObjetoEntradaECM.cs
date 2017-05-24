@@ -45,6 +45,7 @@ namespace Bizagi.ECM.Manager
 
         public string Transaccion { get; set; }
 
+        public string NombresApellidos { get; set; }
 
         private Trace trace;
         public Trace Trace

@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Bizagi.Proxy.Layer.Service.HUBProxy_GenerarMinutaService" CodeBehind="HUBProxy_GenerarMinutaService.svc.cs" %>

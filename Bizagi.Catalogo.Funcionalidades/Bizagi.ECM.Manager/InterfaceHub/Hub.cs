@@ -71,6 +71,7 @@ namespace Bizagi.ECM.Manager.InterfaceHub
                 rq.Data.Tipo = obj.Tipo;
                 rq.Data.TipoIdentificacion = obj.TipoIdentificacion;
                 rq.Data.Transaccion = obj.Transaccion;
+                rq.Data.NombresyApellidos = obj.NombresApellidos;
                 #endregion
 
                 ECMService.Gestor_InsertarRequest req = new ECMService.Gestor_InsertarRequest(rq);

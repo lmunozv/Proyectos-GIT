@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:leg="http://www.fna.gov.co/cim/businessentities/legalizacion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/legalizacion" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="legalizacion">
+    <sequence>
+      <element minOccurs="0" name="idSolicitud" type="int" />
+      <element minOccurs="0" name="idLegalizacion" type="int" />
+      <element minOccurs="0" name="CodNotaria" type="string" />
+    </sequence>
+  </complexType>
+</schema>

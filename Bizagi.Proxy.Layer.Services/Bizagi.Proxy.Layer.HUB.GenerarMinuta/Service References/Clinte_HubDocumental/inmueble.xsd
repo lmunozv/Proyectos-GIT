@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:inm="http://www.fna.gov.co/cim/businessentities/inmueble" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/inmueble" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="inmueble">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="matricula" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoMunicipio" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoInmueble" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="linderosEspeciales1" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="chip" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cedulaCatastral" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="linderosEspeciales2" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="conjuntoAgrupacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreTipoInmueble" type="string" />
+    </sequence>
+  </complexType>
+</schema>

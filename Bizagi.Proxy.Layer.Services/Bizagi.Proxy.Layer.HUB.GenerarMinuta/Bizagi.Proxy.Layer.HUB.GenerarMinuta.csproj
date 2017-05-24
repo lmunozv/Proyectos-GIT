@@ -46,13 +46,10 @@
   <ItemGroup>
     <Compile Include="HubDocumentalImpl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service References\Cliente_HubDocumental\Reference.cs">
+    <Compile Include="Service References\Clinte_HubDocumental\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
-    <Compile Include="Solicitud\Solicitud.cs">
-      <DependentUpon>Solicitud.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -62,24 +59,90 @@
     <None Include="app.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_HubDocumental\WSHUBDocumental.wsdl" />
-    <None Include="Solicitud\Solicitud.xsd">
+    <None Include="Service References\Clinte_HubDocumental\asesor.xsd">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Service References\Cliente_HubDocumental\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Cliente_HubDocumental\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Cliente_HubDocumental\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\Cliente_HubDocumental\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
+    <None Include="Service References\Clinte_HubDocumental\autorizacionEnvio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\codigoTipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\consumerHeaderResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\Credito_MigrarSolicitudReparto.wsdl" />
+    <None Include="Service References\Clinte_HubDocumental\cuentaAVC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\direccion_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\informacionLaboral_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\inmueble.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\legalizacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\MigrarSolicitudReparto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\monedaExtranjera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\motivoRetiro.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\pep.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\solicitud.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\telefono_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Clinte_HubDocumental\tipoafiliacion.xsd">
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -87,6 +150,21 @@
       <Project>{7dfd7615-bc27-4e51-9b0a-4ed8880557b1}</Project>
       <Name>Bizagi.Proxy.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Clinte_HubDocumental\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Clinte_HubDocumental\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Clinte_HubDocumental\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Clinte_HubDocumental\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
