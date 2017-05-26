@@ -30,7 +30,7 @@ namespace Bizagi.Catalogo.Funcionalidades
             obj.Trace.NombreProceso = "Prueba";
             obj.Trace.NumeroSolicitud ="123456";
             //obj.NumeroRadicado = "35-2303-201710010000003";
-            obj.Identificacion = "9530678";
+            obj.Identificacion = "1024";
             ecm.EjecutarECM(obj, operacion);
 
             //CommonMethods c = new CommonMethods();

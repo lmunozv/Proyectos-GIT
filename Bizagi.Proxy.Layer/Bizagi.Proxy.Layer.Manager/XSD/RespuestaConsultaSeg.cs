@@ -43,14 +43,14 @@ public partial class BizAgiWSResponseType {
 [System.ComponentModel.DesignerCategoryAttribute("code")]
 public partial class M_SolicitudType {
     
-    private sbyte oidReclamacionSeguroField;
+    private int oidReclamacionSeguroField;
     
-    private sbyte keyField;
+    private int keyField;
     
     private bool keyFieldSpecified;
     
     /// <remarks/>
-    public sbyte OidReclamacionSeguro {
+    public int OidReclamacionSeguro {
         get {
             return this.oidReclamacionSeguroField;
         }
@@ -61,7 +61,7 @@ public partial class M_SolicitudType {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public sbyte key {
+    public int key {
         get {
             return this.keyField;
         }

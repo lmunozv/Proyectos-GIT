@@ -343,6 +343,7 @@ namespace Bizagi.ECM.Manager.InterfaceHub
                             oSalida.CodigoTipoDocumental = itemDoc.CodigoDirectorio;
                             oSalida.NumeroRadicado = item.Radicado;
                             lstSalida.Add(oSalida);
+                            DateTime.Now.ToShortDateString();
                         }
                     }
                 }

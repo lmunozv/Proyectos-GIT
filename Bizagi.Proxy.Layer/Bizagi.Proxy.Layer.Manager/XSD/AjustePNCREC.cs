@@ -37,13 +37,13 @@ public partial class M_Solicitud {
         }
     }
 
-    private sbyte keyField;
+    private int keyField;
 
     private bool keyFieldSpecified;
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public sbyte key
+    public int key
     {
         get
         {
@@ -82,7 +82,7 @@ public partial class M_SolicitudOidReclamacionSeguro {
     
     private string entityNameField;
 
-    private sbyte keyField;
+    private int keyField;
 
     private bool keyFieldSpecified;
 
@@ -111,7 +111,7 @@ public partial class M_SolicitudOidReclamacionSeguro {
 
     /// <remarks/>
     [System.Xml.Serialization.XmlAttributeAttribute()]
-    public sbyte key
+    public int key
     {
         get
         {
