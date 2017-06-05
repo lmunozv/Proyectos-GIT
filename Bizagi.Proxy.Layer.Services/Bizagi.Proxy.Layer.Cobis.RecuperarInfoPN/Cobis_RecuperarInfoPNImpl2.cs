@@ -11,21 +11,21 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN
 {
     public class Cobis_RecuperarInfoPNImpl2
     {
-        public ClientePersonaNaturalCliente.recuperarinformacion_output
-            RecuperarInfoBasicaPersonaNatural(ClientePersonaNaturalCliente.recuperarinformacion_input input)
+        public ClientePersonaNaturalCliente.recuperarInfoBasica_Output
+            RecuperarInfoBasicaPersonaNatural(ClientePersonaNaturalCliente.recuperarInfoBasica_Input input)
         {
             try
             {
                 ProxyUtils.ByPassCertificate();
-                ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortTypeClient cliente =
-                    new ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortTypeClient();
+                ClientePersonaNaturalCliente.Common_MessageSetPortTypeClient cliente =
+                    new ClientePersonaNaturalCliente.Common_MessageSetPortTypeClient();
                 cliente.ClientCredentials.UserName.UserName = ProxyUtils.GetServiceUser("UsrServices");
                 cliente.ClientCredentials.UserName.Password = ProxyUtils.GetServicePwd("PwdServices");
                 using (OperationContextScope scope = new OperationContextScope(cliente.InnerChannel))
                 {
                     OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
                         ProxyUtils.GetHttpRequestMessageProperty();
-                    var res = cliente.recuperarInformacion(input);
+                    var res = cliente.recuperarInfoBasica(input);
                     return res;
                 }
             }

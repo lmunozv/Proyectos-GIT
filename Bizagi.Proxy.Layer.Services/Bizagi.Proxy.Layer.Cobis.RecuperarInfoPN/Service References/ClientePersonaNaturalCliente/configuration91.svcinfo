@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="//Y0zFQnVfCgfJT1VdVn0TVTiPk=">
+<SavedWcfConfigurationInformation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="9.1" CheckSum="x9cobsva52+vcKVHOtibQAdcfx4=">
   <bindingConfigurations>
-    <bindingConfiguration bindingType="customBinding" name="ClientePersonaNatural_RecuperarInformacion_Binding12">
+    <bindingConfiguration bindingType="customBinding" name="recuperarInfoBasicaBinding">
       <properties>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ClientePersonaNatural_RecuperarInformacion_Binding12</serializedValue>
+          <serializedValue>recuperarInfoBasicaBinding</serializedValue>
         </property>
         <property path="/closeTimeout" isComplexType="false" isExplicitlyDefined="true" clrType="System.TimeSpan, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -154,10 +154,10 @@
     </bindingConfiguration>
   </bindingConfigurations>
   <endpoints>
-    <endpoint name="ClientePersonaNatural_RecuperarInformacion_Port12" contract="ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType" bindingType="customBinding" address="http://localhost:7800/esb/services/soap/clientepersonanatural/recuperarinformacion/v1" bindingConfiguration="ClientePersonaNatural_RecuperarInformacion_Binding12">
+    <endpoint name="ClntePrsnaNtral_RecuperarInfoBasicaPort" contract="ClientePersonaNaturalCliente.Common_MessageSetPortType" bindingType="customBinding" address="http://localhost:7800/esb/services/soap" bindingConfiguration="recuperarInfoBasicaBinding">
       <properties>
         <property path="/address" isComplexType="false" isExplicitlyDefined="true" clrType="System.Uri, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>http://localhost:7800/esb/services/soap/clientepersonanatural/recuperarinformacion/v1</serializedValue>
+          <serializedValue>http://localhost:7800/esb/services/soap</serializedValue>
         </property>
         <property path="/behaviorConfiguration" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />
@@ -166,10 +166,10 @@
           <serializedValue>customBinding</serializedValue>
         </property>
         <property path="/bindingConfiguration" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ClientePersonaNatural_RecuperarInformacion_Binding12</serializedValue>
+          <serializedValue>recuperarInfoBasicaBinding</serializedValue>
         </property>
         <property path="/contract" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType</serializedValue>
+          <serializedValue>ClientePersonaNaturalCliente.Common_MessageSetPortType</serializedValue>
         </property>
         <property path="/headers" isComplexType="true" isExplicitlyDefined="false" clrType="System.ServiceModel.Configuration.AddressHeaderCollectionElement, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue>System.ServiceModel.Configuration.AddressHeaderCollectionElement</serializedValue>
@@ -229,7 +229,7 @@
           <serializedValue>False</serializedValue>
         </property>
         <property path="/name" isComplexType="false" isExplicitlyDefined="true" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-          <serializedValue>ClientePersonaNatural_RecuperarInformacion_Port12</serializedValue>
+          <serializedValue>ClntePrsnaNtral_RecuperarInfoBasicaPort</serializedValue>
         </property>
         <property path="/kind" isComplexType="false" isExplicitlyDefined="false" clrType="System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
           <serializedValue />

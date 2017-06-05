@@ -19,8 +19,8 @@ namespace Bizagi.Proxy.Layer.Service
     {
         [TraceExtensionAttribute]
         [WebMethod]
-        public Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output
-            RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input input)
+        public Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output 
+            RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input input)
         {
             ICliente cliente = new CobisManager();
             return cliente.RecuperarInfoBasicaPersonaNatural(input);

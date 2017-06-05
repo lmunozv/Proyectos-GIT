@@ -13,8 +13,8 @@ namespace Bizagi.Proxy.Layer.Service.Manager.Interfaces
 
         Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServicioResponse recuperarInfoBasicaPersonaJuridicaRequest(Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ConsumerHeader head, Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServiceRequest body);
 
-        Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output
-           RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input input);
+        Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output
+           RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input input);
 
     }
 }

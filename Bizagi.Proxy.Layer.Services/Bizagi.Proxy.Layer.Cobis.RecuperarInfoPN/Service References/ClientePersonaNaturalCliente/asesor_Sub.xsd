@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/asesorsub" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:ase="http://www.fna.gov.co/cim/businessentities/asesor" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/asesorsub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/asesor.xsd" namespace="http://www.fna.gov.co/cim/businessentities/asesor" />
+  <import schemaLocation="../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <complexType name="Asesor_V1.0">
+    <complexContent mixed="false">
+      <restriction base="ase:Asesor">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="codigoOficinaAfiliacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="LogIn" type="string" />
+          <element minOccurs="0" name="codigoAsesor" type="string" />
+          <element minOccurs="0" name="codigoOficialReferido" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Asesor_V2.0">
+    <complexContent mixed="false">
+      <restriction base="ase:Asesor">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="codigoOficinaAfiliacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreCompleto" type="string" />
+          <element minOccurs="0" name="identificacionAsesorComercial" type="ident:Identificacion" />
+          <element minOccurs="0" maxOccurs="1" name="lugarEntrevista" type="string" />
+          <element minOccurs="0" name="fechaEntrevista" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

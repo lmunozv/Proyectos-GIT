@@ -76,16 +76,4862 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/bloqueo")]
+    public partial class bloqueo : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string tipoBloqueoField;
+        
+        private string descripcionBloqueoField;
+        
+        private System.DateTime fechaBloqueoField;
+        
+        private bool fechaBloqueoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string tipoBloqueo {
+            get {
+                return this.tipoBloqueoField;
+            }
+            set {
+                this.tipoBloqueoField = value;
+                this.RaisePropertyChanged("tipoBloqueo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcionBloqueo {
+            get {
+                return this.descripcionBloqueoField;
+            }
+            set {
+                this.descripcionBloqueoField = value;
+                this.RaisePropertyChanged("descripcionBloqueo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=2)]
+        public System.DateTime fechaBloqueo {
+            get {
+                return this.fechaBloqueoField;
+            }
+            set {
+                this.fechaBloqueoField = value;
+                this.RaisePropertyChanged("fechaBloqueo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaBloqueoSpecified {
+            get {
+                return this.fechaBloqueoFieldSpecified;
+            }
+            set {
+                this.fechaBloqueoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaBloqueoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Asesor_V20))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AsesorType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Asesor_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/asesor")]
+    public partial class Asesor : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoOficinaAfiliacionField;
+        
+        private string nombreOficinaAfiliacionField;
+        
+        private string logInField;
+        
+        private string codigoAsesorField;
+        
+        private string codigoOficialReferidoField;
+        
+        private string nombreCompletoField;
+        
+        private Identificacion identificacionAsesorComercialField;
+        
+        private string lugarEntrevistaField;
+        
+        private System.DateTime fechaEntrevistaField;
+        
+        private bool fechaEntrevistaFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigoOficinaAfiliacion {
+            get {
+                return this.codigoOficinaAfiliacionField;
+            }
+            set {
+                this.codigoOficinaAfiliacionField = value;
+                this.RaisePropertyChanged("codigoOficinaAfiliacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string nombreOficinaAfiliacion {
+            get {
+                return this.nombreOficinaAfiliacionField;
+            }
+            set {
+                this.nombreOficinaAfiliacionField = value;
+                this.RaisePropertyChanged("nombreOficinaAfiliacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string LogIn {
+            get {
+                return this.logInField;
+            }
+            set {
+                this.logInField = value;
+                this.RaisePropertyChanged("LogIn");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string codigoAsesor {
+            get {
+                return this.codigoAsesorField;
+            }
+            set {
+                this.codigoAsesorField = value;
+                this.RaisePropertyChanged("codigoAsesor");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string codigoOficialReferido {
+            get {
+                return this.codigoOficialReferidoField;
+            }
+            set {
+                this.codigoOficialReferidoField = value;
+                this.RaisePropertyChanged("codigoOficialReferido");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombreCompleto {
+            get {
+                return this.nombreCompletoField;
+            }
+            set {
+                this.nombreCompletoField = value;
+                this.RaisePropertyChanged("nombreCompleto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public Identificacion identificacionAsesorComercial {
+            get {
+                return this.identificacionAsesorComercialField;
+            }
+            set {
+                this.identificacionAsesorComercialField = value;
+                this.RaisePropertyChanged("identificacionAsesorComercial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string lugarEntrevista {
+            get {
+                return this.lugarEntrevistaField;
+            }
+            set {
+                this.lugarEntrevistaField = value;
+                this.RaisePropertyChanged("lugarEntrevista");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=8)]
+        public System.DateTime fechaEntrevista {
+            get {
+                return this.fechaEntrevistaField;
+            }
+            set {
+                this.fechaEntrevistaField = value;
+                this.RaisePropertyChanged("fechaEntrevista");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaEntrevistaSpecified {
+            get {
+                return this.fechaEntrevistaFieldSpecified;
+            }
+            set {
+                this.fechaEntrevistaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaEntrevistaSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V16))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V15))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V13))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IdPersonaJuridicaType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IdentificacionType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/identificacion")]
+    public partial class Identificacion : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string numeroDocumentoField;
+        
+        private string tipoDocumentoField;
+        
+        private int digitoVerificacionField;
+        
+        private bool digitoVerificacionFieldSpecified;
+        
+        private System.DateTime fechaExpedicionField;
+        
+        private bool fechaExpedicionFieldSpecified;
+        
+        private System.DateTime fechasExpiracionField;
+        
+        private bool fechasExpiracionFieldSpecified;
+        
+        private string ciudadExpedicionField;
+        
+        private string departamentoExpedicionField;
+        
+        private string paisExpedicionField;
+        
+        private string pobladoExpedicionField;
+        
+        private string estadoField;
+        
+        private string descripcionEstadoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string numeroDocumento {
+            get {
+                return this.numeroDocumentoField;
+            }
+            set {
+                this.numeroDocumentoField = value;
+                this.RaisePropertyChanged("numeroDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoDocumento {
+            get {
+                return this.tipoDocumentoField;
+            }
+            set {
+                this.tipoDocumentoField = value;
+                this.RaisePropertyChanged("tipoDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public int digitoVerificacion {
+            get {
+                return this.digitoVerificacionField;
+            }
+            set {
+                this.digitoVerificacionField = value;
+                this.RaisePropertyChanged("digitoVerificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool digitoVerificacionSpecified {
+            get {
+                return this.digitoVerificacionFieldSpecified;
+            }
+            set {
+                this.digitoVerificacionFieldSpecified = value;
+                this.RaisePropertyChanged("digitoVerificacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
+        public System.DateTime fechaExpedicion {
+            get {
+                return this.fechaExpedicionField;
+            }
+            set {
+                this.fechaExpedicionField = value;
+                this.RaisePropertyChanged("fechaExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaExpedicionSpecified {
+            get {
+                return this.fechaExpedicionFieldSpecified;
+            }
+            set {
+                this.fechaExpedicionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaExpedicionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=4)]
+        public System.DateTime fechasExpiracion {
+            get {
+                return this.fechasExpiracionField;
+            }
+            set {
+                this.fechasExpiracionField = value;
+                this.RaisePropertyChanged("fechasExpiracion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechasExpiracionSpecified {
+            get {
+                return this.fechasExpiracionFieldSpecified;
+            }
+            set {
+                this.fechasExpiracionFieldSpecified = value;
+                this.RaisePropertyChanged("fechasExpiracionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string ciudadExpedicion {
+            get {
+                return this.ciudadExpedicionField;
+            }
+            set {
+                this.ciudadExpedicionField = value;
+                this.RaisePropertyChanged("ciudadExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string departamentoExpedicion {
+            get {
+                return this.departamentoExpedicionField;
+            }
+            set {
+                this.departamentoExpedicionField = value;
+                this.RaisePropertyChanged("departamentoExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string paisExpedicion {
+            get {
+                return this.paisExpedicionField;
+            }
+            set {
+                this.paisExpedicionField = value;
+                this.RaisePropertyChanged("paisExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string pobladoExpedicion {
+            get {
+                return this.pobladoExpedicionField;
+            }
+            set {
+                this.pobladoExpedicionField = value;
+                this.RaisePropertyChanged("pobladoExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string estado {
+            get {
+                return this.estadoField;
+            }
+            set {
+                this.estadoField = value;
+                this.RaisePropertyChanged("estado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string descripcionEstado {
+            get {
+                return this.descripcionEstadoField;
+            }
+            set {
+                this.descripcionEstadoField = value;
+                this.RaisePropertyChanged("descripcionEstado");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V16 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V15 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V14 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V13 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V12 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V11 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub")]
+    public partial class Identificacion_V10 : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cesantias")]
+    public partial class IdPersonaJuridicaType : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class IdentificacionType : Identificacion {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AsesorType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Asesor_V2.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/asesorsub")]
+    public partial class Asesor_V20 : Asesor {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class AsesorType : Asesor_V20 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Asesor_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/asesorsub")]
+    public partial class Asesor_V10 : Asesor {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class OficinaAfilicacion : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoField;
+        
+        private bool codigoFieldSpecified;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSpecified {
+            get {
+                return this.codigoFieldSpecified;
+            }
+            set {
+                this.codigoFieldSpecified = value;
+                this.RaisePropertyChanged("codigoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("nombre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class JefePersonal : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoJefePersonalField;
+        
+        private bool codigoJefePersonalFieldSpecified;
+        
+        private string tipoDocumentoField;
+        
+        private string numeroDocumentoField;
+        
+        private Atributo[] atributoField;
+        
+        private DireccionPJT direccionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoJefePersonal {
+            get {
+                return this.codigoJefePersonalField;
+            }
+            set {
+                this.codigoJefePersonalField = value;
+                this.RaisePropertyChanged("codigoJefePersonal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoJefePersonalSpecified {
+            get {
+                return this.codigoJefePersonalFieldSpecified;
+            }
+            set {
+                this.codigoJefePersonalFieldSpecified = value;
+                this.RaisePropertyChanged("codigoJefePersonalSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoDocumento {
+            get {
+                return this.tipoDocumentoField;
+            }
+            set {
+                this.tipoDocumentoField = value;
+                this.RaisePropertyChanged("tipoDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string numeroDocumento {
+            get {
+                return this.numeroDocumentoField;
+            }
+            set {
+                this.numeroDocumentoField = value;
+                this.RaisePropertyChanged("numeroDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("atributo", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public Atributo[] atributo {
+            get {
+                return this.atributoField;
+            }
+            set {
+                this.atributoField = value;
+                this.RaisePropertyChanged("atributo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public DireccionPJT direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class Atributo : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoAtributoRelacionField;
+        
+        private bool codigoAtributoRelacionFieldSpecified;
+        
+        private string valorAtributoRelacionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoAtributoRelacion {
+            get {
+                return this.codigoAtributoRelacionField;
+            }
+            set {
+                this.codigoAtributoRelacionField = value;
+                this.RaisePropertyChanged("codigoAtributoRelacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoAtributoRelacionSpecified {
+            get {
+                return this.codigoAtributoRelacionFieldSpecified;
+            }
+            set {
+                this.codigoAtributoRelacionFieldSpecified = value;
+                this.RaisePropertyChanged("codigoAtributoRelacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string valorAtributoRelacion {
+            get {
+                return this.valorAtributoRelacionField;
+            }
+            set {
+                this.valorAtributoRelacionField = value;
+                this.RaisePropertyChanged("valorAtributoRelacion");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJT : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V21))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionLab))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V111))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V110))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V19))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V18))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V17))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V16))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V15))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V20))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V113))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V112))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V13))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
+    public partial class DireccionFisica : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string idDireccionField;
+        
+        private string direccionCompletaField;
+        
+        private string codigoPaisField;
+        
+        private string nombrePaisField;
+        
+        private string codigoCiudadField;
+        
+        private string nombreCiudadField;
+        
+        private string codigoDepartamentoField;
+        
+        private string nombreDepartamentoField;
+        
+        private string codigoCorregimientoField;
+        
+        private string nombreCorregimientoField;
+        
+        private string codigoProvinciaField;
+        
+        private string nombreProvinciaField;
+        
+        private string tipoDireccionField;
+        
+        private string codigoSectorField;
+        
+        private string nombreSectorField;
+        
+        private string codigoLocalidadField;
+        
+        private string nombreLocalidadField;
+        
+        private string codigoBarrioField;
+        
+        private string nombreBarrioField;
+        
+        private string nombreUrbanizacionField;
+        
+        private string estratoField;
+        
+        private string antiguedadAniosField;
+        
+        private string antiguedadMesesField;
+        
+        private string zonaVeredalField;
+        
+        private string principalField;
+        
+        private Telefono[] telefonoField;
+        
+        private int tiempoAnnosField;
+        
+        private bool tiempoAnnosFieldSpecified;
+        
+        private int tiempoMesesField;
+        
+        private bool tiempoMesesFieldSpecified;
+        
+        private string codigoPostalField;
+        
+        private string observacionField;
+        
+        private string codigoPobladoField;
+        
+        private string nombrePobladoField;
+        
+        private int codigoExternoField;
+        
+        private bool codigoExternoFieldSpecified;
+        
+        private System.DateTime fechaCreacionField;
+        
+        private bool fechaCreacionFieldSpecified;
+        
+        private System.DateTime fechaModificacionField;
+        
+        private bool fechaModificacionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string idDireccion {
+            get {
+                return this.idDireccionField;
+            }
+            set {
+                this.idDireccionField = value;
+                this.RaisePropertyChanged("idDireccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string direccionCompleta {
+            get {
+                return this.direccionCompletaField;
+            }
+            set {
+                this.direccionCompletaField = value;
+                this.RaisePropertyChanged("direccionCompleta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoPais {
+            get {
+                return this.codigoPaisField;
+            }
+            set {
+                this.codigoPaisField = value;
+                this.RaisePropertyChanged("codigoPais");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string nombrePais {
+            get {
+                return this.nombrePaisField;
+            }
+            set {
+                this.nombrePaisField = value;
+                this.RaisePropertyChanged("nombrePais");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string codigoCiudad {
+            get {
+                return this.codigoCiudadField;
+            }
+            set {
+                this.codigoCiudadField = value;
+                this.RaisePropertyChanged("codigoCiudad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombreCiudad {
+            get {
+                return this.nombreCiudadField;
+            }
+            set {
+                this.nombreCiudadField = value;
+                this.RaisePropertyChanged("nombreCiudad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string codigoDepartamento {
+            get {
+                return this.codigoDepartamentoField;
+            }
+            set {
+                this.codigoDepartamentoField = value;
+                this.RaisePropertyChanged("codigoDepartamento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string nombreDepartamento {
+            get {
+                return this.nombreDepartamentoField;
+            }
+            set {
+                this.nombreDepartamentoField = value;
+                this.RaisePropertyChanged("nombreDepartamento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string codigoCorregimiento {
+            get {
+                return this.codigoCorregimientoField;
+            }
+            set {
+                this.codigoCorregimientoField = value;
+                this.RaisePropertyChanged("codigoCorregimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string nombreCorregimiento {
+            get {
+                return this.nombreCorregimientoField;
+            }
+            set {
+                this.nombreCorregimientoField = value;
+                this.RaisePropertyChanged("nombreCorregimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string codigoProvincia {
+            get {
+                return this.codigoProvinciaField;
+            }
+            set {
+                this.codigoProvinciaField = value;
+                this.RaisePropertyChanged("codigoProvincia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string nombreProvincia {
+            get {
+                return this.nombreProvinciaField;
+            }
+            set {
+                this.nombreProvinciaField = value;
+                this.RaisePropertyChanged("nombreProvincia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string tipoDireccion {
+            get {
+                return this.tipoDireccionField;
+            }
+            set {
+                this.tipoDireccionField = value;
+                this.RaisePropertyChanged("tipoDireccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string codigoSector {
+            get {
+                return this.codigoSectorField;
+            }
+            set {
+                this.codigoSectorField = value;
+                this.RaisePropertyChanged("codigoSector");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string nombreSector {
+            get {
+                return this.nombreSectorField;
+            }
+            set {
+                this.nombreSectorField = value;
+                this.RaisePropertyChanged("nombreSector");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string codigoLocalidad {
+            get {
+                return this.codigoLocalidadField;
+            }
+            set {
+                this.codigoLocalidadField = value;
+                this.RaisePropertyChanged("codigoLocalidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public string nombreLocalidad {
+            get {
+                return this.nombreLocalidadField;
+            }
+            set {
+                this.nombreLocalidadField = value;
+                this.RaisePropertyChanged("nombreLocalidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public string codigoBarrio {
+            get {
+                return this.codigoBarrioField;
+            }
+            set {
+                this.codigoBarrioField = value;
+                this.RaisePropertyChanged("codigoBarrio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string nombreBarrio {
+            get {
+                return this.nombreBarrioField;
+            }
+            set {
+                this.nombreBarrioField = value;
+                this.RaisePropertyChanged("nombreBarrio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public string nombreUrbanizacion {
+            get {
+                return this.nombreUrbanizacionField;
+            }
+            set {
+                this.nombreUrbanizacionField = value;
+                this.RaisePropertyChanged("nombreUrbanizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public string estrato {
+            get {
+                return this.estratoField;
+            }
+            set {
+                this.estratoField = value;
+                this.RaisePropertyChanged("estrato");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public string antiguedadAnios {
+            get {
+                return this.antiguedadAniosField;
+            }
+            set {
+                this.antiguedadAniosField = value;
+                this.RaisePropertyChanged("antiguedadAnios");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public string antiguedadMeses {
+            get {
+                return this.antiguedadMesesField;
+            }
+            set {
+                this.antiguedadMesesField = value;
+                this.RaisePropertyChanged("antiguedadMeses");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public string zonaVeredal {
+            get {
+                return this.zonaVeredalField;
+            }
+            set {
+                this.zonaVeredalField = value;
+                this.RaisePropertyChanged("zonaVeredal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public string principal {
+            get {
+                return this.principalField;
+            }
+            set {
+                this.principalField = value;
+                this.RaisePropertyChanged("principal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("telefono", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public Telefono[] telefono {
+            get {
+                return this.telefonoField;
+            }
+            set {
+                this.telefonoField = value;
+                this.RaisePropertyChanged("telefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public int tiempoAnnos {
+            get {
+                return this.tiempoAnnosField;
+            }
+            set {
+                this.tiempoAnnosField = value;
+                this.RaisePropertyChanged("tiempoAnnos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoAnnosSpecified {
+            get {
+                return this.tiempoAnnosFieldSpecified;
+            }
+            set {
+                this.tiempoAnnosFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoAnnosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public int tiempoMeses {
+            get {
+                return this.tiempoMesesField;
+            }
+            set {
+                this.tiempoMesesField = value;
+                this.RaisePropertyChanged("tiempoMeses");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoMesesSpecified {
+            get {
+                return this.tiempoMesesFieldSpecified;
+            }
+            set {
+                this.tiempoMesesFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoMesesSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
+        public string codigoPostal {
+            get {
+                return this.codigoPostalField;
+            }
+            set {
+                this.codigoPostalField = value;
+                this.RaisePropertyChanged("codigoPostal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
+        public string observacion {
+            get {
+                return this.observacionField;
+            }
+            set {
+                this.observacionField = value;
+                this.RaisePropertyChanged("observacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=30)]
+        public string codigoPoblado {
+            get {
+                return this.codigoPobladoField;
+            }
+            set {
+                this.codigoPobladoField = value;
+                this.RaisePropertyChanged("codigoPoblado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
+        public string nombrePoblado {
+            get {
+                return this.nombrePobladoField;
+            }
+            set {
+                this.nombrePobladoField = value;
+                this.RaisePropertyChanged("nombrePoblado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        public int codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoExternoSpecified {
+            get {
+                return this.codigoExternoFieldSpecified;
+            }
+            set {
+                this.codigoExternoFieldSpecified = value;
+                this.RaisePropertyChanged("codigoExternoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=33)]
+        public System.DateTime fechaCreacion {
+            get {
+                return this.fechaCreacionField;
+            }
+            set {
+                this.fechaCreacionField = value;
+                this.RaisePropertyChanged("fechaCreacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaCreacionSpecified {
+            get {
+                return this.fechaCreacionFieldSpecified;
+            }
+            set {
+                this.fechaCreacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCreacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=34)]
+        public System.DateTime fechaModificacion {
+            get {
+                return this.fechaModificacionField;
+            }
+            set {
+                this.fechaModificacionField = value;
+                this.RaisePropertyChanged("fechaModificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaModificacionSpecified {
+            get {
+                return this.fechaModificacionFieldSpecified;
+            }
+            set {
+                this.fechaModificacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaModificacionSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJBas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V16))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V15))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoInfoLabor_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V13))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string numeroCompletoField;
+        
+        private string idTelefonoField;
+        
+        private string tipoTelefonoField;
+        
+        private string numeroTelefonoField;
+        
+        private string extensionField;
+        
+        private int indicativoField;
+        
+        private bool indicativoFieldSpecified;
+        
+        private string idDireccionField;
+        
+        private bool indicadorAutorizacionField;
+        
+        private bool indicadorAutorizacionFieldSpecified;
+        
+        private int codigoAreaField;
+        
+        private bool codigoAreaFieldSpecified;
+        
+        private int codigoExternoField;
+        
+        private bool codigoExternoFieldSpecified;
+        
+        private System.DateTime fechaCreacionField;
+        
+        private bool fechaCreacionFieldSpecified;
+        
+        private System.DateTime fechaModificacionField;
+        
+        private bool fechaModificacionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string numeroCompleto {
+            get {
+                return this.numeroCompletoField;
+            }
+            set {
+                this.numeroCompletoField = value;
+                this.RaisePropertyChanged("numeroCompleto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string idTelefono {
+            get {
+                return this.idTelefonoField;
+            }
+            set {
+                this.idTelefonoField = value;
+                this.RaisePropertyChanged("idTelefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string tipoTelefono {
+            get {
+                return this.tipoTelefonoField;
+            }
+            set {
+                this.tipoTelefonoField = value;
+                this.RaisePropertyChanged("tipoTelefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string numeroTelefono {
+            get {
+                return this.numeroTelefonoField;
+            }
+            set {
+                this.numeroTelefonoField = value;
+                this.RaisePropertyChanged("numeroTelefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string extension {
+            get {
+                return this.extensionField;
+            }
+            set {
+                this.extensionField = value;
+                this.RaisePropertyChanged("extension");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public int indicativo {
+            get {
+                return this.indicativoField;
+            }
+            set {
+                this.indicativoField = value;
+                this.RaisePropertyChanged("indicativo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool indicativoSpecified {
+            get {
+                return this.indicativoFieldSpecified;
+            }
+            set {
+                this.indicativoFieldSpecified = value;
+                this.RaisePropertyChanged("indicativoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string idDireccion {
+            get {
+                return this.idDireccionField;
+            }
+            set {
+                this.idDireccionField = value;
+                this.RaisePropertyChanged("idDireccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public bool indicadorAutorizacion {
+            get {
+                return this.indicadorAutorizacionField;
+            }
+            set {
+                this.indicadorAutorizacionField = value;
+                this.RaisePropertyChanged("indicadorAutorizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool indicadorAutorizacionSpecified {
+            get {
+                return this.indicadorAutorizacionFieldSpecified;
+            }
+            set {
+                this.indicadorAutorizacionFieldSpecified = value;
+                this.RaisePropertyChanged("indicadorAutorizacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public int codigoArea {
+            get {
+                return this.codigoAreaField;
+            }
+            set {
+                this.codigoAreaField = value;
+                this.RaisePropertyChanged("codigoArea");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoAreaSpecified {
+            get {
+                return this.codigoAreaFieldSpecified;
+            }
+            set {
+                this.codigoAreaFieldSpecified = value;
+                this.RaisePropertyChanged("codigoAreaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public int codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoExternoSpecified {
+            get {
+                return this.codigoExternoFieldSpecified;
+            }
+            set {
+                this.codigoExternoFieldSpecified = value;
+                this.RaisePropertyChanged("codigoExternoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=10)]
+        public System.DateTime fechaCreacion {
+            get {
+                return this.fechaCreacionField;
+            }
+            set {
+                this.fechaCreacionField = value;
+                this.RaisePropertyChanged("fechaCreacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaCreacionSpecified {
+            get {
+                return this.fechaCreacionFieldSpecified;
+            }
+            set {
+                this.fechaCreacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCreacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=11)]
+        public System.DateTime fechaModificacion {
+            get {
+                return this.fechaModificacionField;
+            }
+            set {
+                this.fechaModificacionField = value;
+                this.RaisePropertyChanged("fechaModificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaModificacionSpecified {
+            get {
+                return this.fechaModificacionFieldSpecified;
+            }
+            set {
+                this.fechaModificacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaModificacionSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class TelefonoPJBas : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class TelefonoPJ : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V111 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V101 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V16 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V15 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="TelefonoInfoLabor_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class TelefonoInfoLabor_V10 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V14 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V13 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V12 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V11 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V10 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJ : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionLab))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V111))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V110))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V19))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V18))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V17))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V16))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V15))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V12))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V2.1", Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
+    public partial class DireccionFisica_V21 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionLab : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.11", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V111 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.10", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V110 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.9", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V19 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.8", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V18 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.7", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V17 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V16 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V15 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V14 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V12 : DireccionFisica_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V2.0", Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
+    public partial class DireccionFisica_V20 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.13", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V113 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.12", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V112 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V13 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class Tesorero : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoTesoreroField;
+        
+        private bool codigoTesoreroFieldSpecified;
+        
+        private string tipoDocumentoField;
+        
+        private string numeroDocumentoField;
+        
+        private Atributo[] atributoField;
+        
+        private DireccionPJT direccionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoTesorero {
+            get {
+                return this.codigoTesoreroField;
+            }
+            set {
+                this.codigoTesoreroField = value;
+                this.RaisePropertyChanged("codigoTesorero");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoTesoreroSpecified {
+            get {
+                return this.codigoTesoreroFieldSpecified;
+            }
+            set {
+                this.codigoTesoreroFieldSpecified = value;
+                this.RaisePropertyChanged("codigoTesoreroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoDocumento {
+            get {
+                return this.tipoDocumentoField;
+            }
+            set {
+                this.tipoDocumentoField = value;
+                this.RaisePropertyChanged("tipoDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string numeroDocumento {
+            get {
+                return this.numeroDocumentoField;
+            }
+            set {
+                this.numeroDocumentoField = value;
+                this.RaisePropertyChanged("numeroDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("atributo", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public Atributo[] atributo {
+            get {
+                return this.atributoField;
+            }
+            set {
+                this.atributoField = value;
+                this.RaisePropertyChanged("atributo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public DireccionPJT direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DatosSocio : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string tipoPersonaField;
+        
+        private int codigoSocioField;
+        
+        private bool codigoSocioFieldSpecified;
+        
+        private string tipoDocumentoField;
+        
+        private string numeroDocumentoField;
+        
+        private Atributo[] atributoField;
+        
+        private string nombreCompletoSocioField;
+        
+        private string primerApellidoSocioField;
+        
+        private string segundoApellidoSocioField;
+        
+        private string participacionSocioField;
+        
+        private string valorParticipacionField;
+        
+        private string numeroCuotasAccionesField;
+        
+        private DireccionPJT direccionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string tipoPersona {
+            get {
+                return this.tipoPersonaField;
+            }
+            set {
+                this.tipoPersonaField = value;
+                this.RaisePropertyChanged("tipoPersona");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public int codigoSocio {
+            get {
+                return this.codigoSocioField;
+            }
+            set {
+                this.codigoSocioField = value;
+                this.RaisePropertyChanged("codigoSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSocioSpecified {
+            get {
+                return this.codigoSocioFieldSpecified;
+            }
+            set {
+                this.codigoSocioFieldSpecified = value;
+                this.RaisePropertyChanged("codigoSocioSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string tipoDocumento {
+            get {
+                return this.tipoDocumentoField;
+            }
+            set {
+                this.tipoDocumentoField = value;
+                this.RaisePropertyChanged("tipoDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string numeroDocumento {
+            get {
+                return this.numeroDocumentoField;
+            }
+            set {
+                this.numeroDocumentoField = value;
+                this.RaisePropertyChanged("numeroDocumento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("atributo", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public Atributo[] atributo {
+            get {
+                return this.atributoField;
+            }
+            set {
+                this.atributoField = value;
+                this.RaisePropertyChanged("atributo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombreCompletoSocio {
+            get {
+                return this.nombreCompletoSocioField;
+            }
+            set {
+                this.nombreCompletoSocioField = value;
+                this.RaisePropertyChanged("nombreCompletoSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string primerApellidoSocio {
+            get {
+                return this.primerApellidoSocioField;
+            }
+            set {
+                this.primerApellidoSocioField = value;
+                this.RaisePropertyChanged("primerApellidoSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string segundoApellidoSocio {
+            get {
+                return this.segundoApellidoSocioField;
+            }
+            set {
+                this.segundoApellidoSocioField = value;
+                this.RaisePropertyChanged("segundoApellidoSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string participacionSocio {
+            get {
+                return this.participacionSocioField;
+            }
+            set {
+                this.participacionSocioField = value;
+                this.RaisePropertyChanged("participacionSocio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string valorParticipacion {
+            get {
+                return this.valorParticipacionField;
+            }
+            set {
+                this.valorParticipacionField = value;
+                this.RaisePropertyChanged("valorParticipacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string numeroCuotasAcciones {
+            get {
+                return this.numeroCuotasAccionesField;
+            }
+            set {
+                this.numeroCuotasAccionesField = value;
+                this.RaisePropertyChanged("numeroCuotasAcciones");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public DireccionPJT direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DatosRepresentanteLegal : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoRepresentanteLegalField;
+        
+        private bool codigoRepresentanteLegalFieldSpecified;
+        
+        private string tipoDocumentoRepresentanteLegalField;
+        
+        private string numeroDocumentoRepresentanteLegalField;
+        
+        private Atributo[] atributoField;
+        
+        private string nombresRepresentanteLegalField;
+        
+        private string primerApellidoRepresentanteLegalField;
+        
+        private string segundoApellidoRepresentanteLegalField;
+        
+        private string direccionRepresentanteLegalField;
+        
+        private string telefonoRepresentanteLegalField;
+        
+        private string tipoTelefonoRepresentanteLegalField;
+        
+        private string extensionTelefonoRepresentanteLegalField;
+        
+        private int indicativoTelefonoRepresentanteLegalField;
+        
+        private bool indicativoTelefonoRepresentanteLegalFieldSpecified;
+        
+        private string codigoExternoDireccionField;
+        
+        private string codigoExternoTelefonoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoRepresentanteLegal {
+            get {
+                return this.codigoRepresentanteLegalField;
+            }
+            set {
+                this.codigoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("codigoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoRepresentanteLegalSpecified {
+            get {
+                return this.codigoRepresentanteLegalFieldSpecified;
+            }
+            set {
+                this.codigoRepresentanteLegalFieldSpecified = value;
+                this.RaisePropertyChanged("codigoRepresentanteLegalSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoDocumentoRepresentanteLegal {
+            get {
+                return this.tipoDocumentoRepresentanteLegalField;
+            }
+            set {
+                this.tipoDocumentoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("tipoDocumentoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string numeroDocumentoRepresentanteLegal {
+            get {
+                return this.numeroDocumentoRepresentanteLegalField;
+            }
+            set {
+                this.numeroDocumentoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("numeroDocumentoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("atributo", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public Atributo[] atributo {
+            get {
+                return this.atributoField;
+            }
+            set {
+                this.atributoField = value;
+                this.RaisePropertyChanged("atributo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string nombresRepresentanteLegal {
+            get {
+                return this.nombresRepresentanteLegalField;
+            }
+            set {
+                this.nombresRepresentanteLegalField = value;
+                this.RaisePropertyChanged("nombresRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string primerApellidoRepresentanteLegal {
+            get {
+                return this.primerApellidoRepresentanteLegalField;
+            }
+            set {
+                this.primerApellidoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("primerApellidoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string segundoApellidoRepresentanteLegal {
+            get {
+                return this.segundoApellidoRepresentanteLegalField;
+            }
+            set {
+                this.segundoApellidoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("segundoApellidoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string direccionRepresentanteLegal {
+            get {
+                return this.direccionRepresentanteLegalField;
+            }
+            set {
+                this.direccionRepresentanteLegalField = value;
+                this.RaisePropertyChanged("direccionRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string telefonoRepresentanteLegal {
+            get {
+                return this.telefonoRepresentanteLegalField;
+            }
+            set {
+                this.telefonoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("telefonoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string tipoTelefonoRepresentanteLegal {
+            get {
+                return this.tipoTelefonoRepresentanteLegalField;
+            }
+            set {
+                this.tipoTelefonoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("tipoTelefonoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string extensionTelefonoRepresentanteLegal {
+            get {
+                return this.extensionTelefonoRepresentanteLegalField;
+            }
+            set {
+                this.extensionTelefonoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("extensionTelefonoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public int indicativoTelefonoRepresentanteLegal {
+            get {
+                return this.indicativoTelefonoRepresentanteLegalField;
+            }
+            set {
+                this.indicativoTelefonoRepresentanteLegalField = value;
+                this.RaisePropertyChanged("indicativoTelefonoRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool indicativoTelefonoRepresentanteLegalSpecified {
+            get {
+                return this.indicativoTelefonoRepresentanteLegalFieldSpecified;
+            }
+            set {
+                this.indicativoTelefonoRepresentanteLegalFieldSpecified = value;
+                this.RaisePropertyChanged("indicativoTelefonoRepresentanteLegalSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string codigoExternoDireccion {
+            get {
+                return this.codigoExternoDireccionField;
+            }
+            set {
+                this.codigoExternoDireccionField = value;
+                this.RaisePropertyChanged("codigoExternoDireccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string codigoExternoTelefono {
+            get {
+                return this.codigoExternoTelefonoField;
+            }
+            set {
+                this.codigoExternoTelefonoField = value;
+                this.RaisePropertyChanged("codigoExternoTelefono");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DatosLegalesPJ : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private System.DateTime fechaConstitucionField;
+        
+        private bool fechaConstitucionFieldSpecified;
+        
+        private System.DateTime fechaInscripcionField;
+        
+        private bool fechaInscripcionFieldSpecified;
+        
+        private System.DateTime fechaVencimientoField;
+        
+        private bool fechaVencimientoFieldSpecified;
+        
+        private int notariaField;
+        
+        private bool notariaFieldSpecified;
+        
+        private string objetoSocialField;
+        
+        private string reservaLegalField;
+        
+        private int numeroEscrituraField;
+        
+        private bool numeroEscrituraFieldSpecified;
+        
+        private int camaraComercioField;
+        
+        private bool camaraComercioFieldSpecified;
+        
+        private string gradoSociedadField;
+        
+        private int matriculaNumeroField;
+        
+        private bool matriculaNumeroFieldSpecified;
+        
+        private DatosRepresentanteLegal[] datosRepresentanteLegalField;
+        
+        private DatosSocio[] datosSociosField;
+        
+        private string registroCamaraComercioField;
+        
+        private string tipoSociedadField;
+        
+        private string tarjetaFirmasField;
+        
+        private string atribucionesField;
+        
+        private System.DateTime fechaCertificadoField;
+        
+        private bool fechaCertificadoFieldSpecified;
+        
+        private System.DateTime fechaAumentoCapitalField;
+        
+        private bool fechaAumentoCapitalFieldSpecified;
+        
+        private string codigoCiudadReferenciaField;
+        
+        private string codigoCiudadNotariaField;
+        
+        private decimal capitalPagadoField;
+        
+        private bool capitalPagadoFieldSpecified;
+        
+        private Tesorero[] tesoreroField;
+        
+        private JefePersonal[] jefePersonalField;
+        
+        private string codigoExternoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=0)]
+        public System.DateTime fechaConstitucion {
+            get {
+                return this.fechaConstitucionField;
+            }
+            set {
+                this.fechaConstitucionField = value;
+                this.RaisePropertyChanged("fechaConstitucion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaConstitucionSpecified {
+            get {
+                return this.fechaConstitucionFieldSpecified;
+            }
+            set {
+                this.fechaConstitucionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaConstitucionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=1)]
+        public System.DateTime fechaInscripcion {
+            get {
+                return this.fechaInscripcionField;
+            }
+            set {
+                this.fechaInscripcionField = value;
+                this.RaisePropertyChanged("fechaInscripcion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaInscripcionSpecified {
+            get {
+                return this.fechaInscripcionFieldSpecified;
+            }
+            set {
+                this.fechaInscripcionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaInscripcionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=2)]
+        public System.DateTime fechaVencimiento {
+            get {
+                return this.fechaVencimientoField;
+            }
+            set {
+                this.fechaVencimientoField = value;
+                this.RaisePropertyChanged("fechaVencimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaVencimientoSpecified {
+            get {
+                return this.fechaVencimientoFieldSpecified;
+            }
+            set {
+                this.fechaVencimientoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaVencimientoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public int notaria {
+            get {
+                return this.notariaField;
+            }
+            set {
+                this.notariaField = value;
+                this.RaisePropertyChanged("notaria");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool notariaSpecified {
+            get {
+                return this.notariaFieldSpecified;
+            }
+            set {
+                this.notariaFieldSpecified = value;
+                this.RaisePropertyChanged("notariaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string objetoSocial {
+            get {
+                return this.objetoSocialField;
+            }
+            set {
+                this.objetoSocialField = value;
+                this.RaisePropertyChanged("objetoSocial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string reservaLegal {
+            get {
+                return this.reservaLegalField;
+            }
+            set {
+                this.reservaLegalField = value;
+                this.RaisePropertyChanged("reservaLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public int numeroEscritura {
+            get {
+                return this.numeroEscrituraField;
+            }
+            set {
+                this.numeroEscrituraField = value;
+                this.RaisePropertyChanged("numeroEscritura");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroEscrituraSpecified {
+            get {
+                return this.numeroEscrituraFieldSpecified;
+            }
+            set {
+                this.numeroEscrituraFieldSpecified = value;
+                this.RaisePropertyChanged("numeroEscrituraSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public int camaraComercio {
+            get {
+                return this.camaraComercioField;
+            }
+            set {
+                this.camaraComercioField = value;
+                this.RaisePropertyChanged("camaraComercio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool camaraComercioSpecified {
+            get {
+                return this.camaraComercioFieldSpecified;
+            }
+            set {
+                this.camaraComercioFieldSpecified = value;
+                this.RaisePropertyChanged("camaraComercioSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string gradoSociedad {
+            get {
+                return this.gradoSociedadField;
+            }
+            set {
+                this.gradoSociedadField = value;
+                this.RaisePropertyChanged("gradoSociedad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public int matriculaNumero {
+            get {
+                return this.matriculaNumeroField;
+            }
+            set {
+                this.matriculaNumeroField = value;
+                this.RaisePropertyChanged("matriculaNumero");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool matriculaNumeroSpecified {
+            get {
+                return this.matriculaNumeroFieldSpecified;
+            }
+            set {
+                this.matriculaNumeroFieldSpecified = value;
+                this.RaisePropertyChanged("matriculaNumeroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("datosRepresentanteLegal", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public DatosRepresentanteLegal[] datosRepresentanteLegal {
+            get {
+                return this.datosRepresentanteLegalField;
+            }
+            set {
+                this.datosRepresentanteLegalField = value;
+                this.RaisePropertyChanged("datosRepresentanteLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("datosSocio", typeof(DatosSocio), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public DatosSocio[] datosSocios {
+            get {
+                return this.datosSociosField;
+            }
+            set {
+                this.datosSociosField = value;
+                this.RaisePropertyChanged("datosSocios");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string registroCamaraComercio {
+            get {
+                return this.registroCamaraComercioField;
+            }
+            set {
+                this.registroCamaraComercioField = value;
+                this.RaisePropertyChanged("registroCamaraComercio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string tipoSociedad {
+            get {
+                return this.tipoSociedadField;
+            }
+            set {
+                this.tipoSociedadField = value;
+                this.RaisePropertyChanged("tipoSociedad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string tarjetaFirmas {
+            get {
+                return this.tarjetaFirmasField;
+            }
+            set {
+                this.tarjetaFirmasField = value;
+                this.RaisePropertyChanged("tarjetaFirmas");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string atribuciones {
+            get {
+                return this.atribucionesField;
+            }
+            set {
+                this.atribucionesField = value;
+                this.RaisePropertyChanged("atribuciones");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=16)]
+        public System.DateTime fechaCertificado {
+            get {
+                return this.fechaCertificadoField;
+            }
+            set {
+                this.fechaCertificadoField = value;
+                this.RaisePropertyChanged("fechaCertificado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaCertificadoSpecified {
+            get {
+                return this.fechaCertificadoFieldSpecified;
+            }
+            set {
+                this.fechaCertificadoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCertificadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=17)]
+        public System.DateTime fechaAumentoCapital {
+            get {
+                return this.fechaAumentoCapitalField;
+            }
+            set {
+                this.fechaAumentoCapitalField = value;
+                this.RaisePropertyChanged("fechaAumentoCapital");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaAumentoCapitalSpecified {
+            get {
+                return this.fechaAumentoCapitalFieldSpecified;
+            }
+            set {
+                this.fechaAumentoCapitalFieldSpecified = value;
+                this.RaisePropertyChanged("fechaAumentoCapitalSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string codigoCiudadReferencia {
+            get {
+                return this.codigoCiudadReferenciaField;
+            }
+            set {
+                this.codigoCiudadReferenciaField = value;
+                this.RaisePropertyChanged("codigoCiudadReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public string codigoCiudadNotaria {
+            get {
+                return this.codigoCiudadNotariaField;
+            }
+            set {
+                this.codigoCiudadNotariaField = value;
+                this.RaisePropertyChanged("codigoCiudadNotaria");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public decimal capitalPagado {
+            get {
+                return this.capitalPagadoField;
+            }
+            set {
+                this.capitalPagadoField = value;
+                this.RaisePropertyChanged("capitalPagado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool capitalPagadoSpecified {
+            get {
+                return this.capitalPagadoFieldSpecified;
+            }
+            set {
+                this.capitalPagadoFieldSpecified = value;
+                this.RaisePropertyChanged("capitalPagadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("tesorero", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public Tesorero[] tesorero {
+            get {
+                return this.tesoreroField;
+            }
+            set {
+                this.tesoreroField = value;
+                this.RaisePropertyChanged("tesorero");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("jefePersonal", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public JefePersonal[] jefePersonal {
+            get {
+                return this.jefePersonalField;
+            }
+            set {
+                this.jefePersonalField = value;
+                this.RaisePropertyChanged("jefePersonal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public string codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class ReferenciaEconomica : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoReferenciaField;
+        
+        private bool codigoReferenciaFieldSpecified;
+        
+        private string bancoReferenciaField;
+        
+        private string calificacionReferenciaField;
+        
+        private string cuentaReferenciaField;
+        
+        private System.DateTime fechaAperturaField;
+        
+        private bool fechaAperturaFieldSpecified;
+        
+        private System.DateTime fechaVencimientoField;
+        
+        private bool fechaVencimientoFieldSpecified;
+        
+        private System.DateTime fechaModificadoField;
+        
+        private bool fechaModificadoFieldSpecified;
+        
+        private System.DateTime fechaExpedicionField;
+        
+        private bool fechaExpedicionFieldSpecified;
+        
+        private System.DateTime fechaRegistroField;
+        
+        private bool fechaRegistroFieldSpecified;
+        
+        private string funcionarioReferenciaField;
+        
+        private string operacionField;
+        
+        private string estadoFinancieroField;
+        
+        private decimal montoVencidoField;
+        
+        private bool montoVencidoFieldSpecified;
+        
+        private string codigoTarjetaField;
+        
+        private string numeroTarjetaField;
+        
+        private string codigoClaseTarjetaField;
+        
+        private string establecimientoField;
+        
+        private System.DateTime fechaIngresoField;
+        
+        private bool fechaIngresoFieldSpecified;
+        
+        private string estadoReferenciaField;
+        
+        private CuentaBancaria cuentaBancariaField;
+        
+        private string tipoCalificacionField;
+        
+        private string indicadorNacionalField;
+        
+        private string codigoCiudadField;
+        
+        private string sucursalField;
+        
+        private string telefonoField;
+        
+        private TelefonoPJ[] telefonosField;
+        
+        private decimal montoReferenciaField;
+        
+        private bool montoReferenciaFieldSpecified;
+        
+        private string observacionField;
+        
+        private string tipoProductoField;
+        
+        private string tipoReferenciaField;
+        
+        private decimal saldoField;
+        
+        private bool saldoFieldSpecified;
+        
+        private string claseField;
+        
+        private string codigoExternoField;
+        
+        private int codigoReferidoField;
+        
+        private bool codigoReferidoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigoReferencia {
+            get {
+                return this.codigoReferenciaField;
+            }
+            set {
+                this.codigoReferenciaField = value;
+                this.RaisePropertyChanged("codigoReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoReferenciaSpecified {
+            get {
+                return this.codigoReferenciaFieldSpecified;
+            }
+            set {
+                this.codigoReferenciaFieldSpecified = value;
+                this.RaisePropertyChanged("codigoReferenciaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string bancoReferencia {
+            get {
+                return this.bancoReferenciaField;
+            }
+            set {
+                this.bancoReferenciaField = value;
+                this.RaisePropertyChanged("bancoReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string calificacionReferencia {
+            get {
+                return this.calificacionReferenciaField;
+            }
+            set {
+                this.calificacionReferenciaField = value;
+                this.RaisePropertyChanged("calificacionReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string cuentaReferencia {
+            get {
+                return this.cuentaReferenciaField;
+            }
+            set {
+                this.cuentaReferenciaField = value;
+                this.RaisePropertyChanged("cuentaReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=4)]
+        public System.DateTime fechaApertura {
+            get {
+                return this.fechaAperturaField;
+            }
+            set {
+                this.fechaAperturaField = value;
+                this.RaisePropertyChanged("fechaApertura");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaAperturaSpecified {
+            get {
+                return this.fechaAperturaFieldSpecified;
+            }
+            set {
+                this.fechaAperturaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaAperturaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
+        public System.DateTime fechaVencimiento {
+            get {
+                return this.fechaVencimientoField;
+            }
+            set {
+                this.fechaVencimientoField = value;
+                this.RaisePropertyChanged("fechaVencimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaVencimientoSpecified {
+            get {
+                return this.fechaVencimientoFieldSpecified;
+            }
+            set {
+                this.fechaVencimientoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaVencimientoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public System.DateTime fechaModificado {
+            get {
+                return this.fechaModificadoField;
+            }
+            set {
+                this.fechaModificadoField = value;
+                this.RaisePropertyChanged("fechaModificado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaModificadoSpecified {
+            get {
+                return this.fechaModificadoFieldSpecified;
+            }
+            set {
+                this.fechaModificadoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaModificadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=7)]
+        public System.DateTime fechaExpedicion {
+            get {
+                return this.fechaExpedicionField;
+            }
+            set {
+                this.fechaExpedicionField = value;
+                this.RaisePropertyChanged("fechaExpedicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaExpedicionSpecified {
+            get {
+                return this.fechaExpedicionFieldSpecified;
+            }
+            set {
+                this.fechaExpedicionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaExpedicionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public System.DateTime fechaRegistro {
+            get {
+                return this.fechaRegistroField;
+            }
+            set {
+                this.fechaRegistroField = value;
+                this.RaisePropertyChanged("fechaRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRegistroSpecified {
+            get {
+                return this.fechaRegistroFieldSpecified;
+            }
+            set {
+                this.fechaRegistroFieldSpecified = value;
+                this.RaisePropertyChanged("fechaRegistroSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string funcionarioReferencia {
+            get {
+                return this.funcionarioReferenciaField;
+            }
+            set {
+                this.funcionarioReferenciaField = value;
+                this.RaisePropertyChanged("funcionarioReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string operacion {
+            get {
+                return this.operacionField;
+            }
+            set {
+                this.operacionField = value;
+                this.RaisePropertyChanged("operacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string estadoFinanciero {
+            get {
+                return this.estadoFinancieroField;
+            }
+            set {
+                this.estadoFinancieroField = value;
+                this.RaisePropertyChanged("estadoFinanciero");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public decimal montoVencido {
+            get {
+                return this.montoVencidoField;
+            }
+            set {
+                this.montoVencidoField = value;
+                this.RaisePropertyChanged("montoVencido");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool montoVencidoSpecified {
+            get {
+                return this.montoVencidoFieldSpecified;
+            }
+            set {
+                this.montoVencidoFieldSpecified = value;
+                this.RaisePropertyChanged("montoVencidoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string codigoTarjeta {
+            get {
+                return this.codigoTarjetaField;
+            }
+            set {
+                this.codigoTarjetaField = value;
+                this.RaisePropertyChanged("codigoTarjeta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string numeroTarjeta {
+            get {
+                return this.numeroTarjetaField;
+            }
+            set {
+                this.numeroTarjetaField = value;
+                this.RaisePropertyChanged("numeroTarjeta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string codigoClaseTarjeta {
+            get {
+                return this.codigoClaseTarjetaField;
+            }
+            set {
+                this.codigoClaseTarjetaField = value;
+                this.RaisePropertyChanged("codigoClaseTarjeta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public string establecimiento {
+            get {
+                return this.establecimientoField;
+            }
+            set {
+                this.establecimientoField = value;
+                this.RaisePropertyChanged("establecimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=17)]
+        public System.DateTime fechaIngreso {
+            get {
+                return this.fechaIngresoField;
+            }
+            set {
+                this.fechaIngresoField = value;
+                this.RaisePropertyChanged("fechaIngreso");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaIngresoSpecified {
+            get {
+                return this.fechaIngresoFieldSpecified;
+            }
+            set {
+                this.fechaIngresoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaIngresoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string estadoReferencia {
+            get {
+                return this.estadoReferenciaField;
+            }
+            set {
+                this.estadoReferenciaField = value;
+                this.RaisePropertyChanged("estadoReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public CuentaBancaria cuentaBancaria {
+            get {
+                return this.cuentaBancariaField;
+            }
+            set {
+                this.cuentaBancariaField = value;
+                this.RaisePropertyChanged("cuentaBancaria");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public string tipoCalificacion {
+            get {
+                return this.tipoCalificacionField;
+            }
+            set {
+                this.tipoCalificacionField = value;
+                this.RaisePropertyChanged("tipoCalificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public string indicadorNacional {
+            get {
+                return this.indicadorNacionalField;
+            }
+            set {
+                this.indicadorNacionalField = value;
+                this.RaisePropertyChanged("indicadorNacional");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public string codigoCiudad {
+            get {
+                return this.codigoCiudadField;
+            }
+            set {
+                this.codigoCiudadField = value;
+                this.RaisePropertyChanged("codigoCiudad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public string sucursal {
+            get {
+                return this.sucursalField;
+            }
+            set {
+                this.sucursalField = value;
+                this.RaisePropertyChanged("sucursal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public string telefono {
+            get {
+                return this.telefonoField;
+            }
+            set {
+                this.telefonoField = value;
+                this.RaisePropertyChanged("telefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("telefonos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public TelefonoPJ[] telefonos {
+            get {
+                return this.telefonosField;
+            }
+            set {
+                this.telefonosField = value;
+                this.RaisePropertyChanged("telefonos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public decimal montoReferencia {
+            get {
+                return this.montoReferenciaField;
+            }
+            set {
+                this.montoReferenciaField = value;
+                this.RaisePropertyChanged("montoReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool montoReferenciaSpecified {
+            get {
+                return this.montoReferenciaFieldSpecified;
+            }
+            set {
+                this.montoReferenciaFieldSpecified = value;
+                this.RaisePropertyChanged("montoReferenciaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public string observacion {
+            get {
+                return this.observacionField;
+            }
+            set {
+                this.observacionField = value;
+                this.RaisePropertyChanged("observacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
+        public string tipoProducto {
+            get {
+                return this.tipoProductoField;
+            }
+            set {
+                this.tipoProductoField = value;
+                this.RaisePropertyChanged("tipoProducto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
+        public string tipoReferencia {
+            get {
+                return this.tipoReferenciaField;
+            }
+            set {
+                this.tipoReferenciaField = value;
+                this.RaisePropertyChanged("tipoReferencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=30)]
+        public decimal saldo {
+            get {
+                return this.saldoField;
+            }
+            set {
+                this.saldoField = value;
+                this.RaisePropertyChanged("saldo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool saldoSpecified {
+            get {
+                return this.saldoFieldSpecified;
+            }
+            set {
+                this.saldoFieldSpecified = value;
+                this.RaisePropertyChanged("saldoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
+        public string clase {
+            get {
+                return this.claseField;
+            }
+            set {
+                this.claseField = value;
+                this.RaisePropertyChanged("clase");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        public string codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=33)]
+        public int codigoReferido {
+            get {
+                return this.codigoReferidoField;
+            }
+            set {
+                this.codigoReferidoField = value;
+                this.RaisePropertyChanged("codigoReferido");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoReferidoSpecified {
+            get {
+                return this.codigoReferidoFieldSpecified;
+            }
+            set {
+                this.codigoReferidoFieldSpecified = value;
+                this.RaisePropertyChanged("codigoReferidoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CuentaBancaria1))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cuentabancaria")]
+    public partial class CuentaBancaria : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string numeroCuentaField;
+        
+        private string tipoCuentaField;
+        
+        private string codigoBancoField;
+        
+        private string nombreBancoField;
+        
+        private string codigoSucursalBancoField;
+        
+        private bool autorizaDebitoAutomaticoField;
+        
+        private bool autorizaDebitoAutomaticoFieldSpecified;
+        
+        private bool principalField;
+        
+        private bool principalFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string numeroCuenta {
+            get {
+                return this.numeroCuentaField;
+            }
+            set {
+                this.numeroCuentaField = value;
+                this.RaisePropertyChanged("numeroCuenta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoCuenta {
+            get {
+                return this.tipoCuentaField;
+            }
+            set {
+                this.tipoCuentaField = value;
+                this.RaisePropertyChanged("tipoCuenta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string codigoBanco {
+            get {
+                return this.codigoBancoField;
+            }
+            set {
+                this.codigoBancoField = value;
+                this.RaisePropertyChanged("codigoBanco");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string nombreBanco {
+            get {
+                return this.nombreBancoField;
+            }
+            set {
+                this.nombreBancoField = value;
+                this.RaisePropertyChanged("nombreBanco");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string codigoSucursalBanco {
+            get {
+                return this.codigoSucursalBancoField;
+            }
+            set {
+                this.codigoSucursalBancoField = value;
+                this.RaisePropertyChanged("codigoSucursalBanco");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public bool autorizaDebitoAutomatico {
+            get {
+                return this.autorizaDebitoAutomaticoField;
+            }
+            set {
+                this.autorizaDebitoAutomaticoField = value;
+                this.RaisePropertyChanged("autorizaDebitoAutomatico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool autorizaDebitoAutomaticoSpecified {
+            get {
+                return this.autorizaDebitoAutomaticoFieldSpecified;
+            }
+            set {
+                this.autorizaDebitoAutomaticoFieldSpecified = value;
+                this.RaisePropertyChanged("autorizaDebitoAutomaticoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public bool principal {
+            get {
+                return this.principalField;
+            }
+            set {
+                this.principalField = value;
+                this.RaisePropertyChanged("principal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool principalSpecified {
+            get {
+                return this.principalFieldSpecified;
+            }
+            set {
+                this.principalFieldSpecified = value;
+                this.RaisePropertyChanged("principalSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="CuentaBancaria", Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class CuentaBancaria1 : CuentaBancaria {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaJuridicaType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DatosBasicosPJ : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int idClienteField;
+        
+        private bool idClienteFieldSpecified;
+        
+        private Identificacion identificacionField;
+        
+        private string nombreEmpresaField;
+        
+        private string siglaEmpresaField;
+        
+        private string nombreComercialField;
+        
+        private string tipoEmpresaField;
+        
+        private string posicionField;
+        
+        private string codigoCIIUField;
+        
+        private int numeroDeEmpleadosField;
+        
+        private bool numeroDeEmpleadosFieldSpecified;
+        
+        private string vinculacionBanderaField;
+        
+        private string tipoVinculacionField;
+        
+        private string estadoClienteField;
+        
+        private string grupoEconomicoField;
+        
+        private string sectorField;
+        
+        private string naturalezaJuridicaField;
+        
+        private int filialField;
+        
+        private bool filialFieldSpecified;
+        
+        private int oficinaFilialField;
+        
+        private bool oficinaFilialFieldSpecified;
+        
+        private DireccionElectronicaPJ direccionElectronicaField;
+        
+        private DireccionPJT[] direccionesField;
+        
+        private CasillaPostalPJ[] casillasPostalesField;
+        
+        private ReferenciaEconomica[] referenciasEconomicasField;
+        
+        private string codigoPaisPropietarioField;
+        
+        private string actividadEconomicaField;
+        
+        private string tipoSociedadField;
+        
+        private string medioActualizacionField;
+        
+        private DatosLegalesPJ informacionLegalField;
+        
+        private string tipoSedeField;
+        
+        private string codigoOficialField;
+        
+        private string codigoAsesorComercialField;
+        
+        private codigoTipo[] rolesField;
+        
+        private System.DateTime fechaCreacionField;
+        
+        private bool fechaCreacionFieldSpecified;
+        
+        private System.DateTime fechaActualizacionField;
+        
+        private bool fechaActualizacionFieldSpecified;
+        
+        private OficinaAfilicacion oficinaAfiliacionField;
+        
+        private Asesor asesorField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int idCliente {
+            get {
+                return this.idClienteField;
+            }
+            set {
+                this.idClienteField = value;
+                this.RaisePropertyChanged("idCliente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idClienteSpecified {
+            get {
+                return this.idClienteFieldSpecified;
+            }
+            set {
+                this.idClienteFieldSpecified = value;
+                this.RaisePropertyChanged("idClienteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public Identificacion identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+                this.RaisePropertyChanged("identificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string nombreEmpresa {
+            get {
+                return this.nombreEmpresaField;
+            }
+            set {
+                this.nombreEmpresaField = value;
+                this.RaisePropertyChanged("nombreEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string siglaEmpresa {
+            get {
+                return this.siglaEmpresaField;
+            }
+            set {
+                this.siglaEmpresaField = value;
+                this.RaisePropertyChanged("siglaEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string nombreComercial {
+            get {
+                return this.nombreComercialField;
+            }
+            set {
+                this.nombreComercialField = value;
+                this.RaisePropertyChanged("nombreComercial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string tipoEmpresa {
+            get {
+                return this.tipoEmpresaField;
+            }
+            set {
+                this.tipoEmpresaField = value;
+                this.RaisePropertyChanged("tipoEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string posicion {
+            get {
+                return this.posicionField;
+            }
+            set {
+                this.posicionField = value;
+                this.RaisePropertyChanged("posicion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string codigoCIIU {
+            get {
+                return this.codigoCIIUField;
+            }
+            set {
+                this.codigoCIIUField = value;
+                this.RaisePropertyChanged("codigoCIIU");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public int numeroDeEmpleados {
+            get {
+                return this.numeroDeEmpleadosField;
+            }
+            set {
+                this.numeroDeEmpleadosField = value;
+                this.RaisePropertyChanged("numeroDeEmpleados");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroDeEmpleadosSpecified {
+            get {
+                return this.numeroDeEmpleadosFieldSpecified;
+            }
+            set {
+                this.numeroDeEmpleadosFieldSpecified = value;
+                this.RaisePropertyChanged("numeroDeEmpleadosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string vinculacionBandera {
+            get {
+                return this.vinculacionBanderaField;
+            }
+            set {
+                this.vinculacionBanderaField = value;
+                this.RaisePropertyChanged("vinculacionBandera");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string tipoVinculacion {
+            get {
+                return this.tipoVinculacionField;
+            }
+            set {
+                this.tipoVinculacionField = value;
+                this.RaisePropertyChanged("tipoVinculacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string estadoCliente {
+            get {
+                return this.estadoClienteField;
+            }
+            set {
+                this.estadoClienteField = value;
+                this.RaisePropertyChanged("estadoCliente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string grupoEconomico {
+            get {
+                return this.grupoEconomicoField;
+            }
+            set {
+                this.grupoEconomicoField = value;
+                this.RaisePropertyChanged("grupoEconomico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string sector {
+            get {
+                return this.sectorField;
+            }
+            set {
+                this.sectorField = value;
+                this.RaisePropertyChanged("sector");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string naturalezaJuridica {
+            get {
+                return this.naturalezaJuridicaField;
+            }
+            set {
+                this.naturalezaJuridicaField = value;
+                this.RaisePropertyChanged("naturalezaJuridica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public int filial {
+            get {
+                return this.filialField;
+            }
+            set {
+                this.filialField = value;
+                this.RaisePropertyChanged("filial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool filialSpecified {
+            get {
+                return this.filialFieldSpecified;
+            }
+            set {
+                this.filialFieldSpecified = value;
+                this.RaisePropertyChanged("filialSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public int oficinaFilial {
+            get {
+                return this.oficinaFilialField;
+            }
+            set {
+                this.oficinaFilialField = value;
+                this.RaisePropertyChanged("oficinaFilial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool oficinaFilialSpecified {
+            get {
+                return this.oficinaFilialFieldSpecified;
+            }
+            set {
+                this.oficinaFilialFieldSpecified = value;
+                this.RaisePropertyChanged("oficinaFilialSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public DireccionElectronicaPJ direccionElectronica {
+            get {
+                return this.direccionElectronicaField;
+            }
+            set {
+                this.direccionElectronicaField = value;
+                this.RaisePropertyChanged("direccionElectronica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("direccion", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public DireccionPJT[] direcciones {
+            get {
+                return this.direccionesField;
+            }
+            set {
+                this.direccionesField = value;
+                this.RaisePropertyChanged("direcciones");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("casillaPostal", typeof(CasillaPostalPJ), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public CasillaPostalPJ[] casillasPostales {
+            get {
+                return this.casillasPostalesField;
+            }
+            set {
+                this.casillasPostalesField = value;
+                this.RaisePropertyChanged("casillasPostales");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("referenciaEconomica", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public ReferenciaEconomica[] referenciasEconomicas {
+            get {
+                return this.referenciasEconomicasField;
+            }
+            set {
+                this.referenciasEconomicasField = value;
+                this.RaisePropertyChanged("referenciasEconomicas");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public string codigoPaisPropietario {
+            get {
+                return this.codigoPaisPropietarioField;
+            }
+            set {
+                this.codigoPaisPropietarioField = value;
+                this.RaisePropertyChanged("codigoPaisPropietario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public string actividadEconomica {
+            get {
+                return this.actividadEconomicaField;
+            }
+            set {
+                this.actividadEconomicaField = value;
+                this.RaisePropertyChanged("actividadEconomica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public string tipoSociedad {
+            get {
+                return this.tipoSociedadField;
+            }
+            set {
+                this.tipoSociedadField = value;
+                this.RaisePropertyChanged("tipoSociedad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public string medioActualizacion {
+            get {
+                return this.medioActualizacionField;
+            }
+            set {
+                this.medioActualizacionField = value;
+                this.RaisePropertyChanged("medioActualizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public DatosLegalesPJ informacionLegal {
+            get {
+                return this.informacionLegalField;
+            }
+            set {
+                this.informacionLegalField = value;
+                this.RaisePropertyChanged("informacionLegal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public string tipoSede {
+            get {
+                return this.tipoSedeField;
+            }
+            set {
+                this.tipoSedeField = value;
+                this.RaisePropertyChanged("tipoSede");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public string codigoOficial {
+            get {
+                return this.codigoOficialField;
+            }
+            set {
+                this.codigoOficialField = value;
+                this.RaisePropertyChanged("codigoOficial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
+        public string codigoAsesorComercial {
+            get {
+                return this.codigoAsesorComercialField;
+            }
+            set {
+                this.codigoAsesorComercialField = value;
+                this.RaisePropertyChanged("codigoAsesorComercial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("roles", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
+        public codigoTipo[] roles {
+            get {
+                return this.rolesField;
+            }
+            set {
+                this.rolesField = value;
+                this.RaisePropertyChanged("roles");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=30)]
+        public System.DateTime fechaCreacion {
+            get {
+                return this.fechaCreacionField;
+            }
+            set {
+                this.fechaCreacionField = value;
+                this.RaisePropertyChanged("fechaCreacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaCreacionSpecified {
+            get {
+                return this.fechaCreacionFieldSpecified;
+            }
+            set {
+                this.fechaCreacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCreacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=31)]
+        public System.DateTime fechaActualizacion {
+            get {
+                return this.fechaActualizacionField;
+            }
+            set {
+                this.fechaActualizacionField = value;
+                this.RaisePropertyChanged("fechaActualizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaActualizacionSpecified {
+            get {
+                return this.fechaActualizacionFieldSpecified;
+            }
+            set {
+                this.fechaActualizacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaActualizacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        public OficinaAfilicacion oficinaAfiliacion {
+            get {
+                return this.oficinaAfiliacionField;
+            }
+            set {
+                this.oficinaAfiliacionField = value;
+                this.RaisePropertyChanged("oficinaAfiliacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=33)]
+        public Asesor asesor {
+            get {
+                return this.asesorField;
+            }
+            set {
+                this.asesorField = value;
+                this.RaisePropertyChanged("asesor");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionElectronicaPJ : DireccionElectronica {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
+    public partial class DireccionElectronica : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string correoElectronicoField;
+        
+        private string paginaWebField;
+        
+        private bool indicadorAutorizacionField;
+        
+        private bool indicadorAutorizacionFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string correoElectronico {
+            get {
+                return this.correoElectronicoField;
+            }
+            set {
+                this.correoElectronicoField = value;
+                this.RaisePropertyChanged("correoElectronico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string paginaWeb {
+            get {
+                return this.paginaWebField;
+            }
+            set {
+                this.paginaWebField = value;
+                this.RaisePropertyChanged("paginaWeb");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool indicadorAutorizacion {
+            get {
+                return this.indicadorAutorizacionField;
+            }
+            set {
+                this.indicadorAutorizacionField = value;
+                this.RaisePropertyChanged("indicadorAutorizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool indicadorAutorizacionSpecified {
+            get {
+                return this.indicadorAutorizacionFieldSpecified;
+            }
+            set {
+                this.indicadorAutorizacionFieldSpecified = value;
+                this.RaisePropertyChanged("indicadorAutorizacionSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionElectronica_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionElectronica_V11 : DireccionElectronica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionElectronica_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionElectronica_V10 : DireccionElectronica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class CasillaPostalPJ : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
+    public partial class CasillaPostal : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int idCasillaField;
+        
+        private bool idCasillaFieldSpecified;
+        
+        private string apartadoField;
+        
+        private string senalizacionField;
+        
+        private string codigoCiudadField;
+        
+        private string nombreCiudadField;
+        
+        private string codigoDepartamentoField;
+        
+        private string codigoProvinciaField;
+        
+        private string nombreProvinciaField;
+        
+        private string verificadoField;
+        
+        private string tipoField;
+        
+        private string codigoPaisField;
+        
+        private string nombrePaisField;
+        
+        private string zonaPostalField;
+        
+        private string fechaRegistroField;
+        
+        private string fechaModificacionField;
+        
+        private string comentarioField;
+        
+        private string codigoEmpresaField;
+        
+        private string codigoExternoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int idCasilla {
+            get {
+                return this.idCasillaField;
+            }
+            set {
+                this.idCasillaField = value;
+                this.RaisePropertyChanged("idCasilla");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idCasillaSpecified {
+            get {
+                return this.idCasillaFieldSpecified;
+            }
+            set {
+                this.idCasillaFieldSpecified = value;
+                this.RaisePropertyChanged("idCasillaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string apartado {
+            get {
+                return this.apartadoField;
+            }
+            set {
+                this.apartadoField = value;
+                this.RaisePropertyChanged("apartado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string senalizacion {
+            get {
+                return this.senalizacionField;
+            }
+            set {
+                this.senalizacionField = value;
+                this.RaisePropertyChanged("senalizacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string codigoCiudad {
+            get {
+                return this.codigoCiudadField;
+            }
+            set {
+                this.codigoCiudadField = value;
+                this.RaisePropertyChanged("codigoCiudad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string nombreCiudad {
+            get {
+                return this.nombreCiudadField;
+            }
+            set {
+                this.nombreCiudadField = value;
+                this.RaisePropertyChanged("nombreCiudad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string codigoDepartamento {
+            get {
+                return this.codigoDepartamentoField;
+            }
+            set {
+                this.codigoDepartamentoField = value;
+                this.RaisePropertyChanged("codigoDepartamento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string codigoProvincia {
+            get {
+                return this.codigoProvinciaField;
+            }
+            set {
+                this.codigoProvinciaField = value;
+                this.RaisePropertyChanged("codigoProvincia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string nombreProvincia {
+            get {
+                return this.nombreProvinciaField;
+            }
+            set {
+                this.nombreProvinciaField = value;
+                this.RaisePropertyChanged("nombreProvincia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public string verificado {
+            get {
+                return this.verificadoField;
+            }
+            set {
+                this.verificadoField = value;
+                this.RaisePropertyChanged("verificado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public string tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+                this.RaisePropertyChanged("tipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string codigoPais {
+            get {
+                return this.codigoPaisField;
+            }
+            set {
+                this.codigoPaisField = value;
+                this.RaisePropertyChanged("codigoPais");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string nombrePais {
+            get {
+                return this.nombrePaisField;
+            }
+            set {
+                this.nombrePaisField = value;
+                this.RaisePropertyChanged("nombrePais");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string zonaPostal {
+            get {
+                return this.zonaPostalField;
+            }
+            set {
+                this.zonaPostalField = value;
+                this.RaisePropertyChanged("zonaPostal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string fechaRegistro {
+            get {
+                return this.fechaRegistroField;
+            }
+            set {
+                this.fechaRegistroField = value;
+                this.RaisePropertyChanged("fechaRegistro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string fechaModificacion {
+            get {
+                return this.fechaModificacionField;
+            }
+            set {
+                this.fechaModificacionField = value;
+                this.RaisePropertyChanged("fechaModificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string comentario {
+            get {
+                return this.comentarioField;
+            }
+            set {
+                this.comentarioField = value;
+                this.RaisePropertyChanged("comentario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public string codigoEmpresa {
+            get {
+                return this.codigoEmpresaField;
+            }
+            set {
+                this.codigoEmpresaField = value;
+                this.RaisePropertyChanged("codigoEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public string codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class CasillaPostal_V12 : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class CasillaPostal_V11 : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class CasillaPostal_V10 : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/codigoTipo")]
+    public partial class codigoTipo : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoField;
+        
+        private string tipoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+                this.RaisePropertyChanged("tipo");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cesantias")]
+    public partial class PersonaJuridicaType : DatosBasicosPJ {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionFamiliar_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personanatural")]
     public partial class InformacionFamiliar : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string codigoFamiliarField;
         
         private string tipoFamiliarField;
         
-        private PersonaNaturalFamiliar personaNaturalField;
+        private PersonaNaturalInfoBasica_V10 personaNaturalFamiliarField;
         
-        private ClienteFamiliar clienteField;
+        private string secuenciaField;
+        
+        private string codigoExternoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -113,25 +4959,37 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public PersonaNaturalFamiliar personaNatural {
+        public PersonaNaturalInfoBasica_V10 personaNaturalFamiliar {
             get {
-                return this.personaNaturalField;
+                return this.personaNaturalFamiliarField;
             }
             set {
-                this.personaNaturalField = value;
-                this.RaisePropertyChanged("personaNatural");
+                this.personaNaturalFamiliarField = value;
+                this.RaisePropertyChanged("personaNaturalFamiliar");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public ClienteFamiliar cliente {
+        public string secuencia {
             get {
-                return this.clienteField;
+                return this.secuenciaField;
             }
             set {
-                this.clienteField = value;
-                this.RaisePropertyChanged("cliente");
+                this.secuenciaField = value;
+                this.RaisePropertyChanged("secuencia");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
             }
         }
         
@@ -146,17 +5004,32 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalInfoBasica_V11))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class PersonaNaturalFamiliar : PersonaNatural {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNaturalInfoBasica_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/personanatural")]
+    public partial class PersonaNaturalInfoBasica_V10 : PersonaNatural {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalFamiliar))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural1))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Apoderado_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Apoderado_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V213))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V212))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V211))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V28))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V27))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V26))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V24))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalType))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V23))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V21))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V221))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V22))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalInfoBasica_V10))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalInfoBasica_V11))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -224,9 +5097,11 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private bool autorizaEnvioEmailFieldSpecified;
         
-        private string colombianoEnExteriorField;
+        private bool colombianoEnExteriorField;
         
-        private string codigoPaisExtField;
+        private bool colombianoEnExteriorFieldSpecified;
+        
+        private ColombianoExterior infoBasicaExteriorField;
         
         private bool trasladoCesantiasField;
         
@@ -240,7 +5115,15 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private bool esFamiliarFieldSpecified;
         
-        private DireccionElectronica1 direcccionElectronicaField;
+        private int tiempoActividadMesesField;
+        
+        private bool tiempoActividadMesesFieldSpecified;
+        
+        private int tiempoActividadAniosField;
+        
+        private bool tiempoActividadAniosFieldSpecified;
+        
+        private DireccionElectronica direcccionElectronicaField;
         
         private string medioActualizacionField;
         
@@ -252,13 +5135,63 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private string empresaDondeTrabajaField;
         
-        private CasillaPostal1[] casillasPostalesField;
+        private CasillaPostal[] casillasPostalesField;
         
-        private InformacionLaboral informacionLaboralField;
+        private InformacionLaboral[] informacionLaboralField;
         
         private InformacionFinanciera informacionFinancieraField;
         
         private ProteccionCesante[] proteccionCesanteField;
+        
+        private string[] origenesAhorroVoluntarioField;
+        
+        private string enrolamientoField;
+        
+        private TipoAfiliacion tipoAfiliacionField;
+        
+        private AutorizacionEnvio_V10 autorizacionEnvioField;
+        
+        private cuentaAVC_V10 cuentaAVCField;
+        
+        private InformacionFamiliar[] informacionFamiliarField;
+        
+        private codigoTipo[] rolesField;
+        
+        private bool responsableImpuestosEEUUField;
+        
+        private bool responsableImpuestosEEUUFieldSpecified;
+        
+        private PEP pEPField;
+        
+        private bool tIN_EEUUField;
+        
+        private bool tIN_EEUUFieldSpecified;
+        
+        private string numeroTINField;
+        
+        private string estatusMigratorioDefinidoField;
+        
+        private Identificacion identificacionExteriorField;
+        
+        private string oficinaAfiliacionField;
+        
+        private ActividadEconomica actividadEconomicaField;
+        
+        private string tipoActividadField;
+        
+        private Telefono telefonoField;
+        
+        private string estadoField;
+        
+        private int fondoPrivadoField;
+        
+        private bool fondoPrivadoFieldSpecified;
+        
+        private string entidadPensionField;
+        
+        private string tipoVinculacionFNAField;
+        
+        private string codigoField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -622,7 +5555,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
-        public string colombianoEnExterior {
+        public bool colombianoEnExterior {
             get {
                 return this.colombianoEnExteriorField;
             }
@@ -633,14 +5566,26 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
-        public string codigoPaisExt {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool colombianoEnExteriorSpecified {
             get {
-                return this.codigoPaisExtField;
+                return this.colombianoEnExteriorFieldSpecified;
             }
             set {
-                this.codigoPaisExtField = value;
-                this.RaisePropertyChanged("codigoPaisExt");
+                this.colombianoEnExteriorFieldSpecified = value;
+                this.RaisePropertyChanged("colombianoEnExteriorSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public ColombianoExterior InfoBasicaExterior {
+            get {
+                return this.infoBasicaExteriorField;
+            }
+            set {
+                this.infoBasicaExteriorField = value;
+                this.RaisePropertyChanged("InfoBasicaExterior");
             }
         }
         
@@ -718,7 +5663,55 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=30)]
-        public DireccionElectronica1 direcccionElectronica {
+        public int tiempoActividadMeses {
+            get {
+                return this.tiempoActividadMesesField;
+            }
+            set {
+                this.tiempoActividadMesesField = value;
+                this.RaisePropertyChanged("tiempoActividadMeses");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoActividadMesesSpecified {
+            get {
+                return this.tiempoActividadMesesFieldSpecified;
+            }
+            set {
+                this.tiempoActividadMesesFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoActividadMesesSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
+        public int tiempoActividadAnios {
+            get {
+                return this.tiempoActividadAniosField;
+            }
+            set {
+                this.tiempoActividadAniosField = value;
+                this.RaisePropertyChanged("tiempoActividadAnios");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoActividadAniosSpecified {
+            get {
+                return this.tiempoActividadAniosFieldSpecified;
+            }
+            set {
+                this.tiempoActividadAniosFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoActividadAniosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        public DireccionElectronica direcccionElectronica {
             get {
                 return this.direcccionElectronicaField;
             }
@@ -729,7 +5722,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=33)]
         public string medioActualizacion {
             get {
                 return this.medioActualizacionField;
@@ -741,7 +5734,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=34)]
         public string codigoAsesorComercial {
             get {
                 return this.codigoAsesorComercialField;
@@ -753,7 +5746,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=33)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=35)]
         public int codigoOficialReferido {
             get {
                 return this.codigoOficialReferidoField;
@@ -777,7 +5770,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=34)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=36)]
         public string empresaDondeTrabaja {
             get {
                 return this.empresaDondeTrabajaField;
@@ -789,9 +5782,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=35)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("casillaPostal", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public CasillaPostal1[] casillasPostales {
+        [System.Xml.Serialization.XmlElementAttribute("casillasPostales", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=37)]
+        public CasillaPostal[] casillasPostales {
             get {
                 return this.casillasPostalesField;
             }
@@ -802,8 +5794,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=36)]
-        public InformacionLaboral informacionLaboral {
+        [System.Xml.Serialization.XmlElementAttribute("informacionLaboral", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=38)]
+        public InformacionLaboral[] informacionLaboral {
             get {
                 return this.informacionLaboralField;
             }
@@ -814,7 +5806,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=37)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=39)]
         public InformacionFinanciera informacionFinanciera {
             get {
                 return this.informacionFinancieraField;
@@ -826,7 +5818,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("proteccionCesante", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=38)]
+        [System.Xml.Serialization.XmlElementAttribute("proteccionCesante", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=40)]
         public ProteccionCesante[] proteccionCesante {
             get {
                 return this.proteccionCesanteField;
@@ -837,200 +5829,236 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             }
         }
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IdentificacionRes))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Identificacion1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/identificacion")]
-    public partial class Identificacion : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string numeroDocumentoField;
-        
-        private string tipoDocumentoField;
-        
-        private int digitoVerificacionField;
-        
-        private bool digitoVerificacionFieldSpecified;
-        
-        private System.DateTime fechaExpedicionField;
-        
-        private bool fechaExpedicionFieldSpecified;
-        
-        private System.DateTime fechasExpiracionField;
-        
-        private bool fechasExpiracionFieldSpecified;
-        
-        private string ciudadExpedicionField;
-        
-        private string departamentoExpedicionField;
-        
-        private string paisExpedicionField;
-        
-        private string pobladoExpedicionField;
-        
-        private string estadoField;
-        
-        private string descripcionEstadoField;
-        
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string numeroDocumento {
+        [System.Xml.Serialization.XmlElementAttribute("origenesAhorroVoluntario", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=41)]
+        public string[] origenesAhorroVoluntario {
             get {
-                return this.numeroDocumentoField;
+                return this.origenesAhorroVoluntarioField;
             }
             set {
-                this.numeroDocumentoField = value;
-                this.RaisePropertyChanged("numeroDocumento");
+                this.origenesAhorroVoluntarioField = value;
+                this.RaisePropertyChanged("origenesAhorroVoluntario");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string tipoDocumento {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=42)]
+        public string enrolamiento {
             get {
-                return this.tipoDocumentoField;
+                return this.enrolamientoField;
             }
             set {
-                this.tipoDocumentoField = value;
-                this.RaisePropertyChanged("tipoDocumento");
+                this.enrolamientoField = value;
+                this.RaisePropertyChanged("enrolamiento");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public int digitoVerificacion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=43)]
+        public TipoAfiliacion tipoAfiliacion {
             get {
-                return this.digitoVerificacionField;
+                return this.tipoAfiliacionField;
             }
             set {
-                this.digitoVerificacionField = value;
-                this.RaisePropertyChanged("digitoVerificacion");
+                this.tipoAfiliacionField = value;
+                this.RaisePropertyChanged("tipoAfiliacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=44)]
+        public AutorizacionEnvio_V10 autorizacionEnvio {
+            get {
+                return this.autorizacionEnvioField;
+            }
+            set {
+                this.autorizacionEnvioField = value;
+                this.RaisePropertyChanged("autorizacionEnvio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=45)]
+        public cuentaAVC_V10 cuentaAVC {
+            get {
+                return this.cuentaAVCField;
+            }
+            set {
+                this.cuentaAVCField = value;
+                this.RaisePropertyChanged("cuentaAVC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("informacionFamiliar", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=46)]
+        public InformacionFamiliar[] informacionFamiliar {
+            get {
+                return this.informacionFamiliarField;
+            }
+            set {
+                this.informacionFamiliarField = value;
+                this.RaisePropertyChanged("informacionFamiliar");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("roles", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=47)]
+        public codigoTipo[] roles {
+            get {
+                return this.rolesField;
+            }
+            set {
+                this.rolesField = value;
+                this.RaisePropertyChanged("roles");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=48)]
+        public bool responsableImpuestosEEUU {
+            get {
+                return this.responsableImpuestosEEUUField;
+            }
+            set {
+                this.responsableImpuestosEEUUField = value;
+                this.RaisePropertyChanged("responsableImpuestosEEUU");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool digitoVerificacionSpecified {
+        public bool responsableImpuestosEEUUSpecified {
             get {
-                return this.digitoVerificacionFieldSpecified;
+                return this.responsableImpuestosEEUUFieldSpecified;
             }
             set {
-                this.digitoVerificacionFieldSpecified = value;
-                this.RaisePropertyChanged("digitoVerificacionSpecified");
+                this.responsableImpuestosEEUUFieldSpecified = value;
+                this.RaisePropertyChanged("responsableImpuestosEEUUSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=3)]
-        public System.DateTime fechaExpedicion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=49)]
+        public PEP PEP {
             get {
-                return this.fechaExpedicionField;
+                return this.pEPField;
             }
             set {
-                this.fechaExpedicionField = value;
-                this.RaisePropertyChanged("fechaExpedicion");
+                this.pEPField = value;
+                this.RaisePropertyChanged("PEP");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaExpedicionSpecified {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=50)]
+        public bool TIN_EEUU {
             get {
-                return this.fechaExpedicionFieldSpecified;
+                return this.tIN_EEUUField;
             }
             set {
-                this.fechaExpedicionFieldSpecified = value;
-                this.RaisePropertyChanged("fechaExpedicionSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=4)]
-        public System.DateTime fechasExpiracion {
-            get {
-                return this.fechasExpiracionField;
-            }
-            set {
-                this.fechasExpiracionField = value;
-                this.RaisePropertyChanged("fechasExpiracion");
+                this.tIN_EEUUField = value;
+                this.RaisePropertyChanged("TIN_EEUU");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechasExpiracionSpecified {
+        public bool TIN_EEUUSpecified {
             get {
-                return this.fechasExpiracionFieldSpecified;
+                return this.tIN_EEUUFieldSpecified;
             }
             set {
-                this.fechasExpiracionFieldSpecified = value;
-                this.RaisePropertyChanged("fechasExpiracionSpecified");
+                this.tIN_EEUUFieldSpecified = value;
+                this.RaisePropertyChanged("TIN_EEUUSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string ciudadExpedicion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=51)]
+        public string numeroTIN {
             get {
-                return this.ciudadExpedicionField;
+                return this.numeroTINField;
             }
             set {
-                this.ciudadExpedicionField = value;
-                this.RaisePropertyChanged("ciudadExpedicion");
+                this.numeroTINField = value;
+                this.RaisePropertyChanged("numeroTIN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string departamentoExpedicion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=52)]
+        public string estatusMigratorioDefinido {
             get {
-                return this.departamentoExpedicionField;
+                return this.estatusMigratorioDefinidoField;
             }
             set {
-                this.departamentoExpedicionField = value;
-                this.RaisePropertyChanged("departamentoExpedicion");
+                this.estatusMigratorioDefinidoField = value;
+                this.RaisePropertyChanged("estatusMigratorioDefinido");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string paisExpedicion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=53)]
+        public Identificacion identificacionExterior {
             get {
-                return this.paisExpedicionField;
+                return this.identificacionExteriorField;
             }
             set {
-                this.paisExpedicionField = value;
-                this.RaisePropertyChanged("paisExpedicion");
+                this.identificacionExteriorField = value;
+                this.RaisePropertyChanged("identificacionExterior");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public string pobladoExpedicion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=54)]
+        public string oficinaAfiliacion {
             get {
-                return this.pobladoExpedicionField;
+                return this.oficinaAfiliacionField;
             }
             set {
-                this.pobladoExpedicionField = value;
-                this.RaisePropertyChanged("pobladoExpedicion");
+                this.oficinaAfiliacionField = value;
+                this.RaisePropertyChanged("oficinaAfiliacion");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=55)]
+        public ActividadEconomica ActividadEconomica {
+            get {
+                return this.actividadEconomicaField;
+            }
+            set {
+                this.actividadEconomicaField = value;
+                this.RaisePropertyChanged("ActividadEconomica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=56)]
+        public string TipoActividad {
+            get {
+                return this.tipoActividadField;
+            }
+            set {
+                this.tipoActividadField = value;
+                this.RaisePropertyChanged("TipoActividad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=57)]
+        public Telefono telefono {
+            get {
+                return this.telefonoField;
+            }
+            set {
+                this.telefonoField = value;
+                this.RaisePropertyChanged("telefono");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=58)]
         public string estado {
             get {
                 return this.estadoField;
@@ -1042,14 +6070,62 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
-        public string descripcionEstado {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=59)]
+        public int fondoPrivado {
             get {
-                return this.descripcionEstadoField;
+                return this.fondoPrivadoField;
             }
             set {
-                this.descripcionEstadoField = value;
-                this.RaisePropertyChanged("descripcionEstado");
+                this.fondoPrivadoField = value;
+                this.RaisePropertyChanged("fondoPrivado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fondoPrivadoSpecified {
+            get {
+                return this.fondoPrivadoFieldSpecified;
+            }
+            set {
+                this.fondoPrivadoFieldSpecified = value;
+                this.RaisePropertyChanged("fondoPrivadoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=60)]
+        public string entidadPension {
+            get {
+                return this.entidadPensionField;
+            }
+            set {
+                this.entidadPensionField = value;
+                this.RaisePropertyChanged("entidadPension");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=61)]
+        public string tipoVinculacionFNA {
+            get {
+                return this.tipoVinculacionFNAField;
+            }
+            set {
+                this.tipoVinculacionFNAField = value;
+                this.RaisePropertyChanged("tipoVinculacionFNA");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=62)]
+        public string codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
             }
         }
         
@@ -1064,1022 +6140,165 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ColombianoExterior_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ColombianoExterior_V13))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ColombianoExterior_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ColombianoExterior_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ColombianoExterior_V10))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class IdentificacionRes : Identificacion {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Identificacion", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class Identificacion1 : Identificacion {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Direccion))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
-    public partial class DireccionFisica : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personanatural")]
+    public partial class ColombianoExterior : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string idDireccionField;
+        private Identificacion identificacionField;
         
-        private string direccionCompletaField;
+        private string estatusMigratorioDefinidoField;
         
-        private string codigoPaisField;
+        private DireccionFisica_V21[] direccionField;
         
-        private string nombrePaisField;
+        private bool responsableImpuestosEEUUField;
         
-        private string codigoCiudadField;
+        private bool responsableImpuestosEEUUFieldSpecified;
         
-        private string nombreCiudadField;
+        private bool tIN_EEUUField;
         
-        private string codigoDepartamentoField;
+        private bool tIN_EEUUFieldSpecified;
         
-        private string nombreDepartamentoField;
+        private string numeroTINField;
         
-        private string codigoCorregimientoField;
+        private System.DateTime fechaCreacionField;
         
-        private string nombreCorregimientoField;
+        private bool fechaCreacionFieldSpecified;
         
-        private string codigoProvinciaField;
+        private System.DateTime fechaModificacionField;
         
-        private string nombreProvinciaField;
-        
-        private string tipoDireccionField;
-        
-        private string codigoSectorField;
-        
-        private string nombreSectorField;
-        
-        private string codigoLocalidadField;
-        
-        private string nombreLocalidadField;
-        
-        private string codigoBarrioField;
-        
-        private string nombreBarrioField;
-        
-        private string nombreUrbanizacionField;
-        
-        private string estratoField;
-        
-        private string antiguedadAniosField;
-        
-        private string antiguedadMesesField;
-        
-        private string zonaVeredalField;
-        
-        private string principalField;
-        
-        private Telefono[] telefonoField;
-        
-        private int tiempoAnnosField;
-        
-        private bool tiempoAnnosFieldSpecified;
-        
-        private int tiempoMesesField;
-        
-        private bool tiempoMesesFieldSpecified;
+        private bool fechaModificacionFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string idDireccion {
+        public Identificacion identificacion {
             get {
-                return this.idDireccionField;
+                return this.identificacionField;
             }
             set {
-                this.idDireccionField = value;
-                this.RaisePropertyChanged("idDireccion");
+                this.identificacionField = value;
+                this.RaisePropertyChanged("identificacion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string direccionCompleta {
+        public string estatusMigratorioDefinido {
             get {
-                return this.direccionCompletaField;
+                return this.estatusMigratorioDefinidoField;
             }
             set {
-                this.direccionCompletaField = value;
-                this.RaisePropertyChanged("direccionCompleta");
+                this.estatusMigratorioDefinidoField = value;
+                this.RaisePropertyChanged("estatusMigratorioDefinido");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoPais {
+        [System.Xml.Serialization.XmlElementAttribute("direccion", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public DireccionFisica_V21[] direccion {
             get {
-                return this.codigoPaisField;
+                return this.direccionField;
             }
             set {
-                this.codigoPaisField = value;
-                this.RaisePropertyChanged("codigoPais");
+                this.direccionField = value;
+                this.RaisePropertyChanged("direccion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string nombrePais {
+        public bool responsableImpuestosEEUU {
             get {
-                return this.nombrePaisField;
+                return this.responsableImpuestosEEUUField;
             }
             set {
-                this.nombrePaisField = value;
-                this.RaisePropertyChanged("nombrePais");
+                this.responsableImpuestosEEUUField = value;
+                this.RaisePropertyChanged("responsableImpuestosEEUU");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool responsableImpuestosEEUUSpecified {
+            get {
+                return this.responsableImpuestosEEUUFieldSpecified;
+            }
+            set {
+                this.responsableImpuestosEEUUFieldSpecified = value;
+                this.RaisePropertyChanged("responsableImpuestosEEUUSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string codigoCiudad {
+        public bool TIN_EEUU {
             get {
-                return this.codigoCiudadField;
+                return this.tIN_EEUUField;
             }
             set {
-                this.codigoCiudadField = value;
-                this.RaisePropertyChanged("codigoCiudad");
+                this.tIN_EEUUField = value;
+                this.RaisePropertyChanged("TIN_EEUU");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TIN_EEUUSpecified {
+            get {
+                return this.tIN_EEUUFieldSpecified;
+            }
+            set {
+                this.tIN_EEUUFieldSpecified = value;
+                this.RaisePropertyChanged("TIN_EEUUSpecified");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string nombreCiudad {
+        public string numeroTIN {
             get {
-                return this.nombreCiudadField;
+                return this.numeroTINField;
             }
             set {
-                this.nombreCiudadField = value;
-                this.RaisePropertyChanged("nombreCiudad");
+                this.numeroTINField = value;
+                this.RaisePropertyChanged("numeroTIN");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string codigoDepartamento {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=6)]
+        public System.DateTime fechaCreacion {
             get {
-                return this.codigoDepartamentoField;
+                return this.fechaCreacionField;
             }
             set {
-                this.codigoDepartamentoField = value;
-                this.RaisePropertyChanged("codigoDepartamento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string nombreDepartamento {
-            get {
-                return this.nombreDepartamentoField;
-            }
-            set {
-                this.nombreDepartamentoField = value;
-                this.RaisePropertyChanged("nombreDepartamento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public string codigoCorregimiento {
-            get {
-                return this.codigoCorregimientoField;
-            }
-            set {
-                this.codigoCorregimientoField = value;
-                this.RaisePropertyChanged("codigoCorregimiento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public string nombreCorregimiento {
-            get {
-                return this.nombreCorregimientoField;
-            }
-            set {
-                this.nombreCorregimientoField = value;
-                this.RaisePropertyChanged("nombreCorregimiento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
-        public string codigoProvincia {
-            get {
-                return this.codigoProvinciaField;
-            }
-            set {
-                this.codigoProvinciaField = value;
-                this.RaisePropertyChanged("codigoProvincia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
-        public string nombreProvincia {
-            get {
-                return this.nombreProvinciaField;
-            }
-            set {
-                this.nombreProvinciaField = value;
-                this.RaisePropertyChanged("nombreProvincia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
-        public string tipoDireccion {
-            get {
-                return this.tipoDireccionField;
-            }
-            set {
-                this.tipoDireccionField = value;
-                this.RaisePropertyChanged("tipoDireccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
-        public string codigoSector {
-            get {
-                return this.codigoSectorField;
-            }
-            set {
-                this.codigoSectorField = value;
-                this.RaisePropertyChanged("codigoSector");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
-        public string nombreSector {
-            get {
-                return this.nombreSectorField;
-            }
-            set {
-                this.nombreSectorField = value;
-                this.RaisePropertyChanged("nombreSector");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
-        public string codigoLocalidad {
-            get {
-                return this.codigoLocalidadField;
-            }
-            set {
-                this.codigoLocalidadField = value;
-                this.RaisePropertyChanged("codigoLocalidad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
-        public string nombreLocalidad {
-            get {
-                return this.nombreLocalidadField;
-            }
-            set {
-                this.nombreLocalidadField = value;
-                this.RaisePropertyChanged("nombreLocalidad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
-        public string codigoBarrio {
-            get {
-                return this.codigoBarrioField;
-            }
-            set {
-                this.codigoBarrioField = value;
-                this.RaisePropertyChanged("codigoBarrio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
-        public string nombreBarrio {
-            get {
-                return this.nombreBarrioField;
-            }
-            set {
-                this.nombreBarrioField = value;
-                this.RaisePropertyChanged("nombreBarrio");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
-        public string nombreUrbanizacion {
-            get {
-                return this.nombreUrbanizacionField;
-            }
-            set {
-                this.nombreUrbanizacionField = value;
-                this.RaisePropertyChanged("nombreUrbanizacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
-        public string estrato {
-            get {
-                return this.estratoField;
-            }
-            set {
-                this.estratoField = value;
-                this.RaisePropertyChanged("estrato");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
-        public string antiguedadAnios {
-            get {
-                return this.antiguedadAniosField;
-            }
-            set {
-                this.antiguedadAniosField = value;
-                this.RaisePropertyChanged("antiguedadAnios");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
-        public string antiguedadMeses {
-            get {
-                return this.antiguedadMesesField;
-            }
-            set {
-                this.antiguedadMesesField = value;
-                this.RaisePropertyChanged("antiguedadMeses");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
-        public string zonaVeredal {
-            get {
-                return this.zonaVeredalField;
-            }
-            set {
-                this.zonaVeredalField = value;
-                this.RaisePropertyChanged("zonaVeredal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
-        public string principal {
-            get {
-                return this.principalField;
-            }
-            set {
-                this.principalField = value;
-                this.RaisePropertyChanged("principal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("telefono", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
-        public Telefono[] telefono {
-            get {
-                return this.telefonoField;
-            }
-            set {
-                this.telefonoField = value;
-                this.RaisePropertyChanged("telefono");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
-        public int tiempoAnnos {
-            get {
-                return this.tiempoAnnosField;
-            }
-            set {
-                this.tiempoAnnosField = value;
-                this.RaisePropertyChanged("tiempoAnnos");
+                this.fechaCreacionField = value;
+                this.RaisePropertyChanged("fechaCreacion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tiempoAnnosSpecified {
+        public bool fechaCreacionSpecified {
             get {
-                return this.tiempoAnnosFieldSpecified;
+                return this.fechaCreacionFieldSpecified;
             }
             set {
-                this.tiempoAnnosFieldSpecified = value;
-                this.RaisePropertyChanged("tiempoAnnosSpecified");
+                this.fechaCreacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaCreacionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
-        public int tiempoMeses {
-            get {
-                return this.tiempoMesesField;
-            }
-            set {
-                this.tiempoMesesField = value;
-                this.RaisePropertyChanged("tiempoMeses");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool tiempoMesesSpecified {
-            get {
-                return this.tiempoMesesFieldSpecified;
-            }
-            set {
-                this.tiempoMesesFieldSpecified = value;
-                this.RaisePropertyChanged("tiempoMesesSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono2))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string numeroCompletoField;
-        
-        private string idTelefonoField;
-        
-        private string tipoTelefonoField;
-        
-        private string numeroTelefonoField;
-        
-        private string extensionField;
-        
-        private int indicativoField;
-        
-        private bool indicativoFieldSpecified;
-        
-        private string idDireccionField;
-        
-        private bool indicadorAutorizacionField;
-        
-        private bool indicadorAutorizacionFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string numeroCompleto {
-            get {
-                return this.numeroCompletoField;
-            }
-            set {
-                this.numeroCompletoField = value;
-                this.RaisePropertyChanged("numeroCompleto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string idTelefono {
-            get {
-                return this.idTelefonoField;
-            }
-            set {
-                this.idTelefonoField = value;
-                this.RaisePropertyChanged("idTelefono");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string tipoTelefono {
-            get {
-                return this.tipoTelefonoField;
-            }
-            set {
-                this.tipoTelefonoField = value;
-                this.RaisePropertyChanged("tipoTelefono");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string numeroTelefono {
-            get {
-                return this.numeroTelefonoField;
-            }
-            set {
-                this.numeroTelefonoField = value;
-                this.RaisePropertyChanged("numeroTelefono");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string extension {
-            get {
-                return this.extensionField;
-            }
-            set {
-                this.extensionField = value;
-                this.RaisePropertyChanged("extension");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public int indicativo {
-            get {
-                return this.indicativoField;
-            }
-            set {
-                this.indicativoField = value;
-                this.RaisePropertyChanged("indicativo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool indicativoSpecified {
-            get {
-                return this.indicativoFieldSpecified;
-            }
-            set {
-                this.indicativoFieldSpecified = value;
-                this.RaisePropertyChanged("indicativoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string idDireccion {
-            get {
-                return this.idDireccionField;
-            }
-            set {
-                this.idDireccionField = value;
-                this.RaisePropertyChanged("idDireccion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public bool indicadorAutorizacion {
-            get {
-                return this.indicadorAutorizacionField;
-            }
-            set {
-                this.indicadorAutorizacionField = value;
-                this.RaisePropertyChanged("indicadorAutorizacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool indicadorAutorizacionSpecified {
-            get {
-                return this.indicadorAutorizacionFieldSpecified;
-            }
-            set {
-                this.indicadorAutorizacionFieldSpecified = value;
-                this.RaisePropertyChanged("indicadorAutorizacionSpecified");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class TelefonoPJ : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
-    public partial class Telefono2 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class Telefono1 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJ : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJT : DireccionPJ {
-        
-        private TelefonoPJ[] telefonosField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("telefonos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public TelefonoPJ[] telefonos {
-            get {
-                return this.telefonosField;
-            }
-            set {
-                this.telefonosField = value;
-                this.RaisePropertyChanged("telefonos");
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
-    public partial class Direccion : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class DireccionFisica1 : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionElectronica", Namespace="http://www.fna.gov.co/cim/businessentities/personanatural")]
-    public partial class DireccionElectronica1 : DireccionElectronica {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
-    public partial class DireccionElectronica : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string correoElectronicoField;
-        
-        private string paginaWebField;
-        
-        private string indicadorAutorizacionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string correoElectronico {
-            get {
-                return this.correoElectronicoField;
-            }
-            set {
-                this.correoElectronicoField = value;
-                this.RaisePropertyChanged("correoElectronico");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string paginaWeb {
-            get {
-                return this.paginaWebField;
-            }
-            set {
-                this.paginaWebField = value;
-                this.RaisePropertyChanged("paginaWeb");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string indicadorAutorizacion {
-            get {
-                return this.indicadorAutorizacionField;
-            }
-            set {
-                this.indicadorAutorizacionField = value;
-                this.RaisePropertyChanged("indicadorAutorizacion");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionElectronicaPJ : DireccionElectronica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal", Namespace="http://www.fna.gov.co/cim/businessentities/personanatural")]
-    public partial class CasillaPostal1 : CasillaPostal {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/direccion")]
-    public partial class CasillaPostal : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int idCasillaField;
-        
-        private bool idCasillaFieldSpecified;
-        
-        private string apartadoField;
-        
-        private string senalizacionField;
-        
-        private string codigoCiudadField;
-        
-        private string nombreCiudadField;
-        
-        private string codigoDepartamentoField;
-        
-        private string codigoProvinciaField;
-        
-        private string nombreProvinciaField;
-        
-        private string verificadoField;
-        
-        private string tipoField;
-        
-        private string codigoPaisField;
-        
-        private string nombrePaisField;
-        
-        private string zonaPostalField;
-        
-        private string fechaRegistroField;
-        
-        private string fechaModificacionField;
-        
-        private string comentarioField;
-        
-        private string codigoEmpresaField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int idCasilla {
-            get {
-                return this.idCasillaField;
-            }
-            set {
-                this.idCasillaField = value;
-                this.RaisePropertyChanged("idCasilla");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idCasillaSpecified {
-            get {
-                return this.idCasillaFieldSpecified;
-            }
-            set {
-                this.idCasillaFieldSpecified = value;
-                this.RaisePropertyChanged("idCasillaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string apartado {
-            get {
-                return this.apartadoField;
-            }
-            set {
-                this.apartadoField = value;
-                this.RaisePropertyChanged("apartado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string senalizacion {
-            get {
-                return this.senalizacionField;
-            }
-            set {
-                this.senalizacionField = value;
-                this.RaisePropertyChanged("senalizacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string codigoCiudad {
-            get {
-                return this.codigoCiudadField;
-            }
-            set {
-                this.codigoCiudadField = value;
-                this.RaisePropertyChanged("codigoCiudad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string nombreCiudad {
-            get {
-                return this.nombreCiudadField;
-            }
-            set {
-                this.nombreCiudadField = value;
-                this.RaisePropertyChanged("nombreCiudad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string codigoDepartamento {
-            get {
-                return this.codigoDepartamentoField;
-            }
-            set {
-                this.codigoDepartamentoField = value;
-                this.RaisePropertyChanged("codigoDepartamento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string codigoProvincia {
-            get {
-                return this.codigoProvinciaField;
-            }
-            set {
-                this.codigoProvinciaField = value;
-                this.RaisePropertyChanged("codigoProvincia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string nombreProvincia {
-            get {
-                return this.nombreProvinciaField;
-            }
-            set {
-                this.nombreProvinciaField = value;
-                this.RaisePropertyChanged("nombreProvincia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public string verificado {
-            get {
-                return this.verificadoField;
-            }
-            set {
-                this.verificadoField = value;
-                this.RaisePropertyChanged("verificado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public string tipo {
-            get {
-                return this.tipoField;
-            }
-            set {
-                this.tipoField = value;
-                this.RaisePropertyChanged("tipo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
-        public string codigoPais {
-            get {
-                return this.codigoPaisField;
-            }
-            set {
-                this.codigoPaisField = value;
-                this.RaisePropertyChanged("codigoPais");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
-        public string nombrePais {
-            get {
-                return this.nombrePaisField;
-            }
-            set {
-                this.nombrePaisField = value;
-                this.RaisePropertyChanged("nombrePais");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
-        public string zonaPostal {
-            get {
-                return this.zonaPostalField;
-            }
-            set {
-                this.zonaPostalField = value;
-                this.RaisePropertyChanged("zonaPostal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
-        public string fechaRegistro {
-            get {
-                return this.fechaRegistroField;
-            }
-            set {
-                this.fechaRegistroField = value;
-                this.RaisePropertyChanged("fechaRegistro");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
-        public string fechaModificacion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=7)]
+        public System.DateTime fechaModificacion {
             get {
                 return this.fechaModificacionField;
             }
@@ -2090,26 +6309,14 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
-        public string comentario {
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaModificacionSpecified {
             get {
-                return this.comentarioField;
+                return this.fechaModificacionFieldSpecified;
             }
             set {
-                this.comentarioField = value;
-                this.RaisePropertyChanged("comentario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
-        public string codigoEmpresa {
-            get {
-                return this.codigoEmpresaField;
-            }
-            set {
-                this.codigoEmpresaField = value;
-                this.RaisePropertyChanged("codigoEmpresa");
+                this.fechaModificacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaModificacionSpecified");
             }
         }
         
@@ -2128,11 +6335,54 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class CasillaPostalPJ : CasillaPostal {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ColombianoExterior_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class ColombianoExterior_V14 : ColombianoExterior {
     }
     
     /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ColombianoExterior_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class ColombianoExterior_V13 : ColombianoExterior {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ColombianoExterior_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class ColombianoExterior_V12 : ColombianoExterior {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ColombianoExterior_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class ColombianoExterior_V11 : ColombianoExterior {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ColombianoExterior_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class ColombianoExterior_V10 : ColombianoExterior {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V27))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V25))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V24))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V23))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V22))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V26))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V21))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2141,6 +6391,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     public partial class InformacionLaboral : object, System.ComponentModel.INotifyPropertyChanged {
         
         private int idEmpresaField;
+        
+        private bool idEmpresaFieldSpecified;
         
         private string nombreField;
         
@@ -2166,9 +6418,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private bool fechaRegistroSalarioFieldSpecified;
         
-        private int monedaSalarioField;
-        
-        private bool monedaSalarioFieldSpecified;
+        private string monedaSalarioField;
         
         private decimal otrosIngresosField;
         
@@ -2178,7 +6428,41 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private SeguroDesempleo[] seguroDesempleoField;
         
-        private Direccion[] direccionField;
+        private DireccionFisica[] direccionField;
+        
+        private string identificacionField;
+        
+        private string sectorField;
+        
+        private string tipoLaboralField;
+        
+        private bool esIndependienteConContratoField;
+        
+        private bool esIndependienteConContratoFieldSpecified;
+        
+        private string correoEmpresaField;
+        
+        private ActividadEconomica actividadEconomicaField;
+        
+        private DireccionElectronica direccionElectronicaField;
+        
+        private PEP pepField;
+        
+        private int tiempoAnhoField;
+        
+        private bool tiempoAnhoFieldSpecified;
+        
+        private int tiempoMesesField;
+        
+        private bool tiempoMesesFieldSpecified;
+        
+        private string observacionField;
+        
+        private string codigoExternoField;
+        
+        private string cargoActividadField;
+        
+        private Entidad entidadField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -2189,6 +6473,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             set {
                 this.idEmpresaField = value;
                 this.RaisePropertyChanged("idEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool idEmpresaSpecified {
+            get {
+                return this.idEmpresaFieldSpecified;
+            }
+            set {
+                this.idEmpresaFieldSpecified = value;
+                this.RaisePropertyChanged("idEmpresaSpecified");
             }
         }
         
@@ -2338,25 +6634,13 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public int monedaSalario {
+        public string monedaSalario {
             get {
                 return this.monedaSalarioField;
             }
             set {
                 this.monedaSalarioField = value;
                 this.RaisePropertyChanged("monedaSalario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool monedaSalarioSpecified {
-            get {
-                return this.monedaSalarioFieldSpecified;
-            }
-            set {
-                this.monedaSalarioFieldSpecified = value;
-                this.RaisePropertyChanged("monedaSalarioSpecified");
             }
         }
         
@@ -2410,13 +6694,217 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("direccion", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
-        public Direccion[] direccion {
+        public DireccionFisica[] direccion {
             get {
                 return this.direccionField;
             }
             set {
                 this.direccionField = value;
                 this.RaisePropertyChanged("direccion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public string identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+                this.RaisePropertyChanged("identificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public string sector {
+            get {
+                return this.sectorField;
+            }
+            set {
+                this.sectorField = value;
+                this.RaisePropertyChanged("sector");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
+        public string tipoLaboral {
+            get {
+                return this.tipoLaboralField;
+            }
+            set {
+                this.tipoLaboralField = value;
+                this.RaisePropertyChanged("tipoLaboral");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public bool esIndependienteConContrato {
+            get {
+                return this.esIndependienteConContratoField;
+            }
+            set {
+                this.esIndependienteConContratoField = value;
+                this.RaisePropertyChanged("esIndependienteConContrato");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool esIndependienteConContratoSpecified {
+            get {
+                return this.esIndependienteConContratoFieldSpecified;
+            }
+            set {
+                this.esIndependienteConContratoFieldSpecified = value;
+                this.RaisePropertyChanged("esIndependienteConContratoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public string correoEmpresa {
+            get {
+                return this.correoEmpresaField;
+            }
+            set {
+                this.correoEmpresaField = value;
+                this.RaisePropertyChanged("correoEmpresa");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public ActividadEconomica ActividadEconomica {
+            get {
+                return this.actividadEconomicaField;
+            }
+            set {
+                this.actividadEconomicaField = value;
+                this.RaisePropertyChanged("ActividadEconomica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public DireccionElectronica DireccionElectronica {
+            get {
+                return this.direccionElectronicaField;
+            }
+            set {
+                this.direccionElectronicaField = value;
+                this.RaisePropertyChanged("DireccionElectronica");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public PEP pep {
+            get {
+                return this.pepField;
+            }
+            set {
+                this.pepField = value;
+                this.RaisePropertyChanged("pep");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public int tiempoAnho {
+            get {
+                return this.tiempoAnhoField;
+            }
+            set {
+                this.tiempoAnhoField = value;
+                this.RaisePropertyChanged("tiempoAnho");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoAnhoSpecified {
+            get {
+                return this.tiempoAnhoFieldSpecified;
+            }
+            set {
+                this.tiempoAnhoFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoAnhoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public int tiempoMeses {
+            get {
+                return this.tiempoMesesField;
+            }
+            set {
+                this.tiempoMesesField = value;
+                this.RaisePropertyChanged("tiempoMeses");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tiempoMesesSpecified {
+            get {
+                return this.tiempoMesesFieldSpecified;
+            }
+            set {
+                this.tiempoMesesFieldSpecified = value;
+                this.RaisePropertyChanged("tiempoMesesSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public string observacion {
+            get {
+                return this.observacionField;
+            }
+            set {
+                this.observacionField = value;
+                this.RaisePropertyChanged("observacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public string codigoExterno {
+            get {
+                return this.codigoExternoField;
+            }
+            set {
+                this.codigoExternoField = value;
+                this.RaisePropertyChanged("codigoExterno");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public string cargoActividad {
+            get {
+                return this.cargoActividadField;
+            }
+            set {
+                this.cargoActividadField = value;
+                this.RaisePropertyChanged("cargoActividad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public Entidad Entidad {
+            get {
+                return this.entidadField;
+            }
+            set {
+                this.entidadField = value;
+                this.RaisePropertyChanged("Entidad");
             }
         }
         
@@ -2495,6 +6983,433 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
+    public partial class ActividadEconomica : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoCIIUField;
+        
+        private string descripcionCIIUField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string codigoCIIU {
+            get {
+                return this.codigoCIIUField;
+            }
+            set {
+                this.codigoCIIUField = value;
+                this.RaisePropertyChanged("codigoCIIU");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string descripcionCIIU {
+            get {
+                return this.descripcionCIIUField;
+            }
+            set {
+                this.descripcionCIIUField = value;
+                this.RaisePropertyChanged("descripcionCIIU");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PepType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/pep")]
+    public partial class PEP : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool esServidorPublicoField;
+        
+        private bool esServidorPublicoFieldSpecified;
+        
+        private bool manejaRecursosPublicosField;
+        
+        private bool manejaRecursosPublicosFieldSpecified;
+        
+        private bool esReconocidoPublicamenteField;
+        
+        private bool esReconocidoPublicamenteFieldSpecified;
+        
+        private string[] codigoReconocimientoPublicoField;
+        
+        private bool vinculoPersonasPublicasField;
+        
+        private bool vinculoPersonasPublicasFieldSpecified;
+        
+        private string otroField;
+        
+        private string nombreJefeInmediatoField;
+        
+        private Identificacion identificacionJefeInmediatoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool esServidorPublico {
+            get {
+                return this.esServidorPublicoField;
+            }
+            set {
+                this.esServidorPublicoField = value;
+                this.RaisePropertyChanged("esServidorPublico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool esServidorPublicoSpecified {
+            get {
+                return this.esServidorPublicoFieldSpecified;
+            }
+            set {
+                this.esServidorPublicoFieldSpecified = value;
+                this.RaisePropertyChanged("esServidorPublicoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool manejaRecursosPublicos {
+            get {
+                return this.manejaRecursosPublicosField;
+            }
+            set {
+                this.manejaRecursosPublicosField = value;
+                this.RaisePropertyChanged("manejaRecursosPublicos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool manejaRecursosPublicosSpecified {
+            get {
+                return this.manejaRecursosPublicosFieldSpecified;
+            }
+            set {
+                this.manejaRecursosPublicosFieldSpecified = value;
+                this.RaisePropertyChanged("manejaRecursosPublicosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool esReconocidoPublicamente {
+            get {
+                return this.esReconocidoPublicamenteField;
+            }
+            set {
+                this.esReconocidoPublicamenteField = value;
+                this.RaisePropertyChanged("esReconocidoPublicamente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool esReconocidoPublicamenteSpecified {
+            get {
+                return this.esReconocidoPublicamenteFieldSpecified;
+            }
+            set {
+                this.esReconocidoPublicamenteFieldSpecified = value;
+                this.RaisePropertyChanged("esReconocidoPublicamenteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("codigoReconocimientoPublico", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string[] codigoReconocimientoPublico {
+            get {
+                return this.codigoReconocimientoPublicoField;
+            }
+            set {
+                this.codigoReconocimientoPublicoField = value;
+                this.RaisePropertyChanged("codigoReconocimientoPublico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public bool vinculoPersonasPublicas {
+            get {
+                return this.vinculoPersonasPublicasField;
+            }
+            set {
+                this.vinculoPersonasPublicasField = value;
+                this.RaisePropertyChanged("vinculoPersonasPublicas");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool vinculoPersonasPublicasSpecified {
+            get {
+                return this.vinculoPersonasPublicasFieldSpecified;
+            }
+            set {
+                this.vinculoPersonasPublicasFieldSpecified = value;
+                this.RaisePropertyChanged("vinculoPersonasPublicasSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string otro {
+            get {
+                return this.otroField;
+            }
+            set {
+                this.otroField = value;
+                this.RaisePropertyChanged("otro");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string nombreJefeInmediato {
+            get {
+                return this.nombreJefeInmediatoField;
+            }
+            set {
+                this.nombreJefeInmediatoField = value;
+                this.RaisePropertyChanged("nombreJefeInmediato");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public Identificacion identificacionJefeInmediato {
+            get {
+                return this.identificacionJefeInmediatoField;
+            }
+            set {
+                this.identificacionJefeInmediatoField = value;
+                this.RaisePropertyChanged("identificacionJefeInmediato");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class PepType : PEP {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
+    public partial class Entidad : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private int codigoField;
+        
+        private bool codigoFieldSpecified;
+        
+        private identificacion identificacionField;
+        
+        private ActividadEconomica actividadEconomicaField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public int codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoSpecified {
+            get {
+                return this.codigoFieldSpecified;
+            }
+            set {
+                this.codigoFieldSpecified = value;
+                this.RaisePropertyChanged("codigoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public identificacion identificacion {
+            get {
+                return this.identificacionField;
+            }
+            set {
+                this.identificacionField = value;
+                this.RaisePropertyChanged("identificacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public ActividadEconomica ActividadEconomica {
+            get {
+                return this.actividadEconomicaField;
+            }
+            set {
+                this.actividadEconomicaField = value;
+                this.RaisePropertyChanged("ActividadEconomica");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
+    public partial class identificacion : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string tipoField;
+        
+        private string numeroField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string tipo {
+            get {
+                return this.tipoField;
+            }
+            set {
+                this.tipoField = value;
+                this.RaisePropertyChanged("tipo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string numero {
+            get {
+                return this.numeroField;
+            }
+            set {
+                this.numeroField = value;
+                this.RaisePropertyChanged("numero");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.7", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V27 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V25 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V24 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V23 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V26))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V22 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V26 : InformacionLaboral_V22 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionLaboral_V2.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/informacionlaboralsub")]
+    public partial class InformacionLaboral_V21 : InformacionLaboral {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionFinanciera_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionfinanciera")]
     public partial class InformacionFinanciera : object, System.ComponentModel.INotifyPropertyChanged {
         
@@ -2530,9 +7445,15 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         private System.DateTime fechaVinculacionField;
         
+        private bool fechaVinculacionFieldSpecified;
+        
         private System.DateTime fechaRecibidoField;
         
+        private bool fechaRecibidoFieldSpecified;
+        
         private System.DateTime fechaEnvioField;
+        
+        private bool fechaEnvioFieldSpecified;
         
         private string tarjetaFirmasField;
         
@@ -2563,6 +7484,24 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         private string tipoAportanteField;
         
         private MonedaExtranjera[] monedaExtranjeraField;
+        
+        private string pagoServiciosField;
+        
+        private string prestamosMEField;
+        
+        private string[] otroPrestamosField;
+        
+        private CuentaBancaria[] cuentasBancariasField;
+        
+        private bool realizaOperacionesMonedaExtranjeraField;
+        
+        private bool realizaOperacionesMonedaExtranjeraFieldSpecified;
+        
+        private decimal ingresosNoOperacionalesField;
+        
+        private bool ingresosNoOperacionalesFieldSpecified;
+        
+        private string declaracionOrigenRecursosField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -2757,6 +7696,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaVinculacionSpecified {
+            get {
+                return this.fechaVinculacionFieldSpecified;
+            }
+            set {
+                this.fechaVinculacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaVinculacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=9)]
         public System.DateTime fechaRecibido {
             get {
@@ -2769,6 +7720,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaRecibidoSpecified {
+            get {
+                return this.fechaRecibidoFieldSpecified;
+            }
+            set {
+                this.fechaRecibidoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaRecibidoSpecified");
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=10)]
         public System.DateTime fechaEnvio {
             get {
@@ -2777,6 +7740,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             set {
                 this.fechaEnvioField = value;
                 this.RaisePropertyChanged("fechaEnvio");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaEnvioSpecified {
+            get {
+                return this.fechaEnvioFieldSpecified;
+            }
+            set {
+                this.fechaEnvioFieldSpecified = value;
+                this.RaisePropertyChanged("fechaEnvioSpecified");
             }
         }
         
@@ -2960,6 +7935,114 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             }
         }
         
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public string pagoServicios {
+            get {
+                return this.pagoServiciosField;
+            }
+            set {
+                this.pagoServiciosField = value;
+                this.RaisePropertyChanged("pagoServicios");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public string prestamosME {
+            get {
+                return this.prestamosMEField;
+            }
+            set {
+                this.prestamosMEField = value;
+                this.RaisePropertyChanged("prestamosME");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("otroPrestamos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public string[] otroPrestamos {
+            get {
+                return this.otroPrestamosField;
+            }
+            set {
+                this.otroPrestamosField = value;
+                this.RaisePropertyChanged("otroPrestamos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("cuentasBancarias", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
+        public CuentaBancaria[] cuentasBancarias {
+            get {
+                return this.cuentasBancariasField;
+            }
+            set {
+                this.cuentasBancariasField = value;
+                this.RaisePropertyChanged("cuentasBancarias");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public bool realizaOperacionesMonedaExtranjera {
+            get {
+                return this.realizaOperacionesMonedaExtranjeraField;
+            }
+            set {
+                this.realizaOperacionesMonedaExtranjeraField = value;
+                this.RaisePropertyChanged("realizaOperacionesMonedaExtranjera");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool realizaOperacionesMonedaExtranjeraSpecified {
+            get {
+                return this.realizaOperacionesMonedaExtranjeraFieldSpecified;
+            }
+            set {
+                this.realizaOperacionesMonedaExtranjeraFieldSpecified = value;
+                this.RaisePropertyChanged("realizaOperacionesMonedaExtranjeraSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
+        public decimal ingresosNoOperacionales {
+            get {
+                return this.ingresosNoOperacionalesField;
+            }
+            set {
+                this.ingresosNoOperacionalesField = value;
+                this.RaisePropertyChanged("ingresosNoOperacionales");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ingresosNoOperacionalesSpecified {
+            get {
+                return this.ingresosNoOperacionalesFieldSpecified;
+            }
+            set {
+                this.ingresosNoOperacionalesFieldSpecified = value;
+                this.RaisePropertyChanged("ingresosNoOperacionalesSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
+        public string declaracionOrigenRecursos {
+            get {
+                return this.declaracionOrigenRecursosField;
+            }
+            set {
+                this.declaracionOrigenRecursosField = value;
+                this.RaisePropertyChanged("declaracionOrigenRecursos");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -2975,7 +8058,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionfinanciera")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/monedaextranjera")]
     public partial class MonedaExtranjera : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string indicadorOperacionField;
@@ -3133,6 +8216,16 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionFinanciera_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/infofinancierasub")]
+    public partial class InformacionFinanciera_V10 : InformacionFinanciera {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ProteccionCesante_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cesantias")]
     public partial class ProteccionCesante : object, System.ComponentModel.INotifyPropertyChanged {
         
@@ -3161,6 +8254,10 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         private string nombreImagenField;
         
         private byte[] imagenField;
+        
+        private int consecutivoField;
+        
+        private bool consecutivoFieldSpecified;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -3318,6 +8415,30 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             }
         }
         
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public int consecutivo {
+            get {
+                return this.consecutivoField;
+            }
+            set {
+                this.consecutivoField = value;
+                this.RaisePropertyChanged("consecutivo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool consecutivoSpecified {
+            get {
+                return this.consecutivoFieldSpecified;
+            }
+            set {
+                this.consecutivoFieldSpecified = value;
+                this.RaisePropertyChanged("consecutivoSpecified");
+            }
+        }
+        
         public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
         
         protected void RaisePropertyChanged(string propertyName) {
@@ -3333,8 +8454,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class PersonaNatural1 : PersonaNatural {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ProteccionCesante_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/cesantiassub")]
+    public partial class ProteccionCesante_V10 : ProteccionCesante {
     }
     
     /// <remarks/>
@@ -3342,13 +8463,1531 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class ClienteFamiliar : Cliente {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/tipoafiliacion")]
+    public partial class TipoAfiliacion : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool cesantiasField;
+        
+        private bool cesantiasFieldSpecified;
+        
+        private bool aVCField;
+        
+        private bool aVCFieldSpecified;
+        
+        private bool beneficioAFCField;
+        
+        private bool beneficioAFCFieldSpecified;
+        
+        private bool aVCColombianoField;
+        
+        private bool aVCColombianoFieldSpecified;
+        
+        private bool autorizaDebitoAutomaticoField;
+        
+        private bool autorizaDebitoAutomaticoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool cesantias {
+            get {
+                return this.cesantiasField;
+            }
+            set {
+                this.cesantiasField = value;
+                this.RaisePropertyChanged("cesantias");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool cesantiasSpecified {
+            get {
+                return this.cesantiasFieldSpecified;
+            }
+            set {
+                this.cesantiasFieldSpecified = value;
+                this.RaisePropertyChanged("cesantiasSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool AVC {
+            get {
+                return this.aVCField;
+            }
+            set {
+                this.aVCField = value;
+                this.RaisePropertyChanged("AVC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AVCSpecified {
+            get {
+                return this.aVCFieldSpecified;
+            }
+            set {
+                this.aVCFieldSpecified = value;
+                this.RaisePropertyChanged("AVCSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool beneficioAFC {
+            get {
+                return this.beneficioAFCField;
+            }
+            set {
+                this.beneficioAFCField = value;
+                this.RaisePropertyChanged("beneficioAFC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool beneficioAFCSpecified {
+            get {
+                return this.beneficioAFCFieldSpecified;
+            }
+            set {
+                this.beneficioAFCFieldSpecified = value;
+                this.RaisePropertyChanged("beneficioAFCSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public bool AVCColombiano {
+            get {
+                return this.aVCColombianoField;
+            }
+            set {
+                this.aVCColombianoField = value;
+                this.RaisePropertyChanged("AVCColombiano");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AVCColombianoSpecified {
+            get {
+                return this.aVCColombianoFieldSpecified;
+            }
+            set {
+                this.aVCColombianoFieldSpecified = value;
+                this.RaisePropertyChanged("AVCColombianoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public bool autorizaDebitoAutomatico {
+            get {
+                return this.autorizaDebitoAutomaticoField;
+            }
+            set {
+                this.autorizaDebitoAutomaticoField = value;
+                this.RaisePropertyChanged("autorizaDebitoAutomatico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool autorizaDebitoAutomaticoSpecified {
+            get {
+                return this.autorizaDebitoAutomaticoFieldSpecified;
+            }
+            set {
+                this.autorizaDebitoAutomaticoFieldSpecified = value;
+                this.RaisePropertyChanged("autorizaDebitoAutomaticoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ClienteFamiliar))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente1))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AutorizacionEnvio_V11))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="AutorizacionEnvio_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/autorizacionEnvio")]
+    public partial class AutorizacionEnvio_V10 : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private bool correoElectronicoField;
+        
+        private bool correoElectronicoFieldSpecified;
+        
+        private bool telefonoCelularField;
+        
+        private bool telefonoCelularFieldSpecified;
+        
+        private bool extractosCorreoElectronicoField;
+        
+        private bool extractosCorreoElectronicoFieldSpecified;
+        
+        private bool extractosTelefonoCelularField;
+        
+        private bool extractosTelefonoCelularFieldSpecified;
+        
+        private bool envioCorrespondenciaDireccionPrincipalField;
+        
+        private bool envioCorrespondenciaDireccionPrincipalFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public bool correoElectronico {
+            get {
+                return this.correoElectronicoField;
+            }
+            set {
+                this.correoElectronicoField = value;
+                this.RaisePropertyChanged("correoElectronico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool correoElectronicoSpecified {
+            get {
+                return this.correoElectronicoFieldSpecified;
+            }
+            set {
+                this.correoElectronicoFieldSpecified = value;
+                this.RaisePropertyChanged("correoElectronicoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public bool telefonoCelular {
+            get {
+                return this.telefonoCelularField;
+            }
+            set {
+                this.telefonoCelularField = value;
+                this.RaisePropertyChanged("telefonoCelular");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool telefonoCelularSpecified {
+            get {
+                return this.telefonoCelularFieldSpecified;
+            }
+            set {
+                this.telefonoCelularFieldSpecified = value;
+                this.RaisePropertyChanged("telefonoCelularSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public bool extractosCorreoElectronico {
+            get {
+                return this.extractosCorreoElectronicoField;
+            }
+            set {
+                this.extractosCorreoElectronicoField = value;
+                this.RaisePropertyChanged("extractosCorreoElectronico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool extractosCorreoElectronicoSpecified {
+            get {
+                return this.extractosCorreoElectronicoFieldSpecified;
+            }
+            set {
+                this.extractosCorreoElectronicoFieldSpecified = value;
+                this.RaisePropertyChanged("extractosCorreoElectronicoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public bool extractosTelefonoCelular {
+            get {
+                return this.extractosTelefonoCelularField;
+            }
+            set {
+                this.extractosTelefonoCelularField = value;
+                this.RaisePropertyChanged("extractosTelefonoCelular");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool extractosTelefonoCelularSpecified {
+            get {
+                return this.extractosTelefonoCelularFieldSpecified;
+            }
+            set {
+                this.extractosTelefonoCelularFieldSpecified = value;
+                this.RaisePropertyChanged("extractosTelefonoCelularSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public bool envioCorrespondenciaDireccionPrincipal {
+            get {
+                return this.envioCorrespondenciaDireccionPrincipalField;
+            }
+            set {
+                this.envioCorrespondenciaDireccionPrincipalField = value;
+                this.RaisePropertyChanged("envioCorrespondenciaDireccionPrincipal");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool envioCorrespondenciaDireccionPrincipalSpecified {
+            get {
+                return this.envioCorrespondenciaDireccionPrincipalFieldSpecified;
+            }
+            set {
+                this.envioCorrespondenciaDireccionPrincipalFieldSpecified = value;
+                this.RaisePropertyChanged("envioCorrespondenciaDireccionPrincipalSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="AutorizacionEnvio_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/autorizacionEnvio")]
+    public partial class AutorizacionEnvio_V11 : AutorizacionEnvio_V10 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="cuentaAVC_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class cuentaAVC_V10 : cuentaAVC {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V10))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class cuentaAVC : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string numeroCuentaField;
+        
+        private string tipoVinculacionField;
+        
+        private decimal valorCuotaField;
+        
+        private bool valorCuotaFieldSpecified;
+        
+        private string periodicidadField;
+        
+        private string[] beneficioAFCField;
+        
+        private string usuarioAfiliacionField;
+        
+        private string debitoAutomaticoField;
+        
+        private string lineaField;
+        
+        private bool descuentoNominaField;
+        
+        private bool descuentoNominaFieldSpecified;
+        
+        private decimal valorDescuentoNominaField;
+        
+        private bool valorDescuentoNominaFieldSpecified;
+        
+        private string codigoMilitarField;
+        
+        private string periodicidadDebitoField;
+        
+        private string tipoNominaFFAAField;
+        
+        private string formaAplicacionDebitoField;
+        
+        private convenioAVC convenioAVCField;
+        
+        private decimal valorContratoField;
+        
+        private bool valorContratoFieldSpecified;
+        
+        private System.DateTime fechaDiligenciamientoField;
+        
+        private bool fechaDiligenciamientoFieldSpecified;
+        
+        private string asesorField;
+        
+        private bool enRetencionField;
+        
+        private bool enRetencionFieldSpecified;
+        
+        private oficinaRadicacionType oficinaRadicacionField;
+        
+        private int codigoOficinaRadicacionField;
+        
+        private bool codigoOficinaRadicacionFieldSpecified;
+        
+        private decimal saldoField;
+        
+        private bool saldoFieldSpecified;
+        
+        private decimal interesesAcumuladosField;
+        
+        private bool interesesAcumuladosFieldSpecified;
+        
+        private decimal retencionFuenteField;
+        
+        private bool retencionFuenteFieldSpecified;
+        
+        private decimal retencionContingenteField;
+        
+        private bool retencionContingenteFieldSpecified;
+        
+        private decimal saldoDisponibleField;
+        
+        private bool saldoDisponibleFieldSpecified;
+        
+        private System.DateTime fechaUltimoCorteField;
+        
+        private bool fechaUltimoCorteFieldSpecified;
+        
+        private decimal puntajeField;
+        
+        private bool puntajeFieldSpecified;
+        
+        private string codigoEstadoCuentaAVCField;
+        
+        private string codigoFilialField;
+        
+        private System.DateTime fechaAperturaField;
+        
+        private bool fechaAperturaFieldSpecified;
+        
+        private bool tieneProrrogaField;
+        
+        private bool tieneProrrogaFieldSpecified;
+        
+        private string tiempoProrrogaField;
+        
+        private decimal interesesCausadosField;
+        
+        private bool interesesCausadosFieldSpecified;
+        
+        private int numeroConsignacionesField;
+        
+        private bool numeroConsignacionesFieldSpecified;
+        
+        private int numeroRetirosField;
+        
+        private bool numeroRetirosFieldSpecified;
+        
+        private decimal totalAbonosField;
+        
+        private bool totalAbonosFieldSpecified;
+        
+        private decimal totalRetirosField;
+        
+        private bool totalRetirosFieldSpecified;
+        
+        private System.DateTime fechaUltimoMovimientoField;
+        
+        private bool fechaUltimoMovimientoFieldSpecified;
+        
+        private int monedaField;
+        
+        private bool monedaFieldSpecified;
+        
+        private string codigoTipoCuentaField;
+        
+        private int plazoField;
+        
+        private bool plazoFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string numeroCuenta {
+            get {
+                return this.numeroCuentaField;
+            }
+            set {
+                this.numeroCuentaField = value;
+                this.RaisePropertyChanged("numeroCuenta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string tipoVinculacion {
+            get {
+                return this.tipoVinculacionField;
+            }
+            set {
+                this.tipoVinculacionField = value;
+                this.RaisePropertyChanged("tipoVinculacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public decimal valorCuota {
+            get {
+                return this.valorCuotaField;
+            }
+            set {
+                this.valorCuotaField = value;
+                this.RaisePropertyChanged("valorCuota");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool valorCuotaSpecified {
+            get {
+                return this.valorCuotaFieldSpecified;
+            }
+            set {
+                this.valorCuotaFieldSpecified = value;
+                this.RaisePropertyChanged("valorCuotaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string periodicidad {
+            get {
+                return this.periodicidadField;
+            }
+            set {
+                this.periodicidadField = value;
+                this.RaisePropertyChanged("periodicidad");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute("beneficioAFC", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string[] beneficioAFC {
+            get {
+                return this.beneficioAFCField;
+            }
+            set {
+                this.beneficioAFCField = value;
+                this.RaisePropertyChanged("beneficioAFC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string usuarioAfiliacion {
+            get {
+                return this.usuarioAfiliacionField;
+            }
+            set {
+                this.usuarioAfiliacionField = value;
+                this.RaisePropertyChanged("usuarioAfiliacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string debitoAutomatico {
+            get {
+                return this.debitoAutomaticoField;
+            }
+            set {
+                this.debitoAutomaticoField = value;
+                this.RaisePropertyChanged("debitoAutomatico");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public string Linea {
+            get {
+                return this.lineaField;
+            }
+            set {
+                this.lineaField = value;
+                this.RaisePropertyChanged("Linea");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
+        public bool descuentoNomina {
+            get {
+                return this.descuentoNominaField;
+            }
+            set {
+                this.descuentoNominaField = value;
+                this.RaisePropertyChanged("descuentoNomina");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool descuentoNominaSpecified {
+            get {
+                return this.descuentoNominaFieldSpecified;
+            }
+            set {
+                this.descuentoNominaFieldSpecified = value;
+                this.RaisePropertyChanged("descuentoNominaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
+        public decimal valorDescuentoNomina {
+            get {
+                return this.valorDescuentoNominaField;
+            }
+            set {
+                this.valorDescuentoNominaField = value;
+                this.RaisePropertyChanged("valorDescuentoNomina");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool valorDescuentoNominaSpecified {
+            get {
+                return this.valorDescuentoNominaFieldSpecified;
+            }
+            set {
+                this.valorDescuentoNominaFieldSpecified = value;
+                this.RaisePropertyChanged("valorDescuentoNominaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
+        public string codigoMilitar {
+            get {
+                return this.codigoMilitarField;
+            }
+            set {
+                this.codigoMilitarField = value;
+                this.RaisePropertyChanged("codigoMilitar");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
+        public string periodicidadDebito {
+            get {
+                return this.periodicidadDebitoField;
+            }
+            set {
+                this.periodicidadDebitoField = value;
+                this.RaisePropertyChanged("periodicidadDebito");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
+        public string tipoNominaFFAA {
+            get {
+                return this.tipoNominaFFAAField;
+            }
+            set {
+                this.tipoNominaFFAAField = value;
+                this.RaisePropertyChanged("tipoNominaFFAA");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
+        public string formaAplicacionDebito {
+            get {
+                return this.formaAplicacionDebitoField;
+            }
+            set {
+                this.formaAplicacionDebitoField = value;
+                this.RaisePropertyChanged("formaAplicacionDebito");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
+        public convenioAVC convenioAVC {
+            get {
+                return this.convenioAVCField;
+            }
+            set {
+                this.convenioAVCField = value;
+                this.RaisePropertyChanged("convenioAVC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
+        public decimal valorContrato {
+            get {
+                return this.valorContratoField;
+            }
+            set {
+                this.valorContratoField = value;
+                this.RaisePropertyChanged("valorContrato");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool valorContratoSpecified {
+            get {
+                return this.valorContratoFieldSpecified;
+            }
+            set {
+                this.valorContratoFieldSpecified = value;
+                this.RaisePropertyChanged("valorContratoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=16)]
+        public System.DateTime fechaDiligenciamiento {
+            get {
+                return this.fechaDiligenciamientoField;
+            }
+            set {
+                this.fechaDiligenciamientoField = value;
+                this.RaisePropertyChanged("fechaDiligenciamiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaDiligenciamientoSpecified {
+            get {
+                return this.fechaDiligenciamientoFieldSpecified;
+            }
+            set {
+                this.fechaDiligenciamientoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaDiligenciamientoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
+        public string asesor {
+            get {
+                return this.asesorField;
+            }
+            set {
+                this.asesorField = value;
+                this.RaisePropertyChanged("asesor");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
+        public bool enRetencion {
+            get {
+                return this.enRetencionField;
+            }
+            set {
+                this.enRetencionField = value;
+                this.RaisePropertyChanged("enRetencion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool enRetencionSpecified {
+            get {
+                return this.enRetencionFieldSpecified;
+            }
+            set {
+                this.enRetencionFieldSpecified = value;
+                this.RaisePropertyChanged("enRetencionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
+        public oficinaRadicacionType oficinaRadicacion {
+            get {
+                return this.oficinaRadicacionField;
+            }
+            set {
+                this.oficinaRadicacionField = value;
+                this.RaisePropertyChanged("oficinaRadicacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
+        public int codigoOficinaRadicacion {
+            get {
+                return this.codigoOficinaRadicacionField;
+            }
+            set {
+                this.codigoOficinaRadicacionField = value;
+                this.RaisePropertyChanged("codigoOficinaRadicacion");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool codigoOficinaRadicacionSpecified {
+            get {
+                return this.codigoOficinaRadicacionFieldSpecified;
+            }
+            set {
+                this.codigoOficinaRadicacionFieldSpecified = value;
+                this.RaisePropertyChanged("codigoOficinaRadicacionSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
+        public decimal saldo {
+            get {
+                return this.saldoField;
+            }
+            set {
+                this.saldoField = value;
+                this.RaisePropertyChanged("saldo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool saldoSpecified {
+            get {
+                return this.saldoFieldSpecified;
+            }
+            set {
+                this.saldoFieldSpecified = value;
+                this.RaisePropertyChanged("saldoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
+        public decimal interesesAcumulados {
+            get {
+                return this.interesesAcumuladosField;
+            }
+            set {
+                this.interesesAcumuladosField = value;
+                this.RaisePropertyChanged("interesesAcumulados");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool interesesAcumuladosSpecified {
+            get {
+                return this.interesesAcumuladosFieldSpecified;
+            }
+            set {
+                this.interesesAcumuladosFieldSpecified = value;
+                this.RaisePropertyChanged("interesesAcumuladosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
+        public decimal retencionFuente {
+            get {
+                return this.retencionFuenteField;
+            }
+            set {
+                this.retencionFuenteField = value;
+                this.RaisePropertyChanged("retencionFuente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool retencionFuenteSpecified {
+            get {
+                return this.retencionFuenteFieldSpecified;
+            }
+            set {
+                this.retencionFuenteFieldSpecified = value;
+                this.RaisePropertyChanged("retencionFuenteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
+        public decimal retencionContingente {
+            get {
+                return this.retencionContingenteField;
+            }
+            set {
+                this.retencionContingenteField = value;
+                this.RaisePropertyChanged("retencionContingente");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool retencionContingenteSpecified {
+            get {
+                return this.retencionContingenteFieldSpecified;
+            }
+            set {
+                this.retencionContingenteFieldSpecified = value;
+                this.RaisePropertyChanged("retencionContingenteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
+        public decimal saldoDisponible {
+            get {
+                return this.saldoDisponibleField;
+            }
+            set {
+                this.saldoDisponibleField = value;
+                this.RaisePropertyChanged("saldoDisponible");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool saldoDisponibleSpecified {
+            get {
+                return this.saldoDisponibleFieldSpecified;
+            }
+            set {
+                this.saldoDisponibleFieldSpecified = value;
+                this.RaisePropertyChanged("saldoDisponibleSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=26)]
+        public System.DateTime fechaUltimoCorte {
+            get {
+                return this.fechaUltimoCorteField;
+            }
+            set {
+                this.fechaUltimoCorteField = value;
+                this.RaisePropertyChanged("fechaUltimoCorte");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaUltimoCorteSpecified {
+            get {
+                return this.fechaUltimoCorteFieldSpecified;
+            }
+            set {
+                this.fechaUltimoCorteFieldSpecified = value;
+                this.RaisePropertyChanged("fechaUltimoCorteSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
+        public decimal puntaje {
+            get {
+                return this.puntajeField;
+            }
+            set {
+                this.puntajeField = value;
+                this.RaisePropertyChanged("puntaje");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool puntajeSpecified {
+            get {
+                return this.puntajeFieldSpecified;
+            }
+            set {
+                this.puntajeFieldSpecified = value;
+                this.RaisePropertyChanged("puntajeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
+        public string codigoEstadoCuentaAVC {
+            get {
+                return this.codigoEstadoCuentaAVCField;
+            }
+            set {
+                this.codigoEstadoCuentaAVCField = value;
+                this.RaisePropertyChanged("codigoEstadoCuentaAVC");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
+        public string codigoFilial {
+            get {
+                return this.codigoFilialField;
+            }
+            set {
+                this.codigoFilialField = value;
+                this.RaisePropertyChanged("codigoFilial");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=30)]
+        public System.DateTime fechaApertura {
+            get {
+                return this.fechaAperturaField;
+            }
+            set {
+                this.fechaAperturaField = value;
+                this.RaisePropertyChanged("fechaApertura");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaAperturaSpecified {
+            get {
+                return this.fechaAperturaFieldSpecified;
+            }
+            set {
+                this.fechaAperturaFieldSpecified = value;
+                this.RaisePropertyChanged("fechaAperturaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=31)]
+        public bool tieneProrroga {
+            get {
+                return this.tieneProrrogaField;
+            }
+            set {
+                this.tieneProrrogaField = value;
+                this.RaisePropertyChanged("tieneProrroga");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool tieneProrrogaSpecified {
+            get {
+                return this.tieneProrrogaFieldSpecified;
+            }
+            set {
+                this.tieneProrrogaFieldSpecified = value;
+                this.RaisePropertyChanged("tieneProrrogaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=32)]
+        public string tiempoProrroga {
+            get {
+                return this.tiempoProrrogaField;
+            }
+            set {
+                this.tiempoProrrogaField = value;
+                this.RaisePropertyChanged("tiempoProrroga");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=33)]
+        public decimal interesesCausados {
+            get {
+                return this.interesesCausadosField;
+            }
+            set {
+                this.interesesCausadosField = value;
+                this.RaisePropertyChanged("interesesCausados");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool interesesCausadosSpecified {
+            get {
+                return this.interesesCausadosFieldSpecified;
+            }
+            set {
+                this.interesesCausadosFieldSpecified = value;
+                this.RaisePropertyChanged("interesesCausadosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=34)]
+        public int numeroConsignaciones {
+            get {
+                return this.numeroConsignacionesField;
+            }
+            set {
+                this.numeroConsignacionesField = value;
+                this.RaisePropertyChanged("numeroConsignaciones");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroConsignacionesSpecified {
+            get {
+                return this.numeroConsignacionesFieldSpecified;
+            }
+            set {
+                this.numeroConsignacionesFieldSpecified = value;
+                this.RaisePropertyChanged("numeroConsignacionesSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=35)]
+        public int numeroRetiros {
+            get {
+                return this.numeroRetirosField;
+            }
+            set {
+                this.numeroRetirosField = value;
+                this.RaisePropertyChanged("numeroRetiros");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool numeroRetirosSpecified {
+            get {
+                return this.numeroRetirosFieldSpecified;
+            }
+            set {
+                this.numeroRetirosFieldSpecified = value;
+                this.RaisePropertyChanged("numeroRetirosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=36)]
+        public decimal totalAbonos {
+            get {
+                return this.totalAbonosField;
+            }
+            set {
+                this.totalAbonosField = value;
+                this.RaisePropertyChanged("totalAbonos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool totalAbonosSpecified {
+            get {
+                return this.totalAbonosFieldSpecified;
+            }
+            set {
+                this.totalAbonosFieldSpecified = value;
+                this.RaisePropertyChanged("totalAbonosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=37)]
+        public decimal totalRetiros {
+            get {
+                return this.totalRetirosField;
+            }
+            set {
+                this.totalRetirosField = value;
+                this.RaisePropertyChanged("totalRetiros");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool totalRetirosSpecified {
+            get {
+                return this.totalRetirosFieldSpecified;
+            }
+            set {
+                this.totalRetirosFieldSpecified = value;
+                this.RaisePropertyChanged("totalRetirosSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=38)]
+        public System.DateTime fechaUltimoMovimiento {
+            get {
+                return this.fechaUltimoMovimientoField;
+            }
+            set {
+                this.fechaUltimoMovimientoField = value;
+                this.RaisePropertyChanged("fechaUltimoMovimiento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool fechaUltimoMovimientoSpecified {
+            get {
+                return this.fechaUltimoMovimientoFieldSpecified;
+            }
+            set {
+                this.fechaUltimoMovimientoFieldSpecified = value;
+                this.RaisePropertyChanged("fechaUltimoMovimientoSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=39)]
+        public int moneda {
+            get {
+                return this.monedaField;
+            }
+            set {
+                this.monedaField = value;
+                this.RaisePropertyChanged("moneda");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool monedaSpecified {
+            get {
+                return this.monedaFieldSpecified;
+            }
+            set {
+                this.monedaFieldSpecified = value;
+                this.RaisePropertyChanged("monedaSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=40)]
+        public string codigoTipoCuenta {
+            get {
+                return this.codigoTipoCuentaField;
+            }
+            set {
+                this.codigoTipoCuentaField = value;
+                this.RaisePropertyChanged("codigoTipoCuenta");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=41)]
+        public int plazo {
+            get {
+                return this.plazoField;
+            }
+            set {
+                this.plazoField = value;
+                this.RaisePropertyChanged("plazo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool plazoSpecified {
+            get {
+                return this.plazoFieldSpecified;
+            }
+            set {
+                this.plazoFieldSpecified = value;
+                this.RaisePropertyChanged("plazoSpecified");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class convenioAVC : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoField;
+        
+        private string nombreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string Codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("Codigo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string Nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+                this.RaisePropertyChanged("Nombre");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class oficinaRadicacionType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codigoField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string Codigo {
+            get {
+                return this.codigoField;
+            }
+            set {
+                this.codigoField = value;
+                this.RaisePropertyChanged("Codigo");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="cuentaAVC_V1.2", Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class cuentaAVC_V12 : cuentaAVC {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="cuentaAVC_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC")]
+    public partial class cuentaAVC_V11 : cuentaAVC {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Apoderado_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class Apoderado_V11 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Apoderado_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class Apoderado_V10 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.13", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V213 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.12", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V212 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.11", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V211 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.8", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V28 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.7", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V27 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V26 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalType))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V24 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class PersonaNaturalType : PersonaNatural_V24 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V23 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V221))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNatural_V22))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V21 : PersonaNatural {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.2.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V221 : PersonaNatural_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNatural_V2.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNatural_V22 : PersonaNatural_V21 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="PersonaNaturalInfoBasica_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class PersonaNaturalInfoBasica_V11 : PersonaNaturalInfoBasica_V10 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="InformacionFamiliar_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/personanaturalsub")]
+    public partial class InformacionFamiliar_V10 : InformacionFamiliar {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V14))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V13))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V12))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V11))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V15))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V10))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3529,6 +10168,30 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         private string entidadPensionField;
         
         private string vinculacionFNAField;
+        
+        private bloqueo[] bloqueosField;
+        
+        private string segmentoField;
+        
+        private string oficinaField;
+        
+        private System.DateTime fechaInscripcionField;
+        
+        private bool fechaInscripcionFieldSpecified;
+        
+        private System.DateTime fechaEnvioAprobacionField;
+        
+        private bool fechaEnvioAprobacionFieldSpecified;
+        
+        private System.DateTime fechaVinculacionField;
+        
+        private bool fechaVinculacionFieldSpecified;
+        
+        private System.DateTime fechaActualizacionField;
+        
+        private bool fechaActualizacionFieldSpecified;
+        
+        private string estadoNegocioField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
@@ -4574,430 +11237,147 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
             }
         }
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DatosBasicosPJ : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int idClienteField;
-        
-        private bool idClienteFieldSpecified;
-        
-        private Identificacion identificacionField;
-        
-        private string nombreEmpresaField;
-        
-        private string siglaEmpresaField;
-        
-        private string nombreComercialField;
-        
-        private string tipoEmpresaField;
-        
-        private string posicionField;
-        
-        private string codigoCIIUField;
-        
-        private int numeroDeEmpleadosField;
-        
-        private bool numeroDeEmpleadosFieldSpecified;
-        
-        private string vinculacionBanderaField;
-        
-        private string tipoVinculacionField;
-        
-        private string estadoClienteField;
-        
-        private string grupoEconomicoField;
-        
-        private string sectorField;
-        
-        private string naturalezaJuridicaField;
-        
-        private int filialField;
-        
-        private bool filialFieldSpecified;
-        
-        private int oficinaFilialField;
-        
-        private bool oficinaFilialFieldSpecified;
-        
-        private DireccionElectronicaPJ direccionElectronicaField;
-        
-        private DireccionPJT[] direccionesField;
-        
-        private CasillaPostalPJ[] casillasPostalesField;
-        
-        private ReferenciaEconomica[] referenciasEconomicasField;
-        
-        private string codigoPaisPropietarioField;
-        
-        private string actividadEconomicaField;
-        
-        private string tipoSociedadField;
-        
-        private string medioActualizacionField;
-        
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int idCliente {
+        [System.Xml.Serialization.XmlElementAttribute("bloqueos", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=79)]
+        public bloqueo[] bloqueos {
             get {
-                return this.idClienteField;
+                return this.bloqueosField;
             }
             set {
-                this.idClienteField = value;
-                this.RaisePropertyChanged("idCliente");
+                this.bloqueosField = value;
+                this.RaisePropertyChanged("bloqueos");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=80)]
+        public string segmento {
+            get {
+                return this.segmentoField;
+            }
+            set {
+                this.segmentoField = value;
+                this.RaisePropertyChanged("segmento");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=81)]
+        public string oficina {
+            get {
+                return this.oficinaField;
+            }
+            set {
+                this.oficinaField = value;
+                this.RaisePropertyChanged("oficina");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=82)]
+        public System.DateTime fechaInscripcion {
+            get {
+                return this.fechaInscripcionField;
+            }
+            set {
+                this.fechaInscripcionField = value;
+                this.RaisePropertyChanged("fechaInscripcion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool idClienteSpecified {
+        public bool fechaInscripcionSpecified {
             get {
-                return this.idClienteFieldSpecified;
+                return this.fechaInscripcionFieldSpecified;
             }
             set {
-                this.idClienteFieldSpecified = value;
-                this.RaisePropertyChanged("idClienteSpecified");
+                this.fechaInscripcionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaInscripcionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public Identificacion identificacion {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=83)]
+        public System.DateTime fechaEnvioAprobacion {
             get {
-                return this.identificacionField;
+                return this.fechaEnvioAprobacionField;
             }
             set {
-                this.identificacionField = value;
-                this.RaisePropertyChanged("identificacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string nombreEmpresa {
-            get {
-                return this.nombreEmpresaField;
-            }
-            set {
-                this.nombreEmpresaField = value;
-                this.RaisePropertyChanged("nombreEmpresa");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string siglaEmpresa {
-            get {
-                return this.siglaEmpresaField;
-            }
-            set {
-                this.siglaEmpresaField = value;
-                this.RaisePropertyChanged("siglaEmpresa");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string nombreComercial {
-            get {
-                return this.nombreComercialField;
-            }
-            set {
-                this.nombreComercialField = value;
-                this.RaisePropertyChanged("nombreComercial");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string tipoEmpresa {
-            get {
-                return this.tipoEmpresaField;
-            }
-            set {
-                this.tipoEmpresaField = value;
-                this.RaisePropertyChanged("tipoEmpresa");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string posicion {
-            get {
-                return this.posicionField;
-            }
-            set {
-                this.posicionField = value;
-                this.RaisePropertyChanged("posicion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public string codigoCIIU {
-            get {
-                return this.codigoCIIUField;
-            }
-            set {
-                this.codigoCIIUField = value;
-                this.RaisePropertyChanged("codigoCIIU");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public int numeroDeEmpleados {
-            get {
-                return this.numeroDeEmpleadosField;
-            }
-            set {
-                this.numeroDeEmpleadosField = value;
-                this.RaisePropertyChanged("numeroDeEmpleados");
+                this.fechaEnvioAprobacionField = value;
+                this.RaisePropertyChanged("fechaEnvioAprobacion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool numeroDeEmpleadosSpecified {
+        public bool fechaEnvioAprobacionSpecified {
             get {
-                return this.numeroDeEmpleadosFieldSpecified;
+                return this.fechaEnvioAprobacionFieldSpecified;
             }
             set {
-                this.numeroDeEmpleadosFieldSpecified = value;
-                this.RaisePropertyChanged("numeroDeEmpleadosSpecified");
+                this.fechaEnvioAprobacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaEnvioAprobacionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public string vinculacionBandera {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=84)]
+        public System.DateTime fechaVinculacion {
             get {
-                return this.vinculacionBanderaField;
+                return this.fechaVinculacionField;
             }
             set {
-                this.vinculacionBanderaField = value;
-                this.RaisePropertyChanged("vinculacionBandera");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
-        public string tipoVinculacion {
-            get {
-                return this.tipoVinculacionField;
-            }
-            set {
-                this.tipoVinculacionField = value;
-                this.RaisePropertyChanged("tipoVinculacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
-        public string estadoCliente {
-            get {
-                return this.estadoClienteField;
-            }
-            set {
-                this.estadoClienteField = value;
-                this.RaisePropertyChanged("estadoCliente");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
-        public string grupoEconomico {
-            get {
-                return this.grupoEconomicoField;
-            }
-            set {
-                this.grupoEconomicoField = value;
-                this.RaisePropertyChanged("grupoEconomico");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
-        public string sector {
-            get {
-                return this.sectorField;
-            }
-            set {
-                this.sectorField = value;
-                this.RaisePropertyChanged("sector");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
-        public string naturalezaJuridica {
-            get {
-                return this.naturalezaJuridicaField;
-            }
-            set {
-                this.naturalezaJuridicaField = value;
-                this.RaisePropertyChanged("naturalezaJuridica");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
-        public int filial {
-            get {
-                return this.filialField;
-            }
-            set {
-                this.filialField = value;
-                this.RaisePropertyChanged("filial");
+                this.fechaVinculacionField = value;
+                this.RaisePropertyChanged("fechaVinculacion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool filialSpecified {
+        public bool fechaVinculacionSpecified {
             get {
-                return this.filialFieldSpecified;
+                return this.fechaVinculacionFieldSpecified;
             }
             set {
-                this.filialFieldSpecified = value;
-                this.RaisePropertyChanged("filialSpecified");
+                this.fechaVinculacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaVinculacionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
-        public int oficinaFilial {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=85)]
+        public System.DateTime fechaActualizacion {
             get {
-                return this.oficinaFilialField;
+                return this.fechaActualizacionField;
             }
             set {
-                this.oficinaFilialField = value;
-                this.RaisePropertyChanged("oficinaFilial");
+                this.fechaActualizacionField = value;
+                this.RaisePropertyChanged("fechaActualizacion");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool oficinaFilialSpecified {
+        public bool fechaActualizacionSpecified {
             get {
-                return this.oficinaFilialFieldSpecified;
+                return this.fechaActualizacionFieldSpecified;
             }
             set {
-                this.oficinaFilialFieldSpecified = value;
-                this.RaisePropertyChanged("oficinaFilialSpecified");
+                this.fechaActualizacionFieldSpecified = value;
+                this.RaisePropertyChanged("fechaActualizacionSpecified");
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=17)]
-        public DireccionElectronicaPJ direccionElectronica {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=86)]
+        public string estadoNegocio {
             get {
-                return this.direccionElectronicaField;
+                return this.estadoNegocioField;
             }
             set {
-                this.direccionElectronicaField = value;
-                this.RaisePropertyChanged("direccionElectronica");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("direccion", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public DireccionPJT[] direcciones {
-            get {
-                return this.direccionesField;
-            }
-            set {
-                this.direccionesField = value;
-                this.RaisePropertyChanged("direcciones");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("casillaPostal", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public CasillaPostalPJ[] casillasPostales {
-            get {
-                return this.casillasPostalesField;
-            }
-            set {
-                this.casillasPostalesField = value;
-                this.RaisePropertyChanged("casillasPostales");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("referenciaEconomica", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public ReferenciaEconomica[] referenciasEconomicas {
-            get {
-                return this.referenciasEconomicasField;
-            }
-            set {
-                this.referenciasEconomicasField = value;
-                this.RaisePropertyChanged("referenciasEconomicas");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
-        public string codigoPaisPropietario {
-            get {
-                return this.codigoPaisPropietarioField;
-            }
-            set {
-                this.codigoPaisPropietarioField = value;
-                this.RaisePropertyChanged("codigoPaisPropietario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
-        public string actividadEconomica {
-            get {
-                return this.actividadEconomicaField;
-            }
-            set {
-                this.actividadEconomicaField = value;
-                this.RaisePropertyChanged("actividadEconomica");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
-        public string tipoSociedad {
-            get {
-                return this.tipoSociedadField;
-            }
-            set {
-                this.tipoSociedadField = value;
-                this.RaisePropertyChanged("tipoSociedad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
-        public string medioActualizacion {
-            get {
-                return this.medioActualizacionField;
-            }
-            set {
-                this.medioActualizacionField = value;
-                this.RaisePropertyChanged("medioActualizacion");
+                this.estadoNegocioField = value;
+                this.RaisePropertyChanged("estadoNegocio");
             }
         }
         
@@ -5016,535 +11396,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class ReferenciaEconomica : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private int codigoReferenciaField;
-        
-        private bool codigoReferenciaFieldSpecified;
-        
-        private string bancoReferenciaField;
-        
-        private string calificacionReferenciaField;
-        
-        private string cuentaReferenciaField;
-        
-        private System.DateTime fechaAperturaField;
-        
-        private System.DateTime fechaVencimientoField;
-        
-        private bool fechaVencimientoFieldSpecified;
-        
-        private System.DateTime fechaModificadoField;
-        
-        private System.DateTime fechaExpedicionField;
-        
-        private System.DateTime fechaRegistroField;
-        
-        private string funcionarioReferenciaField;
-        
-        private string operacionField;
-        
-        private string estadoFinancieroField;
-        
-        private decimal montoVencidoField;
-        
-        private bool montoVencidoFieldSpecified;
-        
-        private string codigoTarjetaField;
-        
-        private string numeroTarjetaField;
-        
-        private string codigoClaseTarjetaField;
-        
-        private string establecimientoField;
-        
-        private System.DateTime fechaIngresoField;
-        
-        private bool fechaIngresoFieldSpecified;
-        
-        private string estadoReferenciaField;
-        
-        private CuentaBancaria cuentaBancariaField;
-        
-        private string tipoCalificacionField;
-        
-        private string indicadorNacionalField;
-        
-        private string codigoCiudadField;
-        
-        private string sucursalField;
-        
-        private Telefono telefonoField;
-        
-        private decimal montoReferenciaField;
-        
-        private bool montoReferenciaFieldSpecified;
-        
-        private string observacionField;
-        
-        private string tipoProductoField;
-        
-        private string tipoReferenciaField;
-        
-        private decimal saldoField;
-        
-        private bool saldoFieldSpecified;
-        
-        private string claseField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public int codigoReferencia {
-            get {
-                return this.codigoReferenciaField;
-            }
-            set {
-                this.codigoReferenciaField = value;
-                this.RaisePropertyChanged("codigoReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool codigoReferenciaSpecified {
-            get {
-                return this.codigoReferenciaFieldSpecified;
-            }
-            set {
-                this.codigoReferenciaFieldSpecified = value;
-                this.RaisePropertyChanged("codigoReferenciaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string bancoReferencia {
-            get {
-                return this.bancoReferenciaField;
-            }
-            set {
-                this.bancoReferenciaField = value;
-                this.RaisePropertyChanged("bancoReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string calificacionReferencia {
-            get {
-                return this.calificacionReferenciaField;
-            }
-            set {
-                this.calificacionReferenciaField = value;
-                this.RaisePropertyChanged("calificacionReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string cuentaReferencia {
-            get {
-                return this.cuentaReferenciaField;
-            }
-            set {
-                this.cuentaReferenciaField = value;
-                this.RaisePropertyChanged("cuentaReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=4)]
-        public System.DateTime fechaApertura {
-            get {
-                return this.fechaAperturaField;
-            }
-            set {
-                this.fechaAperturaField = value;
-                this.RaisePropertyChanged("fechaApertura");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=5)]
-        public System.DateTime fechaVencimiento {
-            get {
-                return this.fechaVencimientoField;
-            }
-            set {
-                this.fechaVencimientoField = value;
-                this.RaisePropertyChanged("fechaVencimiento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaVencimientoSpecified {
-            get {
-                return this.fechaVencimientoFieldSpecified;
-            }
-            set {
-                this.fechaVencimientoFieldSpecified = value;
-                this.RaisePropertyChanged("fechaVencimientoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public System.DateTime fechaModificado {
-            get {
-                return this.fechaModificadoField;
-            }
-            set {
-                this.fechaModificadoField = value;
-                this.RaisePropertyChanged("fechaModificado");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=7)]
-        public System.DateTime fechaExpedicion {
-            get {
-                return this.fechaExpedicionField;
-            }
-            set {
-                this.fechaExpedicionField = value;
-                this.RaisePropertyChanged("fechaExpedicion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=8)]
-        public System.DateTime fechaRegistro {
-            get {
-                return this.fechaRegistroField;
-            }
-            set {
-                this.fechaRegistroField = value;
-                this.RaisePropertyChanged("fechaRegistro");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=9)]
-        public string funcionarioReferencia {
-            get {
-                return this.funcionarioReferenciaField;
-            }
-            set {
-                this.funcionarioReferenciaField = value;
-                this.RaisePropertyChanged("funcionarioReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=10)]
-        public string operacion {
-            get {
-                return this.operacionField;
-            }
-            set {
-                this.operacionField = value;
-                this.RaisePropertyChanged("operacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=11)]
-        public string estadoFinanciero {
-            get {
-                return this.estadoFinancieroField;
-            }
-            set {
-                this.estadoFinancieroField = value;
-                this.RaisePropertyChanged("estadoFinanciero");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=12)]
-        public decimal montoVencido {
-            get {
-                return this.montoVencidoField;
-            }
-            set {
-                this.montoVencidoField = value;
-                this.RaisePropertyChanged("montoVencido");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool montoVencidoSpecified {
-            get {
-                return this.montoVencidoFieldSpecified;
-            }
-            set {
-                this.montoVencidoFieldSpecified = value;
-                this.RaisePropertyChanged("montoVencidoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=13)]
-        public string codigoTarjeta {
-            get {
-                return this.codigoTarjetaField;
-            }
-            set {
-                this.codigoTarjetaField = value;
-                this.RaisePropertyChanged("codigoTarjeta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=14)]
-        public string numeroTarjeta {
-            get {
-                return this.numeroTarjetaField;
-            }
-            set {
-                this.numeroTarjetaField = value;
-                this.RaisePropertyChanged("numeroTarjeta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=15)]
-        public string codigoClaseTarjeta {
-            get {
-                return this.codigoClaseTarjetaField;
-            }
-            set {
-                this.codigoClaseTarjetaField = value;
-                this.RaisePropertyChanged("codigoClaseTarjeta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=16)]
-        public string establecimiento {
-            get {
-                return this.establecimientoField;
-            }
-            set {
-                this.establecimientoField = value;
-                this.RaisePropertyChanged("establecimiento");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="date", Order=17)]
-        public System.DateTime fechaIngreso {
-            get {
-                return this.fechaIngresoField;
-            }
-            set {
-                this.fechaIngresoField = value;
-                this.RaisePropertyChanged("fechaIngreso");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool fechaIngresoSpecified {
-            get {
-                return this.fechaIngresoFieldSpecified;
-            }
-            set {
-                this.fechaIngresoFieldSpecified = value;
-                this.RaisePropertyChanged("fechaIngresoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=18)]
-        public string estadoReferencia {
-            get {
-                return this.estadoReferenciaField;
-            }
-            set {
-                this.estadoReferenciaField = value;
-                this.RaisePropertyChanged("estadoReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=19)]
-        public CuentaBancaria cuentaBancaria {
-            get {
-                return this.cuentaBancariaField;
-            }
-            set {
-                this.cuentaBancariaField = value;
-                this.RaisePropertyChanged("cuentaBancaria");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=20)]
-        public string tipoCalificacion {
-            get {
-                return this.tipoCalificacionField;
-            }
-            set {
-                this.tipoCalificacionField = value;
-                this.RaisePropertyChanged("tipoCalificacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=21)]
-        public string indicadorNacional {
-            get {
-                return this.indicadorNacionalField;
-            }
-            set {
-                this.indicadorNacionalField = value;
-                this.RaisePropertyChanged("indicadorNacional");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=22)]
-        public string codigoCiudad {
-            get {
-                return this.codigoCiudadField;
-            }
-            set {
-                this.codigoCiudadField = value;
-                this.RaisePropertyChanged("codigoCiudad");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=23)]
-        public string sucursal {
-            get {
-                return this.sucursalField;
-            }
-            set {
-                this.sucursalField = value;
-                this.RaisePropertyChanged("sucursal");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=24)]
-        public Telefono telefono {
-            get {
-                return this.telefonoField;
-            }
-            set {
-                this.telefonoField = value;
-                this.RaisePropertyChanged("telefono");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=25)]
-        public decimal montoReferencia {
-            get {
-                return this.montoReferenciaField;
-            }
-            set {
-                this.montoReferenciaField = value;
-                this.RaisePropertyChanged("montoReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool montoReferenciaSpecified {
-            get {
-                return this.montoReferenciaFieldSpecified;
-            }
-            set {
-                this.montoReferenciaFieldSpecified = value;
-                this.RaisePropertyChanged("montoReferenciaSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=26)]
-        public string observacion {
-            get {
-                return this.observacionField;
-            }
-            set {
-                this.observacionField = value;
-                this.RaisePropertyChanged("observacion");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=27)]
-        public string tipoProducto {
-            get {
-                return this.tipoProductoField;
-            }
-            set {
-                this.tipoProductoField = value;
-                this.RaisePropertyChanged("tipoProducto");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=28)]
-        public string tipoReferencia {
-            get {
-                return this.tipoReferenciaField;
-            }
-            set {
-                this.tipoReferenciaField = value;
-                this.RaisePropertyChanged("tipoReferencia");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=29)]
-        public decimal saldo {
-            get {
-                return this.saldoField;
-            }
-            set {
-                this.saldoField = value;
-                this.RaisePropertyChanged("saldo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool saldoSpecified {
-            get {
-                return this.saldoFieldSpecified;
-            }
-            set {
-                this.saldoFieldSpecified = value;
-                this.RaisePropertyChanged("saldoSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=30)]
-        public string clase {
-            get {
-                return this.claseField;
-            }
-            set {
-                this.claseField = value;
-                this.RaisePropertyChanged("clase");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V14 : Cliente {
     }
     
     /// <remarks/>
@@ -5552,59 +11405,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/cuentabancaria")]
-    public partial class CuentaBancaria : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string numeroCuentaField;
-        
-        private string tipoCuentaField;
-        
-        private string codigoBancoField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string numeroCuenta {
-            get {
-                return this.numeroCuentaField;
-            }
-            set {
-                this.numeroCuentaField = value;
-                this.RaisePropertyChanged("numeroCuenta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string tipoCuenta {
-            get {
-                return this.tipoCuentaField;
-            }
-            set {
-                this.tipoCuentaField = value;
-                this.RaisePropertyChanged("tipoCuenta");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string codigoBanco {
-            get {
-                return this.codigoBancoField;
-            }
-            set {
-                this.codigoBancoField = value;
-                this.RaisePropertyChanged("codigoBanco");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V13 : Cliente {
     }
     
     /// <remarks/>
@@ -5612,8 +11414,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class Cliente1 : Cliente {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V12 : Cliente {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Cliente_V15))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V11 : Cliente {
     }
     
     /// <remarks/>
@@ -5621,18 +11433,38 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class ServiceResponse : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V15 : Cliente_V11 {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Cliente_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/clientesub")]
+    public partial class Cliente_V10 : Cliente {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class recuperarInformacionBasicaRs : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private Cliente1 clienteField;
+        private Cliente_V11 clienteField;
         
-        private PersonaNatural1 personaNaturalField;
+        private PersonaNaturalType personaNaturalField;
         
-        private InformacionFamiliar[] familiaresField;
+        private Apoderado_V10 apoderadoField;
+        
+        private AsesorType asesorField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public Cliente1 cliente {
+        public Cliente_V11 cliente {
             get {
                 return this.clienteField;
             }
@@ -5644,7 +11476,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public PersonaNatural1 personaNatural {
+        public PersonaNaturalType personaNatural {
             get {
                 return this.personaNaturalField;
             }
@@ -5655,15 +11487,26 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("informacionFamiliar", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public InformacionFamiliar[] familiares {
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public Apoderado_V10 Apoderado {
             get {
-                return this.familiaresField;
+                return this.apoderadoField;
             }
             set {
-                this.familiaresField = value;
-                this.RaisePropertyChanged("familiares");
+                this.apoderadoField = value;
+                this.RaisePropertyChanged("Apoderado");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public AsesorType Asesor {
+            get {
+                return this.asesorField;
+            }
+            set {
+                this.asesorField = value;
+                this.RaisePropertyChanged("Asesor");
             }
         }
         
@@ -5682,14 +11525,14 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class ServiceRequest : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+    public partial class recuperarInformacionBasicaRq : object, System.ComponentModel.INotifyPropertyChanged {
         
         private object itemField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("idCliente", typeof(string), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("identificacion", typeof(Identificacion1), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("identificacion", typeof(Identificacion_V11), Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
         public object Item {
             get {
                 return this.itemField;
@@ -5711,20 +11554,18 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1", ConfigurationName="ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType")]
-    public interface ClientePersonaNatural_RecuperarInformacionPortType {
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2", ConfigurationName="ClientePersonaNaturalCliente.Common_MessageSetPortType")]
+    public interface Common_MessageSetPortType {
         
-        [System.ServiceModel.OperationContractAttribute(Action="recuperarInformacionBasica", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.excepcionGenerica), Action="recuperarInformacionBasica", Name="excepcionSistema")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.excepcionGenerica), Action="recuperarInformacionBasica", Name="excepcionNegocio")]
+        [System.ServiceModel.OperationContractAttribute(Action="recuperarInfoBasica", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.excepcionGenerica), Action="recuperarInfoBasica", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CasillaPostal))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(DireccionElectronica))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(cuentaAVC))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Cliente))]
-        Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output recuperarInformacion(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request);
+        Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output recuperarInfoBasica(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="recuperarInformacionBasica", ReplyAction="*")]
-        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output> recuperarInformacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request);
+        [System.ServiceModel.OperationContractAttribute(Action="recuperarInfoBasica", ReplyAction="*")]
+        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output> recuperarInfoBasicaAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input request);
     }
     
     /// <remarks/>
@@ -6084,75 +11925,412 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
         }
     }
     
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recuperarinformacion_input {
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ConsumerHeaderResponse_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class ConsumerHeaderResponse_v10 : object, System.ComponentModel.INotifyPropertyChanged {
         
-        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader consumerHeader;
+        private string clientTransactionIDField;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1", Order=0)]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceRequest recuperarInformacionBasicaRequest;
+        private System.DateTime datetimeField;
         
-        public recuperarinformacion_input() {
+        private bool datetimeFieldSpecified;
+        
+        private string systemIdField;
+        
+        private Status_v10 statusField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string clientTransactionID {
+            get {
+                return this.clientTransactionIDField;
+            }
+            set {
+                this.clientTransactionIDField = value;
+                this.RaisePropertyChanged("clientTransactionID");
+            }
         }
         
-        public recuperarinformacion_input(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader consumerHeader, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceRequest recuperarInformacionBasicaRequest) {
-            this.consumerHeader = consumerHeader;
-            this.recuperarInformacionBasicaRequest = recuperarInformacionBasicaRequest;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime datetime {
+            get {
+                return this.datetimeField;
+            }
+            set {
+                this.datetimeField = value;
+                this.RaisePropertyChanged("datetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool datetimeSpecified {
+            get {
+                return this.datetimeFieldSpecified;
+            }
+            set {
+                this.datetimeFieldSpecified = value;
+                this.RaisePropertyChanged("datetimeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string systemId {
+            get {
+                return this.systemIdField;
+            }
+            set {
+                this.systemIdField = value;
+                this.RaisePropertyChanged("systemId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public Status_v10 status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+                this.RaisePropertyChanged("status");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Status_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class Status_v10 : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private Status_v10StatusType statusTypeField;
+        
+        private bool statusTypeFieldSpecified;
+        
+        private string statusCodeField;
+        
+        private string statusDescField;
+        
+        private string systemCodeField;
+        
+        private string systemDescField;
+        
+        private Status_v10Severity severityField;
+        
+        private bool severityFieldSpecified;
+        
+        private string traceField;
+        
+        private errorMessageType[] errorMessagesField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public Status_v10StatusType statusType {
+            get {
+                return this.statusTypeField;
+            }
+            set {
+                this.statusTypeField = value;
+                this.RaisePropertyChanged("statusType");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool statusTypeSpecified {
+            get {
+                return this.statusTypeFieldSpecified;
+            }
+            set {
+                this.statusTypeFieldSpecified = value;
+                this.RaisePropertyChanged("statusTypeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string statusCode {
+            get {
+                return this.statusCodeField;
+            }
+            set {
+                this.statusCodeField = value;
+                this.RaisePropertyChanged("statusCode");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string statusDesc {
+            get {
+                return this.statusDescField;
+            }
+            set {
+                this.statusDescField = value;
+                this.RaisePropertyChanged("statusDesc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string systemCode {
+            get {
+                return this.systemCodeField;
+            }
+            set {
+                this.systemCodeField = value;
+                this.RaisePropertyChanged("systemCode");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string systemDesc {
+            get {
+                return this.systemDescField;
+            }
+            set {
+                this.systemDescField = value;
+                this.RaisePropertyChanged("systemDesc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public Status_v10Severity severity {
+            get {
+                return this.severityField;
+            }
+            set {
+                this.severityField = value;
+                this.RaisePropertyChanged("severity");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool severitySpecified {
+            get {
+                return this.severityFieldSpecified;
+            }
+            set {
+                this.severityFieldSpecified = value;
+                this.RaisePropertyChanged("severitySpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string trace {
+            get {
+                return this.traceField;
+            }
+            set {
+                this.traceField = value;
+                this.RaisePropertyChanged("trace");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("errorMessage", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public errorMessageType[] errorMessages {
+            get {
+                return this.errorMessagesField;
+            }
+            set {
+                this.errorMessagesField = value;
+                this.RaisePropertyChanged("errorMessages");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public enum Status_v10StatusType {
+        
+        /// <remarks/>
+        OK,
+        
+        /// <remarks/>
+        ERROR,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public enum Status_v10Severity {
+        
+        /// <remarks/>
+        INFO,
+        
+        /// <remarks/>
+        ERROR,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class errorMessageType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codeField;
+        
+        private string messageField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+                this.RaisePropertyChanged("code");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+                this.RaisePropertyChanged("message");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class recuperarinformacion_output {
+    public partial class recuperarInfoBasica_Input {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1", Order=0)]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceResponse recuperarInformacionBasicaResponse;
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader headerRq;
         
-        public recuperarinformacion_output() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2", Order=0)]
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInformacionBasicaRq recuperarInformacionBasicaRq;
+        
+        public recuperarInfoBasica_Input() {
         }
         
-        public recuperarinformacion_output(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceResponse recuperarInformacionBasicaResponse) {
-            this.recuperarInformacionBasicaResponse = recuperarInformacionBasicaResponse;
+        public recuperarInfoBasica_Input(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader headerRq, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInformacionBasicaRq recuperarInformacionBasicaRq) {
+            this.headerRq = headerRq;
+            this.recuperarInformacionBasicaRq = recuperarInformacionBasicaRq;
         }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface ClientePersonaNatural_RecuperarInformacionPortTypeChannel : Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ClientePersonaNatural_RecuperarInformacionPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType>, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType {
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class recuperarInfoBasica_Output {
         
-        public ClientePersonaNatural_RecuperarInformacionPortTypeClient() {
+        [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2")]
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeaderResponse_v10 headerRs;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v2", Order=0)]
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInformacionBasicaRs recuperarInformacionBasicaRs;
+        
+        public recuperarInfoBasica_Output() {
         }
         
-        public ClientePersonaNatural_RecuperarInformacionPortTypeClient(string endpointConfigurationName) : 
+        public recuperarInfoBasica_Output(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeaderResponse_v10 headerRs, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInformacionBasicaRs recuperarInformacionBasicaRs) {
+            this.headerRs = headerRs;
+            this.recuperarInformacionBasicaRs = recuperarInformacionBasicaRs;
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface Common_MessageSetPortTypeChannel : Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.Common_MessageSetPortType, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class Common_MessageSetPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.Common_MessageSetPortType>, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.Common_MessageSetPortType {
+        
+        public Common_MessageSetPortTypeClient() {
+        }
+        
+        public Common_MessageSetPortTypeClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public ClientePersonaNatural_RecuperarInformacionPortTypeClient(string endpointConfigurationName, string remoteAddress) : 
+        public Common_MessageSetPortTypeClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ClientePersonaNatural_RecuperarInformacionPortTypeClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Common_MessageSetPortTypeClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public ClientePersonaNatural_RecuperarInformacionPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public Common_MessageSetPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output recuperarInformacion(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
-            return base.Channel.recuperarInformacion(request);
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output recuperarInfoBasica(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input request) {
+            return base.Channel.recuperarInfoBasica(request);
         }
         
-        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output> recuperarInformacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
-            return base.Channel.recuperarInformacionAsync(request);
+        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output> recuperarInfoBasicaAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input request) {
+            return base.Channel.recuperarInfoBasicaAsync(request);
         }
     }
 }

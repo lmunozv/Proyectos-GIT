@@ -134,6 +134,7 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\Bizagi.Proxy.Layer.Service.pubxml" />
     <None Include="Properties\PublishProfiles\BizagiProxyService.pubxml" />
+    <None Include="Properties\PublishProfiles\custom.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

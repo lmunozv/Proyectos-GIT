@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/clientesub" xmlns:tns="http://www.fna.gov.co/cim/businessentities/bloqueo" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/clientesub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/cliente.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cliente" />
+  <import schemaLocation="../BusinessEntitiesLib/bloqueo.xsd" namespace="http://www.fna.gov.co/cim/businessentities/bloqueo" />
+  <complexType name="Cliente_V1.0">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fondoPrivado" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="bloqueos" type="tns:bloqueo" />
+          <element minOccurs="0" maxOccurs="1" name="segmento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Cliente_V1.1">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fondoPrivado" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="bloqueos" type="tns:bloqueo" />
+          <element minOccurs="0" maxOccurs="1" name="segmento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoNegocio" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Cliente_V1.2">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreContactoPrincipal" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Cliente_V1.3">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Cliente_V1.4">
+    <complexContent mixed="false">
+      <restriction base="cli:Cliente">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Cliente_V1.5">
+    <complexContent mixed="false">
+      <restriction base="this:Cliente_V1.1">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fondoPrivado" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="sectorEconomico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="bloqueos" type="tns:bloqueo" />
+          <element minOccurs="0" maxOccurs="1" name="segmento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

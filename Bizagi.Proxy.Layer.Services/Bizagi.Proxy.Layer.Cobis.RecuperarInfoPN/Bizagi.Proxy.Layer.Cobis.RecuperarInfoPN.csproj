@@ -77,47 +77,101 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output.datasource">
+    <None Include="Service References\ClientePersonaNaturalCliente\asesor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\asesor_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\autorizacionEnvio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\cesantias.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\bloqueo.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\cliente.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cesantias1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\ClientePersonaNatural_RecuperarInformacion.wsdl" />
-    <None Include="Service References\ClientePersonaNaturalCliente\consumerHeader.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cesantias_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\cuentaBancaria.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cliente1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\direccion.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cliente_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\excepciongenerica.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\ClntePrsnaNtral_RecuperarInfoBasica.wsdl" />
+    <None Include="Service References\ClientePersonaNaturalCliente\codigoTipo.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\identificacion.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\consumerHeader1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\informacionfinanciera.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\consumerHeaderResponse.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\informacionlaboral.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cuentaAVC.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\personajuridica.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\cuentaBancaria1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\personanatural.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\direccion1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\recuperarInformacion.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\direccion_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\ClientePersonaNaturalCliente\telefono.xsd">
+    <None Include="Service References\ClientePersonaNaturalCliente\excepciongenerica1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\identificacion1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\identificacion_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionficnaciera_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionfinanciera1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionlaboral1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\informacionLaboral_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\monedaExtranjera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\pep.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\personajuridica1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\personanatural1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\personanatural_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\recuperarInformacionBasica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\telefono1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\telefono_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ClientePersonaNaturalCliente\tipoafiliacion.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Cliente_RecuperarInfoPN\cesantias.xsd">

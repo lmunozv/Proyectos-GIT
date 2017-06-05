@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://www.fna.gov.co/cim/businessentities/bloqueo" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/bloqueo" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="bloqueo">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="tipoBloqueo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descripcionBloqueo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaBloqueo" type="date" />
+    </sequence>
+  </complexType>
+</schema>

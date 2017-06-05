@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns:perjur="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cliente" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema xmlns:perjur="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:tns="http://www.fna.gov.co/cim/businessentities/bloqueo" xmlns:cli="http://www.fna.gov.co/cim/businessentities/cliente" xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cliente" xmlns="http://www.w3.org/2001/XMLSchema">
   <import schemaLocation="../BusinessEntitiesLib/personanatural.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personanatural" />
   <import schemaLocation="../BusinessEntitiesLib/personajuridica.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personajuridica" />
+  <import schemaLocation="bloqueo.xsd" namespace="http://www.fna.gov.co/cim/businessentities/bloqueo" />
   <complexType name="Cliente">
     <sequence>
-      <element minOccurs="0" maxOccurs="1" name="idCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idCliente" type="string">
+        <annotation>
+          <documentation>Código, identificación de la empresa dentro de un aplicativo.  Ej. El codigo de empresa que maneja cobis</documentation>
+        </annotation>
+      </element>
       <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
       <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
       <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
       <element minOccurs="0" maxOccurs="1" name="categoriaCliente" type="string" />
       <element minOccurs="0" maxOccurs="1" name="calificacionInternaCredito" type="string" />
       <element minOccurs="0" maxOccurs="1" name="nombreContactoPrincipal" type="string" />
-      <element minOccurs="0" maxOccurs="1" name="direccionPrincipal" type="string" />
+      <element minOccurs="0" name="direccionPrincipal" type="string" />
       <element minOccurs="0" maxOccurs="1" name="telefonoPrincipal" type="string" />
       <element minOccurs="0" maxOccurs="1" name="autorizacionAsignacionCredito" type="boolean" />
       <element minOccurs="0" maxOccurs="1" name="calificacionSatisfaccion" type="string" />
@@ -83,6 +88,44 @@
       <element minOccurs="0" maxOccurs="1" name="tipoActividad" type="string" />
       <element minOccurs="0" maxOccurs="1" name="entidadPension" type="string" />
       <element minOccurs="0" maxOccurs="1" name="vinculacionFNA" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="bloqueos" type="tns:bloqueo" />
+      <element minOccurs="0" maxOccurs="1" name="segmento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="oficina" type="string">
+        <annotation>
+          <documentation>Código de la oficina asignada a la empresa</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaInscripcion" type="date">
+        <annotation>
+          <documentation>Fecha de incripción o recibido de la empresa en el FNA</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaEnvioAprobacion" type="date">
+        <annotation>
+          <documentation>Fecha de Envío a aprobación de afiliación</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaVinculacion" type="date">
+        <annotation>
+          <documentation>Fecha de vinculación de la empresa en el FNA</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaActualizacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="estadoNegocio" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="CapacidadCliente">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="plazo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="doctorado" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="cuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoAPrestar" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="valorContratado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoAhorrado" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="duracionFinanciera" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoPeriodo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="periodo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="ingresos" type="decimal" />
     </sequence>
   </complexType>
 </schema>

@@ -14,7 +14,7 @@
   <complexType name="UserId">
     <sequence>
       <element minOccurs="1" maxOccurs="1" name="userName" type="string" />
-      <element minOccurs="0" maxOccurs="1" name="userToken" type="anySimpleType" />
+      <element minOccurs="0" maxOccurs="1" name="userToken" type="string" />
     </sequence>
   </complexType>
   <complexType name="Destination">
@@ -49,4 +49,5 @@
     </sequence>
   </complexType>
   <element name="consumerHeader" type="chdr:ConsumerHeader" />
+  <element name="headerRq" type="chdr:ConsumerHeader" />
 </schema>

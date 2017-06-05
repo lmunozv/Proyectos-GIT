@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:pep="http://www.fna.gov.co/cim/businessentities/pep" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/pep" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <complexType name="PEP">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="esServidorPublico" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="manejaRecursosPublicos" type="boolean" />
+      <element minOccurs="0" name="esReconocidoPublicamente" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="codigoReconocimientoPublico" type="string" />
+      <element minOccurs="0" name="vinculoPersonasPublicas" type="boolean" />
+      <element minOccurs="0" name="otro" type="string" />
+      <element minOccurs="0" name="nombreJefeInmediato" type="string" />
+      <element minOccurs="0" name="identificacionJefeInmediato" type="ident:Identificacion" />
+    </sequence>
+  </complexType>
+</schema>

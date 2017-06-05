@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tel="http://www.fna.gov.co/cim/businessentities/telefono" xmlns:moex="http://www.fna.gov.co/cim/businessentities/monedaextranjera" xmlns:CDP="http://www.fna.gov.co/cim/businessentities/asesor" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:dir="http://www.fna.gov.co/cim/businessentities/direccion" xmlns:perjur="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns:cun="http://www.fna.gov.co/cim/businessentities/cuentabancaria" xmlns:ctp="http://www.fna.gov.co/cim/businessentities/codigoTipo" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/personajuridica" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="direccion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/direccion" />
+  <import schemaLocation="telefono.xsd" namespace="http://www.fna.gov.co/cim/businessentities/telefono" />
+  <import schemaLocation="cuentaBancaria.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentabancaria" />
+  <import schemaLocation="codigoTipo.xsd" namespace="http://www.fna.gov.co/cim/businessentities/codigoTipo" />
+  <import schemaLocation="asesor.xsd" namespace="http://www.fna.gov.co/cim/businessentities/asesor" />
+  <complexType name="DatosBasicosPJ">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="idCliente" type="int">
+        <annotation>
+          <documentation>Código de tipo entero para la identificación de la empresa dentro de un aplicativo.  Ej. El codigo de empresa que maneja cobis</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="identificacion" type="ident:Identificacion" />
+      <element minOccurs="0" maxOccurs="1" name="nombreEmpresa" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="siglaEmpresa" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreComercial" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoEmpresa" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="posicion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCIIU" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDeEmpleados" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="vinculacionBandera" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoVinculacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estadoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="grupoEconomico" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="sector" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="naturalezaJuridica" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="filial" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="oficinaFilial" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="direccionElectronica" type="perjur:DireccionElectronicaPJ" />
+      <element minOccurs="0" maxOccurs="1" name="direcciones" type="perjur:Direcciones" />
+      <element minOccurs="0" maxOccurs="unbounded" name="casillasPostales" type="perjur:CasillasPostales" />
+      <element minOccurs="0" maxOccurs="1" name="referenciasEconomicas" type="perjur:ReferenciasEconomicas" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPaisPropietario" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="actividadEconomica" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoSociedad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="medioActualizacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="informacionLegal" type="perjur:DatosLegalesPJ" />
+      <element minOccurs="0" name="tipoSede" type="string">
+        <annotation>
+          <documentation>Establece si el tercero tiene relacion directa con direccion general, sucursales, principal.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoOficial" type="string">
+        <annotation>
+          <documentation>Código del oficial o funcionario referido a la empresa del FNA</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoAsesorComercial" type="string">
+        <annotation>
+          <documentation>Código del asesor o funcionario comercial del FNA</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="roles" type="ctp:codigoTipo">
+        <annotation>
+          <documentation>Define el rol del tercero como afiliado, empleador o proveedor. una misma persona puede tener mas de un rol.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaCreacion" type="date">
+        <annotation>
+          <documentation>Fecha de creación del la entidad en el sistema</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="fechaActualizacion" type="date">
+        <annotation>
+          <documentation>Fecha de actualización de los datos</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="oficinaAfiliacion" type="perjur:OficinaAfilicacion">
+        <annotation>
+          <documentation>informacion de la oficina a la cual está asociado la entidad.</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="asesor" type="CDP:Asesor">
+        <annotation>
+          <documentation>informacion del asesor de la entidad</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="OficinaAfilicacion">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="nombre" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ReferenciaEconomica">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoReferencia" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="bancoReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="calificacionReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cuentaReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaApertura" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaVencimiento" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaModificado" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaRegistro" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="funcionarioReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="operacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estadoFinanciero" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoVencido" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTarjeta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroTarjeta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoClaseTarjeta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="establecimiento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaIngreso" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="estadoReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="cuentaBancaria" type="cun:CuentaBancaria" />
+      <element minOccurs="0" maxOccurs="1" name="tipoCalificacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorNacional" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="sucursal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="telefono" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="telefonos" type="perjur:TelefonoPJ" />
+      <element minOccurs="0" maxOccurs="1" name="montoReferencia" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="observacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoReferencia" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="saldo" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="clase" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string">
+        <annotation>
+          <documentation>Campo de referencia entre CRM y Cobis</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoReferido" type="int" />
+    </sequence>
+  </complexType>
+  <complexType name="DireccionPJ">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCorregimiento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int">
+            <annotation>
+              <documentation>Campo de referencia entre CRM y Cobis</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CasillaPostalPJ">
+    <complexContent mixed="false">
+      <restriction base="dir:CasillaPostal">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idCasilla" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="apartado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoProvincia" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoEmpresa" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string">
+            <annotation>
+              <documentation>Campo de referencia entre CRM y Cobis</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionElectronicaPJ">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionElectronica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="correoElectronico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="TelefonoPJ">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int">
+            <annotation>
+              <documentation>Equivale al indicativo del pais</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int">
+            <annotation>
+              <documentation>Equivale al indicativo del departamento-ciudad</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int">
+            <annotation>
+              <documentation>Campo de referencia entre CRM y Cobis</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CasillasPostales">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="casillaPostal" type="perjur:CasillaPostalPJ" />
+    </sequence>
+  </complexType>
+  <complexType name="Direcciones">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="direccion" type="perjur:DireccionPJT" />
+    </sequence>
+  </complexType>
+  <complexType name="Telefonos">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="perjur:TelefonoPJ" />
+    </sequence>
+  </complexType>
+  <complexType name="ReferenciasEconomicas">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="referenciaEconomica" type="perjur:ReferenciaEconomica" />
+    </sequence>
+  </complexType>
+  <complexType name="DatosLegalesPJ">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="fechaConstitucion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaInscripcion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaVencimiento" type="date" />
+      <element minOccurs="0" name="notaria" type="int" />
+      <element minOccurs="0" name="objetoSocial" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="reservaLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroEscritura" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="camaraComercio" type="int" />
+      <element minOccurs="0" name="gradoSociedad" type="string" />
+      <element minOccurs="0" name="matriculaNumero" type="int" />
+      <element minOccurs="0" maxOccurs="unbounded" name="datosRepresentanteLegal" type="perjur:DatosRepresentanteLegal" />
+      <element minOccurs="0" maxOccurs="unbounded" name="datosSocios" type="perjur:DatosSocios" />
+      <element minOccurs="0" maxOccurs="1" name="registroCamaraComercio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoSociedad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tarjetaFirmas" type="string" />
+      <element minOccurs="0" name="atribuciones" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaCertificado" type="date" />
+      <element minOccurs="0" name="fechaAumentoCapital" type="date" />
+      <element minOccurs="0" name="codigoCiudadReferencia" type="string" />
+      <element minOccurs="0" name="codigoCiudadNotaria" type="string" />
+      <element minOccurs="0" name="capitalPagado" type="decimal" />
+      <element minOccurs="0" maxOccurs="unbounded" name="tesorero" type="perjur:Tesorero" />
+      <element minOccurs="0" maxOccurs="unbounded" name="jefePersonal" type="perjur:JefePersonal" />
+      <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="DatosRepresentanteLegal">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRepresentanteLegal" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tipoDocumentoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDocumentoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="atributo" type="perjur:Atributo" />
+      <element minOccurs="0" maxOccurs="1" name="nombresRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="primerApellidoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="segundoApellidoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccionRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="telefonoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoTelefonoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="extensionTelefonoRepresentanteLegal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicativoTelefonoRepresentanteLegal" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoExternoDireccion" type="string">
+        <annotation>
+          <documentation>Campo de referencia entre CRM y Cobis, para dirección</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoExternoTelefono" type="string">
+        <annotation>
+          <documentation>Campo de referencia entre CRM y Cobis, para telefono</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DatosSocios">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="datosSocio" type="perjur:DatosSocio" />
+    </sequence>
+  </complexType>
+  <complexType name="DatosSocio">
+    <sequence>
+      <element minOccurs="0" name="tipoPersona" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoSocio" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="atributo" type="perjur:Atributo" />
+      <element minOccurs="0" maxOccurs="1" name="nombreCompletoSocio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="primerApellidoSocio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="segundoApellidoSocio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="participacionSocio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="valorParticipacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroCuotasAcciones" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="perjur:DireccionPJT" />
+    </sequence>
+  </complexType>
+  <complexType name="Tesorero">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoTesorero" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="atributo" type="perjur:Atributo" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="perjur:DireccionPJT" />
+    </sequence>
+  </complexType>
+  <complexType name="JefePersonal">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoJefePersonal" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="atributo" type="perjur:Atributo" />
+      <element minOccurs="0" maxOccurs="1" name="direccion" type="perjur:DireccionPJT" />
+    </sequence>
+  </complexType>
+  <complexType name="DatosFinancierosPJ">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="totalPatrimonio" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalPasivos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="totalActivos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="ingresos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="egresos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="ingresosNoOperacionales" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="tipoAportante" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="grandesContribuyentes" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="reportadoSuperbancaria" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="comentarios" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="operacionesInternacionales" type="perjur:OperacionesInternacionales" />
+    </sequence>
+  </complexType>
+  <complexType name="OperacionesInternacionales">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="operacionInternacional" type="perjur:OperacionInternacional" />
+    </sequence>
+  </complexType>
+  <complexType name="OperacionInternacional">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="operacionesInternacionales" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idmoneda" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tipoOperacionIntenacional" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoOperacionesInternacionales" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="idProductoCliente" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreEntidad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idPais" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="idCiudad" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="DireccionPJT">
+    <complexContent mixed="false">
+      <restriction base="dir:DireccionFisica">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoCorregimiento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="zonaVeredal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="telefono" type="perjur:TelefonoPJ" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="observacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoExterno" type="int">
+            <annotation>
+              <documentation>Campo de referencia entre CRM y Cobis</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" maxOccurs="1" name="fechaCreacion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaModificacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DireccionPJBas">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="idDireccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="direccionCompleta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoDepartamento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCorregimiento" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoDireccion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nombreBarrio" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="estrato" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="zonaVeredal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="principal" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="telefonos" type="perjur:TelefonoPJBas" />
+      <element minOccurs="0" maxOccurs="1" name="tiempoAnnos" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tiempoMeses" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPostal" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="observacion" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="TelefonoPJBas">
+    <complexContent mixed="false">
+      <restriction base="tel:Telefono">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="numeroTelefono" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="extension" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="indicativo" type="int">
+            <annotation>
+              <documentation>Equivale al indicativo del pais</documentation>
+            </annotation>
+          </element>
+          <element minOccurs="0" maxOccurs="1" name="indicadorAutorizacion" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="codigoArea" type="int">
+            <annotation>
+              <documentation>Equivale al indicativo del departamento-ciudad</documentation>
+            </annotation>
+          </element>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Atributo">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoAtributoRelacion" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="valorAtributoRelacion" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="CuentaBancaria">
+    <complexContent mixed="false">
+      <restriction base="cun:CuentaBancaria">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroCuenta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoCuenta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="codigoBanco" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="AutorizacionPJ">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaAutorizacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaDesautorizacion" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="loginUsuarioAutoriza" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="loginUsuarioDesautoriza" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="observaciones" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoProducto" type="int" />
+    </sequence>
+  </complexType>
+</schema>
