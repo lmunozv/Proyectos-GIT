@@ -46,6 +46,8 @@
     <Compile Include="CobisManager.cs" />
     <Compile Include="CuadroVentasManager.cs" />
     <Compile Include="HUBManager.cs" />
+    <Compile Include="Interfaces\ICliente.cs" />
+    <Compile Include="Interfaces\ITramites.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1082,9 +1082,9 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Direccion))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Direccion))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica1))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
@@ -1524,8 +1524,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono2))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono2))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono1))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
@@ -1689,15 +1689,6 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
-    public partial class Telefono2 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
     public partial class TelefonoPJ : Telefono {
     }
@@ -1707,8 +1698,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
-    public partial class Telefono1 : Telefono {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
+    public partial class Telefono2 : Telefono {
     }
     
     /// <remarks/>
@@ -1716,8 +1707,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
-    public partial class Direccion : DireccionFisica {
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
+    public partial class Telefono1 : Telefono {
     }
     
     /// <remarks/>
@@ -1758,6 +1749,15 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/informacionlaboral")]
+    public partial class Direccion : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica", Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1")]
     public partial class DireccionFisica1 : DireccionFisica {
     }
@@ -1772,8 +1772,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica1))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica1))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1852,8 +1852,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal1))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal1))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -5714,7 +5714,6 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/clnteprsnantral/rcprarinfobsca/v1", ConfigurationName="ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType")]
     public interface ClientePersonaNatural_RecuperarInformacionPortType {
         
-        // CODEGEN: Generating message contract since the operation recuperarInformacion is neither RPC nor document wrapped.
         [System.ServiceModel.OperationContractAttribute(Action="recuperarInformacionBasica", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.excepcionGenerica), Action="recuperarInformacionBasica", Name="excepcionSistema")]
         [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.excepcionGenerica), Action="recuperarInformacionBasica", Name="excepcionNegocio")]
@@ -6087,7 +6086,6 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class recuperarinformacion_input {
         
@@ -6108,7 +6106,6 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class recuperarinformacion_output {
         
@@ -6150,29 +6147,12 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente 
                 base(binding, remoteAddress) {
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType.recuperarInformacion(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
+        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output recuperarInformacion(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
             return base.Channel.recuperarInformacion(request);
         }
         
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceResponse recuperarInformacion(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader consumerHeader, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceRequest recuperarInformacionBasicaRequest) {
-            Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input inValue = new Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input();
-            inValue.consumerHeader = consumerHeader;
-            inValue.recuperarInformacionBasicaRequest = recuperarInformacionBasicaRequest;
-            Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output retVal = ((Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType)(this)).recuperarInformacion(inValue);
-            return retVal.recuperarInformacionBasicaResponse;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output> Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType.recuperarInformacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
+        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output> recuperarInformacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input request) {
             return base.Channel.recuperarInformacionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output> recuperarInformacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ConsumerHeader consumerHeader, Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ServiceRequest recuperarInformacionBasicaRequest) {
-            Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input inValue = new Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input();
-            inValue.consumerHeader = consumerHeader;
-            inValue.recuperarInformacionBasicaRequest = recuperarInformacionBasicaRequest;
-            return ((Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.ClientePersonaNatural_RecuperarInformacionPortType)(this)).recuperarInformacionAsync(inValue);
         }
     }
 }

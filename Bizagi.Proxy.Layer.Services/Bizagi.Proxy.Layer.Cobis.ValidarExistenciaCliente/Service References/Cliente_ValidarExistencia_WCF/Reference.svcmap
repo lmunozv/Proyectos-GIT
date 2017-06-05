@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="29f2d807-d5f8-4c65-b78f-4f84d76a4f9f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Proyectos\FNA\Procesos\Sistemas\Cobis\Validar existencia\ValidarExistencia\MessageLib\Cliente_ValidarExistencia.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Cliente_validarexistencia.wsdl" MetadataType="Wsdl" ID="23d0e481-1b44-40f7-895d-18fc6a3efe2d" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Validar existencia/ValidarExistencia/MessageLib/Cliente_ValidarExistencia.wsdl" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="24451350-7b74-4290-8058-f1af0c7605dc" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Validar existencia/ValidarExistencia/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="validarexistencia.xsd" MetadataType="Schema" ID="da64cb35-5139-4f4e-9caf-7f0dba785c1f" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Validar existencia/ValidarExistencia/MessageLib/validarexistencia.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="4eb1f75e-22e0-47ef-92ef-884d58bce69a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/Validar existencia/ValidarExistencia/BusinessEntitiesLib/excepciongenerica.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

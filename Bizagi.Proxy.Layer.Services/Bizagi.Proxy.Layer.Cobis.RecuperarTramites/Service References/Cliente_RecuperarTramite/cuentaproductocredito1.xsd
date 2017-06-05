@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:ctaprodcre="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" xmlns:pagosdeuda="http://www.fna.gov.co/cim/businessentities/pagosdeuda" xmlns:rsmvalpag="http://www.fna.gov.co/cim/businessentities/resumenvalorapagar" xmlns:convuvr="http://www.fna.gov.co/cim/businessentities/conversionuvr" xmlns:saldeudacrd="http://www.fna.gov.co/cim/businessentities/saldodeudacredito" xmlns:infctamora="http://www.fna.gov.co/cim/businessentities/informacioncuentamora" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/saldodeudacredito.xsd" namespace="http://www.fna.gov.co/cim/businessentities/saldodeudacredito" />
+  <import schemaLocation="../BusinessEntitiesLib/resumenValorAPagar.xsd" namespace="http://www.fna.gov.co/cim/businessentities/resumenvalorapagar" />
+  <import schemaLocation="../BusinessEntitiesLib/pagosDeuda.xsd" namespace="http://www.fna.gov.co/cim/businessentities/pagosdeuda" />
+  <import schemaLocation="../BusinessEntitiesLib/conversionUvr.xsd" namespace="http://www.fna.gov.co/cim/businessentities/conversionuvr" />
+  <import schemaLocation="../BusinessEntitiesLib/informacionCuentaMora.xsd" namespace="http://www.fna.gov.co/cim/businessentities/informacioncuentamora" />
+  <complexType name="CuentaProductoCredito">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="formulaCalculoInteres" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="diasCalculo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="baseCalculo" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorEvitaFeriados" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorGraciaFeriados" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="mesGracia" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="graciaMora" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="graciaCapital" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="graciaInteres" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="lineaCredito" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="saldoDeudaCredito" type="saldeudacrd:SaldoDeudaCredito" />
+      <element minOccurs="0" maxOccurs="1" name="resumenValorAPagar" type="rsmvalpag:ResumenValorAPagar" />
+      <element minOccurs="0" maxOccurs="1" name="pagosDeuda" type="pagosdeuda:PagosDeuda" />
+      <element minOccurs="0" maxOccurs="1" name="conversionUvr" type="convuvr:ConversionUvr" />
+      <element minOccurs="0" maxOccurs="1" name="informacionCuentaMora" type="infctamora:InformacionCuentaMora" />
+      <element minOccurs="0" maxOccurs="1" name="lineaCreditoS" type="string" />
+    </sequence>
+  </complexType>
+</schema>

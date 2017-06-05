@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e96ed9d-727e-4fac-8f08-e69d023d81c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="D:\Proyectos\FNA\Procesos\Sistemas\Cobis\RecTramite\NUevo\MessageLib\022_Credito_RecuperarTramiteSolicitudes\wsdl\1.2\Credito_RecuperarTramiteSolicitudes.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="asesor1.xsd" MetadataType="Schema" ID="3ef5f06b-05f1-439d-a34a-75abbfa7df2a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/asesor.xsd" />
+    <MetadataFile FileName="cuentaBancaria1.xsd" MetadataType="Schema" ID="fd697e0b-2b72-4167-bc96-552bf00bbe1e" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuentaBancaria.xsd" />
+    <MetadataFile FileName="cuotaCredito1.xsd" MetadataType="Schema" ID="46a289f8-bb7e-4420-bce7-1e8059ac3556" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuotaCredito.xsd" />
+    <MetadataFile FileName="cuentaproductocliente1.xsd" MetadataType="Schema" ID="81c28c2e-f452-4854-9ba8-dc151c3daaf3" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuentaproductocliente.xsd" />
+    <MetadataFile FileName="cuentaAVC1.xsd" MetadataType="Schema" ID="78e8dfcb-f394-46bf-ba37-d7de2aef4699" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuentaAVC.xsd" />
+    <MetadataFile FileName="pep1.xsd" MetadataType="Schema" ID="9beffd21-944e-4a12-9458-ab8d86a19fde" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/pep.xsd" />
+    <MetadataFile FileName="direccion1.xsd" MetadataType="Schema" ID="faa1b656-9f4a-45f6-8d82-d8cf43161896" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/direccion.xsd" />
+    <MetadataFile FileName="excepciongenerica1.xsd" MetadataType="Schema" ID="4984f195-71b8-4011-b85b-db34b74960c5" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="desembolso1.xsd" MetadataType="Schema" ID="2c6456d2-edfb-42a5-be0b-4c8a3fa21bd1" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/desembolso.xsd" />
+    <MetadataFile FileName="informacionLaboral_Sub1.xsd" MetadataType="Schema" ID="a307780a-1b1a-4ee4-b71e-c24ddae0f51a" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/CommonsLib/informacionLaboral_Sub.xsd" />
+    <MetadataFile FileName="codeudor1.xsd" MetadataType="Schema" ID="18a7fbe9-b689-4d5b-a6a3-a07dbd5a81ef" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/codeudor.xsd" />
+    <MetadataFile FileName="identificacion1.xsd" MetadataType="Schema" ID="66861c06-30a2-4b52-8932-9419ff4bd38c" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="codigoTipo1.xsd" MetadataType="Schema" ID="2d6c788e-7c53-445b-8f07-ce1302d9f8e3" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/codigoTipo.xsd" />
+    <MetadataFile FileName="cesantias1.xsd" MetadataType="Schema" ID="4d67a489-812a-44a1-86ff-0102daf218b1" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cesantias.xsd" />
+    <MetadataFile FileName="ubicacionOficinaProducto1.xsd" MetadataType="Schema" ID="7dad72e6-54ed-4213-a70e-3daf6f1ee123" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/ubicacionOficinaProducto.xsd" />
+    <MetadataFile FileName="informacionCuentaMora1.xsd" MetadataType="Schema" ID="a1c56952-b249-4832-881f-045a72610ca9" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/informacionCuentaMora.xsd" />
+    <MetadataFile FileName="cuotasMora1.xsd" MetadataType="Schema" ID="a2071c57-b5e3-4cb1-880c-1fd3204b8120" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuotasMora.xsd" />
+    <MetadataFile FileName="informacionfinanciera1.xsd" MetadataType="Schema" ID="14f5869d-fe5f-40e3-9ace-8565111fb303" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/informacionfinanciera.xsd" />
+    <MetadataFile FileName="personajuridica1.xsd" MetadataType="Schema" ID="85a62b49-b684-4d28-a606-c84a0f454c7f" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/personajuridica.xsd" />
+    <MetadataFile FileName="direccion_Sub1.xsd" MetadataType="Schema" ID="6dc391d4-402b-40e5-a3d8-2539700f1fa1" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/CommonsLib/direccion_Sub.xsd" />
+    <MetadataFile FileName="resumenValorAPagar1.xsd" MetadataType="Schema" ID="7f0da201-5ed5-46a0-93c0-4dff8bf1b821" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/resumenValorAPagar.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse1.xsd" MetadataType="Schema" ID="6d6c0126-6f01-41fb-88aa-e150ea49d4c9" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="pagosCredito1.xsd" MetadataType="Schema" ID="d16617e0-1093-4c43-8a12-377787f4b724" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/pagosCredito.xsd" />
+    <MetadataFile FileName="pagosDeuda1.xsd" MetadataType="Schema" ID="73b67304-86ed-4220-96b1-a2ee4db1a312" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/pagosDeuda.xsd" />
+    <MetadataFile FileName="aseguramientoProducto1.xsd" MetadataType="Schema" ID="b926dae9-7691-40ab-b6ee-616f7396ad39" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/aseguramientoProducto.xsd" />
+    <MetadataFile FileName="personanatural1.xsd" MetadataType="Schema" ID="a6d22e17-8e3a-4dd6-bd9e-29c58451aa83" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/personanatural.xsd" />
+    <MetadataFile FileName="tramite1.xsd" MetadataType="Schema" ID="1149f98f-7f9e-4134-ae03-857c4994aa99" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/tramite.xsd" />
+    <MetadataFile FileName="saldodeudacredito1.xsd" MetadataType="Schema" ID="e1b5efc2-53fd-4b73-a8e5-41545b130fce" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/saldodeudacredito.xsd" />
+    <MetadataFile FileName="Credito_RecuperarTramiteSolicitudes1.wsdl" MetadataType="Wsdl" ID="1218f613-0808-46d1-b385-a3b0593908f3" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/MessageLib/022_Credito_RecuperarTramiteSolicitudes/wsdl/1.2/Credito_RecuperarTramiteSolicitudes.wsdl" />
+    <MetadataFile FileName="tipoafiliacion1.xsd" MetadataType="Schema" ID="dc826cb2-1c49-4894-9804-5742a85a184c" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/tipoafiliacion.xsd" />
+    <MetadataFile FileName="consumerHeader1.xsd" MetadataType="Schema" ID="335ac04f-6fb4-4ba1-a9b0-cd34e324df46" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="informacionlaboral1.xsd" MetadataType="Schema" ID="d4463e28-d516-44ac-bfcd-0c95df40b882" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/informacionlaboral.xsd" />
+    <MetadataFile FileName="monedaExtranjera1.xsd" MetadataType="Schema" ID="e6526c6b-36fe-46d7-b3d1-13f5028d3d3c" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/monedaExtranjera.xsd" />
+    <MetadataFile FileName="autorizacionEnvio1.xsd" MetadataType="Schema" ID="a125b54c-d879-4a23-b755-626e32bb6b46" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/autorizacionEnvio.xsd" />
+    <MetadataFile FileName="conversionUvr1.xsd" MetadataType="Schema" ID="bbeba909-57d1-4b7b-a2b9-b729f929be87" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/conversionUvr.xsd" />
+    <MetadataFile FileName="cuentaproductocredito1.xsd" MetadataType="Schema" ID="538b62c7-3159-4979-b16e-fc01490c2f25" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/cuentaproductocredito.xsd" />
+    <MetadataFile FileName="ConsultarTramitesCreditoPorIdentificacion1.xsd" MetadataType="Schema" ID="84a78377-b39d-4957-972b-217ff7abcd49" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/MessageLib/022_Credito_RecuperarTramiteSolicitudes/xsd/ConsultarTramitesCreditoPorIdentificacion.xsd" />
+    <MetadataFile FileName="telefono_Sub1.xsd" MetadataType="Schema" ID="6bea2d95-6c5f-41bd-837f-abdda65348d0" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/CommonsLib/telefono_Sub.xsd" />
+    <MetadataFile FileName="telefono1.xsd" MetadataType="Schema" ID="4eb1b279-efc1-4e8f-b22d-6ed1525b94d0" SourceId="1" SourceUrl="file:///D:/Proyectos/FNA/Procesos/Sistemas/Cobis/RecTramite/NUevo/BusinessEntitiesLib/telefono.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:detrmt="http://www.fna.gov.co/cim/businessentities/detalletramite" xmlns:ns2="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:this="http://www.fna.gov.co/esb/services/soap/credito/recuperardetalletramite/v1" xmlns:trmt="http://www.fna.gov.co/cim/businessentities/tramite" xmlns:ns3="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/recuperardetalletramite/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../CommonsLib/consumerHeaderResponse.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" />
+  <import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <import schemaLocation="../../../BusinessEntitiesLib/detalleTramite.xsd" namespace="http://www.fna.gov.co/cim/businessentities/detalletramite" />
+  <import schemaLocation="../../../BusinessEntitiesLib/tramite.xsd" namespace="http://www.fna.gov.co/cim/businessentities/tramite" />
+  <element name="headerRq" type="ns3:ConsumerHeader" />
+  <element name="headerRs" type="ns2:ConsumerHeaderResponse_v1.0" />
+  <element name="RecuperarDetalleTramiteRq" type="this:RecuperarDetalleTramiteRqType" />
+  <element name="RecuperarDetalleTramiteRs" type="this:RecuperarDetalleTramiteRsType" />
+  <complexType name="RecuperarDetalleTramiteRqType">
+    <sequence>
+      <element name="tramite" type="this:TramiteType" />
+    </sequence>
+  </complexType>
+  <complexType name="RecuperarDetalleTramiteRsType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="detalleTramite" type="this:DetalleTramiteType" />
+    </sequence>
+  </complexType>
+  <complexType name="TramiteType">
+    <complexContent mixed="false">
+      <restriction base="trmt:Tramite">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idTramite" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="DetalleTramiteType">
+    <complexContent mixed="false">
+      <restriction base="detrmt:detalleTramite">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="idTramite" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="lineaCredito" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaSolicitud" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaAprobacion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechaOferta" type="date" />
+          <element minOccurs="0" name="valorAprobado" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="tipoSolicitud" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="ruta" type="detrmt:rutaType" />
+          <element minOccurs="0" name="valorSubsidio" type="decimal" />
+          <element minOccurs="0" name="fechaVencimientoSubsidio" type="date" />
+          <element minOccurs="0" name="fechaCambioLinea" type="date" />
+          <element minOccurs="0" name="observaciones" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoCredito" type="string" />
+          <element minOccurs="0" name="ciudadRadicacion" type="string" />
+          <element minOccurs="0" name="deptoRadicacion" type="string" />
+          <element minOccurs="0" name="numeroObligacion" type="string" />
+          <element minOccurs="0" name="moneda" type="string" />
+          <element minOccurs="0" name="destinoEconomico" type="string" />
+          <element minOccurs="0" name="ciudadDestino" type="string" />
+          <element minOccurs="0" name="acta" type="string" />
+          <element minOccurs="0" name="flujoTramite" type="detrmt:flujoTramiteType" />
+          <element minOccurs="0" name="valorSolicitado" type="string" />
+          <element minOccurs="0" name="deudor1" type="detrmt:deudorType" />
+          <element minOccurs="0" name="deudor2" type="detrmt:deudorType" />
+          <element minOccurs="0" name="estadoVivienda" type="string" />
+          <element minOccurs="0" name="entidadSubsidiaria" type="string" />
+          <element minOccurs="0" name="bloqueoJuridico" type="string" />
+          <element minOccurs="0" name="fechaRechazo" type="date" />
+          <element minOccurs="0" name="oficinaRadicacion" type="string" />
+          <element minOccurs="0" name="plazo" type="int" />
+          <element minOccurs="0" name="fechaRadicacion" type="date" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

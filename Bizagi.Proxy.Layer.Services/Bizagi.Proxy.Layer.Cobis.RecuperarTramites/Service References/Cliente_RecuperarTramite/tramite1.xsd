@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:Q1="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" xmlns:Q2="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" xmlns:trmt="http://www.fna.gov.co/cim/businessentities/tramite" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/tramite" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="cuentaproductocliente.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" />
+  <import schemaLocation="cuentaproductocredito.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" />
+  <complexType name="Tramite">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="idTramite" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSolicitud" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cuentaProductoCliente" type="trmt:CuentaProductoCliente" />
+      <element minOccurs="0" maxOccurs="1" name="codigoProductoTramite" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoTramite" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="FlujoTramite">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="secuencial" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="secuencialEtapa" type="int" />
+      <element minOccurs="0" name="etapa" type="string" />
+      <element minOccurs="0" name="estacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="fechaLlegada" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="fechaSalida" type="date" />
+    </sequence>
+  </complexType>
+  <complexType name="CuentaProductoCliente">
+    <complexContent mixed="false">
+      <restriction base="Q2:CuentaProductoCliente">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="tipoProductoClienteId" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="cuentaProductoCredito" type="trmt:CuentaProductoCredito" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CuentaProductoCredito">
+    <complexContent mixed="false">
+      <restriction base="Q1:CuentaProductoCredito">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="lineaCredito" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

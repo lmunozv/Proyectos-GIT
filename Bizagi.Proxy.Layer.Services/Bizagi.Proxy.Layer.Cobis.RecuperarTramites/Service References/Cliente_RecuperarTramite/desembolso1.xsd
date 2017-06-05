@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:dsblso="http://www.fna.gov.co/cim/businessentities/desembolso" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/desembolso" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Desembolso">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="fechaDesembolso" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="monto" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="cotizacion" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="numeroTramite" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEstadoTramite" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCausalRechazo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroOrdenPago" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEstadoOrdenPago" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCausalDevolucion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoFormaDesembolso" type="string" />
+    </sequence>
+  </complexType>
+</schema>

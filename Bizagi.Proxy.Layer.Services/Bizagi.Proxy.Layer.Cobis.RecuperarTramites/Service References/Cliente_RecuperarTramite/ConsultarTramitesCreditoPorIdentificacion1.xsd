@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tra="http://www.fna.gov.co/cim/businessentities/tramite" xmlns:ns2="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:this="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2" xmlns:pro="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" xmlns:ns3="http://www.fna.gov.co/esb/services/cl/consumerheader" xmlns:ctaprdcre="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../CommonsLib/consumerHeaderResponse.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" />
+  <import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <import schemaLocation="../../../BusinessEntitiesLib/tramite.xsd" namespace="http://www.fna.gov.co/cim/businessentities/tramite" />
+  <import schemaLocation="../../../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <import schemaLocation="../../../BusinessEntitiesLib/cuentaproductocliente.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocliente" />
+  <import schemaLocation="../../../BusinessEntitiesLib/cuentaproductocredito.xsd" namespace="http://www.fna.gov.co/cim/businessentities/cuentaproductocredito" />
+  <element name="headerRq" type="ns3:ConsumerHeader" />
+  <element name="headerRs" type="ns2:ConsumerHeaderResponse_v1.0" />
+  <element name="ConsultarTramitesCreditoPorIdentificacionRq" type="this:ConsultarTramitesCreditoPorIdentificacionRq" />
+  <element name="ConsultarTramitesCreditoPorIdentificacionRs" type="this:ConsultarTramitesCreditoPorIdentificacionRs" />
+  <complexType name="ConsultarTramitesCreditoPorIdentificacionRq">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="Identificacion" type="this:IdentificacionType" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarTramitesCreditoPorIdentificacionRs">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="tramite" type="this:TramiteType2" />
+    </sequence>
+  </complexType>
+  <complexType name="TramiteType2">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="tramiteCredito" type="this:TramiteType" />
+      <element minOccurs="1" maxOccurs="1" name="lineaCredito" type="this:CuentaProducto" />
+      <element minOccurs="0" maxOccurs="1" name="numeroObligacion" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="IdentificacionType">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element maxOccurs="1" name="numeroDocumento">
+            <simpleType>
+              <restriction base="string">
+                <minLength value="1" />
+                <maxLength value="20" />
+              </restriction>
+            </simpleType>
+          </element>
+          <element maxOccurs="1" name="tipoDocumento">
+            <simpleType>
+              <restriction base="string">
+                <minLength value="1" />
+                <maxLength value="10" />
+              </restriction>
+            </simpleType>
+          </element>
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="TramiteType">
+    <complexContent mixed="false">
+      <restriction base="tra:Tramite">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="idTramite" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="estado" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="fechaSolicitud" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="codigoProductoTramite" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="codigoTipoTramite" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="CuentaProducto">
+    <complexContent mixed="false">
+      <restriction base="ctaprdcre:CuentaProductoCredito">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="lineaCreditoS" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

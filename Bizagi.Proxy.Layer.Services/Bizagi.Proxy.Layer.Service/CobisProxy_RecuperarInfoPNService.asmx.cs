@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bizagi.Proxy.Layer.Service.Manager;
+using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,18 +14,16 @@ namespace Bizagi.Proxy.Layer.Service
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
-    [System.ComponentModel.ToolboxItem(false)]
-    // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
-    // [System.Web.Script.Services.ScriptService]
+    [System.ComponentModel.ToolboxItem(false)]   
     public class CobisProxy_RecuperarInfoPNService : System.Web.Services.WebService
     {
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.Cliente_RecuperarInfoPN.ConsumerHeader header;
         [TraceExtensionAttribute]
         [WebMethod]
-        [SoapHeader("header")]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.Cliente_RecuperarInfoPN.ServiceResponse RecuperarInfoBasicaPersonaNatural(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN.Cliente_RecuperarInfoPN.ServiceRequest DatosCliente)
+        public Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_output
+            RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarinformacion_input input)
         {
-            return Bizagi.Proxy.Layer.Service.Manager.CobisManager.RecuperarInfoBasicaPersonaNatural(header, DatosCliente);
-        }
+            ICliente cliente = new CobisManager();
+            return cliente.RecuperarInfoBasicaPersonaNatural(input);
+        }        
     }
 }

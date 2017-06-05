@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:moex="http://www.fna.gov.co/cim/businessentities/monedaextranjera" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/monedaextranjera" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="MonedaExtranjera">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="indicadorOperacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descripcionOperacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="entidadProducto" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCiudad" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPais" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="montoValor" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="codigoMoneda" type="string" />
+    </sequence>
+  </complexType>
+</schema>

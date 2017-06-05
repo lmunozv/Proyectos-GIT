@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:cuotacred="http://www.fna.gov.co/cim/businessentities/cuotacredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cuotacredito" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="CuotaCredito">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroCuota" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="fechaPago" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="cotizacionUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCuotaUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCapital" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="montoCapitalUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesCorriente" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesCorrienteUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMora" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="interesMoraUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargos" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="otrosCargosUvr" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="seguro" type="decimal" />
+    </sequence>
+  </complexType>
+</schema>

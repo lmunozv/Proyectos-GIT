@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bizagi.Proxy.Layer.Service.Manager;
+using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -23,7 +25,8 @@ namespace Bizagi.Proxy.Layer.Service
         [SoapHeader("header")]
         public Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServicioResponse recuperarInfoBasicaPersonaJuridicaRequest(Bizagi.Proxy.Layer.Cobis.RecuperarInfoPJ.Cliente_RecuperarInfoPJ.ServiceRequest DatosCliente)
         {
-            return Bizagi.Proxy.Layer.Service.Manager.CobisManager.recuperarInfoBasicaPersonaJuridicaRequest(header, DatosCliente);
+            ICliente cliente = new CobisManager();
+            return cliente.recuperarInfoBasicaPersonaJuridicaRequest(header, DatosCliente);
         }
     }
 }

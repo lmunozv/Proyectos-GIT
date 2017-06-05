@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:pagosdeuda="http://www.fna.gov.co/cim/businessentities/pagosdeuda" xmlns:pagcrd="http://www.fna.gov.co/cim/businessentities/pagoscredito" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/pagosdeuda" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/pagosCredito.xsd" namespace="http://www.fna.gov.co/cim/businessentities/pagoscredito" />
+  <complexType name="PagosDeuda">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="pagosCredito" type="pagcrd:PagosCredito" />
+    </sequence>
+  </complexType>
+</schema>

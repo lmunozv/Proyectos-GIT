@@ -1,4 +1,5 @@
 ﻿using Bizagi.Proxy.Layer.Service.Manager;
+using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,10 +18,12 @@ namespace Bizagi.Proxy.Layer.Service
     public class CobisProxy_RecuperarTramites : System.Web.Services.WebService
     {        
         [TraceExtensionAttribute]
-        [WebMethod]        
-        public Cobis.RecuperarTramites.Cliente_RecuperarTramites.TramiteType2[] RecuperarTramites(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramites.ConsumerHeader header, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramites.ConsultarTramitesCreditoPorIdentificacionRq body)
+        [WebMethod]
+        public Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output RecuperarTramites
+            (Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Input body)
         {
-           return   CobisManager.RecuperarTramites(header, body);
+            ITramites cliente = new CobisManager();
+            return cliente.RecuperarTramites(body);
         }
     }
 }

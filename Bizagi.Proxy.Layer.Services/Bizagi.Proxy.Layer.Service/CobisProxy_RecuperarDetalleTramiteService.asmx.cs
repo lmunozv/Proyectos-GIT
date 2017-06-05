@@ -1,4 +1,6 @@
 ﻿using Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite.Cliente_RecuperarDetalleTramite;
+using Bizagi.Proxy.Layer.Service.Manager;
+using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +23,11 @@ namespace Bizagi.Proxy.Layer.Service
         //public Cobis.RecuperarDetalleTramite.Cliente_RecuperarDetalleTramite.ConsumerHeader header;
         [TraceExtensionAttribute]
         [WebMethod]
-        //[SoapHeader("header")]        
-        public RecuperarDetalleTramiteRsType RecuperarDetalleTramite(Cobis.RecuperarDetalleTramite.Cliente_RecuperarDetalleTramite.ConsumerHeader header,
-        RecuperarDetalleTramiteRqType DatosTramite)
+        public Cobis.RecuperarDetalleTramite.Cliente_DetalleTramite.recuperarDetalleTramite_Output 
+            RecuperarDetalleTramite(Cobis.RecuperarDetalleTramite.Cliente_DetalleTramite.recuperarDetalleTramite_Input input)
         {
-            return Bizagi.Proxy.Layer.Service.Manager.CobisManager.RecuperarDetalleTramite(header, DatosTramite);
+            ITramites cliente = new CobisManager();
+            return cliente.RecuperarDetalleTramite(input);
         }
     }
 }

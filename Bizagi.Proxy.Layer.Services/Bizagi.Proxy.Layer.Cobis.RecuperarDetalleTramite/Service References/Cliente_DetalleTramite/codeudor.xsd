@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:pernat="http://www.fna.gov.co/cim/businessentities/personanatural" xmlns:codr="http://www.fna.gov.co/cim/businessentities/codeudor" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/codeudor" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/personanatural.xsd" namespace="http://www.fna.gov.co/cim/businessentities/personanatural" />
+  <complexType name="Codeudor">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="informacionPersonaNatural" type="pernat:PersonaNatural" />
+    </sequence>
+  </complexType>
+</schema>

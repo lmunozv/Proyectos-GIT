@@ -36,6 +36,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,11 +47,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cobis_RecuperarDetalleTramiteImpl.cs" />
+    <Compile Include="Cobis_RecuperarDetalleTramiteImpl2.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Cliente_DetalleTramite\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
     <Compile Include="Web References\Cliente_RecuperarDetalleTramite\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -81,6 +89,124 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\aseguramientoProducto.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\asesor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\autorizacionEnvio.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cesantias.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\codeudor.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\codigoTipo.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\consumerHeader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\consumerHeaderResponse.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\conversionUvr.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\Credito_RecuperarDetalleTramite.wsdl" />
+    <None Include="Service References\Cliente_DetalleTramite\cuentaAVC.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cuentaBancaria.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cuentaproductocliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cuentaproductocredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cuotaCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\cuotasMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\desembolso.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\detalleTramite.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\direccion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\direccion_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\excepciongenerica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\identificacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\informacionCuentaMora.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\informacionfinanciera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\informacionlaboral.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\informacionLaboral_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\monedaExtranjera.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\pagosCredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\pagosDeuda.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\pep.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\personajuridica.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\personanatural.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\recuperardetalletramite.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\resumenValorAPagar.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\saldodeudacredito.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\telefono.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\telefono_Sub.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\tipoafiliacion.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\tramite.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Cliente_DetalleTramite\ubicacionOficinaProducto.xsd">
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Cliente_RecuperarDetalleTramite\aseguramientoProducto.xsd">
       <SubType>Designer</SubType>
@@ -207,6 +333,27 @@
     <None Include="Web References\Cliente_RecuperarDetalleTramite\ubicacionOficinaProducto.xsd">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Cliente_DetalleTramite\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cliente_DetalleTramite\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cliente_DetalleTramite\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Cliente_DetalleTramite\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bizagi.Proxy.Utils\Bizagi.Proxy.Utils.csproj">
+      <Project>{7dfd7615-bc27-4e51-9b0a-4ed8880557b1}</Project>
+      <Name>Bizagi.Proxy.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

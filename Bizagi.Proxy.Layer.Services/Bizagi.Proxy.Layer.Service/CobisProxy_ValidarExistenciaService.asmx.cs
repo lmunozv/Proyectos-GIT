@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Bizagi.Proxy.Layer.Service.Manager;
+using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,14 +19,14 @@ namespace Bizagi.Proxy.Layer.Service
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line 
     // [System.Web.Script.Services.ScriptService]
     public class CobisProxy_ValidarExistenciaService : System.Web.Services.WebService
-    {
-        public Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ConsumerHeader header;
+    {        
         [TraceExtensionAttribute]
         [WebMethod]
-        [SoapHeader("header")]
-        public Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ServicioResponse validarExistenciarRequest(Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia.ServiceRequest DatosCliente)
+        public Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia_WCF.validarexistencia_Output
+           ValidarExistenciaCliente(Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia_WCF.validarexistencia_Input input)
         {
-            return Bizagi.Proxy.Layer.Service.Manager.CobisManager.validarExistenciaRequest(header, DatosCliente);
+            ICliente cliente = new CobisManager();
+            return cliente.ValidarExistenciaCliente(input);
         }
     }
 }

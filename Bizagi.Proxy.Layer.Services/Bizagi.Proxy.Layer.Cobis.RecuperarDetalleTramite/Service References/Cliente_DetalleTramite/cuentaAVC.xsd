@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:pqyr="http://www.fna.gov.co/cim/businessentities/cuentaAVC" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/cuentaAVC" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="cuentaAVC">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="numeroCuenta" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoVinculacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="valorCuota" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="periodicidad" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="beneficioAFC" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="usuarioAfiliacion" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="debitoAutomatico" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Linea" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descuentoNomina" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="valorDescuentoNomina" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="codigoMilitar" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="periodicidadDebito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="tipoNominaFFAA" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="formaAplicacionDebito" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="convenioAVC" type="pqyr:convenioAVC" />
+      <element minOccurs="0" maxOccurs="1" name="valorContrato" type="decimal" />
+      <element minOccurs="0" name="fechaDiligenciamiento" type="date" />
+      <element minOccurs="0" name="asesor" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="enRetencion" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="oficinaRadicacion" type="pqyr:oficinaRadicacionType" />
+    </sequence>
+  </complexType>
+  <complexType name="convenioAVC">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="Codigo" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="Nombre" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="oficinaRadicacionType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="Codigo" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="cuentaAVC_V1.0">
+    <complexContent mixed="false">
+      <restriction base="pqyr:cuentaAVC">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroCuenta" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="valorCuota" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="periodicidad" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="valorContrato" type="decimal" />
+          <element minOccurs="0" name="fechaDiligenciamiento" type="date" />
+          <element minOccurs="0" name="asesor" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="cuentaAVC_V1.1">
+    <complexContent mixed="false">
+      <restriction base="pqyr:cuentaAVC">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="tipoVinculacion" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="valorCuota" type="decimal" />
+          <element minOccurs="1" maxOccurs="1" name="periodicidad" type="string" />
+          <element minOccurs="0" maxOccurs="unbounded" name="beneficioAFC" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="usuarioAfiliacion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="debitoAutomatico" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="Linea" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="descuentoNomina" type="boolean" />
+          <element minOccurs="0" maxOccurs="1" name="valorDescuentoNomina" type="decimal" />
+          <element minOccurs="0" maxOccurs="1" name="codigoMilitar" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="periodicidadDebito" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoNominaFFAA" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="formaAplicacionDebito" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="convenioAVC" type="pqyr:convenioAVC" />
+          <element minOccurs="0" maxOccurs="1" name="oficinaRadicacion" type="pqyr:oficinaRadicacionType" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="cuentaAVC_V1.2">
+    <complexContent mixed="false">
+      <restriction base="pqyr:cuentaAVC">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroCuenta" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>
