@@ -10372,7 +10372,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
         
         private TramiteType tramiteCreditoField;
         
-        private CuentaProducto lineaCreditoField;
+        private string lineaCreditoField;
         
         private string numeroObligacionField;
         
@@ -10390,7 +10390,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public CuentaProducto lineaCredito {
+        public string lineaCredito {
             get {
                 return this.lineaCreditoField;
             }

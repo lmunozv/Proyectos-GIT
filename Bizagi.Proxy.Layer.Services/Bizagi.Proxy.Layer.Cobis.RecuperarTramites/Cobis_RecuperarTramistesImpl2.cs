@@ -23,8 +23,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites
                 using (OperationContextScope scope = new OperationContextScope(cliente.InnerChannel))
                 {
                     OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
-                        ProxyUtils.GetHttpRequestMessageProperty();
-                    Cliente_RecuperarTramite.TramiteType2[] tramite;
+                        ProxyUtils.GetHttpRequestMessageProperty(); 
                    return cliente.consultarTramitesCreditoPorIdentificacion(input);                    
                 }
             }
