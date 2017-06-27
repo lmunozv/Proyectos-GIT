@@ -193,11 +193,11 @@ namespace Bizagi.Business.Reports.Components
                })
                .SetLegend(new Legend
                {
-                   Layout = Layouts.Vertical,
+                   Layout = Layouts.Horizontal,
                    Align = HorizontalAligns.Left,
-                   VerticalAlign = VerticalAligns.Top,
+                   VerticalAlign = VerticalAligns.Top,                   
                    X = 100,
-                   Y = 70,
+                   Y = 2,
                    Floating = true,
                    BackgroundColor = new BackColorOrGradient(ColorTranslator.FromHtml("#FFFFFF")),
                    Shadow = true
@@ -221,11 +221,12 @@ namespace Bizagi.Business.Reports.Components
         {
         
             List<Series> series = Dal.GetData(menu.ProcedureName, parameter);
+            List<string> axis = Dal.GetAxis(menu.DataAxis, null);
             #region Chart
             Highcharts chart = new Highcharts("chart" + menu.Oid)
                 .InitChart(new Chart { DefaultSeriesType = ChartTypes.Area })
                 .SetTitle(new Title { Text = menu.Title })
-                .SetXAxis(new XAxis { Categories = new[] { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" } })
+                .SetXAxis(new XAxis { Categories = axis.ToArray() })
                .SetYAxis(new YAxis
                {
                    Min = 0,
