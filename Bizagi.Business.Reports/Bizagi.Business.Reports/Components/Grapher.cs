@@ -193,14 +193,16 @@ namespace Bizagi.Business.Reports.Components
                })
                .SetLegend(new Legend
                {
-                   Layout = Layouts.Horizontal,
-                   Align = HorizontalAligns.Left,
-                   VerticalAlign = VerticalAligns.Top,                   
-                   X = 100,
-                   Y = 2,
-                   Floating = true,
+                   Layout = Layouts.Vertical,
+                   Align = HorizontalAligns.Center,
+                   VerticalAlign = VerticalAligns.Middle,
+                   X = -100,
+                   Y = 0,
+                   Floating = false,
                    BackgroundColor = new BackColorOrGradient(ColorTranslator.FromHtml("#FFFFFF")),
-                   Shadow = true
+                   BorderColor = ColorTranslator.FromHtml("#CCC"),
+                   BorderWidth = 1,
+                   Shadow = false
                })
                .SetTooltip(new Tooltip { Formatter = @"function() { return ''+ this.x +': '+ this.y +' mm'; }" })
                .SetPlotOptions(new PlotOptions
