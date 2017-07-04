@@ -14,7 +14,7 @@
     </CollectionMappings>
     <GenerateSerializableTypes>true</GenerateSerializableTypes>
     <Serializer>Auto</Serializer>
-    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <UseSerializerForFaults>false</UseSerializerForFaults>
     <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
     <ReferencedAssemblies />
     <ReferencedDataContractTypes />
