@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" xmlns:ident="http://www.fna.gov.co/cim/businessentities/identificacion" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../BusinessEntitiesLib/identificacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/identificacion" />
+  <complexType name="Identificacion_V1.0">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="digitoVerificacion" type="int" />
+          <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechasExpiracion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="departamentoExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="paisExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="pobladoExpedicion" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.1">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="tipoDocumento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.2">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechasExpiracion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="departamentoExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="paisExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="pobladoExpedicion" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.3">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="digitoVerificacion" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.4">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="departamentoExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="paisExpedicion" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.5">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="fechaExpedicion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="fechasExpiracion" type="date" />
+          <element minOccurs="0" maxOccurs="1" name="ciudadExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="departamentoExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="paisExpedicion" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="pobladoExpedicion" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="Identificacion_V1.6">
+    <complexContent mixed="false">
+      <restriction base="ident:Identificacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="numeroDocumento" type="string" />
+          <element minOccurs="0" maxOccurs="1" name="tipoDocumento" type="string" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

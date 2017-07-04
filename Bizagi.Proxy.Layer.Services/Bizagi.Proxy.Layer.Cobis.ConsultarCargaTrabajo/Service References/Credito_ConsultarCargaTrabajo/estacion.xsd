@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" xmlns:estcn="http://www.fna.gov.co/cim/businessentities/estacion" xmlns:id="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/cim/businessentities/estacion" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../CommonsLib/identificacion_Sub.xsd" namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" />
+  <complexType name="Estacion">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigo" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="nombre" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="carga" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="tope" type="int" />
+      <element minOccurs="1" maxOccurs="1" name="identificacion" type="id:Identificacion_V1.1" />
+      <element minOccurs="0" maxOccurs="1" name="codOficina" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="numeroReintegros" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="descripcion" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="etapaEstacion">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="estacion" type="estcn:Estacion" />
+      <element minOccurs="0" maxOccurs="1" name="estado" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="bloqueo" type="boolean" />
+      <element minOccurs="1" maxOccurs="1" name="codigoEtapa" type="int" />
+    </sequence>
+  </complexType>
+</schema>

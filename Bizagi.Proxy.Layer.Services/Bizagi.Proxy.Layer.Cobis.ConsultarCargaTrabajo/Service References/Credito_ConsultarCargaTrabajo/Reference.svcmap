@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="dd82e523-846b-42e2-a785-89a91dad1626" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="E:\Workspace\FNA\Proyectos\Desembolsos\Interfaces\ServiciosCobis\104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0\MessageLib\104_Credito_ConsultarCargaTrabajo\wsdl\1.2\Credito_ConsultarCargaTrabajo.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="5ca83d47-b64a-429e-ad4b-7fffa4dbeec7" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="713557d1-e8b4-405a-9ce9-09892258a04a" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse.xsd" MetadataType="Schema" ID="95c07441-e291-4068-b72b-c2785fc11216" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="identificacion_Sub.xsd" MetadataType="Schema" ID="5277fb2f-792a-4209-bed9-7e54a1344fbc" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/CommonsLib/identificacion_Sub.xsd" />
+    <MetadataFile FileName="consultarcargatrabajo.xsd" MetadataType="Schema" ID="474a377a-a5e7-4c94-969d-558392c1d677" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/MessageLib/104_Credito_ConsultarCargaTrabajo/xsd/consultarcargatrabajo.xsd" />
+    <MetadataFile FileName="identificacion.xsd" MetadataType="Schema" ID="2c4db13e-6bf2-4ef5-bf5b-54faf4ebf57b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="Credito_ConsultarCargaTrabajo.wsdl" MetadataType="Wsdl" ID="f77a53fc-c514-4f39-a0ec-9975a6d75e9a" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/MessageLib/104_Credito_ConsultarCargaTrabajo/wsdl/1.2/Credito_ConsultarCargaTrabajo.wsdl" />
+    <MetadataFile FileName="estacion.xsd" MetadataType="Schema" ID="889fe46a-209a-48fe-91b3-909a3ad08286" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/104-Credito_ConsultarCargaTrabajo-soap1.2-v1.0.0/BusinessEntitiesLib/estacion.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

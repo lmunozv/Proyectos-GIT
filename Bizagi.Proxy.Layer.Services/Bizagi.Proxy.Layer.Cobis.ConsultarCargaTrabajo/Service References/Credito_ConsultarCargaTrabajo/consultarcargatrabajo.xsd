@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/esb/services/soap/credito/consultarcargatrabajo/v1" xmlns:id="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" xmlns:estcn="http://www.fna.gov.co/cim/businessentities/estacion" xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" xmlns:ns1="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/consultarcargatrabajo/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <import schemaLocation="../../../CommonsLib/consumerHeaderResponse.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" />
+  <import schemaLocation="../../../BusinessEntitiesLib/estacion.xsd" namespace="http://www.fna.gov.co/cim/businessentities/estacion" />
+  <import schemaLocation="../../../CommonsLib/identificacion_Sub.xsd" namespace="http://www.fna.gov.co/cim/CommonsLib/identificacionsub" />
+  <element name="headerRq" type="chdr:ConsumerHeader" />
+  <element name="headerRs" type="ns1:ConsumerHeaderResponse_v1.0" />
+  <element name="ConsultarCargaTrabajoPorEtapaRq" type="this:ConsultarCargaTrabajoPorEtapaRqType" />
+  <element name="ConsultarCargaTrabajoPorEtapaRs" type="this:ConsultarCargaTrabajoPorEtapaRsType" />
+  <complexType name="ConsultarCargaTrabajoPorEtapaRqType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigoEtapa" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEstacion" type="int" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarCargaTrabajoPorEtapaRsType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="etapaEstacion" type="this:etapaEstacionType" />
+    </sequence>
+  </complexType>
+  <complexType name="estacionType">
+    <complexContent mixed="false">
+      <restriction base="estcn:Estacion">
+        <sequence>
+          <element minOccurs="1" maxOccurs="1" name="codigo" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="nombre" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="carga" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="tope" type="int" />
+          <element minOccurs="1" maxOccurs="1" name="identificacion" type="id:Identificacion_V1.1" />
+          <element minOccurs="0" maxOccurs="1" name="codOficina" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+  <complexType name="etapaEstacionType">
+    <complexContent mixed="false">
+      <restriction base="estcn:etapaEstacion">
+        <sequence>
+          <element minOccurs="0" maxOccurs="1" name="estacion" type="this:estacionType" />
+          <element minOccurs="1" maxOccurs="1" name="estado" type="string" />
+          <element minOccurs="1" maxOccurs="1" name="bloqueo" type="boolean" />
+          <element minOccurs="1" maxOccurs="1" name="codigoEtapa" type="int" />
+        </sequence>
+      </restriction>
+    </complexContent>
+  </complexType>
+</schema>

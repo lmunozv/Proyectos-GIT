@@ -3,6 +3,7 @@ using Bizagi.Proxy.Layer.Cobis.RecuperarDetalleTramite;
 using Bizagi.Proxy.Layer.Cobis.RecuperarInfoPN;
 using Bizagi.Proxy.Layer.Cobis.RecuperarTramites;
 using Bizagi.Proxy.Layer.Cobis.ValidarExistenciaCliente;
+using Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo;
 using Bizagi.Proxy.Layer.Service.Manager.Interfaces;
 using Bizagi.Proxy.Layer.Util;
 using System.Net;
@@ -65,7 +66,17 @@ namespace Bizagi.Proxy.Layer.Service.Manager
             ProxyUtils.ByPassCertificate();
             Cobis_EnrutarTramiteCreditoImpl2 ser = new Cobis_EnrutarTramiteCreditoImpl2();
             return ser.EnrutarTramiteCredito(input);
-        }      
+        }
+        #endregion
+
+
+        #region Carga
+        public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.etapaEstacionType[] 
+            consultarCargaTrabajo(Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Input input)
+        {
+             ConsultarCargaTrabajoImpl consultaCarga = new ConsultarCargaTrabajoImpl();
+            return consultaCarga.consultarCargaTrabajo(input);
+        }
         #endregion
     }
 }
