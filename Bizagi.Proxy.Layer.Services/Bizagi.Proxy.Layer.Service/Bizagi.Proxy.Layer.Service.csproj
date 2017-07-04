@@ -65,6 +65,7 @@
   <ItemGroup>
     <Content Include="BancoProyectosProxy_CrearEstructuraInmobiliaria.asmx" />
     <Content Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx" />
+    <Content Include="CobisProxy_ConsultarCargaTrabajo.asmx" />
     <Content Include="CobisProxy_EnrutarTramiteCredito.asmx" />
     <Content Include="CobisProxy_RecuperarDetalleTramiteService.asmx" />
     <Content Include="CobisProxy_RecuperarInfoPJService.asmx" />
@@ -86,6 +87,10 @@
     </Compile>
     <Compile Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx.cs">
       <DependentUpon>BancoProyectosProxy_CrearProyectoInmobiliario.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CobisProxy_ConsultarCargaTrabajo.asmx.cs">
+      <DependentUpon>CobisProxy_ConsultarCargaTrabajo.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CobisProxy_EnrutarTramiteCredito.asmx.cs">

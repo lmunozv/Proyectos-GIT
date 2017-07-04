@@ -16,5 +16,7 @@ namespace Bizagi.Proxy.Layer.Service.Manager.Interfaces
         Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Output
            RecuperarInfoBasicaPersonaNatural(Cobis.RecuperarInfoPN.ClientePersonaNaturalCliente.recuperarInfoBasica_Input input);
 
+        Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.etapaEstacionType[]
+            consultarCargaTrabajo(Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Input input);
     }
 }

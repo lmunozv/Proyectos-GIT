@@ -74,7 +74,7 @@ namespace Bizagi.Proxy.Layer.Service.Manager
         public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.etapaEstacionType[] 
             consultarCargaTrabajo(Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Input input)
         {
-             ConsultarCargaTrabajoImpl consultaCarga = new ConsultarCargaTrabajoImpl();
+            ConsultarCargaTrabajoImpl consultaCarga = new ConsultarCargaTrabajoImpl();
             return consultaCarga.consultarCargaTrabajo(input);
         }
         #endregion
