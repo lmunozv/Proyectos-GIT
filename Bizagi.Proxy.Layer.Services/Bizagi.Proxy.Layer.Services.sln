@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.Cobis.En
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo", "Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo\Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.csproj", "{9AD5BA53-1EAF-48BA-B1F0-0BE878A357C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite", "Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite\Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite.csproj", "{D1339F87-D5F7-4165-BBA6-870B5434D297}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{9AD5BA53-1EAF-48BA-B1F0-0BE878A357C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9AD5BA53-1EAF-48BA-B1F0-0BE878A357C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9AD5BA53-1EAF-48BA-B1F0-0BE878A357C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1339F87-D5F7-4165-BBA6-870B5434D297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1339F87-D5F7-4165-BBA6-870B5434D297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1339F87-D5F7-4165-BBA6-870B5434D297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1339F87-D5F7-4165-BBA6-870B5434D297}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

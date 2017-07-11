@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:this="http://www.fna.gov.co/esb/services/soap/credito/asignarestaciontramitecredito/v1" xmlns:ns2="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" xmlns:ns3="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/soap/credito/asignarestaciontramitecredito/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <import schemaLocation="../../../CommonsLib/consumerHeaderResponse.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1" />
+  <import schemaLocation="../../../CommonsLib/consumerHeader.xsd" namespace="http://www.fna.gov.co/esb/services/cl/consumerheader" />
+  <element name="headerRq" type="ns3:ConsumerHeader" />
+  <element name="headerRs" type="ns2:ConsumerHeaderResponse_v1.0" />
+  <element name="AsignarEstacionTramiteRq" type="this:AsignarEstacionTramiteRqType" />
+  <element name="AsignarEstacionTramiteRs" type="this:AsignarEstacionTramiteRsType" />
+  <complexType name="AsignarEstacionTramiteRqType">
+    <sequence>
+      <element name="numeroTramiteCredito" type="int" />
+      <element name="codigoEtapa" type="int" />
+      <element name="codigoEstacion" type="int" />
+    </sequence>
+  </complexType>
+  <complexType name="AsignarEstacionTramiteRsType">
+    <sequence />
+  </complexType>
+</schema>

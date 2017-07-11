@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:chdr="http://www.fna.gov.co/esb/services/cl/consumerheader" elementFormDefault="unqualified" targetNamespace="http://www.fna.gov.co/esb/services/cl/consumerheader" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="ConsumerHeader">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="systemId" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="clientTransactionID" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="endHost" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="endUser" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="datetime" type="dateTime" />
+      <element minOccurs="0" maxOccurs="1" name="requestData" type="chdr:RequestData" />
+      <element minOccurs="0" maxOccurs="1" name="messageContext" type="chdr:MessageContext" />
+    </sequence>
+  </complexType>
+  <complexType name="UserId">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="userName" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="userToken" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Destination">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="name" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="namespace" type="anyURI" />
+      <element minOccurs="0" maxOccurs="1" name="operation" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="version" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="Property">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="key" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="type" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="value" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="RequestData">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="userId" type="chdr:UserId" />
+      <element minOccurs="0" maxOccurs="1" name="destination" type="chdr:Destination" />
+    </sequence>
+  </complexType>
+  <complexType name="MessageContext">
+    <sequence>
+      <element minOccurs="1" maxOccurs="unbounded" name="property" type="chdr:Property" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsumerHeaderResponse">
+    <sequence>
+      <element name="messageContext" type="chdr:MessageContext" />
+    </sequence>
+  </complexType>
+  <element name="consumerHeader" type="chdr:ConsumerHeader" />
+  <element name="headerRq" type="chdr:ConsumerHeader" />
+</schema>

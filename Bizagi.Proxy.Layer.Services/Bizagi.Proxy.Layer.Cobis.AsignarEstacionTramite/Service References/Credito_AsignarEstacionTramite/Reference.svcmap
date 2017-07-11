@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="09f32cbb-c34b-4b62-8b37-c8f3f55356a1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="E:\Workspace\FNA\Proyectos\Desembolsos\Interfaces\ServiciosCobis\Credito_AsignarEstacionTramiteCredito\MessageLib\105_Credito_AsignarEstacionTramiteCredito\wsdl\1.2\AsignarEstacionTramite.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="dd630698-8579-450a-8d91-c6e30a6cd286" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_AsignarEstacionTramiteCredito/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="Credito_AsignarEstacionTramite.wsdl" MetadataType="Wsdl" ID="b75c49a7-1e36-4b3c-8784-98e6764b8f92" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_AsignarEstacionTramiteCredito/MessageLib/105_Credito_AsignarEstacionTramiteCredito/wsdl/1.2/AsignarEstacionTramite.wsdl" />
+    <MetadataFile FileName="AsignarEstacionTramite.xsd" MetadataType="Schema" ID="cd7992bf-20c5-4214-877a-e3515ab0fcc9" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_AsignarEstacionTramiteCredito/MessageLib/105_Credito_AsignarEstacionTramiteCredito/xsd/AsignarEstacionTramite.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse.xsd" MetadataType="Schema" ID="55f0d7f4-f109-407f-86be-765e03fba955" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_AsignarEstacionTramiteCredito/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="e870fe71-c7b8-41ad-a6d3-e6462a50316d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Desembolsos/Interfaces/ServiciosCobis/Credito_AsignarEstacionTramiteCredito/BusinessEntitiesLib/excepciongenerica.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

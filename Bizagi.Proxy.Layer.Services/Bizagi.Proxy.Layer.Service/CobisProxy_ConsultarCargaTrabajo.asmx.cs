@@ -22,12 +22,12 @@ namespace Bizagi.Proxy.Layer.Service
        
             [TraceExtensionAttribute]
             [WebMethod]
-            public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.etapaEstacionType[]
+            public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Output
                 ConsultarCargatrabajo(Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Input input)
             {
                 
-                ICliente cliente = new CobisManager();
-                return cliente.consultarCargaTrabajo(input);
+                ICredito credito = new CobisManager();
+                return credito.consultarCargaTrabajo(input);
                 
             }
         }
