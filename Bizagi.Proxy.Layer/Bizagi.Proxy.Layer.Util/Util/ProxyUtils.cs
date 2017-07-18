@@ -27,5 +27,14 @@ namespace Bizagi.Proxy.Layer.Util
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
         }
 
+        /**
+      * Permite consultar el endopoint de los servicios en el bus. 
+      * 
+      */
+        public static string GetServiceEndpoint(string urlPropertyName)
+        {
+            return System.Configuration.ConfigurationManager.AppSettings[urlPropertyName];
+        }
+
     }
 }

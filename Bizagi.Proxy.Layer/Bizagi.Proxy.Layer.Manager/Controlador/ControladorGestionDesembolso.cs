@@ -58,7 +58,8 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
             }
             catch (Exception e)
             {
-                respuesta.Codigo = CodigoRespuesta.ErrorTecnico.ToString();
+                
+                respuesta.Codigo = Properties.Resources.ErrorTecnico;
                 respuesta.Mensaje = e.Message;
             }
             return respuesta;
@@ -88,7 +89,7 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
 
             param.ActivityData = activity;
             BizagiSOALayerOperations<HUB.BizagiSOAObjects.PeformActivityGeneric.BizAgiWSParam> ejecutar = new BizagiSOALayerOperations<HUB.BizagiSOAObjects.PeformActivityGeneric.BizAgiWSParam>();
-
+            ejecutar.Url = ProxyUtils.GetServiceEndpoint("URLWorkFlowEngine");
             string xmlParam = SerializerManager.SerializarToXml(param);
             XmlDocument paramDocXML = new XmlDocument();
             paramDocXML.LoadXml(xmlParam);
@@ -106,7 +107,7 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
             navigatorParam.MoveToChild("Entities", String.Empty);
             //inserta en el nodo entities el xml con el xml transformado por la xslt
             navigatorParam.AppendChild(docEntitiesXml.OuterXml);
-
+            
             processes performResp = ejecutar.performActivity(paramDocXML.OuterXml);
             return getRespuestaBO(performResp, EnumSOALayerAction.PerformActivity);
 
@@ -134,6 +135,7 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
 
             BizagiSOALayerOperations ejecutar = new BizagiSOALayerOperations();
             string xml = SerializerManager.SerializarToXml<BizAgiWSParam>(param);
+            ejecutar.Url = ProxyUtils.GetServiceEndpoint("URLEntityManager");
             string respuesta = ejecutar.getEntitiesUsingSchemaAsString(xml, schemaDoc.OuterXml);
             BizAgiWSResponse<BizAgiWSResponseEntities<InfoCasoDesembolso>> response = SerializerManager.DeserializarTo2<BizAgiWSResponse<BizAgiWSResponseEntities<InfoCasoDesembolso>>>(respuesta);
             return response.Entities.M_Desembolso;
@@ -154,6 +156,7 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
 
             BizagiSOALayerOperations ejecutar = new BizagiSOALayerOperations();
             string xml = SerializerManager.SerializarToXml<BizAgiWSParam>(param);
+            ejecutar.Url = ProxyUtils.GetServiceEndpoint("URLEntityManager");
             string respuesta = ejecutar.getEntitiesUsingSchemaAsString(xml, schemaDoc.OuterXml);
 
             // pendiente ajustar esta parte, se debe generar objetos de tipo wfuser para poder hacer la extracción de la información.
@@ -186,6 +189,7 @@ namespace Bizagi.Proxy.Layer.Manager.Desembolso
                 caso.Entities.InfoCaso.OidInformacionDesembolso.OidTrackingDesembolso.OidCausalReintegro.SCodigo = notificacion.InformacionDesembolso.CausalReintegro.Codigo;
             param.Cases[0] = caso;
             BizagiSOALayerOperations<BizAgiWSParam<M_CAT_GestionDesembolso>> ejecutar = new BizagiSOALayerOperations<BizAgiWSParam<M_CAT_GestionDesembolso>>();
+            ejecutar.Url = ProxyUtils.GetServiceEndpoint("URLWorkFlowEngine");
             processes crearCasoResp = ejecutar.createCase2(param);
             return getRespuestaBO(crearCasoResp, EnumSOALayerAction.CreateCase);
 

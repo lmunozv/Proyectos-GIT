@@ -18,6 +18,7 @@ namespace Bizagi.Proxy.Layer.Desembolso
         {
             ControladorGestionDesembolso manager = new ControladorGestionDesembolso();
             GestionDesembolsoResponse respuesta = manager.ProcesarSolicitud(NotificacionDesembolsoRequest);
+
             return respuesta;
         }
 

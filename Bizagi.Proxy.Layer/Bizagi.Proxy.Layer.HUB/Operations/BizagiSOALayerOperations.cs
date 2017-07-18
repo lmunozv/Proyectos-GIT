@@ -17,10 +17,28 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
     public class BizagiSOALayerOperations<T> 
             where T : class 
     {
-      
+
+
+
+        private string url;
+
+        public string Url
+        {
+            get
+            {
+                return url;
+            }
+
+            set
+            {
+                url = value;
+            }
+        }
+
         public XmlDocument createCase(T param)
         {
             WorkflowEngineSOA.WorkflowEngineSOA wfEngine = new WorkflowEngineSOA.WorkflowEngineSOA();
+            wfEngine.Url = url;
             string xml = SerializerManager.SerializarToXml<T>(param);
             string xmlRespuesta = wfEngine.createCasesAsString(xml);
             XmlDocument respuesta = new XmlDocument();
@@ -32,6 +50,7 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
         public processes createCase2(T param)
         {
             WorkflowEngineSOA.WorkflowEngineSOA wfEngine = new WorkflowEngineSOA.WorkflowEngineSOA();
+            wfEngine.Url = url;
             string xml = SerializerManager.SerializarToXml<T>(param);
             string xmlRespuesta = wfEngine.createCasesAsString(xml);
             //XmlDocument respuesta = new XmlDocument();
@@ -43,6 +62,7 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
         public processes performActivity(T param)
         {
             WorkflowEngineSOA.WorkflowEngineSOA wfEngine = new WorkflowEngineSOA.WorkflowEngineSOA();
+            wfEngine.Url = url;
             string xml = SerializerManager.SerializarToXml<T>(param);
             string xmlRespuesta = wfEngine.performActivityAsString(xml);
             processes respuesta = SerializerManager.DeserializarTo<processes>(xmlRespuesta);
@@ -52,6 +72,7 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
         public processes performActivity(string xml)
         {
             WorkflowEngineSOA.WorkflowEngineSOA wfEngine = new WorkflowEngineSOA.WorkflowEngineSOA();
+            wfEngine.Url = url;
             string xmlRespuesta = wfEngine.performActivityAsString(xml);
             processes respuesta = SerializerManager.DeserializarTo<processes>(xmlRespuesta);
             return respuesta;
@@ -60,6 +81,7 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
         public string getEntitiesUsingSchemaAsString(string bzgParams,string schema)
         {
             EntityManagerSOA.EntityManagerSOA wfEntityManSOA = new EntityManagerSOA.EntityManagerSOA();
+            wfEntityManSOA.Url = url;
             string respuesta = wfEntityManSOA.getEntitiesUsingSchemaAsString(bzgParams, schema);
             return respuesta;
         }
@@ -73,6 +95,23 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
 
         #region Propiedades
         EntityManagerSOA.EntityManagerSOA wfEntityManSOA;
+
+        string url;
+
+        public string Url
+        {
+            get
+            {
+                return url;
+            }
+
+            set
+            {
+                url = value;
+            }
+        }
+
+
         EntityManagerSOA.EntityManagerSOA WfEntityManSOA
         {
             get
@@ -80,6 +119,7 @@ namespace Bizagi.Proxy.Layer.HUB.Operations
                 if (wfEntityManSOA == null)
                 {
                     wfEntityManSOA = new EntityManagerSOA.EntityManagerSOA();
+                    wfEntityManSOA.Url = url;
                 }
                 return wfEntityManSOA;
             }            
