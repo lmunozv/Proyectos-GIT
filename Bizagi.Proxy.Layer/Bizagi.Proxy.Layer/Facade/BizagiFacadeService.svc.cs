@@ -12,6 +12,7 @@ namespace Bizagi.Proxy.Layer.Desembolso
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ServicioGestionDesembolso" in code, svc and config file together.
     // NOTE: In order to launch WCF Test Client for testing this service, please select ServicioGestionDesembolso.svc or ServicioGestionDesembolso.svc.cs at the Solution Explorer and start debugging.
+    [ServiceBehavior(AddressFilterMode = AddressFilterMode.Any)]
     public class ServicioGestionDesembolso : IBizagiFacadeService
     {
         public GestionDesembolsoResponse NotificarEstadoDesembolso(GestionDesembolsoRequest NotificacionDesembolsoRequest)

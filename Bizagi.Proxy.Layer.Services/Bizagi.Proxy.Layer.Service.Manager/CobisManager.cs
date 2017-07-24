@@ -10,7 +10,7 @@ using System.Net;
 
 namespace Bizagi.Proxy.Layer.Service.Manager
 {
-    public class CobisManager : ICliente, ITramites, ICredito
+    public class CobisManager : ICliente, ITramites
     {
         #region Cliente
         public Cobis.ValidarExistenciaCliente.Cliente_ValidarExistencia_WCF.validarexistencia_Output
@@ -70,23 +70,13 @@ namespace Bizagi.Proxy.Layer.Service.Manager
         #endregion
 
 
-        #region Credito
-        public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Output 
+        #region Carga
+        public Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.etapaEstacionType[] 
             consultarCargaTrabajo(Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.Credito_ConsultarCargaTrabajo.consultarCargaTrabajoPorEtapa_Input input)
         {
-            ConsultarCargaTrabajoImpl consultaCarga = new ConsultarCargaTrabajoImpl();
+             ConsultarCargaTrabajoImpl consultaCarga = new ConsultarCargaTrabajoImpl();
             return consultaCarga.consultarCargaTrabajo(input);
         }
-
-
-        public Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite.Credito_AsignarEstacionTramite.asignarEstacionTramite_Output
-            asignarEstacionTramite(Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite.Credito_AsignarEstacionTramite.asignarEstacionTramite_Input input)
-        {
-            AsignarEstacionTramiteImpl asignarEstacion = new AsignarEstacionTramiteImpl();
-            return asignarEstacion.asignarEstacionTramite(input);
-        }
-
-
         #endregion
     }
 }

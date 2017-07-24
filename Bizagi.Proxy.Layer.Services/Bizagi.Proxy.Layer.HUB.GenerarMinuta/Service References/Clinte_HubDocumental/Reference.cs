@@ -9,780 +9,55 @@
 //------------------------------------------------------------------------------
 
 namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
-    using System.Runtime.Serialization;
-    using System;
     
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
-    public partial class excepcionGenerica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+    public partial class excepcionGenerica : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string codigoField;
         
         private string descripcionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.excepcionGenerica subCodeField;
+        private excepcionGenerica subCodeField;
         
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public string codigo {
             get {
                 return this.codigoField;
             }
             set {
-                if ((object.ReferenceEquals(this.codigoField, value) != true)) {
-                    this.codigoField = value;
-                    this.RaisePropertyChanged("codigo");
-                }
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public string descripcion {
             get {
                 return this.descripcionField;
             }
             set {
-                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
-                    this.descripcionField = value;
-                    this.RaisePropertyChanged("descripcion");
-                }
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.excepcionGenerica subCode {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public excepcionGenerica subCode {
             get {
                 return this.subCodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.subCodeField, value) != true)) {
-                    this.subCodeField = value;
-                    this.RaisePropertyChanged("subCode");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1", ConfigurationName="Clinte_HubDocumental.Credito_MigrarSolicitudRepartoPortType")]
-    public interface Credito_MigrarSolicitudRepartoPortType {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="migrarSolicitudReparto", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.excepcionGenerica), Action="migrarSolicitudReparto", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
-        [System.ServiceModel.XmlSerializerFormatAttribute()]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(inmueble))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(cuentaAVC))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PersonaNatural))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(SolicitudHUBLegalizacion))]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(legalizacion))]
-        Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output migrarSolicitudReparto(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Input request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="migrarSolicitudReparto", ReplyAction="*")]
-        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output> migrarSolicitudRepartoAsync(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Input request);
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class ConsumerHeader : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string systemIdField;
-        
-        private string clientTransactionIDField;
-        
-        private string endHostField;
-        
-        private string endUserField;
-        
-        private System.DateTime datetimeField;
-        
-        private bool datetimeFieldSpecified;
-        
-        private RequestData requestDataField;
-        
-        private Property[] messageContextField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string systemId {
-            get {
-                return this.systemIdField;
-            }
-            set {
-                this.systemIdField = value;
-                this.RaisePropertyChanged("systemId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string clientTransactionID {
-            get {
-                return this.clientTransactionIDField;
-            }
-            set {
-                this.clientTransactionIDField = value;
-                this.RaisePropertyChanged("clientTransactionID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string endHost {
-            get {
-                return this.endHostField;
-            }
-            set {
-                this.endHostField = value;
-                this.RaisePropertyChanged("endHost");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string endUser {
-            get {
-                return this.endUserField;
-            }
-            set {
-                this.endUserField = value;
-                this.RaisePropertyChanged("endUser");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public System.DateTime datetime {
-            get {
-                return this.datetimeField;
-            }
-            set {
-                this.datetimeField = value;
-                this.RaisePropertyChanged("datetime");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool datetimeSpecified {
-            get {
-                return this.datetimeFieldSpecified;
-            }
-            set {
-                this.datetimeFieldSpecified = value;
-                this.RaisePropertyChanged("datetimeSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public RequestData requestData {
-            get {
-                return this.requestDataField;
-            }
-            set {
-                this.requestDataField = value;
-                this.RaisePropertyChanged("requestData");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("property", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public Property[] messageContext {
-            get {
-                return this.messageContextField;
-            }
-            set {
-                this.messageContextField = value;
-                this.RaisePropertyChanged("messageContext");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class RequestData : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private UserId userIdField;
-        
-        private Destination destinationField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public UserId userId {
-            get {
-                return this.userIdField;
-            }
-            set {
-                this.userIdField = value;
-                this.RaisePropertyChanged("userId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public Destination destination {
-            get {
-                return this.destinationField;
-            }
-            set {
-                this.destinationField = value;
-                this.RaisePropertyChanged("destination");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class UserId : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string userNameField;
-        
-        private string userTokenField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string userName {
-            get {
-                return this.userNameField;
-            }
-            set {
-                this.userNameField = value;
-                this.RaisePropertyChanged("userName");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string userToken {
-            get {
-                return this.userTokenField;
-            }
-            set {
-                this.userTokenField = value;
-                this.RaisePropertyChanged("userToken");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
-    public partial class errorMessageType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string codeField;
-        
-        private string messageField;
-        
-        private string typeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string code {
-            get {
-                return this.codeField;
-            }
-            set {
-                this.codeField = value;
-                this.RaisePropertyChanged("code");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-                this.RaisePropertyChanged("message");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-                this.RaisePropertyChanged("type");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Status_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
-    public partial class Status_v10 : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private Status_v10StatusType statusTypeField;
-        
-        private bool statusTypeFieldSpecified;
-        
-        private string statusCodeField;
-        
-        private string statusDescField;
-        
-        private string systemCodeField;
-        
-        private string systemDescField;
-        
-        private Status_v10Severity severityField;
-        
-        private bool severityFieldSpecified;
-        
-        private string traceField;
-        
-        private errorMessageType[] errorMessagesField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public Status_v10StatusType statusType {
-            get {
-                return this.statusTypeField;
-            }
-            set {
-                this.statusTypeField = value;
-                this.RaisePropertyChanged("statusType");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool statusTypeSpecified {
-            get {
-                return this.statusTypeFieldSpecified;
-            }
-            set {
-                this.statusTypeFieldSpecified = value;
-                this.RaisePropertyChanged("statusTypeSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string statusCode {
-            get {
-                return this.statusCodeField;
-            }
-            set {
-                this.statusCodeField = value;
-                this.RaisePropertyChanged("statusCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string statusDesc {
-            get {
-                return this.statusDescField;
-            }
-            set {
-                this.statusDescField = value;
-                this.RaisePropertyChanged("statusDesc");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string systemCode {
-            get {
-                return this.systemCodeField;
-            }
-            set {
-                this.systemCodeField = value;
-                this.RaisePropertyChanged("systemCode");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string systemDesc {
-            get {
-                return this.systemDescField;
-            }
-            set {
-                this.systemDescField = value;
-                this.RaisePropertyChanged("systemDesc");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public Status_v10Severity severity {
-            get {
-                return this.severityField;
-            }
-            set {
-                this.severityField = value;
-                this.RaisePropertyChanged("severity");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool severitySpecified {
-            get {
-                return this.severityFieldSpecified;
-            }
-            set {
-                this.severityFieldSpecified = value;
-                this.RaisePropertyChanged("severitySpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
-        public string trace {
-            get {
-                return this.traceField;
-            }
-            set {
-                this.traceField = value;
-                this.RaisePropertyChanged("trace");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("errorMessage", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public errorMessageType[] errorMessages {
-            get {
-                return this.errorMessagesField;
-            }
-            set {
-                this.errorMessagesField = value;
-                this.RaisePropertyChanged("errorMessages");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
-    public enum Status_v10StatusType {
-        
-        /// <remarks/>
-        OK,
-        
-        /// <remarks/>
-        ERROR,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
-    public enum Status_v10Severity {
-        
-        /// <remarks/>
-        INFO,
-        
-        /// <remarks/>
-        ERROR,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ConsumerHeaderResponse_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
-    public partial class ConsumerHeaderResponse_v10 : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string clientTransactionIDField;
-        
-        private System.DateTime datetimeField;
-        
-        private bool datetimeFieldSpecified;
-        
-        private string systemIdField;
-        
-        private Status_v10 statusField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string clientTransactionID {
-            get {
-                return this.clientTransactionIDField;
-            }
-            set {
-                this.clientTransactionIDField = value;
-                this.RaisePropertyChanged("clientTransactionID");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public System.DateTime datetime {
-            get {
-                return this.datetimeField;
-            }
-            set {
-                this.datetimeField = value;
-                this.RaisePropertyChanged("datetime");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool datetimeSpecified {
-            get {
-                return this.datetimeFieldSpecified;
-            }
-            set {
-                this.datetimeFieldSpecified = value;
-                this.RaisePropertyChanged("datetimeSpecified");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string systemId {
-            get {
-                return this.systemIdField;
-            }
-            set {
-                this.systemIdField = value;
-                this.RaisePropertyChanged("systemId");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public Status_v10 status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-                this.RaisePropertyChanged("status");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class Property : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string keyField;
-        
-        private string typeField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-                this.RaisePropertyChanged("key");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-                this.RaisePropertyChanged("type");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-                this.RaisePropertyChanged("value");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class Destination : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string nameField;
-        
-        private string namespaceField;
-        
-        private string operationField;
-        
-        private string versionField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-                this.RaisePropertyChanged("name");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="anyURI", Order=1)]
-        public string @namespace {
-            get {
-                return this.namespaceField;
-            }
-            set {
-                this.namespaceField = value;
-                this.RaisePropertyChanged("namespace");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string operation {
-            get {
-                return this.operationField;
-            }
-            set {
-                this.operationField = value;
-                this.RaisePropertyChanged("operation");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string version {
-            get {
-                return this.versionField;
-            }
-            set {
-                this.versionField = value;
-                this.RaisePropertyChanged("version");
+                this.subCodeField = value;
+                this.RaisePropertyChanged("subCode");
             }
         }
         
@@ -2574,9 +1849,6 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V113))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V112))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V13))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V21))]
@@ -2591,6 +1863,9 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V14))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V20))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V113))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V112))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V13))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionType))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
@@ -3170,8 +2445,6 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJBas))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V16))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V15))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoInfoLabor_V10))]
@@ -3180,6 +2453,8 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V111))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJBas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V10))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoType))]
@@ -3457,24 +2732,6 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class TelefonoPJBas : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class TelefonoPJ : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
     public partial class Telefono_V16 : Telefono {
     }
@@ -3547,6 +2804,24 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class TelefonoPJBas : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class TelefonoPJ : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
     public partial class Telefono_V11 : Telefono {
     }
@@ -3567,33 +2842,6 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1")]
     public partial class TelefonoType : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.13", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
-    public partial class DireccionFisica_V113 : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.12", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
-    public partial class DireccionFisica_V112 : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
-    public partial class DireccionFisica_V13 : DireccionFisica {
     }
     
     /// <remarks/>
@@ -3737,6 +2985,33 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.13", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V113 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.12", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V112 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionFisica_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
+    public partial class DireccionFisica_V13 : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1")]
     public partial class DireccionType : DireccionFisica {
     }
@@ -3858,9 +3133,9 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V10))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionType1))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
@@ -3940,6 +3215,15 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionElectronicaPJ : DireccionElectronica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="DireccionElectronica_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class DireccionElectronica_V11 : DireccionElectronica {
     }
@@ -3958,24 +3242,15 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionElectronicaPJ : DireccionElectronica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1")]
     public partial class DireccionType1 : DireccionElectronica {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V10))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostalPJ))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -4264,6 +3539,15 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class CasillaPostalPJ : CasillaPostal {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class CasillaPostal_V12 : CasillaPostal {
     }
@@ -4284,15 +3568,6 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(TypeName="CasillaPostal_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/direccionsub")]
     public partial class CasillaPostal_V10 : CasillaPostal {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class CasillaPostalPJ : CasillaPostal {
     }
     
     /// <remarks/>
@@ -8292,6 +7567,714 @@ namespace Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental {
             set {
                 this.inmueblesField = value;
                 this.RaisePropertyChanged("inmuebles");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/migrarsolicitudreparto/v1", ConfigurationName="Clinte_HubDocumental.Credito_MigrarSolicitudRepartoPortType")]
+    public interface Credito_MigrarSolicitudRepartoPortType {
+        
+        [System.ServiceModel.OperationContractAttribute(Action="migrarSolicitudReparto", ReplyAction="*")]
+        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.excepcionGenerica), Action="migrarSolicitudReparto", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(inmueble))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(cuentaAVC))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(PersonaNatural))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(SolicitudHUBLegalizacion))]
+        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(legalizacion))]
+        Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output migrarSolicitudReparto(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Input request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="migrarSolicitudReparto", ReplyAction="*")]
+        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Output> migrarSolicitudRepartoAsync(Bizagi.Proxy.Layer.HUB.GenerarMinuta.Clinte_HubDocumental.migrarSolicitudReparto_Input request);
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class ConsumerHeader : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string systemIdField;
+        
+        private string clientTransactionIDField;
+        
+        private string endHostField;
+        
+        private string endUserField;
+        
+        private System.DateTime datetimeField;
+        
+        private bool datetimeFieldSpecified;
+        
+        private RequestData requestDataField;
+        
+        private Property[] messageContextField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string systemId {
+            get {
+                return this.systemIdField;
+            }
+            set {
+                this.systemIdField = value;
+                this.RaisePropertyChanged("systemId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string clientTransactionID {
+            get {
+                return this.clientTransactionIDField;
+            }
+            set {
+                this.clientTransactionIDField = value;
+                this.RaisePropertyChanged("clientTransactionID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string endHost {
+            get {
+                return this.endHostField;
+            }
+            set {
+                this.endHostField = value;
+                this.RaisePropertyChanged("endHost");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string endUser {
+            get {
+                return this.endUserField;
+            }
+            set {
+                this.endUserField = value;
+                this.RaisePropertyChanged("endUser");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public System.DateTime datetime {
+            get {
+                return this.datetimeField;
+            }
+            set {
+                this.datetimeField = value;
+                this.RaisePropertyChanged("datetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool datetimeSpecified {
+            get {
+                return this.datetimeFieldSpecified;
+            }
+            set {
+                this.datetimeFieldSpecified = value;
+                this.RaisePropertyChanged("datetimeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public RequestData requestData {
+            get {
+                return this.requestDataField;
+            }
+            set {
+                this.requestDataField = value;
+                this.RaisePropertyChanged("requestData");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("property", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public Property[] messageContext {
+            get {
+                return this.messageContextField;
+            }
+            set {
+                this.messageContextField = value;
+                this.RaisePropertyChanged("messageContext");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class RequestData : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private UserId userIdField;
+        
+        private Destination destinationField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public UserId userId {
+            get {
+                return this.userIdField;
+            }
+            set {
+                this.userIdField = value;
+                this.RaisePropertyChanged("userId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public Destination destination {
+            get {
+                return this.destinationField;
+            }
+            set {
+                this.destinationField = value;
+                this.RaisePropertyChanged("destination");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class UserId : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string userNameField;
+        
+        private string userTokenField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string userName {
+            get {
+                return this.userNameField;
+            }
+            set {
+                this.userNameField = value;
+                this.RaisePropertyChanged("userName");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string userToken {
+            get {
+                return this.userTokenField;
+            }
+            set {
+                this.userTokenField = value;
+                this.RaisePropertyChanged("userToken");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class Destination : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string nameField;
+        
+        private string namespaceField;
+        
+        private string operationField;
+        
+        private string versionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+                this.RaisePropertyChanged("name");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="anyURI", Order=1)]
+        public string @namespace {
+            get {
+                return this.namespaceField;
+            }
+            set {
+                this.namespaceField = value;
+                this.RaisePropertyChanged("namespace");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string operation {
+            get {
+                return this.operationField;
+            }
+            set {
+                this.operationField = value;
+                this.RaisePropertyChanged("operation");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string version {
+            get {
+                return this.versionField;
+            }
+            set {
+                this.versionField = value;
+                this.RaisePropertyChanged("version");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class Property : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string keyField;
+        
+        private string typeField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+                this.RaisePropertyChanged("key");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="ConsumerHeaderResponse_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class ConsumerHeaderResponse_v10 : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string clientTransactionIDField;
+        
+        private System.DateTime datetimeField;
+        
+        private bool datetimeFieldSpecified;
+        
+        private string systemIdField;
+        
+        private Status_v10 statusField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string clientTransactionID {
+            get {
+                return this.clientTransactionIDField;
+            }
+            set {
+                this.clientTransactionIDField = value;
+                this.RaisePropertyChanged("clientTransactionID");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public System.DateTime datetime {
+            get {
+                return this.datetimeField;
+            }
+            set {
+                this.datetimeField = value;
+                this.RaisePropertyChanged("datetime");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool datetimeSpecified {
+            get {
+                return this.datetimeFieldSpecified;
+            }
+            set {
+                this.datetimeFieldSpecified = value;
+                this.RaisePropertyChanged("datetimeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string systemId {
+            get {
+                return this.systemIdField;
+            }
+            set {
+                this.systemIdField = value;
+                this.RaisePropertyChanged("systemId");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public Status_v10 status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+                this.RaisePropertyChanged("status");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Status_v1.0", Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class Status_v10 : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private Status_v10StatusType statusTypeField;
+        
+        private bool statusTypeFieldSpecified;
+        
+        private string statusCodeField;
+        
+        private string statusDescField;
+        
+        private string systemCodeField;
+        
+        private string systemDescField;
+        
+        private Status_v10Severity severityField;
+        
+        private bool severityFieldSpecified;
+        
+        private string traceField;
+        
+        private errorMessageType[] errorMessagesField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public Status_v10StatusType statusType {
+            get {
+                return this.statusTypeField;
+            }
+            set {
+                this.statusTypeField = value;
+                this.RaisePropertyChanged("statusType");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool statusTypeSpecified {
+            get {
+                return this.statusTypeFieldSpecified;
+            }
+            set {
+                this.statusTypeFieldSpecified = value;
+                this.RaisePropertyChanged("statusTypeSpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string statusCode {
+            get {
+                return this.statusCodeField;
+            }
+            set {
+                this.statusCodeField = value;
+                this.RaisePropertyChanged("statusCode");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string statusDesc {
+            get {
+                return this.statusDescField;
+            }
+            set {
+                this.statusDescField = value;
+                this.RaisePropertyChanged("statusDesc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string systemCode {
+            get {
+                return this.systemCodeField;
+            }
+            set {
+                this.systemCodeField = value;
+                this.RaisePropertyChanged("systemCode");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string systemDesc {
+            get {
+                return this.systemDescField;
+            }
+            set {
+                this.systemDescField = value;
+                this.RaisePropertyChanged("systemDesc");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public Status_v10Severity severity {
+            get {
+                return this.severityField;
+            }
+            set {
+                this.severityField = value;
+                this.RaisePropertyChanged("severity");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool severitySpecified {
+            get {
+                return this.severityFieldSpecified;
+            }
+            set {
+                this.severityFieldSpecified = value;
+                this.RaisePropertyChanged("severitySpecified");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=6)]
+        public string trace {
+            get {
+                return this.traceField;
+            }
+            set {
+                this.traceField = value;
+                this.RaisePropertyChanged("trace");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("errorMessage", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
+        public errorMessageType[] errorMessages {
+            get {
+                return this.errorMessagesField;
+            }
+            set {
+                this.errorMessagesField = value;
+                this.RaisePropertyChanged("errorMessages");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public enum Status_v10StatusType {
+        
+        /// <remarks/>
+        OK,
+        
+        /// <remarks/>
+        ERROR,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public enum Status_v10Severity {
+        
+        /// <remarks/>
+        INFO,
+        
+        /// <remarks/>
+        ERROR,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
+    public partial class errorMessageType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string codeField;
+        
+        private string messageField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+                this.RaisePropertyChanged("code");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+                this.RaisePropertyChanged("message");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
             }
         }
         

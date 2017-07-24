@@ -75,8 +75,9 @@ namespace Bizagi.ECM.Manager
         public string Valor { get; set; }
 
         #region Documento
-        //public byte[] Documento { get; set; }
-        public string Documento { get; set; }
+        public byte[] Documento { get; set; }
+
+        //public string Documento { get; set; }
 
         public string CodigoDirectorio { get; set; }
 

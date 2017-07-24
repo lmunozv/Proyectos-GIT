@@ -99,12 +99,13 @@ namespace Bizagi.ECM.Manager.InterfaceHub
                 {
                     salida.NumeroDocumento = res.Gestor_InsertarResult.CodeFiles[0];
                     salida.NumeroRadicado = res.Gestor_InsertarResult.Results;
-                    return salida;
+                    salida.Ejecutado = res.Gestor_InsertarResult.Sucess;                    
                 }
                 else
                 {
-                    throw new Exception("Error : " + res.Gestor_InsertarResult.Message);
+                    salida.Ejecutado = res.Gestor_InsertarResult.Sucess;
                 }
+                return salida;
             }
             catch (Exception ex)
             {
@@ -199,8 +200,8 @@ namespace Bizagi.ECM.Manager.InterfaceHub
                 #region Documentos
                 req.value.ListDocumetnos = new List<DocumentosDto>()
                     { new DocumentosDto()
-                    { Archivo =obj.Documento,
-                     //Archivo =Convert.ToBase64String(obj.Documento),
+                    { //Archivo =obj.Documento,
+                      Archivo =Convert.ToBase64String(obj.Documento),
                       CodigoDirectorio = obj.CodigoDirectorio,
                       CodigoTipoDocumento = obj.CodigoTipoDocumento,
                       Extension = obj.Extension,

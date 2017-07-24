@@ -65,8 +65,6 @@
   <ItemGroup>
     <Content Include="BancoProyectosProxy_CrearEstructuraInmobiliaria.asmx" />
     <Content Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx" />
-    <Content Include="CobisProxy_AsignarEstacionTramite.asmx" />
-    <Content Include="CobisProxy_ConsultarCargaTrabajo.asmx" />
     <Content Include="CobisProxy_EnrutarTramiteCredito.asmx" />
     <Content Include="CobisProxy_RecuperarDetalleTramiteService.asmx" />
     <Content Include="CobisProxy_RecuperarInfoPJService.asmx" />
@@ -88,14 +86,6 @@
     </Compile>
     <Compile Include="BancoProyectosProxy_CrearProyectoInmobiliario.asmx.cs">
       <DependentUpon>BancoProyectosProxy_CrearProyectoInmobiliario.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CobisProxy_AsignarEstacionTramite.asmx.cs">
-      <DependentUpon>CobisProxy_AsignarEstacionTramite.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="CobisProxy_ConsultarCargaTrabajo.asmx.cs">
-      <DependentUpon>CobisProxy_ConsultarCargaTrabajo.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="CobisProxy_EnrutarTramiteCredito.asmx.cs">
@@ -160,10 +150,6 @@
     <ProjectReference Include="..\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob\Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob.csproj">
       <Project>{c55b454a-78f3-4ff7-8ee3-5ed39e4900bb}</Project>
       <Name>Bizagi.Proxy.Layer.BancoProyectos.CrearProyectoInmob</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite\Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite.csproj">
-      <Project>{d1339f87-d5f7-4165-bba6-870b5434d297}</Project>
-      <Name>Bizagi.Proxy.Layer.Cobis.AsignarEstacionTramite</Name>
     </ProjectReference>
     <ProjectReference Include="..\Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo\Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo.csproj">
       <Project>{9ad5ba53-1eaf-48ba-b1f0-0be878a357c2}</Project>

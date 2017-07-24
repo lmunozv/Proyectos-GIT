@@ -65,7 +65,9 @@
   <ItemGroup>
     <Content Include="Facade\BizagiFacadeService.svc" />
     <Content Include="Facade\ServicioGestionSeguros.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Facade\IBizagiFacadeService.cs" />
@@ -87,6 +89,7 @@
     </None>
     <None Include="Properties\PublishProfiles\BizagiFacade.pubxml" />
     <None Include="Properties\PublishProfiles\BizagiServices.pubxml" />
+    <None Include="Properties\PublishProfiles\Fachada.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

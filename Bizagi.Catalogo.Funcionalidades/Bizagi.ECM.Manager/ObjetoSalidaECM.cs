@@ -13,5 +13,7 @@ namespace Bizagi.ECM.Manager
         public string NumeroDocumento { get; set; }
 
         public string CodigoTipoDocumental { get; set; }
+
+        public bool Ejecutado { get; set; }
     }
 }

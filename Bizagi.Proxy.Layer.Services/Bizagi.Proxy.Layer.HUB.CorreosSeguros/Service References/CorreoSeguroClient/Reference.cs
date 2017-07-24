@@ -9,72 +9,217 @@
 //------------------------------------------------------------------------------
 
 namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
-    using System.Runtime.Serialization;
-    using System;
     
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
-    public partial class excepcionGenerica : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+    public partial class excepcionGenerica : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string codigoField;
         
         private string descripcionField;
         
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.excepcionGenerica subCodeField;
+        private excepcionGenerica subCodeField;
         
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=0)]
         public string codigo {
             get {
                 return this.codigoField;
             }
             set {
-                if ((object.ReferenceEquals(this.codigoField, value) != true)) {
-                    this.codigoField = value;
-                    this.RaisePropertyChanged("codigo");
-                }
+                this.codigoField = value;
+                this.RaisePropertyChanged("codigo");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, EmitDefaultValue=false)]
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=1)]
         public string descripcion {
             get {
                 return this.descripcionField;
             }
             set {
-                if ((object.ReferenceEquals(this.descripcionField, value) != true)) {
-                    this.descripcionField = value;
-                    this.RaisePropertyChanged("descripcion");
-                }
+                this.descripcionField = value;
+                this.RaisePropertyChanged("descripcion");
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.excepcionGenerica subCode {
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Order=2)]
+        public excepcionGenerica subCode {
             get {
                 return this.subCodeField;
             }
             set {
-                if ((object.ReferenceEquals(this.subCodeField, value) != true)) {
-                    this.subCodeField = value;
-                    this.RaisePropertyChanged("subCode");
-                }
+                this.subCodeField = value;
+                this.RaisePropertyChanged("subCode");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
+    public partial class EnviarCorreoSeguroRsType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string idMensajeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string idMensaje {
+            get {
+                return this.idMensajeField;
+            }
+            set {
+                this.idMensajeField = value;
+                this.RaisePropertyChanged("idMensaje");
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
+    public partial class EnviarCorreoSeguroRqType : object, System.ComponentModel.INotifyPropertyChanged {
+        
+        private string usuarioField;
+        
+        private string asuntoField;
+        
+        private string mensajeField;
+        
+        private string nombreDestinatarioField;
+        
+        private string correoDestinatarioField;
+        
+        private string nombreArchivoField;
+        
+        private byte[] archivoField;
+        
+        private bool notificacionField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
+        public string usuario {
+            get {
+                return this.usuarioField;
+            }
+            set {
+                this.usuarioField = value;
+                this.RaisePropertyChanged("usuario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
+        public string asunto {
+            get {
+                return this.asuntoField;
+            }
+            set {
+                this.asuntoField = value;
+                this.RaisePropertyChanged("asunto");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
+        public string mensaje {
+            get {
+                return this.mensajeField;
+            }
+            set {
+                this.mensajeField = value;
+                this.RaisePropertyChanged("mensaje");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
+        public string nombreDestinatario {
+            get {
+                return this.nombreDestinatarioField;
+            }
+            set {
+                this.nombreDestinatarioField = value;
+                this.RaisePropertyChanged("nombreDestinatario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
+        public string correoDestinatario {
+            get {
+                return this.correoDestinatarioField;
+            }
+            set {
+                this.correoDestinatarioField = value;
+                this.RaisePropertyChanged("correoDestinatario");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
+        public string nombreArchivo {
+            get {
+                return this.nombreArchivoField;
+            }
+            set {
+                this.nombreArchivoField = value;
+                this.RaisePropertyChanged("nombreArchivo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true, Order=6)]
+        public byte[] archivo {
+            get {
+                return this.archivoField;
+            }
+            set {
+                this.archivoField = value;
+                this.RaisePropertyChanged("archivo");
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
+        public bool notificacion {
+            get {
+                return this.notificacionField;
+            }
+            set {
+                this.notificacionField = value;
+                this.RaisePropertyChanged("notificacion");
             }
         }
         
@@ -94,8 +239,7 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
         
         [System.ServiceModel.OperationContractAttribute(Action="enviarCorreoSeguro", ReplyAction="*")]
         [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.excepcionGenerica), Action="enviarCorreoSeguro", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
-        [System.ServiceModel.XmlSerializerFormatAttribute()]
-        [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ConsumerHeader))]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Output enviarCorreoSeguro(Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient.enviarCorreoSeguro_Input request);
     }
     
@@ -337,66 +481,6 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
-    public partial class Property : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string keyField;
-        
-        private string typeField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-                this.RaisePropertyChanged("key");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-                this.RaisePropertyChanged("type");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-                this.RaisePropertyChanged("value");
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
     public partial class Destination : object, System.ComponentModel.INotifyPropertyChanged {
         
         private string nameField;
@@ -470,150 +554,48 @@ namespace Bizagi.Proxy.Layer.HUB.CorreosSeguros.CorreoSeguroClient {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
-    public partial class EnviarCorreoSeguroRsType : object, System.ComponentModel.INotifyPropertyChanged {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader")]
+    public partial class Property : object, System.ComponentModel.INotifyPropertyChanged {
         
-        private string idMensajeField;
+        private string keyField;
         
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string idMensaje {
-            get {
-                return this.idMensajeField;
-            }
-            set {
-                this.idMensajeField = value;
-                this.RaisePropertyChanged("idMensaje");
-            }
-        }
+        private string typeField;
         
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/pki/services/soap/seguridad/enviarcorreoseguro/v1")]
-    public partial class EnviarCorreoSeguroRqType : object, System.ComponentModel.INotifyPropertyChanged {
-        
-        private string usuarioField;
-        
-        private string asuntoField;
-        
-        private string mensajeField;
-        
-        private string nombreDestinatarioField;
-        
-        private string correoDestinatarioField;
-        
-        private string nombreArchivoField;
-        
-        private byte[] archivoField;
-        
-        private bool notificacionField;
+        private string valueField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=0)]
-        public string usuario {
+        public string key {
             get {
-                return this.usuarioField;
+                return this.keyField;
             }
             set {
-                this.usuarioField = value;
-                this.RaisePropertyChanged("usuario");
+                this.keyField = value;
+                this.RaisePropertyChanged("key");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=1)]
-        public string asunto {
+        public string type {
             get {
-                return this.asuntoField;
+                return this.typeField;
             }
             set {
-                this.asuntoField = value;
-                this.RaisePropertyChanged("asunto");
+                this.typeField = value;
+                this.RaisePropertyChanged("type");
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=2)]
-        public string mensaje {
+        public string value {
             get {
-                return this.mensajeField;
+                return this.valueField;
             }
             set {
-                this.mensajeField = value;
-                this.RaisePropertyChanged("mensaje");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=3)]
-        public string nombreDestinatario {
-            get {
-                return this.nombreDestinatarioField;
-            }
-            set {
-                this.nombreDestinatarioField = value;
-                this.RaisePropertyChanged("nombreDestinatario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=4)]
-        public string correoDestinatario {
-            get {
-                return this.correoDestinatarioField;
-            }
-            set {
-                this.correoDestinatarioField = value;
-                this.RaisePropertyChanged("correoDestinatario");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=5)]
-        public string nombreArchivo {
-            get {
-                return this.nombreArchivoField;
-            }
-            set {
-                this.nombreArchivoField = value;
-                this.RaisePropertyChanged("nombreArchivo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, DataType="base64Binary", IsNullable=true, Order=6)]
-        public byte[] archivo {
-            get {
-                return this.archivoField;
-            }
-            set {
-                this.archivoField = value;
-                this.RaisePropertyChanged("archivo");
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(Form=System.Xml.Schema.XmlSchemaForm.Unqualified, Order=7)]
-        public bool notificacion {
-            get {
-                return this.notificacionField;
-            }
-            set {
-                this.notificacionField = value;
-                this.RaisePropertyChanged("notificacion");
+                this.valueField = value;
+                this.RaisePropertyChanged("value");
             }
         }
         

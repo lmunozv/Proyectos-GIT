@@ -12,7 +12,7 @@ namespace Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo
 {
     public class ConsultarCargaTrabajoImpl
     {
-        public consultarCargaTrabajoPorEtapa_Output consultarCargaTrabajo(consultarCargaTrabajoPorEtapa_Input input)
+        public etapaEstacionType[] consultarCargaTrabajo(consultarCargaTrabajoPorEtapa_Input input)
         {
             try
             {
@@ -26,7 +26,7 @@ namespace Bizagi.Proxy.Layer.Cobis.ConsultarCargaTrabajo
                     OperationContext.Current.OutgoingMessageProperties[HttpRequestMessageProperty.Name] =
                         ProxyUtils.GetHttpRequestMessageProperty();
                     var SomeResposne = ClientWs.consultarCargaTrabajoPorEtapa(input);
-                    return SomeResposne;
+                    return SomeResposne.ConsultarCargaTrabajoPorEtapaRs;
                 }
             }
             catch (Exception ex)
