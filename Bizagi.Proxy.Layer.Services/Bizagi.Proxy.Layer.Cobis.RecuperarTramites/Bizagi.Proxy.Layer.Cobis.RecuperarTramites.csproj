@@ -77,125 +77,122 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\aseguramientoProducto1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\aseguramientoProducto.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\asesor1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\asesor.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\autorizacionEnvio1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\autorizacionEnvio.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsumerHeaderResponse_v10.datasource">
+    <None Include="Service References\Cliente_RecuperarTramite\Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.TramiteType2.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cesantias1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cesantias.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\codeudor1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\codeudor.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\codigoTipo1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\codigoTipo.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\ConsultarTramitesCreditoPorIdentificacion1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\ConsultarTramitesCreditoPorIdentificacion.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\consumerHeader1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\consumerHeader.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\consumerHeaderResponse1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\consumerHeaderResponse.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\conversionUvr1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\conversionUvr.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\Credito_RecuperarTramiteSolicitudes1.wsdl" />
-    <None Include="Service References\Cliente_RecuperarTramite\cuentaAVC1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\Credito_RecuperarTramiteSolicitudes.wsdl" />
+    <None Include="Service References\Cliente_RecuperarTramite\cuentaAVC.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cuentaBancaria1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cuentaBancaria.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cuentaproductocliente1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cuentaproductocliente.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cuentaproductocredito1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cuentaproductocredito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cuotaCredito1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cuotaCredito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\cuotasMora1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\cuotasMora.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\desembolso1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\desembolso.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\direccion1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\direccion.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\direccion_Sub1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\direccion_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\excepciongenerica1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\excepciongenerica.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\identificacion1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\identificacion.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\informacionCuentaMora1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\informacionCuentaMora.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\informacionfinanciera1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\informacionfinanciera.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\informacionlaboral1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\informacionlaboral.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\informacionLaboral_Sub1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\informacionLaboral_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\monedaExtranjera1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\monedaExtranjera.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\pagosCredito1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\pagosCredito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\pagosDeuda1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\pagosDeuda.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\pep1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\pep.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\personajuridica1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\personajuridica.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\personanatural1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\personanatural.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\resumenValorAPagar1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\resumenValorAPagar.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\saldodeudacredito1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\saldodeudacredito.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\telefono1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\telefono.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\telefono_Sub1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\telefono_Sub.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\tipoafiliacion1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\tipoafiliacion.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\tramite1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\tramite.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\Cliente_RecuperarTramite\ubicacionOficinaProducto1.xsd">
+    <None Include="Service References\Cliente_RecuperarTramite\ubicacionOficinaProducto.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\Cliente_RecuperarTramites\aseguramientoProducto.xsd">

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="0e96ed9d-727e-4fac-8f08-e69d023d81c2" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>true</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="E:\Workspace\FNA\Proyectos\Legalizacion\Interfaces\022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0\MessageLib\022_Credito_RecuperarTramiteSolicitudes\wsdl\1.2\Credito_RecuperarTramiteSolicitudes.wsdl" Protocol="file" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="cuentaAVC.xsd" MetadataType="Schema" ID="3acb9cfb-57e5-4dea-8e9b-8666c6d225af" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuentaAVC.xsd" />
+    <MetadataFile FileName="cuotasMora.xsd" MetadataType="Schema" ID="00f8704a-ab4d-4263-af77-b0aadaa9a67b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuotasMora.xsd" />
+    <MetadataFile FileName="direccion_Sub.xsd" MetadataType="Schema" ID="3955ac93-1a10-4002-9d2b-c0f293909cfc" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/CommonsLib/direccion_Sub.xsd" />
+    <MetadataFile FileName="informacionCuentaMora.xsd" MetadataType="Schema" ID="9c721b14-4d8d-4536-8d5e-ea359fc75aac" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/informacionCuentaMora.xsd" />
+    <MetadataFile FileName="codigoTipo.xsd" MetadataType="Schema" ID="38db7de0-ef53-427e-a996-20e4cf1b3a64" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/codigoTipo.xsd" />
+    <MetadataFile FileName="telefono_Sub.xsd" MetadataType="Schema" ID="8b2d7457-2a77-42e5-943e-7275fa74626a" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/CommonsLib/telefono_Sub.xsd" />
+    <MetadataFile FileName="saldodeudacredito.xsd" MetadataType="Schema" ID="30d5f432-7176-4be7-8010-91098e4fa77d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/saldodeudacredito.xsd" />
+    <MetadataFile FileName="asesor.xsd" MetadataType="Schema" ID="1caacaee-6e59-4dba-a250-9eddca7818a2" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/asesor.xsd" />
+    <MetadataFile FileName="consumerHeader.xsd" MetadataType="Schema" ID="fbcca865-cc80-4c65-a464-0f8ac21d987e" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/CommonsLib/consumerHeader.xsd" />
+    <MetadataFile FileName="pep.xsd" MetadataType="Schema" ID="75475fce-3bb7-4dd0-97d6-363a655a153d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/pep.xsd" />
+    <MetadataFile FileName="aseguramientoProducto.xsd" MetadataType="Schema" ID="50a59e25-00f8-4b73-9ff2-cc976d7c68ef" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/aseguramientoProducto.xsd" />
+    <MetadataFile FileName="conversionUvr.xsd" MetadataType="Schema" ID="c5ce034d-22c2-4eea-880f-18e9cc94c04b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/conversionUvr.xsd" />
+    <MetadataFile FileName="informacionfinanciera.xsd" MetadataType="Schema" ID="a5933551-dfae-4dbc-8cdd-607da0a729d9" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/informacionfinanciera.xsd" />
+    <MetadataFile FileName="telefono.xsd" MetadataType="Schema" ID="8ee8688d-3a4a-4c16-a8c2-084c82e98e37" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/telefono.xsd" />
+    <MetadataFile FileName="Credito_RecuperarTramiteSolicitudes.wsdl" MetadataType="Wsdl" ID="8d1018a3-f80b-4c7a-964a-43e1e5a1473c" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/MessageLib/022_Credito_RecuperarTramiteSolicitudes/wsdl/1.2/Credito_RecuperarTramiteSolicitudes.wsdl" />
+    <MetadataFile FileName="ubicacionOficinaProducto.xsd" MetadataType="Schema" ID="37b20e7a-a9d2-441a-8e35-7f7c86832ad0" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/ubicacionOficinaProducto.xsd" />
+    <MetadataFile FileName="codeudor.xsd" MetadataType="Schema" ID="b710896f-310b-46e7-bd69-d04ef0bad306" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/codeudor.xsd" />
+    <MetadataFile FileName="cuotaCredito.xsd" MetadataType="Schema" ID="b5170094-d483-4435-bded-caf6bf11bb54" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuotaCredito.xsd" />
+    <MetadataFile FileName="identificacion.xsd" MetadataType="Schema" ID="2869b3ab-89f9-4813-ac56-ffca3b2f8add" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/identificacion.xsd" />
+    <MetadataFile FileName="direccion.xsd" MetadataType="Schema" ID="4fa9e51e-ef48-4ea4-994d-fd68e32c9076" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/direccion.xsd" />
+    <MetadataFile FileName="informacionLaboral_Sub.xsd" MetadataType="Schema" ID="0cb81766-c334-4457-9c4c-32130ed5dd85" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/CommonsLib/informacionLaboral_Sub.xsd" />
+    <MetadataFile FileName="pagosDeuda.xsd" MetadataType="Schema" ID="80e24084-94b9-4d18-8a35-37615cf8fd3e" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/pagosDeuda.xsd" />
+    <MetadataFile FileName="desembolso.xsd" MetadataType="Schema" ID="9dd2be53-7053-4ad4-8e88-7d2be9059d1d" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/desembolso.xsd" />
+    <MetadataFile FileName="personanatural.xsd" MetadataType="Schema" ID="0dddc673-5396-425f-8159-c939b3f4d0e2" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/personanatural.xsd" />
+    <MetadataFile FileName="resumenValorAPagar.xsd" MetadataType="Schema" ID="ab40f220-91e7-4705-9cd7-686cc2d09810" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/resumenValorAPagar.xsd" />
+    <MetadataFile FileName="pagosCredito.xsd" MetadataType="Schema" ID="7b880add-f305-4a04-9340-75e54637c958" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/pagosCredito.xsd" />
+    <MetadataFile FileName="cuentaproductocredito.xsd" MetadataType="Schema" ID="81e97b97-cee0-4a5b-a885-b833080a74e2" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuentaproductocredito.xsd" />
+    <MetadataFile FileName="informacionlaboral.xsd" MetadataType="Schema" ID="79fd2607-fd24-4cfd-800f-2d784adc8344" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/informacionlaboral.xsd" />
+    <MetadataFile FileName="excepciongenerica.xsd" MetadataType="Schema" ID="a1b242f9-6706-42fd-8b39-6ec6db4e1d28" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/excepciongenerica.xsd" />
+    <MetadataFile FileName="tramite.xsd" MetadataType="Schema" ID="bbda0089-8aea-452e-b5ab-e3c2770c68bf" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/tramite.xsd" />
+    <MetadataFile FileName="cuentaBancaria.xsd" MetadataType="Schema" ID="f02b1c06-4af9-4b01-bfb0-270c80b5e899" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuentaBancaria.xsd" />
+    <MetadataFile FileName="personajuridica.xsd" MetadataType="Schema" ID="f5456150-9166-48c3-817d-e0a5573b9c24" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/personajuridica.xsd" />
+    <MetadataFile FileName="cuentaproductocliente.xsd" MetadataType="Schema" ID="ab0d6597-8d63-4f6d-826d-53080f3920f4" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cuentaproductocliente.xsd" />
+    <MetadataFile FileName="cesantias.xsd" MetadataType="Schema" ID="f706f6e1-7056-4f09-9817-f4a264dd3001" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/cesantias.xsd" />
+    <MetadataFile FileName="monedaExtranjera.xsd" MetadataType="Schema" ID="eb227c54-9662-414d-b033-b3ccc4f58f76" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/monedaExtranjera.xsd" />
+    <MetadataFile FileName="autorizacionEnvio.xsd" MetadataType="Schema" ID="45ec887f-cf7e-40e9-ac34-579d5dddb945" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/autorizacionEnvio.xsd" />
+    <MetadataFile FileName="consumerHeaderResponse.xsd" MetadataType="Schema" ID="88b5f953-b009-4e23-b845-77276608adc1" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/CommonsLib/consumerHeaderResponse.xsd" />
+    <MetadataFile FileName="tipoafiliacion.xsd" MetadataType="Schema" ID="16e6985e-8ad8-4007-8841-a942cffb879b" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/BusinessEntitiesLib/tipoafiliacion.xsd" />
+    <MetadataFile FileName="ConsultarTramitesCreditoPorIdentificacion1.xsd" MetadataType="Schema" ID="e6764ad4-4ba9-4107-a7de-4554fcd035d8" SourceId="1" SourceUrl="file:///E:/Workspace/FNA/Proyectos/Legalizacion/Interfaces/022-Credito_RecuperarTramiteSolicitudes-soap1.2-v2.0.0/MessageLib/022_Credito_RecuperarTramiteSolicitudes/xsd/ConsultarTramitesCreditoPorIdentificacion.xsd" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

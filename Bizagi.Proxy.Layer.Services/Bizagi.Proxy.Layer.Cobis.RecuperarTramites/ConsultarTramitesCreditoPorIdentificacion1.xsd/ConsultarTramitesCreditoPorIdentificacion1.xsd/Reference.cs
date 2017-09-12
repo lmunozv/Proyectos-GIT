@@ -8,11 +8,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
+namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -72,7 +72,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -174,7 +174,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -220,7 +220,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -308,7 +308,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -318,7 +318,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(PersonaNaturalInfoBasica_V10))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1346,7 +1346,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(IdPersonaJuridicaType))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(IdentificacionType))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1560,7 +1560,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1569,7 +1569,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1578,6 +1578,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V21))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionLab))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V111))]
@@ -1590,12 +1592,10 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V14))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V20))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJT))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V113))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V112))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V13))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2173,6 +2173,8 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJBas))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V16))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V15))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoInfoLabor_V10))]
@@ -2183,9 +2185,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V101))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(Telefono_V10))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJBas))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(TelefonoPJ))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2455,97 +2455,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V16 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V15 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="TelefonoInfoLabor_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class TelefonoInfoLabor_V10 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V14 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V13 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V12 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V111 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
-    public partial class Telefono_V101 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V11 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
-    public partial class Telefono_V10 : Telefono {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2554,12 +2464,120 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
     public partial class TelefonoPJ : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.6", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V16 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.5", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V15 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="TelefonoInfoLabor_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class TelefonoInfoLabor_V10 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.4", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V14 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.3", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V13 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.2", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V12 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V111 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/CommonsLib/telefonosub")]
+    public partial class Telefono_V101 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.1", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V11 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(TypeName="Telefono_V1.0", Namespace="http://www.fna.gov.co/cim/businessentities/telefono")]
+    public partial class Telefono_V10 : Telefono {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJT : DireccionFisica {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
+    public partial class DireccionPJ : DireccionFisica {
     }
     
     /// <remarks/>
@@ -2573,7 +2591,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V15))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V14))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionFisica_V12))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2582,7 +2600,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2591,7 +2609,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2600,7 +2618,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2609,7 +2627,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2618,7 +2636,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2627,7 +2645,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2636,7 +2654,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2645,7 +2663,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2654,7 +2672,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2663,7 +2681,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2672,7 +2690,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2681,25 +2699,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJT : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.fna.gov.co/cim/businessentities/personajuridica")]
-    public partial class DireccionPJ : DireccionFisica {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2708,7 +2708,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2717,7 +2717,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2726,7 +2726,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2845,7 +2845,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronicaPJ))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DireccionElectronica_V10))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2919,7 +2919,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2928,7 +2928,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2937,7 +2937,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -2950,7 +2950,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CasillaPostal_V10))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3234,7 +3234,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3243,7 +3243,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3252,7 +3252,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3261,7 +3261,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3277,7 +3277,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V22))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V26))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V21))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3813,7 +3813,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3873,7 +3873,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -3919,7 +3919,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4077,7 +4077,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4151,7 +4151,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4197,7 +4197,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4206,7 +4206,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4215,7 +4215,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4224,7 +4224,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4234,7 +4234,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(InformacionLaboral_V26))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4243,7 +4243,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4252,7 +4252,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4261,7 +4261,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -4895,7 +4895,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5054,7 +5054,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CuentaBancaria1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5198,7 +5198,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5207,7 +5207,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5435,7 +5435,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5594,7 +5594,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AutorizacionEnvio_V11))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5752,7 +5752,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5761,7 +5761,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -5773,7 +5773,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V12))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V11))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(cuentaAVC_V10))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6393,7 +6393,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6439,7 +6439,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6471,7 +6471,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6480,7 +6480,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6489,7 +6489,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6521,7 +6521,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6707,7 +6707,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -6753,7 +6753,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7163,7 +7163,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7308,7 +7308,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -7522,7 +7522,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8184,7 +8184,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -8454,7 +8454,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9006,7 +9006,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CuentaProductoCredito1))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CuentaProducto))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9333,7 +9333,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9342,7 +9342,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9351,7 +9351,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -9594,7 +9594,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(CuentaProductoCliente1))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10200,7 +10200,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10210,7 +10210,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(TramiteType))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10354,7 +10354,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10363,7 +10363,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10423,7 +10423,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10455,23 +10455,24 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2", ConfigurationName="Cliente_RecuperarTramite.Credito_RecuperarTramiteSolicitudesPortType")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2", ConfigurationName="ConsultarTramitesCreditoPorIdentificacion1.xsd.Credito_RecuperarTramiteSolicitude" +
+        "sPortType")]
     public interface Credito_RecuperarTramiteSolicitudesPortType {
         
         [System.ServiceModel.OperationContractAttribute(Action="consultarTramitesCreditoPorIdentificacion", ReplyAction="*")]
-        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.excepcionGenerica), Action="consultarTramitesCreditoPorIdentificacion", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
+        [System.ServiceModel.FaultContractAttribute(typeof(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.excepcionGenerica), Action="consultarTramitesCreditoPorIdentificacion", Name="excepcionGenerica", Namespace="http://www.fna.gov.co/cim/businessentities/excepciongenerica")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(cuentaAVC))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(CuentaProductoCliente))]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(Tramite))]
-        Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output consultarTramitesCreditoPorIdentificacion(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Input request);
+        Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Output consultarTramitesCreditoPorIdentificacion(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Input request);
         
         [System.ServiceModel.OperationContractAttribute(Action="consultarTramitesCreditoPorIdentificacion", ReplyAction="*")]
-        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output> consultarTramitesCreditoPorIdentificacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Input request);
+        System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Output> consultarTramitesCreditoPorIdentificacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Input request);
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10602,7 +10603,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10648,7 +10649,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10694,7 +10695,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10768,7 +10769,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10828,7 +10829,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -10916,7 +10917,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11075,7 +11076,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
     public enum Status_v10StatusType {
@@ -11088,7 +11089,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.fna.gov.co/esb/services/cl/consumerheader/v1")]
     public enum Status_v10Severity {
@@ -11101,7 +11102,7 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2102.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -11166,15 +11167,15 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     public partial class consultarTramitesCreditoPorIdentificacion_Input {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2")]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsumerHeader headerRq;
+        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsumerHeader headerRq;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2", Order=0)]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsultarTramitesCreditoPorIdentificacionRq ConsultarTramitesCreditoPorIdentificacionRq;
+        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsultarTramitesCreditoPorIdentificacionRq ConsultarTramitesCreditoPorIdentificacionRq;
         
         public consultarTramitesCreditoPorIdentificacion_Input() {
         }
         
-        public consultarTramitesCreditoPorIdentificacion_Input(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsumerHeader headerRq, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsultarTramitesCreditoPorIdentificacionRq ConsultarTramitesCreditoPorIdentificacionRq) {
+        public consultarTramitesCreditoPorIdentificacion_Input(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsumerHeader headerRq, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsultarTramitesCreditoPorIdentificacionRq ConsultarTramitesCreditoPorIdentificacionRq) {
             this.headerRq = headerRq;
             this.ConsultarTramitesCreditoPorIdentificacionRq = ConsultarTramitesCreditoPorIdentificacionRq;
         }
@@ -11186,28 +11187,28 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
     public partial class consultarTramitesCreditoPorIdentificacion_Output {
         
         [System.ServiceModel.MessageHeaderAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2")]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsumerHeaderResponse_v10 headerRs;
+        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsumerHeaderResponse_v10 headerRs;
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://www.fna.gov.co/esb/services/soap/credito/recuperartramitesolicitudes/v2", Order=0)]
         [System.Xml.Serialization.XmlArrayItemAttribute("tramite", Form=System.Xml.Schema.XmlSchemaForm.Unqualified, IsNullable=false)]
-        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.TramiteType2[] ConsultarTramitesCreditoPorIdentificacionRs;
+        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.TramiteType2[] ConsultarTramitesCreditoPorIdentificacionRs;
         
         public consultarTramitesCreditoPorIdentificacion_Output() {
         }
         
-        public consultarTramitesCreditoPorIdentificacion_Output(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.ConsumerHeaderResponse_v10 headerRs, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.TramiteType2[] ConsultarTramitesCreditoPorIdentificacionRs) {
+        public consultarTramitesCreditoPorIdentificacion_Output(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.ConsumerHeaderResponse_v10 headerRs, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.TramiteType2[] ConsultarTramitesCreditoPorIdentificacionRs) {
             this.headerRs = headerRs;
             this.ConsultarTramitesCreditoPorIdentificacionRs = ConsultarTramitesCreditoPorIdentificacionRs;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface Credito_RecuperarTramiteSolicitudesPortTypeChannel : Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.Credito_RecuperarTramiteSolicitudesPortType, System.ServiceModel.IClientChannel {
+    public interface Credito_RecuperarTramiteSolicitudesPortTypeChannel : Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.Credito_RecuperarTramiteSolicitudesPortType, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Credito_RecuperarTramiteSolicitudesPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.Credito_RecuperarTramiteSolicitudesPortType>, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.Credito_RecuperarTramiteSolicitudesPortType {
+    public partial class Credito_RecuperarTramiteSolicitudesPortTypeClient : System.ServiceModel.ClientBase<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.Credito_RecuperarTramiteSolicitudesPortType>, Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.Credito_RecuperarTramiteSolicitudesPortType {
         
         public Credito_RecuperarTramiteSolicitudesPortTypeClient() {
         }
@@ -11228,11 +11229,11 @@ namespace Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite {
                 base(binding, remoteAddress) {
         }
         
-        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output consultarTramitesCreditoPorIdentificacion(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Input request) {
+        public Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Output consultarTramitesCreditoPorIdentificacion(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Input request) {
             return base.Channel.consultarTramitesCreditoPorIdentificacion(request);
         }
         
-        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Output> consultarTramitesCreditoPorIdentificacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.Cliente_RecuperarTramite.consultarTramitesCreditoPorIdentificacion_Input request) {
+        public System.Threading.Tasks.Task<Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Output> consultarTramitesCreditoPorIdentificacionAsync(Bizagi.Proxy.Layer.Cobis.RecuperarTramites.ConsultarTramitesCreditoPorIdentificacion1.xsd.consultarTramitesCreditoPorIdentificacion_Input request) {
             return base.Channel.consultarTramitesCreditoPorIdentificacionAsync(request);
         }
     }
